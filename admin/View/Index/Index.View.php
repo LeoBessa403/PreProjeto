@@ -28,7 +28,7 @@
                         Resumo dos Projetos
                     </div>
                     <div class="panel-body">
-                        <div class="col-sm-4">
+                        <div class="col-sm-6">
                             <button class="btn btn-icon btn-block">
                                 <i class="clip-users-3"></i>
                                 Projetos Cadastrados
@@ -36,10 +36,10 @@
                                 </span>
                             </button>
                         </div>
-                        <div class="col-sm-4">
+                        <div class="col-sm-6">
                             <button class="btn btn-icon btn-block">
                                 <i class="clip-users-3"></i>
-                                Módulos cadastradas
+                                Módulos cadastrados
                                 <span class="negrito dados dados-danger">
                                 </span>
                             </button>
@@ -47,7 +47,7 @@
                         <div class="col-sm-4">
                             <button class="btn btn-icon btn-block">
                                 <i class="clip-users-2"></i>
-                                Fabricantes Cadastrados
+                                Sessões Cadastradas
                                 <span class="dados negrito dados-black">
                                 </span>
                             </button>
@@ -55,7 +55,7 @@
                         <div class="col-sm-4">
                             <button class="btn btn-icon btn-block">
                                 <i class="clip-users-3"></i>
-                                Produtos Destaque
+                                Histórias Cadastradas
                                 <span class="negrito dados dados-warning">
                                 </span>
                             </button>
@@ -63,40 +63,8 @@
                         <div class="col-sm-4">
                             <button class="btn btn-icon btn-block">
                                 <i class="fa fa-money"></i>
-                                Mais Visitados
+                                Anotações Cadastradas
                                 <span class="dados negrito dados-info">
-                                </span>
-                            </button>
-                        </div>
-                        <div class="col-sm-4">
-                            <button class="btn btn-icon btn-block">
-                                <i class="clip-user-cancel"></i>
-                                Mais Vendidos
-                                <span class="dados negrito dados-beige">
-                                </span>
-                            </button>
-                        </div>
-                        <div class="col-sm-4">
-                            <button class="btn btn-icon btn-block">
-                                <i class="clip-user-3"></i>
-                                Produtos sem estoque
-                                <span class="dados negrito dados-olivia">
-                                </span>
-                            </button>
-                        </div>
-                        <div class="col-sm-4">
-                            <button class="btn btn-icon btn-block">
-                                <i class="fa-dollar fa"></i>
-                                Novos Produtos
-                                <span class="dados negrito dados-orange">
-                                </span>
-                            </button>
-                        </div>
-                        <div class="col-sm-4">
-                            <button class="btn btn-icon btn-block">
-                                <i class="fa-eur fa"></i>
-                                Mais procurados
-                                <span class="dados negrito dados-gray">
                                 </span>
                             </button>
                         </div>
