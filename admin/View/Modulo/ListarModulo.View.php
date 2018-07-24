@@ -7,7 +7,7 @@
                     <li>
                         <i class="clip-grid-6"></i>
                         <a href="#">
-                            Categoria
+                            Modulo
                         </a>
                     </li>
                     <li class="active">
@@ -15,9 +15,9 @@
                     </li>
                 </ol>
                 <div class="page-header">
-                    <h1>Categoria
-                        <small>Listar Categoria</small>
-                        <?php Valida::geraBtnNovo(); ?>
+                    <h1>Modulo
+                        <small>Listar Modulo</small>
+                        <?php Valida::geraBtnNovo(Valida::GeraParametro(CO_PROJETO.'/'.$coProjeto)); ?>
                     </h1>
                 </div>
                 <!-- end: PAGE TITLE & BREADCRUMB -->
@@ -28,33 +28,34 @@
                 <div class="panel panel-default">
                     <div class="panel-heading">
                         <i class="fa fa-external-link-square"></i>
-                        Categoria dos Produtos
+                        Modulos do projeto
                     </div>
                     <div class="panel-body">
                         <?php
                         Modal::load();
-                        Modal::deletaRegistro("Categoria");
-                        Modal::confirmacao("confirma_Categoria");
-                        $arrColunas = array('Nome da Categoria', 'Segmento', 'Ações');
+                        Modal::deletaRegistro("Modulo");
+                        Modal::confirmacao("confirma_Modulo");
+                        $arrColunas = array('Nome da Modulo', 'Projeto', 'Ações');
                         $grid = new Grid();
                         $grid->setColunasIndeces($arrColunas);
                         $grid->criaGrid();
-                        /** @var CategoriaEntidade $res */
+                        /** @var ModuloEntidade $res */
                         foreach ($result as $res):
-                            $acao = '<a href="' . PASTAADMIN . 'Categoria/CadastroCategoria/' .
-                                Valida::GeraParametro(CO_CATEGORIA . "/" . $res->getCoCategoria()) . '" class="btn btn-primary tooltips" 
+                            $acao = '<a href="' . PASTAADMIN . 'Modulo/CadastroModulo/' .
+                                Valida::GeraParametro(CO_MODULO . "/" . $res->getCoModulo()) . '" class="btn btn-primary tooltips" 
                                     data-original-title="Editar Registro" data-placement="top">
                                      <i class="fa fa-clipboard"></i>
-                                 </a>
-                                 <a data-toggle="modal" role="button" class="btn btn-bricky 
-                                        tooltips deleta" id="' . $res->getCoCategoria() . '" data-msg-restricao="MSG01"
-                                           href="#Categoria" data-original-title="Excluir Registro" data-placement="top">
-                                            <i class="fa fa-trash-o"></i>
-                                        </a>';
-                            $grid->setColunas($res->getNoCategoria());
-                            $grid->setColunas($res->getCoSegmento()->getDsSegmento());
+                                 </a> 
+                                 <a href="' . PASTAADMIN . 'Sessao/ListarSessao/' .
+                                Valida::GeraParametro(CO_MODULO . "/" . $res->getCoModulo()) . '" 
+                                class="btn btn-dark-grey tooltips" 
+                                    data-original-title="Sessões do Modulo" data-placement="top">
+                                     <i class="clip-stack-empty"></i>
+                                 </a>';
+                            $grid->setColunas($res->getNoModulo());
+                            $grid->setColunas($res->getCoProjeto()->getNoProjeto());
                             $grid->setColunas($acao, 2);
-                            $grid->criaLinha($res->getCoCategoria());
+                            $grid->criaLinha($res->getCoModulo());
                         endforeach;
                         $grid->finalizaGrid();
                         ?>

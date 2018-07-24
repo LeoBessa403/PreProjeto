@@ -8,7 +8,7 @@
                                     <li>
                                             <i class="clip-grid-6"></i>
                                             <a href="#">
-                                                Categoria
+                                                Modulo
                                             </a>
                                     </li>
                                     <li class="active">
@@ -17,7 +17,7 @@
 
                             </ol>
                             <div class="page-header">
-                                    <h1>Categoria <small>Cadastro / Edição</small></h1>
+                                    <h1>Modulo <small>Cadastro / Edição</small></h1>
                             </div>
                             <!-- end: PAGE TITLE & BREADCRUMB -->
                     </div>

@@ -40,11 +40,16 @@
                         $grid->criaGrid();
                         /** @var ProjetoEntidade $res */
                         foreach ($result as $res):
-
                             $acao = '<a href="' . PASTAADMIN . 'Projeto/CadastroProjeto/' .
                                 Valida::GeraParametro(CO_PROJETO . "/" . $res->getCoProjeto()) . '" class="btn btn-primary tooltips" 
                                     data-original-title="Editar Registro" data-placement="top">
                                      <i class="fa fa-clipboard"></i>
+                                 </a> 
+                                  <a href="' . PASTAADMIN . 'Modulo/ListarModulo/' .
+                                Valida::GeraParametro(CO_PROJETO . "/" . $res->getCoProjeto()) . '" 
+                                class="btn btn-dark-grey tooltips" 
+                                    data-original-title="Modulos do Projeto" data-placement="top">
+                                     <i class="clip-stack-empty"></i>
                                  </a>';
 
                             $grid->setColunas($res->getNoProjeto());
