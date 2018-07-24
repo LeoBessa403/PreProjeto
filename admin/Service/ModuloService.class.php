@@ -22,19 +22,18 @@ class  ModuloService extends AbstractService
             SUCESSO => false,
             MSG => null
         ];
-        $categoriaValidador = new CategoriaValidador();
-        /** @var CategoriaValidador $validador */
-        $validador = $categoriaValidador->validarCategoria($dados);
+        $moduloValidador = new ModuloValidador();
+        /** @var ModuloValidador $validador */
+        $validador = $moduloValidador->validarModulo($dados);
         if ($validador[SUCESSO]) {
-            $categoria[NO_CATEGORIA] = trim($dados[NO_CATEGORIA]);
-            $categoria[CO_SEGMENTO] = $dados[CO_SEGMENTO][0];
-            $categoria[NO_CATEGORIA_URL_AMIGAVEL] = Valida::ValNome(trim($dados[NO_CATEGORIA]));
+            $modulo[NO_MODULO] = trim($dados[NO_MODULO]);
+            $modulo[CO_PROJETO] = $dados[CO_PROJETO];
 
-            if (!empty($_POST[CO_CATEGORIA])):
-                $coCategoria = $dados[CO_CATEGORIA];
-                $retorno[SUCESSO] = $this->Salva($categoria, $coCategoria);
+            if (!empty($_POST[CO_MODULO])):
+                $coModulo = $dados[CO_MODULO];
+                $retorno[SUCESSO] = $this->Salva($modulo, $coModulo);
             else:
-                $retorno[SUCESSO] = $this->Salva($categoria);
+                $retorno[SUCESSO] = $this->Salva($modulo);
             endif;
         } else {
             $session = new Session();
