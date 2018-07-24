@@ -34,7 +34,7 @@ class  AnotacaoService extends AbstractService
                 $coAnotacao = $dados[CO_ANOTACAO];
                 $retorno[SUCESSO] = $this->Salva($anotacao, $coAnotacao);
             else:
-                $anotacao[DT_CADASTRO] =  Valida::DataHoraAtualBanco();
+                $anotacao[DT_CADASTRO] = Valida::DataHoraAtualBanco();
                 $retorno[SUCESSO] = $this->Salva($anotacao);
             endif;
         } else {

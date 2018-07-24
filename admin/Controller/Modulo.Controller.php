@@ -24,21 +24,22 @@ class Modulo extends AbstractController
 
         if (!empty($_POST[$id])):
             $retorno = $moduloService->salvaModulo($_POST);
-            if($retorno[SUCESSO]){
-                Redireciona(UrlAmigavel::$modulo.'/'.UrlAmigavel::$controller.'/ListarModulo/');
+            if ($retorno[SUCESSO]) {
+                Redireciona(UrlAmigavel::$modulo . '/' . UrlAmigavel::$controller .
+                    '/ListarModulo/' . Valida::GeraParametro(CO_PROJETO . "/" . $_POST[CO_PROJETO]));
             }
         endif;
 
         $coModulo = UrlAmigavel::PegaParametro(CO_MODULO);
         $res = [];
-        if($coModulo){
+        if ($coModulo) {
             /** @var ModuloEntidade $modulo */
             $modulo = $moduloService->PesquisaUmRegistro($coModulo);
             $res[CO_MODULO] = $modulo->getCoModulo();
             $res[NO_MODULO] = $modulo->getNoModulo();
             $res[CO_PROJETO] = $modulo->getCoProjeto()->getCoProjeto();
             $res[NO_PROJETO] = $modulo->getCoProjeto()->getNoProjeto();
-        }else{
+        } else {
             /** @var ProjetoService $projetoService */
             $projetoService = $this->getService(PROJETO_SERVICE);
 

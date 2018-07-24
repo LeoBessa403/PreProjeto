@@ -24,21 +24,22 @@ class Sessao extends AbstractController
 
         if (!empty($_POST[$id])):
             $retorno = $sessaoService->salvaSessao($_POST);
-            if($retorno[SUCESSO]){
-                Redireciona(UrlAmigavel::$modulo.'/'.UrlAmigavel::$controller.'/ListarSessao/');
+            if ($retorno[SUCESSO]) {
+                Redireciona(UrlAmigavel::$modulo . '/' . UrlAmigavel::$controller .
+                    '/ListarSessao/' . Valida::GeraParametro(CO_MODULO . "/" . $_POST[CO_MODULO]));
             }
         endif;
 
         $coSessao = UrlAmigavel::PegaParametro(CO_SESSAO);
         $res = [];
-        if($coSessao){
+        if ($coSessao) {
             /** @var SessaoEntidade $sessao */
             $sessao = $sessaoService->PesquisaUmRegistro($coSessao);
             $res[CO_SESSAO] = $sessao->getCoSessao();
             $res[NO_SESSAO] = $sessao->getNoSessao();
             $res[CO_MODULO] = $sessao->getCoModulo()->getCoModulo();
             $res[NO_MODULO] = $sessao->getCoModulo()->getNoModulo();
-        }else{
+        } else {
             /** @var ModuloService $moduloService */
             $moduloService = $this->getService(MODULO_SERVICE);
 

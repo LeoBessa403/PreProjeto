@@ -24,14 +24,15 @@ class Anotacao extends AbstractController
 
         if (!empty($_POST[$id])):
             $retorno = $anotacaoService->salvaAnotacao($_POST);
-            if($retorno[SUCESSO]){
-                Redireciona(UrlAmigavel::$modulo.'/'.UrlAmigavel::$controller.'/ListarAnotacao/');
+            if ($retorno[SUCESSO]) {
+                Redireciona(UrlAmigavel::$modulo . '/' . UrlAmigavel::$controller .
+                    '/ListarAnotacao/' . Valida::GeraParametro(CO_HISTORIA . "/" . $_POST[CO_HISTORIA]));
             }
         endif;
 
         $coAnotacao = UrlAmigavel::PegaParametro(CO_ANOTACAO);
         $res = [];
-        if($coAnotacao){
+        if ($coAnotacao) {
             /** @var AnotacaoEntidade $anotacao */
             $anotacao = $anotacaoService->PesquisaUmRegistro($coAnotacao);
             $res[CO_ANOTACAO] = $anotacao->getCoAnotacao();
@@ -39,7 +40,7 @@ class Anotacao extends AbstractController
             $res['ds_titulo_hist'] = $anotacao->getCoHistoria()->getDsTitulo();
             $res[CO_HISTORIA] = $anotacao->getCoHistoria()->getCoHistoria();
             $res[DS_OBSERVACAO] = $anotacao->getDsObservacao();
-        }else{
+        } else {
             /** @var HistoriaService $historiaService */
             $historiaService = $this->getService(HISTORIA_SERVICE);
 

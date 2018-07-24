@@ -1,4 +1,5 @@
 <?php
+
 /**
  * HistoriaForm [ FORM ]
  * @copyright (c) 2017, Leo Bessa
@@ -64,9 +65,10 @@ class HistoriaForm
                 ->CriaInpunt();
         endif;
 
-        return $formulario->finalizaForm('Historia/ListarHistoria/'.
-            Valida::GeraParametro(CO_SESSAO . "/" .$res[CO_SESSAO]));
+        return $formulario->finalizaForm('Historia/ListarHistoria/' .
+            Valida::GeraParametro(CO_SESSAO . "/" . $res[CO_SESSAO]));
     }
 }
+
 ?>
    

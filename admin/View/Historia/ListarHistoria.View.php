@@ -55,23 +55,23 @@
                                  </a>';
 
                             $progresso = (($res->getNuEsforco() - $res->getNuEsforcoRestante())
-                                / $res->getNuEsforco()) * 100;
+                                    / $res->getNuEsforco()) * 100;
 
                             $cor = 'success';
-                            if($progresso < 25){
+                            if ($progresso < 25) {
                                 $cor = 'danger';
-                            }elseif($progresso < 50){
+                            } elseif ($progresso < 50) {
                                 $cor = 'warning';
-                             }elseif($progresso < 80){
+                            } elseif ($progresso < 80) {
                                 $cor = 'info';
                             }
 
                             $barra = '<div class="progress progress-striped progress-sm tooltips" 
-                            data-original-title="'.$progresso.'%" data-placement="top"
+                            data-original-title="' . $progresso . '%" data-placement="top"
                             style="height: 18px;">
-                                            <div class="progress-bar progress-bar-'.$cor.'" role="progressbar" 
+                                            <div class="progress-bar progress-bar-' . $cor . '" role="progressbar" 
                                             aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" 
-                                            style="width: '.$progresso.'%"></div>
+                                            style="width: ' . $progresso . '%"></div>
                                     </div>';
                             $grid->setColunas($res->getDsTitulo());
                             $grid->setColunas($res->getDtAtualizado());

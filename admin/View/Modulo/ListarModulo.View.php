@@ -17,7 +17,7 @@
                 <div class="page-header">
                     <h1>Modulo
                         <small>Listar Modulo</small>
-                        <?php Valida::geraBtnNovo(Valida::GeraParametro(CO_PROJETO.'/'.$coProjeto)); ?>
+                        <?php Valida::geraBtnNovo(Valida::GeraParametro(CO_PROJETO . '/' . $coProjeto)); ?>
                     </h1>
                 </div>
                 <!-- end: PAGE TITLE & BREADCRUMB -->

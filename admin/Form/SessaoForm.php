@@ -1,4 +1,5 @@
 <?php
+
 /**
  * SessaoForm [ FORM ]
  * @copyright (c) 2017, Leo Bessa
@@ -41,9 +42,10 @@ class SessaoForm
                 ->CriaInpunt();
         endif;
 
-        return $formulario->finalizaForm('Sessao/ListarSessao/'.
-            Valida::GeraParametro(CO_MODULO . "/" .$res[CO_MODULO]));
+        return $formulario->finalizaForm('Sessao/ListarSessao/' .
+            Valida::GeraParametro(CO_MODULO . "/" . $res[CO_MODULO]));
     }
 }
+
 ?>
    

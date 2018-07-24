@@ -124,8 +124,7 @@ class Relacionamentos
                     ('Tipo') => '1',
                 ),
             ),
-            (ImagemEntidade::TABELA) => Array(
-            ),
+            (ImagemEntidade::TABELA) => Array(),
             (PerfilFuncionalidadeEntidade::TABELA) => Array(
                 (CO_PERFIL) => Array(
                     ('Campo') => CO_PERFIL,
@@ -193,8 +192,7 @@ class Relacionamentos
                     ('Tipo') => '1',
                 ),
             ),
-            (TrafegoEntidade::TABELA) => Array(
-            ),
+            (TrafegoEntidade::TABELA) => Array(),
             (AnotacaoEntidade::TABELA) => Array(
                 (CO_HISTORIA) => Array(
                     ('Campo') => CO_HISTORIA,

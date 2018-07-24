@@ -1,4 +1,5 @@
 <?php
+
 /**
  * AnotacaoForm [ FORM ]
  * @copyright (c) 2017, Leo Bessa
@@ -48,9 +49,10 @@ class AnotacaoForm
                 ->CriaInpunt();
         endif;
 
-        return $formulario->finalizaForm('Anotacao/ListarAnotacao/'.
-            Valida::GeraParametro(CO_HISTORIA . "/" .$res[CO_HISTORIA]));
+        return $formulario->finalizaForm('Anotacao/ListarAnotacao/' .
+            Valida::GeraParametro(CO_HISTORIA . "/" . $res[CO_HISTORIA]));
     }
 }
+
 ?>
    

@@ -54,13 +54,13 @@ class  HistoriaService extends AbstractService
             $historia[ST_SITUACAO] = $this->getSituacaoHistoria($dados);
             $historia[NU_ESFORCO] = $dados[NU_ESFORCO][0];
             $historia[NU_ESFORCO_RESTANTE] = $dados[NU_ESFORCO_RESTANTE];
-            $historia[DT_ATUALIZADO] =  Valida::DataHoraAtualBanco();
+            $historia[DT_ATUALIZADO] = Valida::DataHoraAtualBanco();
 
             if (!empty($_POST[CO_HISTORIA])):
                 $coHistoria = $dados[CO_HISTORIA];
                 $retorno[SUCESSO] = $this->Salva($historia, $coHistoria);
             else:
-                $historia[DT_CADASTRO] =  Valida::DataHoraAtualBanco();
+                $historia[DT_CADASTRO] = Valida::DataHoraAtualBanco();
                 $retorno[SUCESSO] = $this->Salva($historia);
             endif;
         } else {
@@ -74,9 +74,9 @@ class  HistoriaService extends AbstractService
     public function getSituacaoHistoria($dados)
     {
         $sit = StatusHistoriaEnum::INICIADA;
-        if($dados[NU_ESFORCO_RESTANTE] == 0){
+        if ($dados[NU_ESFORCO_RESTANTE] == 0) {
             $sit = StatusHistoriaEnum::CONCLUIDA;
-        }elseif ($dados[NU_ESFORCO_RESTANTE] == $dados[NU_ESFORCO][0]){
+        } elseif ($dados[NU_ESFORCO_RESTANTE] == $dados[NU_ESFORCO][0]) {
             $sit = StatusHistoriaEnum::NAO_INICIADA;
         }
         return $sit;

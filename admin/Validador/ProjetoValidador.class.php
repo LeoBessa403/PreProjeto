@@ -17,7 +17,6 @@ class  ProjetoValidador extends AbstractValidador
         $this->retorno[DADOS][] = $this->ValidaCampoObrigatorioDescricao(
             $dados[NO_PROJETO], 6, 'Nome do Projeto'
         );
-
         return $this->MontaRetorno($this->retorno);
     }
 }
