@@ -17,7 +17,7 @@
                 <div class="page-header">
                     <h1>Sessao
                         <small>Listar Sessao</small>
-                        <?php Valida::geraBtnNovo(Valida::GeraParametro(CO_MODULO.'/'.$coModulo)); ?>
+                        <?php Valida::geraBtnNovo(Valida::GeraParametro(CO_MODULO . '/' . $coModulo)); ?>
                     </h1>
                 </div>
                 <!-- end: PAGE TITLE & BREADCRUMB -->
@@ -62,6 +62,9 @@
                     </div>
                 </div>
                 <!-- end: DYNAMIC TABLE PANEL -->
+                <?php Valida::geraBtnVoltar('Modulo/ListarModulo/' . Valida::GeraParametro(
+                        CO_MODULO . "/" . $res->getCoModulo()->getCoModulo())); ?>
+                <br><br><br>
             </div>
         </div>
         <!-- end: PAGE CONTENT-->

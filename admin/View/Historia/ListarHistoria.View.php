@@ -47,10 +47,10 @@
                                     data-original-title="Editar Registro" data-placement="top">
                                      <i class="fa fa-clipboard"></i>
                                  </a> 
-                                 <a href="' . PASTAADMIN . 'Historia/ListarHistoria/' .
-                                Valida::GeraParametro(CO_MODULO . "/" . $res->getCoHistoria()) . '" 
+                                 <a href="' . PASTAADMIN . 'Anotacao/ListarAnotacao/' .
+                                Valida::GeraParametro(CO_HISTORIA . "/" . $res->getCoHistoria()) . '" 
                                 class="btn btn-dark-grey tooltips" 
-                                    data-original-title="Sessões do Historia" data-placement="top">
+                                    data-original-title="Anotação da Historia" data-placement="top">
                                      <i class="clip-stack-empty"></i>
                                  </a>';
 
@@ -66,11 +66,12 @@
                                 $cor = 'info';
                             }
 
-                            $barra = '<div class="progress progress-striped progress-sm">
+                            $barra = '<div class="progress progress-striped progress-sm tooltips" 
+                            data-original-title="'.$progresso.'%" data-placement="top"
+                            style="height: 18px;">
                                             <div class="progress-bar progress-bar-'.$cor.'" role="progressbar" 
                                             aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" 
-                                            style="width: '.$progresso.'%">
-                                            </div>
+                                            style="width: '.$progresso.'%"></div>
                                     </div>';
                             $grid->setColunas($res->getDsTitulo());
                             $grid->setColunas($res->getDtAtualizado());
@@ -87,6 +88,9 @@
                     </div>
                 </div>
                 <!-- end: DYNAMIC TABLE PANEL -->
+                <?php Valida::geraBtnVoltar('Sessao/ListarSessao/' . Valida::GeraParametro(
+                        CO_SESSAO . "/" . $res->getCoSessao()->getCoSessao())); ?>
+                <br><br><br>
             </div>
         </div>
         <!-- end: PAGE CONTENT-->

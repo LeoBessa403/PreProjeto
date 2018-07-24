@@ -7,7 +7,7 @@
                     <li>
                         <i class="clip-grid-6"></i>
                         <a href="#">
-                            Modulo
+                            Anotacao
                         </a>
                     </li>
                     <li class="active">
@@ -15,9 +15,9 @@
                     </li>
                 </ol>
                 <div class="page-header">
-                    <h1>Modulo
-                        <small>Listar Modulo</small>
-                        <?php Valida::geraBtnNovo(Valida::GeraParametro(CO_PROJETO.'/'.$coProjeto)); ?>
+                    <h1>Anotacao
+                        <small>Listar Anotacao</small>
+                        <?php Valida::geraBtnNovo(Valida::GeraParametro(CO_HISTORIA . '/' . $coHistoria)); ?>
                     </h1>
                 </div>
                 <!-- end: PAGE TITLE & BREADCRUMB -->
@@ -28,41 +28,36 @@
                 <div class="panel panel-default">
                     <div class="panel-heading">
                         <i class="fa fa-external-link-square"></i>
-                        Modulos do projeto
+                        Anotacaos do modulo
                     </div>
                     <div class="panel-body">
                         <?php
                         Modal::load();
-                        Modal::deletaRegistro("Modulo");
-                        Modal::confirmacao("confirma_Modulo");
-                        $arrColunas = array('Nome da Modulo', 'Projeto', 'Ações');
+                        Modal::deletaRegistro("Anotacao");
+                        Modal::confirmacao("confirma_Anotacao");
+                        $arrColunas = array('Nome da Anotacao', 'História', 'Ações');
                         $grid = new Grid();
                         $grid->setColunasIndeces($arrColunas);
                         $grid->criaGrid();
-                        /** @var ModuloEntidade $res */
+                        /** @var AnotacaoEntidade $res */
                         foreach ($result as $res):
-                            $acao = '<a href="' . PASTAADMIN . 'Modulo/CadastroModulo/' .
-                                Valida::GeraParametro(CO_MODULO . "/" . $res->getCoModulo()) . '" class="btn btn-primary tooltips" 
+                            $acao = '<a href="' . PASTAADMIN . 'Anotacao/CadastroAnotacao/' .
+                                Valida::GeraParametro(CO_ANOTACAO . "/" . $res->getCoAnotacao()) . '" class="btn btn-primary tooltips" 
                                     data-original-title="Editar Registro" data-placement="top">
                                      <i class="fa fa-clipboard"></i>
-                                 </a> 
-                                 <a href="' . PASTAADMIN . 'Sessao/ListarSessao/' .
-                                Valida::GeraParametro(CO_MODULO . "/" . $res->getCoModulo()) . '" 
-                                class="btn btn-dark-grey tooltips" 
-                                    data-original-title="Sessões do Modulo" data-placement="top">
-                                     <i class="clip-stack-empty"></i>
                                  </a>';
-                            $grid->setColunas($res->getNoModulo());
-                            $grid->setColunas($res->getCoProjeto()->getNoProjeto());
-                            $grid->setColunas($acao, 2);
-                            $grid->criaLinha($res->getCoModulo());
+                            $grid->setColunas($res->getDsTitulo());
+                            $grid->setColunas($res->getCoHistoria()->getDsTitulo());
+                            $grid->setColunas($acao, 1);
+                            $grid->criaLinha($res->getCoAnotacao());
                         endforeach;
                         $grid->finalizaGrid();
                         ?>
                     </div>
                 </div>
                 <!-- end: DYNAMIC TABLE PANEL -->
-                <?php Valida::geraBtnVoltar('Projeto/ListarProjeto'); ?>
+                <?php Valida::geraBtnVoltar('Historia/ListarHistoria/' . Valida::GeraParametro(
+                        CO_HISTORIA . "/" . $res->getCoHistoria()->getCoHistoria())); ?>
                 <br><br><br>
             </div>
         </div>
