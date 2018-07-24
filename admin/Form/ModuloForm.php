@@ -1,13 +1,13 @@
 <?php
 /**
- * CategoriaForm [ FORM ]
+ * ModuloForm [ FORM ]
  * @copyright (c) 2017, Leo Bessa
  */
-class CategoriaForm
+class ModuloForm
 {
     public static function Cadastrar($res = false)
     {
-        $id = "cadastroCategoria";
+        $id = "cadastroModulo";
 
         $formulario = new Form($id, ADMIN . "/" . UrlAmigavel::$controller . "/" . UrlAmigavel::$action,
             "Cadastrar", 6);
@@ -16,24 +16,28 @@ class CategoriaForm
         endif;
 
         $formulario
-            ->setId(NO_CATEGORIA)
+            ->setId(NO_MODULO)
             ->setClasses("ob")
-            ->setLabel("Nome do Categoria")
+            ->setLabel("Nome do Modulo")
             ->CriaInpunt();
 
         $formulario
-            ->setId(CO_SEGMENTO)
-            ->setLabel("Segmento da Categoria")
-            ->setClasses("ob")
-            ->setType("select")
-            ->setAutocomplete(SegmentoEntidade::TABELA, DS_SEGMENTO,SegmentoEntidade::CHAVE)
+            ->setId(NO_PROJETO)
+            ->setLabel("Projeto do Modulo")
+            ->setClasses("disabilita")
+            ->CriaInpunt();
+
+        $formulario
+            ->setType("hidden")
+            ->setId(CO_PROJETO)
+            ->setValues($res[CO_PROJETO])
             ->CriaInpunt();
 
         if ($res):
             $formulario
                 ->setType("hidden")
-                ->setId(CO_CATEGORIA)
-                ->setValues($res[CO_CATEGORIA])
+                ->setId(CO_MODULO)
+                ->setValues($res[CO_MODULO])
                 ->CriaInpunt();
         endif;
 
