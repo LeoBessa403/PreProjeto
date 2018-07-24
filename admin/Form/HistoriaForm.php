@@ -27,15 +27,6 @@ class HistoriaForm
             ->setLabel("Título da Historia")
             ->CriaInpunt();
 
-        $label_options = HistoriaService::SituacaoHistoria();
-        $formulario
-            ->setLabel("Situação da História")
-            ->setId(ST_SITUACAO)
-            ->setType("select")
-            ->setTamanhoInput(12)
-            ->setOptions($label_options)
-            ->CriaInpunt();
-
         $formulario
             ->setType("textarea")
             ->setClasses("ckeditor")

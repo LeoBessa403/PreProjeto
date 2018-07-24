@@ -172,4 +172,21 @@ class FuncoesSistema
         return $campo;
     }
 
+    public static function SituacaoHistoria($st)
+    {
+
+        switch ($st) {
+            case "C":
+                $op = '<span class="label label-success">Concluída</span>';
+                break;
+            case "N":
+                $op = '<span class="label label-danger">Não Iniciada</span>';
+                break;
+            case "I":
+                $op = '<span class="label label-warning">Iniciada</span>';
+                break;
+        }
+
+        return $op;
+    }
 }

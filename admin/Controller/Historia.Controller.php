@@ -38,6 +38,9 @@ class Historia extends AbstractController
             $res[DS_TITULO] = $historia->getDsTitulo();
             $res[CO_SESSAO] = $historia->getCoSessao()->getCoSessao();
             $res[NO_SESSAO] = $historia->getCoSessao()->getNoSessao();
+            $res[NU_ESFORCO] = $historia->getNuEsforco();
+            $res[NU_ESFORCO_RESTANTE] = $historia->getNuEsforcoRestante();
+            $res[DS_OBSERVACAO] = $historia->getDsObservacao();
         }else{
             /** @var SessaoService $sessaoService */
             $sessaoService = $this->getService(SESSAO_SERVICE);

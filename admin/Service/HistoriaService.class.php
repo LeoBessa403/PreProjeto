@@ -51,7 +51,7 @@ class  HistoriaService extends AbstractService
             $historia[DS_TITULO] = trim($dados[DS_TITULO]);
             $historia[DS_OBSERVACAO] = trim($dados[DS_OBSERVACAO]);
             $historia[CO_SESSAO] = $dados[CO_SESSAO];
-            $historia[ST_SITUACAO] = $dados[ST_SITUACAO][0];
+            $historia[ST_SITUACAO] = $this->getSituacaoHistoria($dados);
             $historia[NU_ESFORCO] = $dados[NU_ESFORCO][0];
             $historia[NU_ESFORCO_RESTANTE] = $dados[NU_ESFORCO_RESTANTE];
             $historia[DT_ATUALIZADO] =  Valida::DataHoraAtualBanco();
@@ -69,6 +69,17 @@ class  HistoriaService extends AbstractService
             $retorno = $validador;
         }
         return $retorno;
+    }
+
+    public function getSituacaoHistoria($dados)
+    {
+        $sit = StatusHistoriaEnum::INICIADA;
+        if($dados[NU_ESFORCO_RESTANTE] == 0){
+            $sit = StatusHistoriaEnum::CONCLUIDA;
+        }elseif ($dados[NU_ESFORCO_RESTANTE] == $dados[NU_ESFORCO][0]){
+            $sit = StatusHistoriaEnum::NAO_INICIADA;
+        }
+        return $sit;
     }
 
 }

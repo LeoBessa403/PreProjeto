@@ -206,7 +206,7 @@ class Relacionamentos
                 (CO_ANOTACAO) => Array(
                     ('Campo') => CO_HISTORIA,
                     ('Entidade') => 'AnotacaoEntidade',
-                    ('Tipo') => '1',
+                    ('Tipo') => '2',
                 ),
                 (CO_SESSAO) => Array(
                     ('Campo') => CO_SESSAO,
@@ -218,7 +218,7 @@ class Relacionamentos
                 (CO_HISTORIA) => Array(
                     ('Campo') => CO_SESSAO,
                     ('Entidade') => 'HistoriaEntidade',
-                    ('Tipo') => '1',
+                    ('Tipo') => '2',
                 ),
                 (CO_MODULO) => Array(
                     ('Campo') => CO_MODULO,
@@ -235,14 +235,14 @@ class Relacionamentos
                 (CO_SESSAO) => Array(
                     ('Campo') => CO_MODULO,
                     ('Entidade') => 'SessaoEntidade',
-                    ('Tipo') => '1',
+                    ('Tipo') => '2',
                 ),
             ),
             (ProjetoEntidade::TABELA) => Array(
                 (CO_MODULO) => Array(
                     ('Campo') => CO_PROJETO,
                     ('Entidade') => 'ModuloEntidade',
-                    ('Tipo') => '1',
+                    ('Tipo') => '2',
                 ),
             ),
         );

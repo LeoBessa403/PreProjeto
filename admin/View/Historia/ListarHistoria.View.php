@@ -17,7 +17,7 @@
                 <div class="page-header">
                     <h1>Historia
                         <small>Listar Historia</small>
-                        <?php Valida::geraBtnNovo(Valida::GeraParametro(CO_SESSAO.'/'.$coSessao)); ?>
+                        <?php Valida::geraBtnNovo(Valida::GeraParametro(CO_SESSAO . '/' . $coSessao)); ?>
                     </h1>
                 </div>
                 <!-- end: PAGE TITLE & BREADCRUMB -->
@@ -35,14 +35,15 @@
                         Modal::load();
                         Modal::deletaRegistro("Historia");
                         Modal::confirmacao("confirma_Historia");
-                        $arrColunas = array('Nome da Historia', 'Modulo', 'Ações');
+                        $arrColunas = array('Nome da Historia', 'Atualizado em', 'Situação', 'Esforço', 'Esf. Restante',
+                            'Progresso', 'Sessão', 'Ações');
                         $grid = new Grid();
                         $grid->setColunasIndeces($arrColunas);
                         $grid->criaGrid();
                         /** @var HistoriaEntidade $res */
                         foreach ($result as $res):
                             $acao = '<a href="' . PASTAADMIN . 'Historia/CadastroHistoria/' .
-                                Valida::GeraParametro(CO_SESSAO . "/" . $res->getCoHistoria()) . '" class="btn btn-primary tooltips" 
+                                Valida::GeraParametro(CO_HISTORIA . "/" . $res->getCoHistoria()) . '" class="btn btn-primary tooltips" 
                                     data-original-title="Editar Registro" data-placement="top">
                                      <i class="fa fa-clipboard"></i>
                                  </a> 
@@ -52,8 +53,32 @@
                                     data-original-title="Sessões do Historia" data-placement="top">
                                      <i class="clip-stack-empty"></i>
                                  </a>';
-                            $grid->setColunas($res->getNoHistoria());
-                            $grid->setColunas($res->getCoModulo()->getNoModulo());
+
+                            $progresso = (($res->getNuEsforco() - $res->getNuEsforcoRestante())
+                                / $res->getNuEsforco()) * 100;
+
+                            $cor = 'success';
+                            if($progresso < 25){
+                                $cor = 'danger';
+                            }elseif($progresso < 50){
+                                $cor = 'warning';
+                             }elseif($progresso < 80){
+                                $cor = 'info';
+                            }
+
+                            $barra = '<div class="progress progress-striped progress-sm">
+                                            <div class="progress-bar progress-bar-'.$cor.'" role="progressbar" 
+                                            aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" 
+                                            style="width: '.$progresso.'%">
+                                            </div>
+                                    </div>';
+                            $grid->setColunas($res->getDsTitulo());
+                            $grid->setColunas($res->getDtAtualizado());
+                            $grid->setColunas(FuncoesSistema::SituacaoHistoria($res->getStSituacao()));
+                            $grid->setColunas($res->getNuEsforco());
+                            $grid->setColunas($res->getNuEsforcoRestante());
+                            $grid->setColunas($barra);
+                            $grid->setColunas($res->getCoSessao()->getNoSessao());
                             $grid->setColunas($acao, 2);
                             $grid->criaLinha($res->getCoHistoria());
                         endforeach;
