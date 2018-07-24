@@ -20,7 +20,7 @@
 		root.Ladda = factory( root.Spinner );
 	}
 
-}
+};
 (this, function( Spinner ) {
 	'use strict';
 

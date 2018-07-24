@@ -634,7 +634,7 @@ returns true if plugin should continue with sending AJAX request, false will abo
             ///<param name="id" type="String">Id of the record that wil be deleted</param>
             ///<param name="fnDeleteRow" type="Function(id)">Function that will be called to delete a row. Default - fnDeleteRow(id)</param>
 
-            return confirm("Are you sure that you want to delete this record?"); ;
+            return confirm("Are you sure that you want to delete this record?");
         }
         
         
@@ -789,7 +789,7 @@ returns true if plugin should continue with sending AJAX request, false will abo
                                             if (this.nodeName.toLowerCase() == "select" || this.tagName.toLowerCase() == "select") {
 
                                                 if (this.multiple == true) {
-                                                    var aoSelectedValue = new Array();
+                                                    var aoSelectedValue = [];
                                                     aoCellValues = sCellValue.split(",");
                                                     for (i = 0; i <= this.options.length - 1; i++) {
                                                         if (jQuery.inArray(this.options[i].text.toLowerCase().trim(), aoCellValues) != -1) {
@@ -843,8 +843,8 @@ returns true if plugin should continue with sending AJAX request, false will abo
             var iDT_RowId = jQuery.data(oForm, 'DT_RowId');
             var iColumnCount = oSettings.aoColumns.length;
 
-            var values = new Array();
-            var rowData = new Object();
+            var values = [];
+            var rowData = {};
 
             $("input:text[rel],input:radio[rel][checked],input:hidden[rel],select[rel],textarea[rel],span.datafield[rel],input:checkbox[rel]", oForm).each(function () {
                 var rel = $(this).attr("rel");
@@ -980,7 +980,7 @@ returns true if plugin should continue with sending AJAX request, false will abo
 
             fnSetDisplayStart();
             $(nActionForm).dialog('close');
-            return;       
+
 
         }
         
@@ -1337,7 +1337,7 @@ returns true if plugin should continue with sending AJAX request, false will abo
                         });
 
 
-                        var aActionFormButtons = new Array();
+                        var aActionFormButtons = [];
 
                         //var oActionSubmitButton = $("#form" + sAction + "Ok", oActionForm);
                         //aActionFormButtons.push(oActionSubmitButton);

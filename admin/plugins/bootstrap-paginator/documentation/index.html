@@ -785,7 +785,7 @@
         var options = {
             currentPage: 3,
             totalPages: 10
-        }
+        };
 
         $('#bp-get-started-initialization').bootstrapPaginator(options);
     }
@@ -794,7 +794,7 @@
         var options = {
             currentPage: 3,
             totalPages: 10
-        }
+        };
 
         $('#bp-example-initialization').bootstrapPaginator(options);
     }
@@ -807,7 +807,7 @@
                 size:"normal",
                 alignment:"left"
             },
-            container = $('#bp-example-size-alignment')
+            container = $('#bp-example-size-alignment');
 
 
 
@@ -821,31 +821,31 @@
 
         $('#bp-size-mini').click(function(){
 
-            changeContainerSize("mini")
+            changeContainerSize("mini");
 
             updateCode()
-        })
+        });
 
         $('#bp-size-small').click(function(){
 
-            changeContainerSize("small")
+            changeContainerSize("small");
 
             updateCode()
-        })
+        });
 
         $('#bp-size-normal').click(function(){
 
-            changeContainerSize("normal")
+            changeContainerSize("normal");
 
             updateCode()
-        })
+        });
 
         $('#bp-size-large').click(function(){
 
-            changeContainerSize("large")
+            changeContainerSize("large");
 
             updateCode()
-        })
+        });
 
         function changeContainerAlignment(alignment){
             options.alignment = alignment;
@@ -858,14 +858,14 @@
             changeContainerAlignment("left");
 
             updateCode()
-        })
+        });
 
         $("#bp-alignment-center").click(function(){
 
             changeContainerAlignment("center");
 
             updateCode()
-        })
+        });
 
         $("#bp-alignment-right").click(function(){
 
@@ -873,7 +873,7 @@
 
             updateCode()
 
-        })
+        });
 
         function updateCode()
         {
@@ -890,7 +890,7 @@
 
 
 
-            var text = hljs.highlight("javascript", str)
+            var text = hljs.highlight("javascript", str);
 
             $('#bp-size-alignment-code').html(text.value)
         }
@@ -916,7 +916,7 @@
                         return (page == current)?"*p"+page:"p"+page;
                 }
             }
-        }
+        };
 
         $('#bp-example-page-item-text').bootstrapPaginator(options);
 
@@ -940,7 +940,7 @@
                         return "Tooltip for page " + page;
                 }
             }
-        }
+        };
 
         $('#bp-example-page-item-tooltip-text').bootstrapPaginator(options);
     }
@@ -951,7 +951,7 @@
             currentPage: 3,
             totalPages: 10,
             useBootstrapTooltip:true
-         }
+         };
 
         $('#bp-example-page-item-use-bootstrap-tooltip').bootstrapPaginator(options);
 
@@ -981,7 +981,7 @@
                 html: true,
                 placement: 'bottom'
             }
-        }
+        };
 
         $('#bp-example-page-item-bootstrap-tooltip-configuration').bootstrapPaginator(options);
 
@@ -994,7 +994,7 @@
             itemContainerClass: function (type, page, current) {
                 return (page === current) ? "active" : "pointer-cursor";
             }
-        }
+        };
 
         $('#bp-example-page-item-container-class').bootstrapPaginator(options);
     }
@@ -1005,7 +1005,7 @@
             currentPage: 2,
             totalPages: 10,
             numberOfPages:3
-        }
+        };
 
         $('#bp-example-number-of-pages').bootstrapPaginator(options);
     }
@@ -1030,7 +1030,7 @@
 
                 $("#page-url-alert-content").text("Page item url: "+url)
             }
-        }
+        };
 
         $('#bp-example-page-url').bootstrapPaginator(options);
     }
@@ -1050,7 +1050,7 @@
                         return true;
                 }
             }
-        }
+        };
 
         $('#bp-example-presence-of-page').bootstrapPaginator(options);
     }
@@ -1063,7 +1063,7 @@
             onPageClicked: function(e,originalEvent,type,page){
                 $('#page-clicked-alert-content').text("Page item clicked, type: "+type+", page: "+page);
             }
-        }
+        };
 
         $('#bp-example-page-clicked-event').bootstrapPaginator(options);
     }
@@ -1093,7 +1093,7 @@
                 },3000);
 
             }
-        }
+        };
 
         $('#bp-example-page-clicked-event-stoppable').bootstrapPaginator(options);
     }
@@ -1106,7 +1106,7 @@
             onPageChanged: function(e,oldPage,newPage){
                 $('#page-changed-alert-content').text("Current page changed, old: "+oldPage+", new: "+newPage);
             }
-        }
+        };
 
         $('#bp-example-page-changed-event').bootstrapPaginator(options);
 
@@ -1122,13 +1122,13 @@
         var options = {
             currentPage: 3,
             totalPages: 10
-        }
+        };
 
         $('#bp-example-show-function').bootstrapPaginator(options);
 
         function updateCode(fname,page){
 
-            var fstr = "\""+fname+"\""+(fname=="show"?", "+page:"")
+            var fstr = "\""+fname+"\""+(fname=="show"?", "+page:"");
 
             var str = "\r\n\
         var options = {\r\n\
@@ -1140,7 +1140,7 @@
 
 
 
-            var text = hljs.highlight("javascript", str)
+            var text = hljs.highlight("javascript", str);
 
             $('#show-function-code').html(text.value)
         }
@@ -1193,7 +1193,7 @@
 
             updateCode("show",page);
 
-        })
+        });
 
         $('#bp-example-show-first-btn').click(function(){
 
@@ -1203,7 +1203,7 @@
 
             updateCode("showFirst");
 
-        })
+        });
 
         $('#bp-example-show-prev-btn').click(function(){
 
@@ -1213,7 +1213,7 @@
 
             updateCode("showPrevious");
 
-        })
+        });
 
         $('#bp-example-show-next-btn').click(function(){
 
@@ -1223,7 +1223,7 @@
 
             updateCode("showNext");
 
-        })
+        });
 
         $('#bp-example-show-last-btn').click(function(){
 
@@ -1242,7 +1242,7 @@
         var options = {
             currentPage: 3,
             totalPages: 10
-        }
+        };
 
         $('#bp-example-get-pages-function').bootstrapPaginator(options);
 
@@ -1250,7 +1250,7 @@
 
         $('#bp-example-get-pages-btn').click(function(){
             updateCode();
-        })
+        });
 
 
         function updateCode()
@@ -1287,7 +1287,7 @@
 
 
 
-            var text = hljs.highlight("javascript", str)
+            var text = hljs.highlight("javascript", str);
 
             codeSection.html(text.value)
         }
@@ -1301,7 +1301,7 @@
         var options = {
             currentPage: 3,
             totalPages: 10
-        }
+        };
 
         $('#bp-example-set-options-function').bootstrapPaginator(options);
 
@@ -1309,12 +1309,12 @@
 
         $("#bp-exmaple-set-option-update-btn").click(function(){
             updateCode();
-        })
+        });
 
         function updateCode(){
 
             var numberOfPages = $('#bp-example-set-option-number-of-page-select').val(),
-                totalPages = $('#bp-example-set-option-total-pages-select').val()
+                totalPages = $('#bp-example-set-option-total-pages-select').val();
 
             var str = "\r\n\
         var options = {\r\n\
@@ -1334,7 +1334,7 @@
                 totalPages: totalPages
             });
 
-            var text = hljs.highlight("javascript", str)
+            var text = hljs.highlight("javascript", str);
 
             $('#set-option-code').html(text.value)
 
@@ -1361,7 +1361,7 @@
         getPagesFunctionDemo();
         setOptionsFunctionDemo();
 
-        $('#navbar').scrollspy({offset:100})
+        $('#navbar').scrollspy({offset:100});
 
         $("a[href^='#']").click(function(e){
             e.preventDefault();
@@ -1379,14 +1379,14 @@
             var  position = item.position(),
                  top = position.top;
 
-            console.log(window.location.pathname)
+            console.log(window.location.pathname);
 
-            History.replaceState({state:3},"State 3",window.location.pathname+id)
+            History.replaceState({state:3},"State 3",window.location.pathname+id);
 
             $('body').animate({scrollTop:top-50}, 1000)
         })
 
-    })
+    });
 
     $(document).ready(function() {
         $('pre').each(function(i, e) {

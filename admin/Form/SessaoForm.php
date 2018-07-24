@@ -16,15 +16,15 @@ class SessaoForm
         endif;
 
         $formulario
-            ->setId(NO_SESSAO)
-            ->setClasses("ob")
-            ->setLabel("Nome da Sessao")
-            ->CriaInpunt();
-
-        $formulario
             ->setId(NO_MODULO)
             ->setLabel("Modulo da Sessao")
             ->setClasses("disabilita")
+            ->CriaInpunt();
+
+        $formulario
+            ->setId(NO_SESSAO)
+            ->setClasses("ob")
+            ->setLabel("Nome da Sessao")
             ->CriaInpunt();
 
         $formulario

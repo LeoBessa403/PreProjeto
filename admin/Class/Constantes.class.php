@@ -20,6 +20,7 @@
 	define('CO_PROJETO', 'co_projeto');
 	define('NO_PROJETO', 'no_projeto');
 	define('NO_SESSAO', 'no_sessao');
+	define('DS_TITULO', 'ds_titulo');
 
 	// SERVICES
 	define('ANOTACAO_SERVICE', 'AnotacaoService');

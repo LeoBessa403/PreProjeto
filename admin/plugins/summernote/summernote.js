@@ -16,7 +16,7 @@
     var eq2 = function(elA, elB) { return elA === elB; };
     var fail = function() { return false; };
     var not = function(f) { return function() { return !f.apply(f, arguments); }};
-    var self = function(a) { return a; }
+    var self = function(a) { return a; };
     return { eq: eq, eq2: eq2, fail: fail, not: not, self: self };
   }();
   
@@ -61,9 +61,11 @@
     var compact = function(array) {
       var aResult = [];
       for (var idx = 0, sz = array.length; idx < sz; idx ++) {
-        if (array[idx]) { aResult.push(array[idx]); };
-      };
-      return aResult;
+          if (array[idx]) {
+              aResult.push(array[idx]);
+          }
+      }
+        return aResult;
     };
 
     return { head: head, last: last, initial: initial, tail: tail, 
@@ -140,7 +142,7 @@
         for (var idx = 0, sz = node.childNodes.length; idx < sz; idx++) {
           fnWalk(node.childNodes[idx]);
         }
-      }
+      };
 
       fnWalk(commonAncestor(nodeA, nodeB)); // DFS with commonAcestor.
       return aNode;
@@ -155,8 +157,8 @@
         aNext.push(node);
         if (pred(node)) { break; }
         node = node.previousSibling;
-      };
-      return aNext;
+      }
+        return aNext;
     };
     
     // listNext: listing nextSiblings (until predicate hit: optional)
@@ -168,8 +170,8 @@
         aNext.push(node);
         if (pred(node)) { break; }
         node = node.nextSibling;
-      };
-      return aNext;
+      }
+        return aNext;
     };
     
     // insertAfter: insert node after preceding
@@ -358,7 +360,7 @@
         }
 
         return {cont: elNode, collapseToStart: bCollapseToStart, offset: nOffset};
-      }
+      };
 
       var textRange = document.body.createTextRange();
       var info = textRangeInfo(bp.cont, bp.offset);
@@ -592,7 +594,7 @@
     this.tab = function(welEditable) {
       recordUndo(welEditable);
       var rng = range.create();
-      var sNbsp = new Array(welEditable.data('tabsize') + 1).join('&nbsp;')
+      var sNbsp = new Array(welEditable.data('tabsize') + 1).join('&nbsp;');
       rng.insertNode($('<span id="noteTab">' + sNbsp + '</span>')[0]);
       var welTab = $('#noteTab').removeAttr('id');
       rng = range.create(welTab[0], 1);
@@ -915,7 +917,9 @@
             welLinkBtn.addClass('disabled').attr('disabled', true);
           }
 
-          if (!linkInfo.text) { welLinkText.html(welLinkUrl.val()); };
+          if (!linkInfo.text) {
+                welLinkText.html(welLinkUrl.val());
+            }
         }).trigger('focus');
         welLinkBtn.click(function(event) {
           welLinkDialog.modal('hide'); //hide and createLink (ie9+)
@@ -1050,7 +1054,9 @@
 
     var hMousedown = function(event) {
       //preventDefault Selection for FF, IE8+
-      if (dom.isImg(event.target)) { event.preventDefault(); };
+        if (dom.isImg(event.target)) {
+            event.preventDefault();
+        }
     };
     
     var hToolbarAndPopoverUpdate = function(event) {
@@ -1150,7 +1156,7 @@
           var hResizeFullscreen = function() {
             var nHeight = $(window).height() - welToolbar.outerHeight();
             welEditable.css('height', nHeight);
-          }
+          };
 
           var bFullscreen = welEditor.hasClass('fullscreen');
           if (bFullscreen) {
@@ -1180,7 +1186,7 @@
       var hMouseup = function() {
         welDocument.unbind('mousemove', hMousemove)
                    .unbind('mouseup', hMouseup);
-      }
+      };
       welDocument.mousemove(hMousemove).mouseup(hMouseup);
       event.stopPropagation(); event.preventDefault();
     };
@@ -1618,9 +1624,8 @@
           sToolbar += aToolbarItem[group[1][i]];
         }
         sToolbar += '</div>';
-      };
-
-      sToolbar = '<div class="note-toolbar btn-toolbar">' + sToolbar + '</div>';
+      }
+        sToolbar = '<div class="note-toolbar btn-toolbar">' + sToolbar + '</div>';
 
       var welToolbar = $(sToolbar).prependTo(welEditor);
       createPalette(welToolbar);
@@ -1708,7 +1713,7 @@
       }
       if (this.length > 0 && options.oninit) { // callback on init
         options.oninit();
-      };
+      }
     },
     // get the HTML contents of note or set the HTML contents of note.
     code: function(sHTML) {

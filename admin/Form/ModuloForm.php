@@ -16,15 +16,15 @@ class ModuloForm
         endif;
 
         $formulario
-            ->setId(NO_MODULO)
-            ->setClasses("ob")
-            ->setLabel("Nome do Modulo")
-            ->CriaInpunt();
-
-        $formulario
             ->setId(NO_PROJETO)
             ->setLabel("Projeto do Modulo")
             ->setClasses("disabilita")
+            ->CriaInpunt();
+
+        $formulario
+            ->setId(NO_MODULO)
+            ->setClasses("ob")
+            ->setLabel("Nome do Modulo")
             ->CriaInpunt();
 
         $formulario

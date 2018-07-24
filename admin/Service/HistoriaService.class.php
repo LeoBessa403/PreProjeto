@@ -16,5 +16,59 @@ class  HistoriaService extends AbstractService
         $this->ObjetoModel = New HistoriaModel();
     }
 
+    public static function SituacaoHistoria()
+    {
+        return StatusHistoriaEnum::$descricao;
+    }
+
+    public static function comboEsforco()
+    {
+        $ComboEstados =
+            array(
+                "" => "Selecione o esforço",
+                "1" => "1",
+                "3" => "3",
+                "5" => "5",
+                "8" => "8",
+                "13" => "13",
+                "20" => "20",
+                "30" => "30",
+                "40" => "40",
+            );
+        return $ComboEstados;
+    }
+
+    public function salvaHistoria($dados)
+    {
+        $retorno = [
+            SUCESSO => false,
+            MSG => null
+        ];
+        $historiaValidador = new HistoriaValidador();
+        /** @var HistoriaValidador $validador */
+        $validador = $historiaValidador->validarHistoria($dados);
+        if ($validador[SUCESSO]) {
+            $historia[DS_TITULO] = trim($dados[DS_TITULO]);
+            $historia[DS_OBSERVACAO] = trim($dados[DS_OBSERVACAO]);
+            $historia[CO_SESSAO] = $dados[CO_SESSAO];
+            $historia[ST_SITUACAO] = $dados[ST_SITUACAO][0];
+            $historia[NU_ESFORCO] = $dados[NU_ESFORCO][0];
+            $historia[NU_ESFORCO_RESTANTE] = $dados[NU_ESFORCO_RESTANTE];
+            $historia[DT_ATUALIZADO] =  Valida::DataHoraAtualBanco();
+
+            if (!empty($_POST[CO_HISTORIA])):
+                $coHistoria = $dados[CO_HISTORIA];
+                $retorno[SUCESSO] = $this->Salva($historia, $coHistoria);
+            else:
+                $historia[DT_CADASTRO] =  Valida::DataHoraAtualBanco();
+                $retorno[SUCESSO] = $this->Salva($historia);
+            endif;
+        } else {
+            $session = new Session();
+            $session->setSession(MENSAGEM, $validador[MSG]);
+            $retorno = $validador;
+        }
+        return $retorno;
+    }
 
 }

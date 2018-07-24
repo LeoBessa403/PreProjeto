@@ -301,9 +301,8 @@
 						}
 					});
 					return this;
-				};
-
-				function getInputSelection(el) {
+                }
+                function getInputSelection(el) {
 					var start = 0, end = 0, normalizedValue, range, textInputRange, len, endRange;
 
 					if (typeof el.selectionStart == "number" && typeof el.selectionEnd == "number") {
@@ -356,7 +355,7 @@
 				input.bind('mask.maskMoney', mask);
 			})
 		}
-	}
+	};
 
 	$.fn.maskMoney = function(method) {
 		if ( methods[method] ) {

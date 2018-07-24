@@ -7,7 +7,7 @@
                     <li>
                         <i class="clip-grid-6"></i>
                         <a href="#">
-                            Sessao
+                            Historia
                         </a>
                     </li>
                     <li class="active">
@@ -15,9 +15,9 @@
                     </li>
                 </ol>
                 <div class="page-header">
-                    <h1>Sessao
-                        <small>Listar Sessao</small>
-                        <?php Valida::geraBtnNovo(Valida::GeraParametro(CO_MODULO.'/'.$coModulo)); ?>
+                    <h1>Historia
+                        <small>Listar Historia</small>
+                        <?php Valida::geraBtnNovo(Valida::GeraParametro(CO_SESSAO.'/'.$coSessao)); ?>
                     </h1>
                 </div>
                 <!-- end: PAGE TITLE & BREADCRUMB -->
@@ -28,34 +28,34 @@
                 <div class="panel panel-default">
                     <div class="panel-heading">
                         <i class="fa fa-external-link-square"></i>
-                        Sessaos do modulo
+                        Historias do modulo
                     </div>
                     <div class="panel-body">
                         <?php
                         Modal::load();
-                        Modal::deletaRegistro("Sessao");
-                        Modal::confirmacao("confirma_Sessao");
-                        $arrColunas = array('Nome da Sessao', 'Modulo', 'Ações');
+                        Modal::deletaRegistro("Historia");
+                        Modal::confirmacao("confirma_Historia");
+                        $arrColunas = array('Nome da Historia', 'Modulo', 'Ações');
                         $grid = new Grid();
                         $grid->setColunasIndeces($arrColunas);
                         $grid->criaGrid();
-                        /** @var SessaoEntidade $res */
+                        /** @var HistoriaEntidade $res */
                         foreach ($result as $res):
-                            $acao = '<a href="' . PASTAADMIN . 'Sessao/CadastroSessao/' .
-                                Valida::GeraParametro(CO_SESSAO . "/" . $res->getCoSessao()) . '" class="btn btn-primary tooltips" 
+                            $acao = '<a href="' . PASTAADMIN . 'Historia/CadastroHistoria/' .
+                                Valida::GeraParametro(CO_SESSAO . "/" . $res->getCoHistoria()) . '" class="btn btn-primary tooltips" 
                                     data-original-title="Editar Registro" data-placement="top">
                                      <i class="fa fa-clipboard"></i>
                                  </a> 
                                  <a href="' . PASTAADMIN . 'Historia/ListarHistoria/' .
-                                Valida::GeraParametro(CO_SESSAO . "/" . $res->getCoSessao()) . '" 
+                                Valida::GeraParametro(CO_MODULO . "/" . $res->getCoHistoria()) . '" 
                                 class="btn btn-dark-grey tooltips" 
-                                    data-original-title="Histórias da Sessões" data-placement="top">
+                                    data-original-title="Sessões do Historia" data-placement="top">
                                      <i class="clip-stack-empty"></i>
                                  </a>';
-                            $grid->setColunas($res->getNoSessao());
+                            $grid->setColunas($res->getNoHistoria());
                             $grid->setColunas($res->getCoModulo()->getNoModulo());
                             $grid->setColunas($acao, 2);
-                            $grid->criaLinha($res->getCoSessao());
+                            $grid->criaLinha($res->getCoHistoria());
                         endforeach;
                         $grid->finalizaGrid();
                         ?>

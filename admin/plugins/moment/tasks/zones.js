@@ -36,8 +36,7 @@ module.exports = function (grunt) {
                 // country code TAB coordinates TAB timezone
                 .map(function (line) { return line.split('\t')[2]; }));
         });
-    };
-
+    }
     function runTestsInZone (zone, next) {
         grunt.log.ok("Running tests in zone " + zone);
         grunt.util.spawn({
@@ -56,5 +55,5 @@ module.exports = function (grunt) {
             }
             next();
         });
-    };
+    }
 };
