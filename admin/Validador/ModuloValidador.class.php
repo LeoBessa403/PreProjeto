@@ -1,10 +1,10 @@
 <?php
 
 /**
- * CategoriaValidador [ VALIDATOR ]
+ * ModuloValidador [ VALIDATOR ]
  * @copyright (c) 2017, Leo Bessa
  */
-class  CategoriaValidador extends AbstractValidador
+class  ModuloValidador extends AbstractValidador
 {
     private $retorno = [
         SUCESSO => true,
@@ -12,13 +12,10 @@ class  CategoriaValidador extends AbstractValidador
         DADOS => []
     ];
 
-    public function validarCategoria($dados)
+    public function validarModulo($dados)
     {
-        $this->retorno[DADOS][] = $this->ValidaCampoSelectObrigatorio(
-            $dados[CO_SEGMENTO], 'Segmento'
-        );
         $this->retorno[DADOS][] = $this->ValidaCampoObrigatorioDescricao(
-            $dados[NO_CATEGORIA], 2, 'Nome da Categoria'
+            $dados[NO_MODULO], 2, 'Nome do Modulo'
         );
         return $this->MontaRetorno($this->retorno);
     }
