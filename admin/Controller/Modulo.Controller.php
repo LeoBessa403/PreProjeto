@@ -1,40 +1,54 @@
 <?php
 
-class Categoria extends AbstractController
+class Modulo extends AbstractController
 {
     public $result;
+    public $coProjeto;
 
-    function ListarCategoria()
+    function ListarModulo()
     {
-        /** @var CategoriaService $categoriaService */
-        $categoriaService = $this->getService(CATEGORIA_SERVICE);
-        $this->result = $categoriaService->PesquisaTodos();
+        $this->coProjeto = UrlAmigavel::PegaParametro(CO_PROJETO);
+        /** @var ModuloService $moduloService */
+        $moduloService = $this->getService(MODULO_SERVICE);
+        $this->result = $moduloService->PesquisaTodos([
+            CO_PROJETO => $this->coProjeto
+        ]);
     }
 
-    function CadastroCategoria()
+    function CadastroModulo()
     {
-        /** @var CategoriaService $categoriaService */
-        $categoriaService = $this->getService(CATEGORIA_SERVICE);
+        /** @var ModuloService $moduloService */
+        $moduloService = $this->getService(MODULO_SERVICE);
 
-        $id = "cadastroCategoria";
+        $id = "cadastroModulo";
 
         if (!empty($_POST[$id])):
-            $retorno = $categoriaService->salvaCategoria($_POST);
+            $retorno = $moduloService->salvaModulo($_POST);
             if($retorno[SUCESSO]){
-                Redireciona(UrlAmigavel::$modulo.'/'.UrlAmigavel::$controller.'/ListarCategoria/');
+                Redireciona(UrlAmigavel::$modulo.'/'.UrlAmigavel::$controller.'/ListarModulo/');
             }
         endif;
 
-        $coCategoria = UrlAmigavel::PegaParametro(CO_CATEGORIA);
+        $coModulo = UrlAmigavel::PegaParametro(CO_MODULO);
         $res = [];
-        if($coCategoria){
-            /** @var CategoriaEntidade $categoria */
-            $categoria = $categoriaService->PesquisaUmRegistro($coCategoria);
-            $res[CO_CATEGORIA] = $categoria->getCoCategoria();
-            $res[NO_CATEGORIA] = $categoria->getNoCategoria();
-            $res[CO_SEGMENTO] = $categoria->getCoSegmento()->getCoSegmento();
+        if($coModulo){
+            /** @var ModuloEntidade $modulo */
+            $modulo = $moduloService->PesquisaUmRegistro($coModulo);
+            $res[CO_MODULO] = $modulo->getCoModulo();
+            $res[NO_MODULO] = $modulo->getNoModulo();
+            $res[CO_PROJETO] = $modulo->getCoProjeto()->getCoProjeto();
+            $res[NO_PROJETO] = $modulo->getCoProjeto()->getNoProjeto();
+        }else{
+            /** @var ProjetoService $projetoService */
+            $projetoService = $this->getService(PROJETO_SERVICE);
+
+            $coProjeto = UrlAmigavel::PegaParametro(CO_PROJETO);
+            /** @var ProjetoEntidade $projeto */
+            $projeto = $projetoService->PesquisaUmRegistro($coProjeto);
+            $res[CO_PROJETO] = $projeto->getCoProjeto();
+            $res[NO_PROJETO] = $projeto->getNoProjeto();
         }
-        $this->form = CategoriaForm::Cadastrar($res);
+        $this->form = ModuloForm::Cadastrar($res);
 
     }
 
