@@ -4,37 +4,34 @@ class IndexController extends AbstractController
 {
     public function Index()
     {
-//        /** @var ProdutoService $produtoService */
-//        $produtoService = $this->getService(PRODUTO_SERVICE);
-//        $produtos = $produtoService->PesquisaTodos();
-//
-//        /** @var CategoriaService $categoriaService */
-//        $categoriaService = $this->getService(CATEGORIA_SERVICE);
-//        $categorias = $categoriaService->PesquisaTodos();
-//
-//        /** @var FabricanteService $fabricanteService */
-//        $fabricanteService = $this->getService(FABRICANTE_SERVICE);
-//        $fabricantes = $fabricanteService->PesquisaTodos();
-//
-//        /** @var ProdutoDetalheService $produtoDetalheService */
-//        $produtoDetalheService = $this->getService(PRODUTO_DETALHE_SERVICE);
-//        $produtosDestaque = $produtoDetalheService->PesquisaProdutosDestaque();
-//
-//        $produtosSemEstoque = $produtoService->PesquisaProdutosSemEstoque();
-//        $produtosNovos = $produtoService->PesquisaProdutosNovos(30); // Dias passados para compara
-//        $produtosMaisVisitados = $produtoService->PesquisaProdutosMaisVisitados();
-//
-//        $dados['ProdutosCadastrados'] = count($produtos);
-//        $dados['FabricantesCadastrados'] = count($fabricantes);
-//        $dados['CategoriasCadastrados'] = count($categorias);
-//        $dados['ProdutosDestaque'] = count($produtosDestaque);
-//        $dados['MaisVisitados'] = count($produtosMaisVisitados);
-//        $dados['MaisVendidos'] = 0;
-//        $dados['ProdutosSemEstoque'] = count($produtosSemEstoque);
-//        $dados['NovosProdutos'] = count($produtosNovos);
-//        $dados['MaisProdurados'] = 0;
+        /** @var ProjetoService $projetoService */
+        $projetoService = $this->getService(PROJETO_SERVICE);
+        $projetos = $projetoService->PesquisaTodos();
 
-        return [];
+        /** @var ModuloService $moduloService */
+        $moduloService = $this->getService(MODULO_SERVICE);
+        $modulos = $moduloService->PesquisaTodos();
+
+        /** @var SessaoService $sessaoService */
+        $sessaoService = $this->getService(SESSAO_SERVICE);
+        $sessaos = $sessaoService->PesquisaTodos();
+
+        /** @var HistoriaService $historiaService */
+        $historiaService = $this->getService(HISTORIA_SERVICE);
+        $historias = $historiaService->PesquisaTodos();
+
+        /** @var AnotacaoService $anotacaoService */
+        $anotacaoService = $this->getService(ANOTACAO_SERVICE);
+        $anotacaos = $anotacaoService->PesquisaTodos();
+
+
+        $dados['projetosCadastrados'] = count($projetos);
+        $dados['modulosCadastrados'] = count($modulos);
+        $dados['sessaosCadastradas'] = count($sessaos);
+        $dados['historiasCadastradas'] = count($historias);
+        $dados['anotacaosCadastradas'] = count($anotacaos);
+
+        return $dados;
     }
 
 }

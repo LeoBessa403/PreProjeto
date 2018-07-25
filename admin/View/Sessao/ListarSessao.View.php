@@ -51,10 +51,16 @@
                                 class="btn btn-dark-grey tooltips" 
                                     data-original-title="Histórias da Sessões" data-placement="top">
                                      <i class="clip-stack-empty"></i>
+                                 </a>
+                                  <a href="' . PASTAADMIN . 'Sessao/EstatisticaSessao/' .
+                                Valida::GeraParametro(CO_SESSAO . "/" . $res->getCoSessao()) . '" 
+                                class="btn btn-green tooltips" 
+                                    data-original-title="Estatistica da Sessao" data-placement="top">
+                                     <i class="clip-bars"></i>
                                  </a>';
                             $grid->setColunas($res->getNoSessao());
                             $grid->setColunas($res->getCoModulo()->getNoModulo());
-                            $grid->setColunas($acao, 2);
+                            $grid->setColunas($acao, 3);
                             $grid->criaLinha($res->getCoSessao());
                         endforeach;
                         $grid->finalizaGrid();
@@ -63,7 +69,7 @@
                 </div>
                 <!-- end: DYNAMIC TABLE PANEL -->
                 <?php Valida::geraBtnVoltar('Modulo/ListarModulo/' . Valida::GeraParametro(
-                        CO_MODULO . "/" . $res->getCoModulo()->getCoModulo())); ?>
+                        CO_PROJETO . "/" . $res->getCoModulo()->getCoProjeto()->getCoProjeto())); ?>
                 <br><br><br>
             </div>
         </div>

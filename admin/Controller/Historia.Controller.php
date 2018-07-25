@@ -5,7 +5,7 @@ class Historia extends AbstractController
     public $result;
     public $coSessao;
 
-    function ListarHistoria()
+    public function ListarHistoria()
     {
         $this->coSessao = UrlAmigavel::PegaParametro(CO_SESSAO);
         /** @var HistoriaService $historiaService */
@@ -15,7 +15,7 @@ class Historia extends AbstractController
         ]);
     }
 
-    function CadastroHistoria()
+    public function CadastroHistoria()
     {
         /** @var HistoriaService $historiaService */
         $historiaService = $this->getService(HISTORIA_SERVICE);

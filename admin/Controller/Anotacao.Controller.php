@@ -5,7 +5,7 @@ class Anotacao extends AbstractController
     public $result;
     public $coHistoria;
 
-    function ListarAnotacao()
+    public function ListarAnotacao()
     {
         $this->coHistoria = UrlAmigavel::PegaParametro(CO_HISTORIA);
         /** @var AnotacaoService $anotacaoService */
@@ -15,7 +15,7 @@ class Anotacao extends AbstractController
         ]);
     }
 
-    function CadastroAnotacao()
+    public function CadastroAnotacao()
     {
         /** @var AnotacaoService $anotacaoService */
         $anotacaoService = $this->getService(ANOTACAO_SERVICE);

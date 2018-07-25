@@ -5,7 +5,7 @@ class Sessao extends AbstractController
     public $result;
     public $coModulo;
 
-    function ListarSessao()
+    public function ListarSessao()
     {
         $this->coModulo = UrlAmigavel::PegaParametro(CO_MODULO);
         /** @var SessaoService $sessaoService */
@@ -15,7 +15,7 @@ class Sessao extends AbstractController
         ]);
     }
 
-    function CadastroSessao()
+    public function CadastroSessao()
     {
         /** @var SessaoService $sessaoService */
         $sessaoService = $this->getService(SESSAO_SERVICE);
@@ -50,7 +50,26 @@ class Sessao extends AbstractController
             $res[NO_MODULO] = $modulo->getNoModulo();
         }
         $this->form = SessaoForm::Cadastrar($res);
+    }
 
+    public function EstatisticaSessao()
+    {
+        $dados['esforco'] = 0;
+        $dados['esforcoRestante'] = 0;
+        /** @var SessaoService $sessaoService */
+        $sessaoService = $this->getService(SESSAO_SERVICE);
+        $coSessao = UrlAmigavel::PegaParametro(CO_SESSAO);
+        /** @var SessaoEntidade $sessao */
+        $sessao = $sessaoService->PesquisaUmRegistro($coSessao);
+        if (!empty($sessao->getCoHistoria())) {
+            /** @var HistoriaEntidade $historia */
+            foreach ($sessao->getCoHistoria() as $historia) {
+                $dados['esforco'] = $dados['esforco'] + $historia->getNuEsforco();
+                $dados['esforcoRestante'] = $dados['esforcoRestante'] + $historia->getNuEsforcoRestante();
+            }
+        }
+        $this->coModulo = $sessao->getCoModulo()->getCoModulo();
+        $this->dados = $dados;
     }
 
 }

@@ -33,6 +33,7 @@ class  ModuloService extends AbstractService
                 $coModulo = $dados[CO_MODULO];
                 $retorno[SUCESSO] = $this->Salva($modulo, $coModulo);
             else:
+                $modulo[DT_CADASTRO] = Valida::DataHoraAtualBanco();
                 $retorno[SUCESSO] = $this->Salva($modulo);
             endif;
         } else {

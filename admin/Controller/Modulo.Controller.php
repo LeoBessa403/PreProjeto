@@ -4,8 +4,9 @@ class Modulo extends AbstractController
 {
     public $result;
     public $coProjeto;
+    public $coModulo;
 
-    function ListarModulo()
+    public function ListarModulo()
     {
         $this->coProjeto = UrlAmigavel::PegaParametro(CO_PROJETO);
         /** @var ModuloService $moduloService */
@@ -15,7 +16,7 @@ class Modulo extends AbstractController
         ]);
     }
 
-    function CadastroModulo()
+    public function CadastroModulo()
     {
         /** @var ModuloService $moduloService */
         $moduloService = $this->getService(MODULO_SERVICE);
@@ -50,7 +51,32 @@ class Modulo extends AbstractController
             $res[NO_PROJETO] = $projeto->getNoProjeto();
         }
         $this->form = ModuloForm::Cadastrar($res);
+    }
 
+    public function EstatisticaModulo()
+    {
+        $dados['esforco'] = 0;
+        $dados['esforcoRestante'] = 0;
+        /** @var ModuloService $moduloService */
+        $moduloService = $this->getService(MODULO_SERVICE);
+        $coModulo = UrlAmigavel::PegaParametro(CO_MODULO);
+        /** @var ProjetoEntidade $projeto */
+        $modulo = $moduloService->PesquisaUmRegistro($coModulo);
+        /** @var ModuloEntidade $modulo */
+        if (!empty($modulo->getCoSessao())) {
+            /** @var SessaoEntidade $sessao */
+            foreach ($modulo->getCoSessao() as $sessao) {
+                if (!empty($sessao->getCoHistoria())) {
+                    /** @var HistoriaEntidade $historia */
+                    foreach ($sessao->getCoHistoria() as $historia) {
+                        $dados['esforco'] = $dados['esforco'] + $historia->getNuEsforco();
+                        $dados['esforcoRestante'] = $dados['esforcoRestante'] + $historia->getNuEsforcoRestante();
+                    }
+                }
+            }
+        }
+        $this->coProjeto = $modulo->getCoProjeto()->getCoProjeto();
+        $this->dados = $dados;
     }
 
 }

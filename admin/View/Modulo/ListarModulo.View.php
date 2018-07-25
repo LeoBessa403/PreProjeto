@@ -51,10 +51,16 @@
                                 class="btn btn-dark-grey tooltips" 
                                     data-original-title="Sessões do Modulo" data-placement="top">
                                      <i class="clip-stack-empty"></i>
+                                 </a>
+                                  <a href="' . PASTAADMIN . 'Modulo/EstatisticaModulo/' .
+                                Valida::GeraParametro(CO_MODULO . "/" . $res->getCoModulo()) . '" 
+                                class="btn btn-green tooltips" 
+                                    data-original-title="Estatistica do Modulo" data-placement="top">
+                                     <i class="clip-bars"></i>
                                  </a>';
                             $grid->setColunas($res->getNoModulo());
                             $grid->setColunas($res->getCoProjeto()->getNoProjeto());
-                            $grid->setColunas($acao, 2);
+                            $grid->setColunas($acao, 3);
                             $grid->criaLinha($res->getCoModulo());
                         endforeach;
                         $grid->finalizaGrid();

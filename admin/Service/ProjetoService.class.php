@@ -32,6 +32,7 @@ class  ProjetoService extends AbstractService
                 $coProjeto = $dados[CO_PROJETO];
                 $retorno[SUCESSO] = $this->Salva($projeto, $coProjeto);
             else:
+                $projeto[DT_CADASTRO] = Valida::DataHoraAtualBanco();
                 $retorno[SUCESSO] = $this->Salva($projeto);
             endif;
         } else {

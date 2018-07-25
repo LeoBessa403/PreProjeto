@@ -33,6 +33,7 @@ class  SessaoService extends AbstractService
                 $coSessao = $dados[CO_SESSAO];
                 $retorno[SUCESSO] = $this->Salva($sessao, $coSessao);
             else:
+                $sessao[DT_CADASTRO] = Valida::DataHoraAtualBanco();
                 $retorno[SUCESSO] = $this->Salva($sessao);
             endif;
         } else {

@@ -33,6 +33,7 @@
                                 <i class="clip-users-3"></i>
                                 Projetos Cadastrados
                                 <span class="negrito dados dados-success">
+                                    <?= $dados['projetosCadastrados']; ?>
                                 </span>
                             </button>
                         </div>
@@ -41,6 +42,7 @@
                                 <i class="clip-users-3"></i>
                                 Módulos cadastrados
                                 <span class="negrito dados dados-danger">
+                                    <?= $dados['modulosCadastrados']; ?>
                                 </span>
                             </button>
                         </div>
@@ -49,6 +51,7 @@
                                 <i class="clip-users-2"></i>
                                 Sessões Cadastradas
                                 <span class="dados negrito dados-black">
+                                    <?= $dados['sessaosCadastradas']; ?>
                                 </span>
                             </button>
                         </div>
@@ -57,6 +60,7 @@
                                 <i class="clip-users-3"></i>
                                 Histórias Cadastradas
                                 <span class="negrito dados dados-warning">
+                                    <?= $dados['historiasCadastradas']; ?>
                                 </span>
                             </button>
                         </div>
@@ -65,6 +69,7 @@
                                 <i class="fa fa-money"></i>
                                 Anotações Cadastradas
                                 <span class="dados negrito dados-info">
+                                    <?= $dados['anotacaosCadastradas']; ?>
                                 </span>
                             </button>
                         </div>
