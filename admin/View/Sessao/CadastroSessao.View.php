@@ -8,7 +8,7 @@
                     <li>
                         <i class="clip-grid-6"></i>
                         <a href="#">
-                            Modulo
+                            Sessão
                         </a>
                     </li>
                     <li class="active">
@@ -17,7 +17,7 @@
 
                 </ol>
                 <div class="page-header">
-                    <h1>Modulo
+                    <h1>Sessão
                         <small>Cadastro / Edição</small>
                     </h1>
                 </div>

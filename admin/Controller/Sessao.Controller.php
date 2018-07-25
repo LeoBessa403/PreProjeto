@@ -4,15 +4,23 @@ class Sessao extends AbstractController
 {
     public $result;
     public $coModulo;
+    public $coProjeto;
 
     public function ListarSessao()
     {
         $this->coModulo = UrlAmigavel::PegaParametro(CO_MODULO);
         /** @var SessaoService $sessaoService */
         $sessaoService = $this->getService(SESSAO_SERVICE);
+        /** @var ModuloService $moduloService */
+        $moduloService = $this->getService(MODULO_SERVICE);
+
+        /** @var ModuloEntidade $modulo */
+        $modulo = $moduloService->PesquisaUmRegistro($this->coModulo);
+
         $this->result = $sessaoService->PesquisaTodos([
             CO_MODULO => $this->coModulo
         ]);
+        $this->coProjeto = $modulo->getCoProjeto()->getCoProjeto();
     }
 
     public function CadastroSessao()

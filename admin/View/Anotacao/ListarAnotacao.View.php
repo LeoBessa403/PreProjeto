@@ -57,7 +57,7 @@
                 </div>
                 <!-- end: DYNAMIC TABLE PANEL -->
                 <?php Valida::geraBtnVoltar('Historia/ListarHistoria/' . Valida::GeraParametro(
-                        CO_HISTORIA . "/" . $res->getCoHistoria()->getCoHistoria())); ?>
+                        CO_SESSAO . "/" . $coSessao)); ?>
                 <br><br><br>
             </div>
         </div>

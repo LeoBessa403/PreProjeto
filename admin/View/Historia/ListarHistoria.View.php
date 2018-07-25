@@ -89,7 +89,7 @@
                 </div>
                 <!-- end: DYNAMIC TABLE PANEL -->
                 <?php Valida::geraBtnVoltar('Sessao/ListarSessao/' . Valida::GeraParametro(
-                        CO_SESSAO . "/" . $res->getCoSessao()->getCoSessao())); ?>
+                        CO_MODULO . "/" . $coSessao)); ?>
                 <br><br><br>
             </div>
         </div>

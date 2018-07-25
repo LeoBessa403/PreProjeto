@@ -15,7 +15,7 @@ class  SessaoValidador extends AbstractValidador
     public function validarSessao($dados)
     {
         $this->retorno[DADOS][] = $this->ValidaCampoObrigatorioDescricao(
-            $dados[NO_SESSAO], 2, 'Nome da Sessao'
+            $dados[NO_SESSAO], 1, 'Nome da Sessao'
         );
         return $this->MontaRetorno($this->retorno);
     }

@@ -69,7 +69,7 @@
                 </div>
                 <!-- end: DYNAMIC TABLE PANEL -->
                 <?php Valida::geraBtnVoltar('Modulo/ListarModulo/' . Valida::GeraParametro(
-                        CO_PROJETO . "/" . $res->getCoModulo()->getCoProjeto()->getCoProjeto())); ?>
+                        CO_PROJETO . "/" . $coProjeto)); ?>
                 <br><br><br>
             </div>
         </div>

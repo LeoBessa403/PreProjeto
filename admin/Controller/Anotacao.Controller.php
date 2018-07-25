@@ -4,15 +4,22 @@ class Anotacao extends AbstractController
 {
     public $result;
     public $coHistoria;
+    public $coSessao;
 
     public function ListarAnotacao()
     {
         $this->coHistoria = UrlAmigavel::PegaParametro(CO_HISTORIA);
         /** @var AnotacaoService $anotacaoService */
         $anotacaoService = $this->getService(ANOTACAO_SERVICE);
+        /** @var HistoriaService $historiaService */
+        $historiaService = $this->getService(HISTORIA_SERVICE);
+
+        /** @var HistoriaEntidade $historia */
+        $historia = $historiaService->PesquisaUmRegistro($this->coHistoria);
         $this->result = $anotacaoService->PesquisaTodos([
             CO_HISTORIA => $this->coHistoria
         ]);
+        $this->coSessao = $historia->getCoSessao()->getCoSessao();
     }
 
     public function CadastroAnotacao()

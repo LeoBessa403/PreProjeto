@@ -4,15 +4,22 @@ class Historia extends AbstractController
 {
     public $result;
     public $coSessao;
+    public $coModulo;
 
     public function ListarHistoria()
     {
         $this->coSessao = UrlAmigavel::PegaParametro(CO_SESSAO);
         /** @var HistoriaService $historiaService */
         $historiaService = $this->getService(HISTORIA_SERVICE);
+        /** @var SessaoService $sessaoService */
+        $sessaoService = $this->getService(SESSAO_SERVICE);
+
         $this->result = $historiaService->PesquisaTodos([
             CO_SESSAO => $this->coSessao
         ]);
+        /** @var SessaoEntidade $sessao */
+        $sessao = $sessaoService->PesquisaUmRegistro($this->coSessao);
+        $this->coModulo = $sessao->getCoModulo()->getCoModulo();
     }
 
     public function CadastroHistoria()
