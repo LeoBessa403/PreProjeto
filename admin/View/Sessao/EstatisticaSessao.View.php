@@ -57,7 +57,9 @@
                         $semanas = ($horas / (ConfiguracoesEnum::DESENVOLVEDORES * ConfiguracoesEnum::DIAS_TRABALHADOS *
                                 ConfiguracoesEnum::HORAS_DIAS));
                         $dias = ($semanas * ConfiguracoesEnum::DIAS_TRABALHADOS);
-                        $soma = ((int)$dias == $dias) ? $dias : ((int)$dias + 1);
+                        $somaDias = ((int)$semanas == $semanas) ? $semanas : ((int)$semanas + 1);
+                        $somaDias = $somaDias * 7;
+                        $soma = ((int)$somaDias == $somaDias) ? $somaDias : ((int)$somaDias + 1);
                         $dataPrevista = Valida::CalculaData(Date('d/m/Y'), $soma, '+');
                         ?>
                         <div class="col-sm-12">
