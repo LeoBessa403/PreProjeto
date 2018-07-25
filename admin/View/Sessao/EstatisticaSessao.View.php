@@ -56,17 +56,25 @@
                         $semanas = ($horas / (ConfiguracoesEnum::DESENVOLVEDORES * ConfiguracoesEnum::DIAS_TRABALHADOS *
                                 ConfiguracoesEnum::HORAS_DIAS));
                         $dias = ($semanas * ConfiguracoesEnum::DIAS_TRABALHADOS);
+                        $soma = ((int)$dias == $dias) ? $dias : ((int)$dias + 1);
+                        $dataPrevista = Valida::CalculaData(Date('d/m/Y'), $soma, '+');
                         ?>
                         <div class="col-sm-12">
                             <?= $barra; ?>
                         </div>
-                        <div class="col-sm-6">
+                        <div class="col-sm-4">
+                            <div class="alert alert-block alert-warning fade in">
+                                <h4 class="alert-heading"><i class="fa fa-group"></i> Data de Termino</h4>
+                                <h2><?= $dataPrevista; ?></h2>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
                             <div class="alert alert-block alert-success fade in">
                                 <h4 class="alert-heading"><i class="fa fa-group"></i> Esforço Total</h4>
                                 <h2><?= $dados['esforco']; ?></h2>
                             </div>
                         </div>
-                        <div class="col-sm-6">
+                        <div class="col-sm-4">
                             <div class="alert alert-block alert-danger fade in">
                                 <h4 class="alert-heading"><i class="fa fa-eye"></i> Esforço Restante</h4>
                                 <h2><?= $dados['esforcoRestante']; ?></h2>
@@ -79,7 +87,7 @@
                             </div>
                         </div>
                         <div class="col-sm-4">
-                            <div class="alert alert-block alert-success fade in">
+                            <div class="alert alert-block alert-danger fade in">
                                 <h4 class="alert-heading"><i class="fa fa-eye-slash"></i> Dias</h4>
                                 <h2><?= Valida::FormataMoeda($dias); ?></h2>
                             </div>
