@@ -14,7 +14,7 @@
                     </li>
                 </ol>
                 <div class="page-header">
-                    <h1>Estatísticas do Projeto</h1>
+                    <h1>Estatísticas do Projeto <small><b><?= $noProjeto; ?></b></small></h1>
                 </div>
                 <!-- end: PAGE TITLE & BREADCRUMB -->
             </div>

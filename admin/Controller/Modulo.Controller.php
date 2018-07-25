@@ -5,6 +5,7 @@ class Modulo extends AbstractController
     public $result;
     public $coProjeto;
     public $coModulo;
+    public $noModulo;
 
     public function ListarModulo()
     {
@@ -77,6 +78,7 @@ class Modulo extends AbstractController
         }
         $this->coProjeto = $modulo->getCoProjeto()->getCoProjeto();
         $this->dados = $dados;
+        $this->noModulo = $modulo->getNoModulo();
     }
 
 }

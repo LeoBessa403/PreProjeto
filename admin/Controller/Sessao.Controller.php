@@ -5,6 +5,7 @@ class Sessao extends AbstractController
     public $result;
     public $coModulo;
     public $coProjeto;
+    public $noSessao;
 
     public function ListarSessao()
     {
@@ -78,6 +79,7 @@ class Sessao extends AbstractController
         }
         $this->coModulo = $sessao->getCoModulo()->getCoModulo();
         $this->dados = $dados;
+        $this->noSessao = $sessao->getNoSessao();
     }
 
 }

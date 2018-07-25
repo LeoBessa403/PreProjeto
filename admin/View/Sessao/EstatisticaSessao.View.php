@@ -14,7 +14,8 @@
                     </li>
                 </ol>
                 <div class="page-header">
-                    <h1>Estatísticas da Sessão</h1>
+                    <h1>Estatísticas da Sessão <small><b><?= $noSessao; ?></b></small></h1>
+
                 </div>
                 <!-- end: PAGE TITLE & BREADCRUMB -->
             </div>

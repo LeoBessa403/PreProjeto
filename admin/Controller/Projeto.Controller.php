@@ -5,6 +5,7 @@ class Projeto extends AbstractController
     public $result;
     public $projeto;
     public $dados;
+    public $noProjeto;
 
     public function ListarProjeto()
     {
@@ -41,9 +42,13 @@ class Projeto extends AbstractController
     {
         $dados['esforco'] = 0;
         $dados['esforcoRestante'] = 0;
+        /** @var ProjetoService $projetoService */
+        $projetoService = $this->getService(PROJETO_SERVICE);
         /** @var ModuloService $moduloService */
         $moduloService = $this->getService(MODULO_SERVICE);
         $coProjeto = UrlAmigavel::PegaParametro(CO_PROJETO);
+        /** @var ProjetoEntidade $projeto */
+        $projeto = $projetoService->PesquisaUmRegistro($coProjeto);
         /** @var ProjetoEntidade $projeto */
         $modulos = $moduloService->PesquisaTodos([
             CO_PROJETO => $coProjeto
@@ -64,6 +69,7 @@ class Projeto extends AbstractController
             }
         }
         $this->dados = $dados;
+        $this->noProjeto = $projeto->getNoProjeto();
     }
 
 }

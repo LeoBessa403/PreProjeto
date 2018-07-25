@@ -14,7 +14,7 @@
                     </li>
                 </ol>
                 <div class="page-header">
-                    <h1>Estatísticas do Modulo</h1>
+                    <h1>Estatísticas do Modulo <small><b><?= $noModulo; ?></b></small></h1>
                 </div>
                 <!-- end: PAGE TITLE & BREADCRUMB -->
             </div>
