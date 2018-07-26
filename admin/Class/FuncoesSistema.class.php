@@ -220,9 +220,12 @@ class FuncoesSistema
         $semanas = ($horas / (ConfiguracoesEnum::DESENVOLVEDORES * ConfiguracoesEnum::DIAS_TRABALHADOS *
                 ConfiguracoesEnum::HORAS_DIAS));
         $dias = ($semanas * ConfiguracoesEnum::DIAS_TRABALHADOS);
-        $somaDias = ((int)$semanas == $semanas) ? $semanas : ((int)$semanas + 1);
+        $somaDias = (int)$semanas;
+        $totalDiasPorSemana = $somaDias * ConfiguracoesEnum::DIAS_TRABALHADOS;
+        $totalDiasRestantes = $dias - $totalDiasPorSemana;
         $somaDias = $somaDias * 7;
-        $soma = ((int)$somaDias == $somaDias) ? $somaDias : ((int)$somaDias + 1);
+        $totalDiasRestantes = $somaDias + $totalDiasRestantes;
+        $soma = ((int)$totalDiasRestantes == $totalDiasRestantes) ? $totalDiasRestantes : ((int)$totalDiasRestantes + 1);
         $dataPrevista = Valida::CalculaData(Date('d/m/Y'), $soma, '+');
 
         $estatisticas['barra'] =  $barra;
