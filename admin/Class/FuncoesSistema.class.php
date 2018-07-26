@@ -189,4 +189,48 @@ class FuncoesSistema
 
         return $op;
     }
+
+    public static function getDadosEstatistica($dados)
+    {
+        if($dados['esforco'] == 0){
+            $progresso = 0;
+        }else{
+            $progresso = ((($dados['esforco'] - $dados['esforcoRestante']))
+                    / $dados['esforco']) * 100;
+        }
+
+        $cor = 'success';
+        if ($progresso < 25) {
+            $cor = 'danger';
+        } elseif ($progresso < 50) {
+            $cor = 'warning';
+        } elseif ($progresso < 80) {
+            $cor = 'info';
+        }
+
+        $barra = '<div class="progress progress-striped active progress-sm tooltips" 
+                            data-original-title="' .  Valida::FormataMoeda($progresso) . '%" data-placement="top"
+                            style="height: 18px;">
+                                            <div class="progress-bar progress-bar-' . $cor . '" role="progressbar" 
+                                            aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" 
+                                            style="width: ' . $progresso . '%"></div>
+                                    </div>';
+
+        $horas = ($dados['esforcoRestante'] * ConfiguracoesEnum::MINUTOS_ESFORCO) / 60;
+        $semanas = ($horas / (ConfiguracoesEnum::DESENVOLVEDORES * ConfiguracoesEnum::DIAS_TRABALHADOS *
+                ConfiguracoesEnum::HORAS_DIAS));
+        $dias = ($semanas * ConfiguracoesEnum::DIAS_TRABALHADOS);
+        $somaDias = ((int)$semanas == $semanas) ? $semanas : ((int)$semanas + 1);
+        $somaDias = $somaDias * 7;
+        $soma = ((int)$somaDias == $somaDias) ? $somaDias : ((int)$somaDias + 1);
+        $dataPrevista = Valida::CalculaData(Date('d/m/Y'), $soma, '+');
+
+        $estatisticas['barra'] =  $barra;
+        $estatisticas['dias'] =   Valida::FormataMoeda($dias);
+        $estatisticas['horas'] =  Valida::FormataMoeda($horas);
+        $estatisticas['semanas'] =  Valida::FormataMoeda($semanas);
+        $estatisticas['dataPrevista'] =  $dataPrevista;
+
+        return $estatisticas;
+    }
 }

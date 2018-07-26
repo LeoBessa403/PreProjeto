@@ -29,46 +29,15 @@
                     </div>
                     <div class="panel-body">
                         <?php
-                        if($dados['esforco'] == 0){
-                            $progresso = 0;
-                        }else{
-                            $progresso = ((($dados['esforco'] - $dados['esforcoRestante']))
-                                    / $dados['esforco']) * 100;
-                        }
-
-                        $cor = 'success';
-                        if ($progresso < 25) {
-                            $cor = 'danger';
-                        } elseif ($progresso < 50) {
-                            $cor = 'warning';
-                        } elseif ($progresso < 80) {
-                            $cor = 'info';
-                        }
-
-                        $barra = '<div class="progress progress-striped active progress-sm tooltips" 
-                            data-original-title="' . $progresso . '%" data-placement="top"
-                            style="height: 18px;">
-                                            <div class="progress-bar progress-bar-' . $cor . '" role="progressbar" 
-                                            aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" 
-                                            style="width: ' . $progresso . '%"></div>
-                                    </div>';
-
-                        $horas = ($dados['esforcoRestante'] * ConfiguracoesEnum::MINUTOS_ESFORCO) / 60;
-                        $semanas = ($horas / (ConfiguracoesEnum::DESENVOLVEDORES * ConfiguracoesEnum::DIAS_TRABALHADOS *
-                                ConfiguracoesEnum::HORAS_DIAS));
-                        $dias = ($semanas * ConfiguracoesEnum::DIAS_TRABALHADOS);
-                        $somaDias = ((int)$semanas == $semanas) ? $semanas : ((int)$semanas + 1);
-                        $somaDias = $somaDias * 7;
-                        $soma = ((int)$somaDias == $somaDias) ? $somaDias : ((int)$somaDias + 1);
-                        $dataPrevista = Valida::CalculaData(Date('d/m/Y'), $soma, '+');
+                        $estatisticas = FuncoesSistema::getDadosEstatistica($dados);
                         ?>
                         <div class="col-sm-12">
-                            <?= $barra; ?>
+                            <?= $estatisticas['barra']; ?>
                         </div>
                         <div class="col-sm-4">
                             <div class="alert alert-block alert-warning fade in">
                                 <h4 class="alert-heading"><i class="fa fa-group"></i> Data de Termino</h4>
-                                <h2><?= $dataPrevista; ?></h2>
+                                <h2><?= $estatisticas['dataPrevista']; ?></h2>
                             </div>
                         </div>
                         <div class="col-sm-4">
@@ -86,19 +55,19 @@
                         <div class="col-sm-4">
                             <div class="alert alert-block alert-info fade in">
                                 <h4 class="alert-heading"><i class="fa fa-user"></i> Horas</h4>
-                                <h2><?= Valida::FormataMoeda($horas); ?></h2>
+                                <h2><?= $estatisticas['horas']; ?></h2>
                             </div>
                         </div>
                         <div class="col-sm-4">
                             <div class="alert alert-block alert-danger fade in">
                                 <h4 class="alert-heading"><i class="fa fa-eye-slash"></i> Dias</h4>
-                                <h2><?= Valida::FormataMoeda($dias); ?></h2>
+                                <h2><?= $estatisticas['dias']; ?></h2>
                             </div>
                         </div>
                         <div class="col-sm-4">
                             <div class="alert alert-block alert-warning fade in">
                                 <h4 class="alert-heading"><i class="fa fa-eye-slash"></i> Semanas</h4>
-                                <h2><?= Valida::FormataMoeda($semanas); ?></h2>
+                                <h2><?= $estatisticas['semanas']; ?></h2>
                             </div>
                         </div>
                     </div>
