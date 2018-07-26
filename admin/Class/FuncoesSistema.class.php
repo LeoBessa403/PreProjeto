@@ -192,9 +192,35 @@ class FuncoesSistema
 
     public static function getDadosEstatistica($dados)
     {
-        if($dados['esforco'] == 0){
+
+        $barra = self::getBarraProgresso($dados);
+
+        $horas = ($dados['esforcoRestante'] * ConfiguracoesEnum::MINUTOS_ESFORCO) / 60;
+        $semanas = ($horas / (ConfiguracoesEnum::DESENVOLVEDORES * ConfiguracoesEnum::DIAS_TRABALHADOS *
+                ConfiguracoesEnum::HORAS_DIAS));
+        $dias = ($semanas * ConfiguracoesEnum::DIAS_TRABALHADOS);
+        $somaDias = (int)$semanas;
+        $totalDiasPorSemana = $somaDias * ConfiguracoesEnum::DIAS_TRABALHADOS;
+        $totalDiasRestantes = $dias - $totalDiasPorSemana;
+        $somaDias = $somaDias * 7;
+        $totalDiasRestantes = $somaDias + $totalDiasRestantes;
+        $soma = ((int)$totalDiasRestantes == $totalDiasRestantes) ? $totalDiasRestantes : ((int)$totalDiasRestantes + 1);
+        $dataPrevista = Valida::CalculaData(Date('d/m/Y'), $soma, '+');
+
+        $estatisticas['barra'] = $barra;
+        $estatisticas['dias'] = Valida::FormataMoeda($dias);
+        $estatisticas['horas'] = Valida::FormataMoeda($horas);
+        $estatisticas['semanas'] = Valida::FormataMoeda($semanas);
+        $estatisticas['dataPrevista'] = $dataPrevista;
+
+        return $estatisticas;
+    }
+
+    public static function getBarraProgresso($dados)
+    {
+        if ($dados['esforco'] == 0) {
             $progresso = 0;
-        }else{
+        } else {
             $progresso = ((($dados['esforco'] - $dados['esforcoRestante']))
                     / $dados['esforco']) * 100;
         }
@@ -209,31 +235,12 @@ class FuncoesSistema
         }
 
         $barra = '<div class="progress progress-striped active progress-sm tooltips" 
-                            data-original-title="' .  Valida::FormataMoeda($progresso) . '%" data-placement="top"
+                            data-original-title="' . Valida::FormataMoeda($progresso) . '%" data-placement="top"
                             style="height: 18px;">
                                             <div class="progress-bar progress-bar-' . $cor . '" role="progressbar" 
                                             aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" 
                                             style="width: ' . $progresso . '%"></div>
                                     </div>';
-
-        $horas = ($dados['esforcoRestante'] * ConfiguracoesEnum::MINUTOS_ESFORCO) / 60;
-        $semanas = ($horas / (ConfiguracoesEnum::DESENVOLVEDORES * ConfiguracoesEnum::DIAS_TRABALHADOS *
-                ConfiguracoesEnum::HORAS_DIAS));
-        $dias = ($semanas * ConfiguracoesEnum::DIAS_TRABALHADOS);
-        $somaDias = (int)$semanas;
-        $totalDiasPorSemana = $somaDias * ConfiguracoesEnum::DIAS_TRABALHADOS;
-        $totalDiasRestantes = $dias - $totalDiasPorSemana;
-        $somaDias = $somaDias * 7;
-        $totalDiasRestantes = $somaDias + $totalDiasRestantes;
-        $soma = ((int)$totalDiasRestantes == $totalDiasRestantes) ? $totalDiasRestantes : ((int)$totalDiasRestantes + 1);
-        $dataPrevista = Valida::CalculaData(Date('d/m/Y'), $soma, '+');
-
-        $estatisticas['barra'] =  $barra;
-        $estatisticas['dias'] =   Valida::FormataMoeda($dias);
-        $estatisticas['horas'] =  Valida::FormataMoeda($horas);
-        $estatisticas['semanas'] =  Valida::FormataMoeda($semanas);
-        $estatisticas['dataPrevista'] =  $dataPrevista;
-
-        return $estatisticas;
+        return $barra;
     }
 }

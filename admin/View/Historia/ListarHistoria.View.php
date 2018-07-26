@@ -54,25 +54,10 @@
                                      <i class="clip-stack-empty"></i>
                                  </a>';
 
-                            $progresso = (($res->getNuEsforco() - $res->getNuEsforcoRestante())
-                                    / $res->getNuEsforco()) * 100;
+                            $dados['esforco'] = $res->getNuEsforco();
+                            $dados['esforcoRestante'] = $res->getNuEsforcoRestante();
+                            $barra = FuncoesSistema::getBarraProgresso($dados);
 
-                            $cor = 'success';
-                            if ($progresso < 25) {
-                                $cor = 'danger';
-                            } elseif ($progresso < 50) {
-                                $cor = 'warning';
-                            } elseif ($progresso < 80) {
-                                $cor = 'info';
-                            }
-
-                            $barra = '<div class="progress progress-striped progress-sm tooltips" 
-                            data-original-title="' . $progresso . '%" data-placement="top"
-                            style="height: 18px;">
-                                            <div class="progress-bar progress-bar-' . $cor . '" role="progressbar" 
-                                            aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" 
-                                            style="width: ' . $progresso . '%"></div>
-                                    </div>';
                             $grid->setColunas($res->getDsTitulo());
                             $grid->setColunas($res->getDtAtualizado());
                             $grid->setColunas(FuncoesSistema::SituacaoHistoria($res->getStSituacao()));
