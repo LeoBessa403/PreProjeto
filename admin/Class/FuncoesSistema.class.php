@@ -226,11 +226,11 @@ class FuncoesSistema
         }
 
         $cor = 'success';
-        if ($progresso < 25) {
+        if ($progresso < 35) {
             $cor = 'danger';
-        } elseif ($progresso < 50) {
+        } elseif ($progresso < 60) {
             $cor = 'warning';
-        } elseif ($progresso < 80) {
+        } elseif ($progresso < 95) {
             $cor = 'info';
         }
 
