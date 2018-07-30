@@ -57,6 +57,7 @@
                             $dados['esforco'] = $res->getNuEsforco();
                             $dados['esforcoRestante'] = $res->getNuEsforcoRestante();
                             $barra = FuncoesSistema::getBarraProgresso($dados);
+                            $barra = $barra['barra'];
 
                             $grid->setColunas($res->getDsTitulo());
                             $grid->setColunas($res->getDtAtualizado());
