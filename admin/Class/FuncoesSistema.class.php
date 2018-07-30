@@ -193,7 +193,7 @@ class FuncoesSistema
     public static function getDadosEstatistica($dados)
     {
 
-        $barra = self::getBarraProgresso($dados);
+        $dado = self::getBarraProgresso($dados);
 
         $horas = ($dados['esforcoRestante'] * ConfiguracoesEnum::MINUTOS_ESFORCO) / 60;
         $semanas = ($horas / (ConfiguracoesEnum::DESENVOLVEDORES * ConfiguracoesEnum::DIAS_TRABALHADOS *
@@ -207,7 +207,8 @@ class FuncoesSistema
         $soma = ((int)$totalDiasRestantes == $totalDiasRestantes) ? $totalDiasRestantes : ((int)$totalDiasRestantes + 1);
         $dataPrevista = Valida::CalculaData(Date('d/m/Y'), $soma, '+');
 
-        $estatisticas['barra'] = $barra;
+        $estatisticas['barra'] = $dado['barra'];
+        $estatisticas['percentual'] =  $dado['percentual'];
         $estatisticas['dias'] = Valida::FormataMoeda($dias);
         $estatisticas['horas'] = Valida::FormataMoeda($horas);
         $estatisticas['semanas'] = Valida::FormataMoeda($semanas);
@@ -241,6 +242,8 @@ class FuncoesSistema
                                             aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" 
                                             style="width: ' . $progresso . '%"></div>
                                     </div>';
-        return $barra;
+        $dado['barra'] = $barra;
+        $dado['percentual'] = Valida::FormataMoeda($progresso);
+        return $dado;
     }
 }
