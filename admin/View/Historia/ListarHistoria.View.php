@@ -1,3 +1,16 @@
+<style>
+    .btn-dark-grey{
+        position: absolute;
+        margin-left: 3px;
+    }
+    .qtd{
+        float: right;
+        top: -6px;
+        left: -4px;
+        position: relative;
+        z-index: 9999 !important;
+    }
+</style>
 <div class="main-content">
     <div class="container">
         <div class="row">
@@ -46,14 +59,16 @@
                                 Valida::GeraParametro(CO_HISTORIA . "/" . $res->getCoHistoria()) . '" class="btn btn-primary tooltips" 
                                     data-original-title="Editar Registro" data-placement="top">
                                      <i class="fa fa-clipboard"></i>
-                                 </a> 
-                                 <a href="' . PASTAADMIN . 'Anotacao/ListarAnotacao/' .
+                                 </a> ';
+                            if (!empty($res->getCoAnotacao())) {
+                                $acao .= ' <span class="qtd badge badge-danger"> '.count($res->getCoAnotacao()).' </span>';
+                            }
+                            $acao .= ' <a href="' . PASTAADMIN . 'Anotacao/ListarAnotacao/' .
                                 Valida::GeraParametro(CO_HISTORIA . "/" . $res->getCoHistoria()) . '" 
                                 class="btn btn-dark-grey tooltips" 
                                     data-original-title="Anotação da Historia" data-placement="top">
                                      <i class="clip-stack-empty"></i>
                                  </a>';
-
                             $dados['esforco'] = $res->getNuEsforco();
                             $dados['esforcoRestante'] = $res->getNuEsforcoRestante();
                             $barra = FuncoesSistema::getBarraProgresso($dados);
