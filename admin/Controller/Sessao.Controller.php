@@ -65,6 +65,8 @@ class Sessao extends AbstractController
     {
         $dados['esforco'] = 0;
         $dados['esforcoRestante'] = 0;
+        /** @var HistoriaService $historiaService */
+        $historiaService = $this->getService(HISTORIA_SERVICE);
         /** @var SessaoService $sessaoService */
         $sessaoService = $this->getService(SESSAO_SERVICE);
         $coSessao = UrlAmigavel::PegaParametro(CO_SESSAO);
@@ -75,8 +77,10 @@ class Sessao extends AbstractController
             foreach ($sessao->getCoHistoria() as $historia) {
                 $dados['esforco'] = $dados['esforco'] + $historia->getNuEsforco();
                 $dados['esforcoRestante'] = $dados['esforcoRestante'] + $historia->getNuEsforcoRestante();
+                $Condicoes[CO_REGISTRO][] = $historia->getCoHistoria();
             }
         }
+        $historiaService->motaGraficoEvolucao($Condicoes);
         $this->coModulo = $sessao->getCoModulo()->getCoModulo();
         $this->dados = $dados;
         $this->noSessao = $sessao->getNoSessao();

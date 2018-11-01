@@ -42,6 +42,8 @@ class Projeto extends AbstractController
     {
         $dados['esforco'] = 0;
         $dados['esforcoRestante'] = 0;
+        /** @var HistoriaService $historiaService */
+        $historiaService = $this->getService(HISTORIA_SERVICE);
         /** @var ProjetoService $projetoService */
         $projetoService = $this->getService(PROJETO_SERVICE);
         /** @var ModuloService $moduloService */
@@ -53,6 +55,7 @@ class Projeto extends AbstractController
         $modulos = $moduloService->PesquisaTodos([
             CO_PROJETO => $coProjeto
         ]);
+        $Condicoes = [];
         /** @var ModuloEntidade $modulo */
         foreach ($modulos as $modulo) {
             if (!empty($modulo->getCoSessao())) {
@@ -63,11 +66,14 @@ class Projeto extends AbstractController
                         foreach ($sessao->getCoHistoria() as $historia) {
                             $dados['esforco'] = $dados['esforco'] + $historia->getNuEsforco();
                             $dados['esforcoRestante'] = $dados['esforcoRestante'] + $historia->getNuEsforcoRestante();
+                            $Condicoes[CO_REGISTRO][] = $historia->getCoHistoria();
                         }
                     }
                 }
             }
         }
+        $historiaService->motaGraficoEvolucao($Condicoes);
+
         $this->dados = $dados;
         $this->noProjeto = $projeto->getNoProjeto();
     }

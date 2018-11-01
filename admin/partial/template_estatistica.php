@@ -46,3 +46,9 @@ $estatisticas = FuncoesSistema::getDadosEstatistica($dados);
         <h2><?= $estatisticas['semanas']; ?></h2>
     </div>
 </div>
+<div class="col-md-12">
+    <h3>Esforço / Esforço Restante</h3>
+    <div class="alert alert-success fade in">
+        <div id="div_esforco"></div>
+    </div>
+</div>
