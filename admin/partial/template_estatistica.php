@@ -52,3 +52,9 @@ $estatisticas = FuncoesSistema::getDadosEstatistica($dados);
         <div id="div_esforco"></div>
     </div>
 </div>
+<div class="col-md-12">
+    <h3>Percentual de evolução</h3>
+    <div class="alert alert-info fade in">
+        <div id="div_percentual_evolucao"></div>
+    </div>
+</div>
