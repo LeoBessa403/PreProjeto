@@ -14,7 +14,9 @@
                     </li>
                 </ol>
                 <div class="page-header">
-                    <h1>Estatísticas do Modulo <small><b><?= $noModulo; ?></b></small></h1>
+                    <h1>Estatísticas do Modulo
+                        <small><b><?= $noModulo; ?></b></small>
+                    </h1>
                 </div>
                 <!-- end: PAGE TITLE & BREADCRUMB -->
             </div>
@@ -30,9 +32,11 @@
                         <?php include_once PASTA_RAIZ . ADMIN . '/partial/template_estatistica.php'; ?>
                     </div>
                 </div>
-                <!-- end: DYNAMIC TABLE PANEL -->
-                <?php Valida::geraBtnVoltar('Modulo/ListarModulo/' . Valida::GeraParametro(
-                        CO_PROJETO . "/" . $coProjeto)); ?>
+                <div class="pull-right">
+                    <!-- end: DYNAMIC TABLE PANEL -->
+                    <?php Valida::geraBtnVoltar('Modulo/ListarModulo/' . Valida::GeraParametro(
+                            CO_PROJETO . "/" . $coProjeto)); ?>
+                </div>
                 <br><br><br>
             </div>
         </div>

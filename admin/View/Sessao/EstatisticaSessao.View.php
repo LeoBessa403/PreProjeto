@@ -14,7 +14,9 @@
                     </li>
                 </ol>
                 <div class="page-header">
-                    <h1>Estatísticas da Sessão <small><b><?= $noSessao; ?></b></small></h1>
+                    <h1>Estatísticas da Sessão
+                        <small><b><?= $noSessao; ?></b></small>
+                    </h1>
 
                 </div>
                 <!-- end: PAGE TITLE & BREADCRUMB -->
@@ -31,10 +33,13 @@
                         <?php include_once PASTA_RAIZ . ADMIN . '/partial/template_estatistica.php'; ?>
                     </div>
                 </div>
-                <!-- end: DYNAMIC TABLE PANEL -->
-                <?php Valida::geraBtnVoltar('Sessao/ListarSessao/' . Valida::GeraParametro(
-                        CO_MODULO . "/" . $coModulo)); ?>
+                <div class="pull-right">
+                    <!-- end: DYNAMIC TABLE PANEL -->
+                    ?php Valida::geraBtnVoltar('Sessao/ListarSessao/' . Valida::GeraParametro(
+                    CO_MODULO . "/" . $coModulo)); ?>
+                </div>
                 <br><br><br>
+                <!-- end: DYNAMIC TABLE PANEL -->
             </div>
         </div>
         <!-- end: PAGE HEADER -->
