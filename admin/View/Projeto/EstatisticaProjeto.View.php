@@ -32,8 +32,10 @@
                         <?php include_once PASTA_RAIZ . ADMIN . '/partial/template_estatistica.php'; ?>
                     </div>
                 </div>
-                <!-- end: DYNAMIC TABLE PANEL -->
-                <?php Valida::geraBtnVoltar('Projeto/ListarProjeto'); ?>
+                <div class="pull-right">
+                    <!-- end: DYNAMIC TABLE PANEL -->
+                    <?php Valida::geraBtnVoltar('Projeto/ListarProjeto'); ?>
+                </div>
                 <br><br><br>
             </div>
         </div>
