@@ -18,7 +18,8 @@ body {
 }
 
 body.bg_style_1 {
-    background: url("../images/bg.png") rgba(0, 0, 0, 0) !important;
+    background: url("../images/bckgr_gestao.jpg") rgba(0, 0, 0, 0) center center !important;
+    background-size: auto !important;
 }
 
 body.bg_style_2 {
@@ -3426,8 +3427,8 @@ body.login {
 }
 
 body.login.example1 {
-    background-image: url("../images/bg.png");
-    background-color: rgba(0, 0, 0, 0);
+    background: url("../images/bckgr_gestao.jpg") rgba(0, 0, 0, 0) center center !important;
+    background-size: auto !important;
 }
 
 body.login.example2 {
@@ -4431,7 +4432,8 @@ div.timeline_element.purple div.timeline_title {
 }
 
 .timer-area {
-    background-image: url("../images/bg.png");
+    background: url("../images/bckgr_gestao.jpg") rgba(0, 0, 0, 0) center center !important;
+    background-size: auto !important;
     background-color: rgba(0, 0, 0, 0);
     margin-bottom: 4em;
     padding-top: 2em;
