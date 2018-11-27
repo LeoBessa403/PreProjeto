@@ -35,7 +35,7 @@
                         Modal::load();
                         Modal::deletaRegistro("Sessao");
                         Modal::confirmacao("confirma_Sessao");
-                        $arrColunas = array('Nome da Sessao', 'Modulo', 'Ações');
+                        $arrColunas = array('Nome da Sessao', 'Modulo', 'Progresso', 'Ações');
                         $grid = new Grid();
                         $grid->setColunasIndeces($arrColunas);
                         $grid->criaGrid();
@@ -58,8 +58,21 @@
                                     data-original-title="Estatistica da Sessao" data-placement="top">
                                      <i class="clip-bars"></i>
                                  </a>';
+
+                            // Monta Barra de Progresso
+                            $dados['esforco'] = 0;
+                            $dados['esforcoRestante'] = 0;
+                            /** @var HistoriaEntidade $historia */
+                            foreach ($res->getCoHistoria() as $historia) {
+                                $dados['esforco'] = $dados['esforco'] + $historia->getNuEsforco();
+                                $dados['esforcoRestante'] = $dados['esforcoRestante'] + $historia->getNuEsforcoRestante();
+                            }
+                            $barra = FuncoesSistema::getBarraProgresso($dados);
+                            $barra = $barra['barra'];
+
                             $grid->setColunas($res->getNoSessao());
                             $grid->setColunas($res->getCoModulo()->getNoModulo());
+                            $grid->setColunas($barra);
                             $grid->setColunas($acao, 3);
                             $grid->criaLinha($res->getCoSessao());
                         endforeach;

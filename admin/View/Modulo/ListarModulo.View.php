@@ -35,7 +35,7 @@
                         Modal::load();
                         Modal::deletaRegistro("Modulo");
                         Modal::confirmacao("confirma_Modulo");
-                        $arrColunas = array('Nome da Modulo', 'Projeto', 'Ações');
+                        $arrColunas = array('Nome da Modulo', 'Projeto', 'Progresso', 'Ações');
                         $grid = new Grid();
                         $grid->setColunasIndeces($arrColunas);
                         $grid->criaGrid();
@@ -58,8 +58,24 @@
                                     data-original-title="Estatistica do Modulo" data-placement="top">
                                      <i class="clip-bars"></i>
                                  </a>';
+
+                            // Monta Barra de Progresso
+                            $dados['esforco'] = 0;
+                            $dados['esforcoRestante'] = 0;
+                            /** @var SessaoEntidade $sessao */
+                            foreach ($res->getCoSessao() as $sessao) {
+                                /** @var HistoriaEntidade $historia */
+                                foreach ($sessao->getCoHistoria() as $historia) {
+                                    $dados['esforco'] = $dados['esforco'] + $historia->getNuEsforco();
+                                    $dados['esforcoRestante'] = $dados['esforcoRestante'] + $historia->getNuEsforcoRestante();
+                                }
+                            }
+                            $barra = FuncoesSistema::getBarraProgresso($dados);
+                            $barra = $barra['barra'];
+
                             $grid->setColunas($res->getNoModulo());
                             $grid->setColunas($res->getCoProjeto()->getNoProjeto());
+                            $grid->setColunas($barra);
                             $grid->setColunas($acao, 3);
                             $grid->criaLinha($res->getCoModulo());
                         endforeach;

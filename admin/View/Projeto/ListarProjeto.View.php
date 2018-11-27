@@ -34,7 +34,7 @@
                         <?php
                         Modal::load();
                         Modal::confirmacao("confirma_Projeto");
-                        $arrColunas = array('Nome do Projeto', 'Ações');
+                        $arrColunas = array('Nome do Projeto', 'Progresso', 'Ações');
                         $grid = new Grid();
                         $grid->setColunasIndeces($arrColunas);
                         $grid->criaGrid();
@@ -58,7 +58,14 @@
                                      <i class="clip-bars"></i>
                                  </a>';
 
+                            // Monta Barra de Progresso
+                            $dados['esforco'] = $progresso[$res->getCoProjeto()]['esforco'];
+                            $dados['esforcoRestante'] = $progresso[$res->getCoProjeto()]['esforcoRestante'];
+                            $barra = FuncoesSistema::getBarraProgresso($dados);
+                            $barra = $barra['barra'];
+
                             $grid->setColunas($res->getNoProjeto());
+                            $grid->setColunas($barra);
                             $grid->setColunas($acao, 3);
                             $grid->criaLinha($res->getCoProjeto());
                         endforeach;

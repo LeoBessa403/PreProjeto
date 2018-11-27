@@ -5,6 +5,7 @@ class Projeto extends AbstractController
     public $result;
     public $projeto;
     public $dados;
+    public $progresso;
     public $noProjeto;
 
     public function ListarProjeto()
@@ -12,6 +13,36 @@ class Projeto extends AbstractController
         /** @var ProjetoService $projetoService */
         $projetoService = $this->getService(PROJETO_SERVICE);
         $this->result = $projetoService->PesquisaTodos();
+        $dados = [];
+
+        // Monta barra de Progresso
+        /** @var ModuloService $moduloService */
+        $moduloService = $this->getService(MODULO_SERVICE);
+        /** @var ProjetoEntidade $projeto */
+        foreach ($this->result as $projeto) {
+            $coProjeto = $projeto->getCoProjeto();
+            $dados[$coProjeto]['esforco'] = 0;
+            $dados[$coProjeto]['esforcoRestante'] = 0;
+            $modulos = $moduloService->PesquisaTodos([
+                CO_PROJETO => $coProjeto
+            ]);
+            /** @var ModuloEntidade $modulo */
+            foreach ($modulos as $modulo) {
+                if (!empty($modulo->getCoSessao())) {
+                    /** @var SessaoEntidade $sessao */
+                    foreach ($modulo->getCoSessao() as $sessao) {
+                        if (!empty($sessao->getCoHistoria())) {
+                            /** @var HistoriaEntidade $historia */
+                            foreach ($sessao->getCoHistoria() as $historia) {
+                                $dados[$coProjeto]['esforco'] = $dados[$coProjeto]['esforco'] + $historia->getNuEsforco();
+                                $dados[$coProjeto]['esforcoRestante'] = $dados[$coProjeto]['esforcoRestante'] + $historia->getNuEsforcoRestante();
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        $this->progresso = $dados;
     }
 
     public function CadastroProjeto()
@@ -51,7 +82,7 @@ class Projeto extends AbstractController
         $coProjeto = UrlAmigavel::PegaParametro(CO_PROJETO);
         /** @var ProjetoEntidade $projeto */
         $projeto = $projetoService->PesquisaUmRegistro($coProjeto);
-        /** @var ProjetoEntidade $projeto */
+
         $modulos = $moduloService->PesquisaTodos([
             CO_PROJETO => $coProjeto
         ]);
