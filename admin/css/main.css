@@ -4434,7 +4434,6 @@ div.timeline_element.purple div.timeline_title {
 .timer-area {
     background: url("../images/bckgr_gestao.jpg") rgba(0, 0, 0, 0) center center !important;
     background-size: auto !important;
-    background-color: rgba(0, 0, 0, 0);
     margin-bottom: 4em;
     padding-top: 2em;
     color: #1F2225;
