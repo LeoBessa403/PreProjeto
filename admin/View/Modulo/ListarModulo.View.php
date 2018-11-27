@@ -67,9 +67,12 @@
                         ?>
                     </div>
                 </div>
-                <!-- end: DYNAMIC TABLE PANEL -->
-                <?php Valida::geraBtnVoltar('Projeto/ListarProjeto'); ?>
+                <div class="pull-right">
+                    <!-- end: DYNAMIC TABLE PANEL -->
+                    <?php Valida::geraBtnVoltar('Projeto/ListarProjeto'); ?>
+                </div>
                 <br><br><br>
+                <!-- end: DYNAMIC TABLE PANEL -->
             </div>
         </div>
         <!-- end: PAGE CONTENT-->

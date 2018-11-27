@@ -67,10 +67,13 @@
                         ?>
                     </div>
                 </div>
-                <!-- end: DYNAMIC TABLE PANEL -->
-                <?php Valida::geraBtnVoltar('Modulo/ListarModulo/' . Valida::GeraParametro(
-                        CO_PROJETO . "/" . $coProjeto)); ?>
+                <div class="pull-right">
+                    <!-- end: DYNAMIC TABLE PANEL -->
+                    <?php Valida::geraBtnVoltar('Modulo/ListarModulo/' . Valida::GeraParametro(
+                            CO_PROJETO . "/" . $coProjeto)); ?>
+                </div>
                 <br><br><br>
+                <!-- end: DYNAMIC TABLE PANEL -->
             </div>
         </div>
         <!-- end: PAGE CONTENT-->

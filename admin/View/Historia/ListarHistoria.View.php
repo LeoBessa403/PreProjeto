@@ -88,10 +88,13 @@
                         ?>
                     </div>
                 </div>
-                <!-- end: DYNAMIC TABLE PANEL -->
-                <?php Valida::geraBtnVoltar('Sessao/ListarSessao/' . Valida::GeraParametro(
-                        CO_MODULO . "/" . $coModulo)); ?>
+                <div class="pull-right">
+                    <!-- end: DYNAMIC TABLE PANEL -->
+                    <?php Valida::geraBtnVoltar('Sessao/ListarSessao/' . Valida::GeraParametro(
+                            CO_MODULO . "/" . $coModulo)); ?>
+                </div>
                 <br><br><br>
+                <!-- end: DYNAMIC TABLE PANEL -->
             </div>
         </div>
         <!-- end: PAGE CONTENT-->
