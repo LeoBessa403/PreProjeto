@@ -75,7 +75,7 @@
                             $barra = $barra['barra'];
 
                             $grid->setColunas($res->getDsTitulo());
-                            $grid->setColunas($res->getDtAtualizado());
+                            $grid->setColunas(Valida::DataShow($res->getDtAtualizado(),'d/m/Y H:i'));
                             $grid->setColunas(FuncoesSistema::SituacaoHistoria($res->getStSituacao()));
                             $grid->setColunas($res->getNuEsforco());
                             $grid->setColunas($res->getNuEsforcoRestante());
