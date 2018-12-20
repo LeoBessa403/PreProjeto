@@ -62,10 +62,12 @@
                             // Monta Barra de Progresso
                             $dados['esforco'] = 0;
                             $dados['esforcoRestante'] = 0;
-                            /** @var HistoriaEntidade $historia */
-                            foreach ($res->getCoHistoria() as $historia) {
-                                $dados['esforco'] = $dados['esforco'] + $historia->getNuEsforco();
-                                $dados['esforcoRestante'] = $dados['esforcoRestante'] + $historia->getNuEsforcoRestante();
+                            if($res->getCoHistoria()){
+                                /** @var HistoriaEntidade $historia */
+                                foreach ($res->getCoHistoria() as $historia) {
+                                    $dados['esforco'] = $dados['esforco'] + $historia->getNuEsforco();
+                                    $dados['esforcoRestante'] = $dados['esforcoRestante'] + $historia->getNuEsforcoRestante();
+                                }
                             }
                             $barra = FuncoesSistema::getBarraProgresso($dados);
                             $barra = $barra['barra'];
