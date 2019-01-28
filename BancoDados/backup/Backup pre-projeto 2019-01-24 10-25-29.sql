@@ -16,7 +16,7 @@ CREATE TABLE `tb_acesso` (
   PRIMARY KEY (`co_acesso`,`co_usuario`,`co_trafego`),
   KEY `fk_TB_ACESSO_TB_USUARIO1_idx` (`co_usuario`),
   KEY `fk_TB_ACESSO_TB_TRAFEGO1_idx` (`co_trafego`)
-) ENGINE=InnoDB AUTO_INCREMENT=99 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=110 DEFAULT CHARSET=utf8;
 
 
 INSERT INTO tb_acesso VALUES("1","qiae0mv2m2g9l50i845316ji72","2018-07-23 11:20:13","2018-07-23 13:21:47","F","1","1");
@@ -213,7 +213,29 @@ INSERT INTO tb_acesso VALUES("96","au886dq4kojafm6uua4vtlccc5","2018-12-20 15:40
 
 INSERT INTO tb_acesso VALUES("97","1bgpm4dhiihe6vqtf0le9rfdg6","2019-01-13 21:32:28","2019-01-13 22:49:38","F","1","97");
 
-INSERT INTO tb_acesso VALUES("98","eq7iu344l6pht078svt9t4g7o7","2019-01-14 13:06:59","2019-01-14 15:03:54","A","1","98");
+INSERT INTO tb_acesso VALUES("98","eq7iu344l6pht078svt9t4g7o7","2019-01-14 13:06:59","2019-01-14 15:07:54","F","1","98");
+
+INSERT INTO tb_acesso VALUES("99","eq7iu344l6pht078svt9t4g7o7","2019-01-14 15:54:57","2019-01-14 17:26:39","F","1","99");
+
+INSERT INTO tb_acesso VALUES("100","eq7iu344l6pht078svt9t4g7o7","2019-01-14 17:42:14","2019-01-14 18:45:17","F","1","100");
+
+INSERT INTO tb_acesso VALUES("101","eq7iu344l6pht078svt9t4g7o7","2019-01-15 10:00:00","2019-01-15 11:06:53","F","1","101");
+
+INSERT INTO tb_acesso VALUES("102","eq7iu344l6pht078svt9t4g7o7","2019-01-15 13:15:25","2019-01-17 13:11:23","F","1","102");
+
+INSERT INTO tb_acesso VALUES("103","eq7iu344l6pht078svt9t4g7o7","2019-01-17 13:12:57","2019-01-17 14:24:30","F","1","103");
+
+INSERT INTO tb_acesso VALUES("104","eq7iu344l6pht078svt9t4g7o7","2019-01-17 17:18:45","2019-01-17 18:24:22","F","1","104");
+
+INSERT INTO tb_acesso VALUES("105","eq7iu344l6pht078svt9t4g7o7","2019-01-18 09:32:52","2019-01-18 11:53:15","F","1","105");
+
+INSERT INTO tb_acesso VALUES("106","eq7iu344l6pht078svt9t4g7o7","2019-01-18 12:54:12","2019-01-18 14:28:54","F","1","106");
+
+INSERT INTO tb_acesso VALUES("107","eq7iu344l6pht078svt9t4g7o7","2019-01-18 16:28:53","2019-01-18 17:32:20","F","1","107");
+
+INSERT INTO tb_acesso VALUES("108","21kubq6khf4fjne7tv68refih0","2019-01-22 11:53:21","2019-01-22 12:54:24","F","1","108");
+
+INSERT INTO tb_acesso VALUES("109","21kubq6khf4fjne7tv68refih0","2019-01-22 14:52:20","2019-01-22 15:52:54","A","1","109");
 
 
 
@@ -253,7 +275,7 @@ CREATE TABLE `tb_auditoria` (
   `co_usuario` int(10) NOT NULL,
   PRIMARY KEY (`co_auditoria`,`co_usuario`),
   KEY `fk_TB_AUDITORIA_TB_USUARIO1_idx` (`co_usuario`)
-) ENGINE=InnoDB AUTO_INCREMENT=373 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=403 DEFAULT CHARSET=utf8;
 
 
 INSERT INTO tb_auditoria VALUES("1","2018-07-23 17:32:33","Master","1");
@@ -1000,6 +1022,66 @@ INSERT INTO tb_auditoria VALUES("371","2019-01-14 14:01:10","Master","1");
 
 INSERT INTO tb_auditoria VALUES("372","2019-01-14 14:01:47","Master","1");
 
+INSERT INTO tb_auditoria VALUES("373","2019-01-14 15:56:22","Master","1");
+
+INSERT INTO tb_auditoria VALUES("374","2019-01-14 15:56:57","Master","1");
+
+INSERT INTO tb_auditoria VALUES("375","2019-01-14 15:57:17","Master","1");
+
+INSERT INTO tb_auditoria VALUES("376","2019-01-14 15:58:00","Master","1");
+
+INSERT INTO tb_auditoria VALUES("377","2019-01-14 15:58:47","Master","1");
+
+INSERT INTO tb_auditoria VALUES("378","2019-01-14 16:08:33","Master","1");
+
+INSERT INTO tb_auditoria VALUES("379","2019-01-14 16:24:17","Master","1");
+
+INSERT INTO tb_auditoria VALUES("380","2019-01-14 17:44:38","Master","1");
+
+INSERT INTO tb_auditoria VALUES("381","2019-01-15 10:06:25","Master","1");
+
+INSERT INTO tb_auditoria VALUES("382","2019-01-15 13:20:50","Master","1");
+
+INSERT INTO tb_auditoria VALUES("383","2019-01-15 13:21:30","Master","1");
+
+INSERT INTO tb_auditoria VALUES("384","2019-01-15 13:22:03","Master","1");
+
+INSERT INTO tb_auditoria VALUES("385","2019-01-17 17:20:10","Master","1");
+
+INSERT INTO tb_auditoria VALUES("386","2019-01-18 09:33:57","Master","1");
+
+INSERT INTO tb_auditoria VALUES("387","2019-01-18 09:34:33","Master","1");
+
+INSERT INTO tb_auditoria VALUES("388","2019-01-18 09:36:18","Master","1");
+
+INSERT INTO tb_auditoria VALUES("389","2019-01-18 09:37:10","Master","1");
+
+INSERT INTO tb_auditoria VALUES("390","2019-01-18 09:39:15","Master","1");
+
+INSERT INTO tb_auditoria VALUES("391","2019-01-18 09:39:52","Master","1");
+
+INSERT INTO tb_auditoria VALUES("392","2019-01-18 09:40:56","Master","1");
+
+INSERT INTO tb_auditoria VALUES("393","2019-01-18 09:41:45","Master","1");
+
+INSERT INTO tb_auditoria VALUES("394","2019-01-18 09:43:32","Master","1");
+
+INSERT INTO tb_auditoria VALUES("395","2019-01-18 09:44:24","Master","1");
+
+INSERT INTO tb_auditoria VALUES("396","2019-01-18 09:45:21","Master","1");
+
+INSERT INTO tb_auditoria VALUES("397","2019-01-18 09:48:00","Master","1");
+
+INSERT INTO tb_auditoria VALUES("398","2019-01-18 10:01:11","Master","1");
+
+INSERT INTO tb_auditoria VALUES("399","2019-01-18 10:33:43","Master","1");
+
+INSERT INTO tb_auditoria VALUES("400","2019-01-18 10:34:59","Master","1");
+
+INSERT INTO tb_auditoria VALUES("401","2019-01-18 12:55:16","Master","1");
+
+INSERT INTO tb_auditoria VALUES("402","2019-01-18 13:28:07","Master","1");
+
 
 
 
@@ -1014,7 +1096,7 @@ CREATE TABLE `tb_auditoria_itens` (
   `co_auditoria_tabela` int(11) NOT NULL,
   PRIMARY KEY (`co_auditoria_itens`,`co_auditoria_tabela`),
   KEY `fk_TB_AUDITORIA_ITENS_TB_AUDITORIA_TABELA1_idx` (`co_auditoria_tabela`)
-) ENGINE=InnoDB AUTO_INCREMENT=2748 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=2972 DEFAULT CHARSET=utf8;
 
 
 INSERT INTO tb_auditoria_itens VALUES("1","","Sistema Da Beleaza","no_projeto","1");
@@ -6447,6 +6529,454 @@ INSERT INTO tb_auditoria_itens VALUES("2746","","2019-01-14 14:01:47","dt_atuali
 
 INSERT INTO tb_auditoria_itens VALUES("2747","","2019-01-14 14:01:47","dt_cadastro","372");
 
+INSERT INTO tb_auditoria_itens VALUES("2748","","Validação dos includes","ds_titulo","373");
+
+INSERT INTO tb_auditoria_itens VALUES("2749","","<p>Valida&ccedil;&atilde;o dos includes o que &eacute; necess&aacute;rio e se &eacute; preciso pro arquivo</p>","ds_observacao","373");
+
+INSERT INTO tb_auditoria_itens VALUES("2750","","34","co_sessao","373");
+
+INSERT INTO tb_auditoria_itens VALUES("2751","","N","st_situacao","373");
+
+INSERT INTO tb_auditoria_itens VALUES("2752","","8","nu_esforco","373");
+
+INSERT INTO tb_auditoria_itens VALUES("2753","","8","nu_esforco_restante","373");
+
+INSERT INTO tb_auditoria_itens VALUES("2754","","2019-01-14 15:56:22","dt_atualizado","373");
+
+INSERT INTO tb_auditoria_itens VALUES("2755","","2019-01-14 15:56:22","dt_cadastro","373");
+
+INSERT INTO tb_auditoria_itens VALUES("2756","","Exclusão de arquivos","ds_titulo","374");
+
+INSERT INTO tb_auditoria_itens VALUES("2757","","<p>Exclus&atilde;o de arquivos desnecess&aacute;rios do projeto</p>","ds_observacao","374");
+
+INSERT INTO tb_auditoria_itens VALUES("2758","","34","co_sessao","374");
+
+INSERT INTO tb_auditoria_itens VALUES("2759","","N","st_situacao","374");
+
+INSERT INTO tb_auditoria_itens VALUES("2760","","5","nu_esforco","374");
+
+INSERT INTO tb_auditoria_itens VALUES("2761","","5","nu_esforco_restante","374");
+
+INSERT INTO tb_auditoria_itens VALUES("2762","","2019-01-14 15:56:57","dt_atualizado","374");
+
+INSERT INTO tb_auditoria_itens VALUES("2763","","2019-01-14 15:56:57","dt_cadastro","374");
+
+INSERT INTO tb_auditoria_itens VALUES("2764","151","","co_historia","375");
+
+INSERT INTO tb_auditoria_itens VALUES("2765","Exclusão de arquivos","Exclusão de arquivos","ds_titulo","375");
+
+INSERT INTO tb_auditoria_itens VALUES("2766","<p>Exclus&atilde;o de arquivos desnecess&aacute;rios do projeto</p>","<p>Exclus&atilde;o de arquivos desnecess&aacute;rios do projeto</p>","ds_observacao","375");
+
+INSERT INTO tb_auditoria_itens VALUES("2767","2019-01-14 15:56:57","","dt_cadastro","375");
+
+INSERT INTO tb_auditoria_itens VALUES("2768","2019-01-14 15:56:57","2019-01-14 15:57:17","dt_atualizado","375");
+
+INSERT INTO tb_auditoria_itens VALUES("2769","N","N","st_situacao","375");
+
+INSERT INTO tb_auditoria_itens VALUES("2770","5","3","nu_esforco","375");
+
+INSERT INTO tb_auditoria_itens VALUES("2771","5","3","nu_esforco_restante","375");
+
+INSERT INTO tb_auditoria_itens VALUES("2772","34","34","co_sessao","375");
+
+INSERT INTO tb_auditoria_itens VALUES("2773","145","","co_historia","376");
+
+INSERT INTO tb_auditoria_itens VALUES("2774","Padrinização do sistema com/sem Assinante","Padrinização do sistema com/sem Assinante","ds_titulo","376");
+
+INSERT INTO tb_auditoria_itens VALUES("2775","<p>Criar constante TEM_ASSINANTE e fazer valida&ccedil;&otilde;es para funcionar com e sem assinante</p>","<p>Criar constante TEM_ASSINANTE e fazer valida&ccedil;&otilde;es para funcionar com e sem assinante</p>","ds_observacao","376");
+
+INSERT INTO tb_auditoria_itens VALUES("2776","2019-01-13 21:43:02","","dt_cadastro","376");
+
+INSERT INTO tb_auditoria_itens VALUES("2777","2019-01-13 21:43:02","2019-01-14 15:58:00","dt_atualizado","376");
+
+INSERT INTO tb_auditoria_itens VALUES("2778","N","N","st_situacao","376");
+
+INSERT INTO tb_auditoria_itens VALUES("2779","30","13","nu_esforco","376");
+
+INSERT INTO tb_auditoria_itens VALUES("2780","30","13","nu_esforco_restante","376");
+
+INSERT INTO tb_auditoria_itens VALUES("2781","35","35","co_sessao","376");
+
+INSERT INTO tb_auditoria_itens VALUES("2782","145","","co_historia","377");
+
+INSERT INTO tb_auditoria_itens VALUES("2783","Padrinização do sistema com/sem Assinante","Padrinização do sistema com/sem Assinante","ds_titulo","377");
+
+INSERT INTO tb_auditoria_itens VALUES("2784","<p>Criar constante TEM_ASSINANTE e fazer valida&ccedil;&otilde;es para funcionar com e sem assinante</p>","<p>Criar constante TEM_ASSINANTE e fazer valida&ccedil;&otilde;es para funcionar com e sem assinante</p>","ds_observacao","377");
+
+INSERT INTO tb_auditoria_itens VALUES("2785","2019-01-13 21:43:02","","dt_cadastro","377");
+
+INSERT INTO tb_auditoria_itens VALUES("2786","2019-01-14 15:58:00","2019-01-14 15:58:47","dt_atualizado","377");
+
+INSERT INTO tb_auditoria_itens VALUES("2787","N","I","st_situacao","377");
+
+INSERT INTO tb_auditoria_itens VALUES("2788","13","13","nu_esforco","377");
+
+INSERT INTO tb_auditoria_itens VALUES("2789","13","3","nu_esforco_restante","377");
+
+INSERT INTO tb_auditoria_itens VALUES("2790","35","35","co_sessao","377");
+
+INSERT INTO tb_auditoria_itens VALUES("2791","145","","co_historia","378");
+
+INSERT INTO tb_auditoria_itens VALUES("2792","Padrinização do sistema com/sem Assinante","Padrinização do sistema com/sem Assinante","ds_titulo","378");
+
+INSERT INTO tb_auditoria_itens VALUES("2793","<p>Criar constante TEM_ASSINANTE e fazer valida&ccedil;&otilde;es para funcionar com e sem assinante</p>","<p>Criar constante TEM_ASSINANTE e fazer valida&ccedil;&otilde;es para funcionar com e sem assinante</p>","ds_observacao","378");
+
+INSERT INTO tb_auditoria_itens VALUES("2794","2019-01-13 21:43:02","","dt_cadastro","378");
+
+INSERT INTO tb_auditoria_itens VALUES("2795","2019-01-14 15:58:47","2019-01-14 16:08:33","dt_atualizado","378");
+
+INSERT INTO tb_auditoria_itens VALUES("2796","I","C","st_situacao","378");
+
+INSERT INTO tb_auditoria_itens VALUES("2797","13","8","nu_esforco","378");
+
+INSERT INTO tb_auditoria_itens VALUES("2798","3","","nu_esforco_restante","378");
+
+INSERT INTO tb_auditoria_itens VALUES("2799","35","35","co_sessao","378");
+
+INSERT INTO tb_auditoria_itens VALUES("2800","147","","co_historia","379");
+
+INSERT INTO tb_auditoria_itens VALUES("2801","Backup Banco","Backup Banco","ds_titulo","379");
+
+INSERT INTO tb_auditoria_itens VALUES("2802","<p>Melhorias do Backup e automa&ccedil;&atilde;o da atualiza&ccedil;&atilde;o do banco</p>","<p>Melhorias do Backup e automa&ccedil;&atilde;o da atualiza&ccedil;&atilde;o do banco</p>","ds_observacao","379");
+
+INSERT INTO tb_auditoria_itens VALUES("2803","2019-01-14 13:09:48","","dt_cadastro","379");
+
+INSERT INTO tb_auditoria_itens VALUES("2804","2019-01-14 13:09:48","2019-01-14 16:24:17","dt_atualizado","379");
+
+INSERT INTO tb_auditoria_itens VALUES("2805","N","N","st_situacao","379");
+
+INSERT INTO tb_auditoria_itens VALUES("2806","13","8","nu_esforco","379");
+
+INSERT INTO tb_auditoria_itens VALUES("2807","13","8","nu_esforco_restante","379");
+
+INSERT INTO tb_auditoria_itens VALUES("2808","34","34","co_sessao","379");
+
+INSERT INTO tb_auditoria_itens VALUES("2809","147","","co_historia","380");
+
+INSERT INTO tb_auditoria_itens VALUES("2810","Backup Banco","Backup Banco","ds_titulo","380");
+
+INSERT INTO tb_auditoria_itens VALUES("2811","<p>Melhorias do Backup e automa&ccedil;&atilde;o da atualiza&ccedil;&atilde;o do banco</p>","<p>Melhorias do Backup e automa&ccedil;&atilde;o da atualiza&ccedil;&atilde;o do banco</p>","ds_observacao","380");
+
+INSERT INTO tb_auditoria_itens VALUES("2812","2019-01-14 13:09:48","","dt_cadastro","380");
+
+INSERT INTO tb_auditoria_itens VALUES("2813","2019-01-14 16:24:17","2019-01-14 17:44:38","dt_atualizado","380");
+
+INSERT INTO tb_auditoria_itens VALUES("2814","N","C","st_situacao","380");
+
+INSERT INTO tb_auditoria_itens VALUES("2815","8","8","nu_esforco","380");
+
+INSERT INTO tb_auditoria_itens VALUES("2816","8","","nu_esforco_restante","380");
+
+INSERT INTO tb_auditoria_itens VALUES("2817","34","34","co_sessao","380");
+
+INSERT INTO tb_auditoria_itens VALUES("2818","","Auditoria","ds_titulo","381");
+
+INSERT INTO tb_auditoria_itens VALUES("2819","","<p>Melhorias na funcionalidade de auditoria onde tem que separar os itens da auditoria quando usa o metodo <code><strong>deletar quando </strong><var>e vincular as chaves estrangeiras para aparecer a descri&ccedil;&atilde;o da chave</var></code></p>\n\n<p","ds_observacao","381");
+
+INSERT INTO tb_auditoria_itens VALUES("2820","","34","co_sessao","381");
+
+INSERT INTO tb_auditoria_itens VALUES("2821","","N","st_situacao","381");
+
+INSERT INTO tb_auditoria_itens VALUES("2822","","13","nu_esforco","381");
+
+INSERT INTO tb_auditoria_itens VALUES("2823","","13","nu_esforco_restante","381");
+
+INSERT INTO tb_auditoria_itens VALUES("2824","","2019-01-15 10:06:24","dt_atualizado","381");
+
+INSERT INTO tb_auditoria_itens VALUES("2825","","2019-01-15 10:06:24","dt_cadastro","381");
+
+INSERT INTO tb_auditoria_itens VALUES("2826","146","","co_historia","382");
+
+INSERT INTO tb_auditoria_itens VALUES("2827","Merge das Library","Merge das Library","ds_titulo","382");
+
+INSERT INTO tb_auditoria_itens VALUES("2828","<p>Merge da Library do projeto Sistema da Beleza com a master do Projeto Merge das Library</p>","<p>Merge da Library do projeto Sistema da Beleza com a master do Projeto Merge das Library</p>","ds_observacao","382");
+
+INSERT INTO tb_auditoria_itens VALUES("2829","2019-01-13 21:49:26","","dt_cadastro","382");
+
+INSERT INTO tb_auditoria_itens VALUES("2830","2019-01-13 21:49:26","2019-01-15 13:20:50","dt_atualizado","382");
+
+INSERT INTO tb_auditoria_itens VALUES("2831","N","C","st_situacao","382");
+
+INSERT INTO tb_auditoria_itens VALUES("2832","5","5","nu_esforco","382");
+
+INSERT INTO tb_auditoria_itens VALUES("2833","5","","nu_esforco_restante","382");
+
+INSERT INTO tb_auditoria_itens VALUES("2834","35","35","co_sessao","382");
+
+INSERT INTO tb_auditoria_itens VALUES("2835","","Merge library nos projetos","ds_titulo","383");
+
+INSERT INTO tb_auditoria_itens VALUES("2836","","<p>Aplicar Library nos projetos</p>","ds_observacao","383");
+
+INSERT INTO tb_auditoria_itens VALUES("2837","","35","co_sessao","383");
+
+INSERT INTO tb_auditoria_itens VALUES("2838","","N","st_situacao","383");
+
+INSERT INTO tb_auditoria_itens VALUES("2839","","5","nu_esforco","383");
+
+INSERT INTO tb_auditoria_itens VALUES("2840","","5","nu_esforco_restante","383");
+
+INSERT INTO tb_auditoria_itens VALUES("2841","","2019-01-15 13:21:30","dt_atualizado","383");
+
+INSERT INTO tb_auditoria_itens VALUES("2842","","2019-01-15 13:21:30","dt_cadastro","383");
+
+INSERT INTO tb_auditoria_itens VALUES("2843","","Arquitetura","no_projeto","384");
+
+INSERT INTO tb_auditoria_itens VALUES("2844","","2019-01-15 13:22:03","dt_cadastro","384");
+
+INSERT INTO tb_auditoria_itens VALUES("2845","139","","co_historia","385");
+
+INSERT INTO tb_auditoria_itens VALUES("2846","Padronizar classes FORMs","Padronizar classes FORMs","ds_titulo","385");
+
+INSERT INTO tb_auditoria_itens VALUES("2847","<p>Unificar as 2 classes de FORM e FORMASSISTENTE</p>","<p>Unificar as 2 classes de FORM e FORMASSISTENTE</p>","ds_observacao","385");
+
+INSERT INTO tb_auditoria_itens VALUES("2848","2018-12-20 13:13:10","","dt_cadastro","385");
+
+INSERT INTO tb_auditoria_itens VALUES("2849","2018-12-20 15:43:21","2019-01-17 17:20:10","dt_atualizado","385");
+
+INSERT INTO tb_auditoria_itens VALUES("2850","N","C","st_situacao","385");
+
+INSERT INTO tb_auditoria_itens VALUES("2851","8","5","nu_esforco","385");
+
+INSERT INTO tb_auditoria_itens VALUES("2852","8","","nu_esforco_restante","385");
+
+INSERT INTO tb_auditoria_itens VALUES("2853","34","34","co_sessao","385");
+
+INSERT INTO tb_auditoria_itens VALUES("2854","","Gestão","no_modulo","386");
+
+INSERT INTO tb_auditoria_itens VALUES("2855","","2","co_projeto","386");
+
+INSERT INTO tb_auditoria_itens VALUES("2856","","2019-01-18 09:33:56","dt_cadastro","386");
+
+INSERT INTO tb_auditoria_itens VALUES("2857","","Banco de dados","no_sessao","387");
+
+INSERT INTO tb_auditoria_itens VALUES("2858","","7","co_modulo","387");
+
+INSERT INTO tb_auditoria_itens VALUES("2859","","2019-01-18 09:34:33","dt_cadastro","387");
+
+INSERT INTO tb_auditoria_itens VALUES("2860","","Realizar Backup","ds_titulo","388");
+
+INSERT INTO tb_auditoria_itens VALUES("2861","","<p>Criar funcionalidade para realizar o backup do bamco do projeto, com a op&ccedil;&atilde;o de enviar o arquivo sql paor email.</p>","ds_observacao","388");
+
+INSERT INTO tb_auditoria_itens VALUES("2862","","36","co_sessao","388");
+
+INSERT INTO tb_auditoria_itens VALUES("2863","","N","st_situacao","388");
+
+INSERT INTO tb_auditoria_itens VALUES("2864","","5","nu_esforco","388");
+
+INSERT INTO tb_auditoria_itens VALUES("2865","","5","nu_esforco_restante","388");
+
+INSERT INTO tb_auditoria_itens VALUES("2866","","2019-01-18 09:36:17","dt_atualizado","388");
+
+INSERT INTO tb_auditoria_itens VALUES("2867","","2019-01-18 09:36:17","dt_cadastro","388");
+
+INSERT INTO tb_auditoria_itens VALUES("2868","","Gerar Entidades","ds_titulo","389");
+
+INSERT INTO tb_auditoria_itens VALUES("2869","","<p>Criar funcionalidades para gerar as entidades a partir do banco.</p>","ds_observacao","389");
+
+INSERT INTO tb_auditoria_itens VALUES("2870","","36","co_sessao","389");
+
+INSERT INTO tb_auditoria_itens VALUES("2871","","N","st_situacao","389");
+
+INSERT INTO tb_auditoria_itens VALUES("2872","","5","nu_esforco","389");
+
+INSERT INTO tb_auditoria_itens VALUES("2873","","5","nu_esforco_restante","389");
+
+INSERT INTO tb_auditoria_itens VALUES("2874","","2019-01-18 09:37:10","dt_atualizado","389");
+
+INSERT INTO tb_auditoria_itens VALUES("2875","","2019-01-18 09:37:10","dt_cadastro","389");
+
+INSERT INTO tb_auditoria_itens VALUES("2876","","Melhorar classe Gerar Entidade","ds_titulo","390");
+
+INSERT INTO tb_auditoria_itens VALUES("2877","","<p>Melhorar classe Gerar Entidade para gerar constantes geral e relacionamento so acrescentar o que precisa.</p>","ds_observacao","390");
+
+INSERT INTO tb_auditoria_itens VALUES("2878","","34","co_sessao","390");
+
+INSERT INTO tb_auditoria_itens VALUES("2879","","N","st_situacao","390");
+
+INSERT INTO tb_auditoria_itens VALUES("2880","","8","nu_esforco","390");
+
+INSERT INTO tb_auditoria_itens VALUES("2881","","8","nu_esforco_restante","390");
+
+INSERT INTO tb_auditoria_itens VALUES("2882","","2019-01-18 09:39:15","dt_atualizado","390");
+
+INSERT INTO tb_auditoria_itens VALUES("2883","","2019-01-18 09:39:15","dt_cadastro","390");
+
+INSERT INTO tb_auditoria_itens VALUES("2884","152","","co_historia","391");
+
+INSERT INTO tb_auditoria_itens VALUES("2885","Auditoria","Visualização da Auditoria","ds_titulo","391");
+
+INSERT INTO tb_auditoria_itens VALUES("2886","<p>Melhorias na funcionalidade de auditoria onde tem que separar os itens da auditoria quando usa o metodo <code><strong>deletar quando </strong><var>e vincular as chaves estrangeiras para aparecer a descri&ccedil;&atilde;o da chave</var></code></p>\n\n<p","<p>Melhorias na funcionalidade de auditoria onde tem que separar os itens da auditoria quando usa o metodo <code><strong>deletar quando </strong><var>e vincular as chaves estrangeiras para aparecer a descri&ccedil;&atilde;o da chave</var></code></p>\n\n<p","ds_observacao","391");
+
+INSERT INTO tb_auditoria_itens VALUES("2887","2019-01-15 10:06:24","","dt_cadastro","391");
+
+INSERT INTO tb_auditoria_itens VALUES("2888","2019-01-15 10:06:24","2019-01-18 09:39:52","dt_atualizado","391");
+
+INSERT INTO tb_auditoria_itens VALUES("2889","N","N","st_situacao","391");
+
+INSERT INTO tb_auditoria_itens VALUES("2890","13","13","nu_esforco","391");
+
+INSERT INTO tb_auditoria_itens VALUES("2891","13","13","nu_esforco_restante","391");
+
+INSERT INTO tb_auditoria_itens VALUES("2892","34","34","co_sessao","391");
+
+INSERT INTO tb_auditoria_itens VALUES("2893","7","","co_modulo","392");
+
+INSERT INTO tb_auditoria_itens VALUES("2894","Gestão","Gestão Arquitetura","no_modulo","392");
+
+INSERT INTO tb_auditoria_itens VALUES("2895","2019-01-18 09:33:56","","dt_cadastro","392");
+
+INSERT INTO tb_auditoria_itens VALUES("2896","2","2","co_projeto","392");
+
+INSERT INTO tb_auditoria_itens VALUES("2897","","URL Amigável","no_sessao","393");
+
+INSERT INTO tb_auditoria_itens VALUES("2898","","7","co_modulo","393");
+
+INSERT INTO tb_auditoria_itens VALUES("2899","","2019-01-18 09:41:44","dt_cadastro","393");
+
+INSERT INTO tb_auditoria_itens VALUES("2900","37","","co_sessao","394");
+
+INSERT INTO tb_auditoria_itens VALUES("2901","URL Amigável","Config Padrão","no_sessao","394");
+
+INSERT INTO tb_auditoria_itens VALUES("2902","2019-01-18 09:41:44","","dt_cadastro","394");
+
+INSERT INTO tb_auditoria_itens VALUES("2903","7","7","co_modulo","394");
+
+INSERT INTO tb_auditoria_itens VALUES("2904","","Gestão do Config","ds_titulo","395");
+
+INSERT INTO tb_auditoria_itens VALUES("2905","","<p>Criar funcionalidade para gerenciar o config</p>","ds_observacao","395");
+
+INSERT INTO tb_auditoria_itens VALUES("2906","","37","co_sessao","395");
+
+INSERT INTO tb_auditoria_itens VALUES("2907","","N","st_situacao","395");
+
+INSERT INTO tb_auditoria_itens VALUES("2908","","8","nu_esforco","395");
+
+INSERT INTO tb_auditoria_itens VALUES("2909","","8","nu_esforco_restante","395");
+
+INSERT INTO tb_auditoria_itens VALUES("2910","","2019-01-18 09:44:23","dt_atualizado","395");
+
+INSERT INTO tb_auditoria_itens VALUES("2911","","2019-01-18 09:44:23","dt_cadastro","395");
+
+INSERT INTO tb_auditoria_itens VALUES("2912","","Resert Config","ds_titulo","396");
+
+INSERT INTO tb_auditoria_itens VALUES("2913","","<p>Resetar o conig para o padr&atilde;o</p>","ds_observacao","396");
+
+INSERT INTO tb_auditoria_itens VALUES("2914","","37","co_sessao","396");
+
+INSERT INTO tb_auditoria_itens VALUES("2915","","N","st_situacao","396");
+
+INSERT INTO tb_auditoria_itens VALUES("2916","","5","nu_esforco","396");
+
+INSERT INTO tb_auditoria_itens VALUES("2917","","5","nu_esforco_restante","396");
+
+INSERT INTO tb_auditoria_itens VALUES("2918","","2019-01-18 09:45:21","dt_atualizado","396");
+
+INSERT INTO tb_auditoria_itens VALUES("2919","","2019-01-18 09:45:21","dt_cadastro","396");
+
+INSERT INTO tb_auditoria_itens VALUES("2920","","Inicializar o Banco de dados","ds_titulo","397");
+
+INSERT INTO tb_auditoria_itens VALUES("2921","","<p>Inicializar o Banco de dados com os dados iniciais necess&aacute;rios padr&otilde;es</p>","ds_observacao","397");
+
+INSERT INTO tb_auditoria_itens VALUES("2922","","34","co_sessao","397");
+
+INSERT INTO tb_auditoria_itens VALUES("2923","","N","st_situacao","397");
+
+INSERT INTO tb_auditoria_itens VALUES("2924","","5","nu_esforco","397");
+
+INSERT INTO tb_auditoria_itens VALUES("2925","","5","nu_esforco_restante","397");
+
+INSERT INTO tb_auditoria_itens VALUES("2926","","2019-01-18 09:48:00","dt_atualizado","397");
+
+INSERT INTO tb_auditoria_itens VALUES("2927","","2019-01-18 09:48:00","dt_cadastro","397");
+
+INSERT INTO tb_auditoria_itens VALUES("2928","","Unificar as Classe GRID","ds_titulo","398");
+
+INSERT INTO tb_auditoria_itens VALUES("2929","","<p>Padronizar as classes</p>","ds_observacao","398");
+
+INSERT INTO tb_auditoria_itens VALUES("2930","","34","co_sessao","398");
+
+INSERT INTO tb_auditoria_itens VALUES("2931","","N","st_situacao","398");
+
+INSERT INTO tb_auditoria_itens VALUES("2932","","1","nu_esforco","398");
+
+INSERT INTO tb_auditoria_itens VALUES("2933","","1","nu_esforco_restante","398");
+
+INSERT INTO tb_auditoria_itens VALUES("2934","","2019-01-18 10:01:11","dt_atualizado","398");
+
+INSERT INTO tb_auditoria_itens VALUES("2935","","2019-01-18 10:01:11","dt_cadastro","398");
+
+INSERT INTO tb_auditoria_itens VALUES("2936","156","","co_historia","399");
+
+INSERT INTO tb_auditoria_itens VALUES("2937","Melhorar classe Gerar Entidade","Melhorar classe Gerar Entidade","ds_titulo","399");
+
+INSERT INTO tb_auditoria_itens VALUES("2938","<p>Melhorar classe Gerar Entidade para gerar constantes geral e relacionamento so acrescentar o que precisa.</p>","<p>Melhorar classe Gerar Entidade para gerar constantes geral e relacionamento so acrescentar o que precisa.</p>","ds_observacao","399");
+
+INSERT INTO tb_auditoria_itens VALUES("2939","2019-01-18 09:39:15","","dt_cadastro","399");
+
+INSERT INTO tb_auditoria_itens VALUES("2940","2019-01-18 09:39:15","2019-01-18 10:33:43","dt_atualizado","399");
+
+INSERT INTO tb_auditoria_itens VALUES("2941","N","N","st_situacao","399");
+
+INSERT INTO tb_auditoria_itens VALUES("2942","8","3","nu_esforco","399");
+
+INSERT INTO tb_auditoria_itens VALUES("2943","8","3","nu_esforco_restante","399");
+
+INSERT INTO tb_auditoria_itens VALUES("2944","34","34","co_sessao","399");
+
+INSERT INTO tb_auditoria_itens VALUES("2945","156","","co_historia","400");
+
+INSERT INTO tb_auditoria_itens VALUES("2946","Melhorar classe Gerar Entidade","Melhorar classe Gerar Entidade","ds_titulo","400");
+
+INSERT INTO tb_auditoria_itens VALUES("2947","<p>Melhorar classe Gerar Entidade para gerar constantes geral e relacionamento so acrescentar o que precisa.</p>","<p>Melhorar classe Gerar Entidade para gerar constantes geral e relacionamento so acrescentar o que precisa.</p>","ds_observacao","400");
+
+INSERT INTO tb_auditoria_itens VALUES("2948","2019-01-18 09:39:15","","dt_cadastro","400");
+
+INSERT INTO tb_auditoria_itens VALUES("2949","2019-01-18 10:33:43","2019-01-18 10:34:59","dt_atualizado","400");
+
+INSERT INTO tb_auditoria_itens VALUES("2950","N","C","st_situacao","400");
+
+INSERT INTO tb_auditoria_itens VALUES("2951","3","1","nu_esforco","400");
+
+INSERT INTO tb_auditoria_itens VALUES("2952","3","","nu_esforco_restante","400");
+
+INSERT INTO tb_auditoria_itens VALUES("2953","34","34","co_sessao","400");
+
+INSERT INTO tb_auditoria_itens VALUES("2954","155","","co_historia","401");
+
+INSERT INTO tb_auditoria_itens VALUES("2955","Gerar Entidades","Gerar Entidades","ds_titulo","401");
+
+INSERT INTO tb_auditoria_itens VALUES("2956","<p>Criar funcionalidades para gerar as entidades a partir do banco.</p>","<p>Criar funcionalidades para gerar as entidades a partir do banco.</p>","ds_observacao","401");
+
+INSERT INTO tb_auditoria_itens VALUES("2957","2019-01-18 09:37:10","","dt_cadastro","401");
+
+INSERT INTO tb_auditoria_itens VALUES("2958","2019-01-18 09:37:10","2019-01-18 12:55:16","dt_atualizado","401");
+
+INSERT INTO tb_auditoria_itens VALUES("2959","N","C","st_situacao","401");
+
+INSERT INTO tb_auditoria_itens VALUES("2960","5","5","nu_esforco","401");
+
+INSERT INTO tb_auditoria_itens VALUES("2961","5","","nu_esforco_restante","401");
+
+INSERT INTO tb_auditoria_itens VALUES("2962","36","36","co_sessao","401");
+
+INSERT INTO tb_auditoria_itens VALUES("2963","154","","co_historia","402");
+
+INSERT INTO tb_auditoria_itens VALUES("2964","Realizar Backup","Realizar Backup","ds_titulo","402");
+
+INSERT INTO tb_auditoria_itens VALUES("2965","<p>Criar funcionalidade para realizar o backup do bamco do projeto, com a op&ccedil;&atilde;o de enviar o arquivo sql paor email.</p>","<p>Criar funcionalidade para realizar o backup do bamco do projeto, com a op&ccedil;&atilde;o de enviar o arquivo sql paor email.</p>","ds_observacao","402");
+
+INSERT INTO tb_auditoria_itens VALUES("2966","2019-01-18 09:36:17","","dt_cadastro","402");
+
+INSERT INTO tb_auditoria_itens VALUES("2967","2019-01-18 09:36:17","2019-01-18 13:28:07","dt_atualizado","402");
+
+INSERT INTO tb_auditoria_itens VALUES("2968","N","C","st_situacao","402");
+
+INSERT INTO tb_auditoria_itens VALUES("2969","5","5","nu_esforco","402");
+
+INSERT INTO tb_auditoria_itens VALUES("2970","5","","nu_esforco_restante","402");
+
+INSERT INTO tb_auditoria_itens VALUES("2971","36","36","co_sessao","402");
+
 
 
 
@@ -6461,7 +6991,7 @@ CREATE TABLE `tb_auditoria_tabela` (
   `co_auditoria` int(11) NOT NULL,
   PRIMARY KEY (`co_auditoria_tabela`,`co_auditoria`),
   KEY `fk_TB_AUDITORIA_TABELA_TB_AUDITORIA1_idx` (`co_auditoria`)
-) ENGINE=InnoDB AUTO_INCREMENT=373 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=403 DEFAULT CHARSET=utf8;
 
 
 INSERT INTO tb_auditoria_tabela VALUES("1","TB_PROJETO","I","1","1");
@@ -7208,6 +7738,66 @@ INSERT INTO tb_auditoria_tabela VALUES("371","TB_HISTORIA","U","128","371");
 
 INSERT INTO tb_auditoria_tabela VALUES("372","TB_HISTORIA","I","149","372");
 
+INSERT INTO tb_auditoria_tabela VALUES("373","TB_HISTORIA","I","150","373");
+
+INSERT INTO tb_auditoria_tabela VALUES("374","TB_HISTORIA","I","151","374");
+
+INSERT INTO tb_auditoria_tabela VALUES("375","TB_HISTORIA","U","151","375");
+
+INSERT INTO tb_auditoria_tabela VALUES("376","TB_HISTORIA","U","145","376");
+
+INSERT INTO tb_auditoria_tabela VALUES("377","TB_HISTORIA","U","145","377");
+
+INSERT INTO tb_auditoria_tabela VALUES("378","TB_HISTORIA","U","145","378");
+
+INSERT INTO tb_auditoria_tabela VALUES("379","TB_HISTORIA","U","147","379");
+
+INSERT INTO tb_auditoria_tabela VALUES("380","TB_HISTORIA","U","147","380");
+
+INSERT INTO tb_auditoria_tabela VALUES("381","TB_HISTORIA","I","152","381");
+
+INSERT INTO tb_auditoria_tabela VALUES("382","TB_HISTORIA","U","146","382");
+
+INSERT INTO tb_auditoria_tabela VALUES("383","TB_HISTORIA","I","153","383");
+
+INSERT INTO tb_auditoria_tabela VALUES("384","TB_PROJETO","I","2","384");
+
+INSERT INTO tb_auditoria_tabela VALUES("385","TB_HISTORIA","U","139","385");
+
+INSERT INTO tb_auditoria_tabela VALUES("386","TB_MODULO","I","7","386");
+
+INSERT INTO tb_auditoria_tabela VALUES("387","TB_SESSAO","I","36","387");
+
+INSERT INTO tb_auditoria_tabela VALUES("388","TB_HISTORIA","I","154","388");
+
+INSERT INTO tb_auditoria_tabela VALUES("389","TB_HISTORIA","I","155","389");
+
+INSERT INTO tb_auditoria_tabela VALUES("390","TB_HISTORIA","I","156","390");
+
+INSERT INTO tb_auditoria_tabela VALUES("391","TB_HISTORIA","U","152","391");
+
+INSERT INTO tb_auditoria_tabela VALUES("392","TB_MODULO","U","7","392");
+
+INSERT INTO tb_auditoria_tabela VALUES("393","TB_SESSAO","I","37","393");
+
+INSERT INTO tb_auditoria_tabela VALUES("394","TB_SESSAO","U","37","394");
+
+INSERT INTO tb_auditoria_tabela VALUES("395","TB_HISTORIA","I","157","395");
+
+INSERT INTO tb_auditoria_tabela VALUES("396","TB_HISTORIA","I","158","396");
+
+INSERT INTO tb_auditoria_tabela VALUES("397","TB_HISTORIA","I","159","397");
+
+INSERT INTO tb_auditoria_tabela VALUES("398","TB_HISTORIA","I","160","398");
+
+INSERT INTO tb_auditoria_tabela VALUES("399","TB_HISTORIA","U","156","399");
+
+INSERT INTO tb_auditoria_tabela VALUES("400","TB_HISTORIA","U","156","400");
+
+INSERT INTO tb_auditoria_tabela VALUES("401","TB_HISTORIA","U","155","401");
+
+INSERT INTO tb_auditoria_tabela VALUES("402","TB_HISTORIA","U","154","402");
+
 
 
 
@@ -7300,7 +7890,7 @@ CREATE TABLE `tb_historia` (
   `co_sessao` int(11) NOT NULL,
   PRIMARY KEY (`co_historia`,`co_sessao`),
   KEY `fk_TB_HISTORIA_TB_SESSAO1_idx` (`co_sessao`)
-) ENGINE=InnoDB AUTO_INCREMENT=150 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=161 DEFAULT CHARSET=utf8;
 
 
 INSERT INTO tb_historia VALUES("1","Manter Planos do sistema","<p>Manter planos do sistema da beleza, onde ter&aacute; que manter os desconto com per&iacute;odo para o plano</p>\n\n\n\n\n\n\n\n<p>&nbsp;</p>\n\n\n\n\n\n\n\n<p>Modelagem: Plano e historico plano modulos</p>","2018-07-24 15:28:56","2018-07-31 15:05:13","C","13","0","1");
@@ -7569,7 +8159,7 @@ INSERT INTO tb_historia VALUES("137","Form Assistente","<p>Cria&ccedil;&atilde;o
 
 INSERT INTO tb_historia VALUES("138","Versionamento do sistema","<p>Controle da vers&atilde;o do sistema</p>","2018-12-20 13:09:11","2018-12-20 13:09:11","C","1","0","34");
 
-INSERT INTO tb_historia VALUES("139","Padronizar classes FORMs","<p>Unificar as 2 classes de FORM e FORMASSISTENTE</p>","2018-12-20 13:13:10","2018-12-20 15:43:21","N","8","8","34");
+INSERT INTO tb_historia VALUES("139","Padronizar classes FORMs","<p>Unificar as 2 classes de FORM e FORMASSISTENTE</p>","2018-12-20 13:13:10","2019-01-17 17:20:10","C","5","0","34");
 
 INSERT INTO tb_historia VALUES("140","Mudar Status","<p>Mudar Status Ativo e inativo do Profissional</p>","2018-12-20 13:42:59","2018-12-20 13:42:59","N","5","5","9");
 
@@ -7581,15 +8171,37 @@ INSERT INTO tb_historia VALUES("143","Padronização do uso do site","<p>Criar c
 
 INSERT INTO tb_historia VALUES("144","Padronização das telas principais","<p>Ajuste do site e sistema e login</p>","2019-01-13 21:40:03","2019-01-13 21:40:03","C","8","0","35");
 
-INSERT INTO tb_historia VALUES("145","Padrinização do sistema com/sem Assinante","<p>Criar constante TEM_ASSINANTE e fazer valida&ccedil;&otilde;es para funcionar com e sem assinante</p>","2019-01-13 21:43:02","2019-01-13 21:43:02","N","30","30","35");
+INSERT INTO tb_historia VALUES("145","Padrinização do sistema com/sem Assinante","<p>Criar constante TEM_ASSINANTE e fazer valida&ccedil;&otilde;es para funcionar com e sem assinante</p>","2019-01-13 21:43:02","2019-01-14 16:08:33","C","8","0","35");
 
-INSERT INTO tb_historia VALUES("146","Merge das Library","<p>Merge da Library do projeto Sistema da Beleza com a master do Projeto Merge das Library</p>","2019-01-13 21:49:26","2019-01-13 21:49:26","N","5","5","35");
+INSERT INTO tb_historia VALUES("146","Merge das Library","<p>Merge da Library do projeto Sistema da Beleza com a master do Projeto Merge das Library</p>","2019-01-13 21:49:26","2019-01-15 13:20:50","C","5","0","35");
 
-INSERT INTO tb_historia VALUES("147","Backup Banco","<p>Melhorias do Backup e automa&ccedil;&atilde;o da atualiza&ccedil;&atilde;o do banco</p>","2019-01-14 13:09:48","2019-01-14 13:09:48","N","13","13","34");
+INSERT INTO tb_historia VALUES("147","Backup Banco","<p>Melhorias do Backup e automa&ccedil;&atilde;o da atualiza&ccedil;&atilde;o do banco</p>","2019-01-14 13:09:48","2019-01-14 17:44:38","C","8","0","34");
 
 INSERT INTO tb_historia VALUES("148","Login opcional","<p>Podendo loghar com E-mail ou CPF</p>","2019-01-14 13:54:50","2019-01-14 13:54:50","C","5","0","35");
 
 INSERT INTO tb_historia VALUES("149","Manter Usuário Comum","<p>Manter Usu&aacute;rio sem assinante</p>","2019-01-14 14:01:47","2019-01-14 14:01:47","I","20","15","33");
+
+INSERT INTO tb_historia VALUES("150","Validação dos includes","<p>Valida&ccedil;&atilde;o dos includes o que &eacute; necess&aacute;rio e se &eacute; preciso pro arquivo</p>","2019-01-14 15:56:22","2019-01-14 15:56:22","N","8","8","34");
+
+INSERT INTO tb_historia VALUES("151","Exclusão de arquivos","<p>Exclus&atilde;o de arquivos desnecess&aacute;rios do projeto</p>","2019-01-14 15:56:57","2019-01-14 15:57:17","N","3","3","34");
+
+INSERT INTO tb_historia VALUES("152","Visualização da Auditoria","<p>Melhorias na funcionalidade de auditoria onde tem que separar os itens da auditoria quando usa o metodo <code><strong>deletar quando </strong><var>e vincular as chaves estrangeiras para aparecer a descri&ccedil;&atilde;o da chave</var></code></p>\n\n<p><code><var>Ex.: (C&oacute;digo usu&aacute;rio/ nome do usu&aacute;rio &#39;Leo Bessa&#39;)</var></code></p>","2019-01-15 10:06:24","2019-01-18 09:39:52","N","13","13","34");
+
+INSERT INTO tb_historia VALUES("153","Merge library nos projetos","<p>Aplicar Library nos projetos</p>","2019-01-15 13:21:30","2019-01-15 13:21:30","N","5","5","35");
+
+INSERT INTO tb_historia VALUES("154","Realizar Backup","<p>Criar funcionalidade para realizar o backup do bamco do projeto, com a op&ccedil;&atilde;o de enviar o arquivo sql paor email.</p>","2019-01-18 09:36:17","2019-01-18 13:28:07","C","5","0","36");
+
+INSERT INTO tb_historia VALUES("155","Gerar Entidades","<p>Criar funcionalidades para gerar as entidades a partir do banco.</p>","2019-01-18 09:37:10","2019-01-18 12:55:16","C","5","0","36");
+
+INSERT INTO tb_historia VALUES("156","Melhorar classe Gerar Entidade","<p>Melhorar classe Gerar Entidade para gerar constantes geral e relacionamento so acrescentar o que precisa.</p>","2019-01-18 09:39:15","2019-01-18 10:34:59","C","1","0","34");
+
+INSERT INTO tb_historia VALUES("157","Gestão do Config","<p>Criar funcionalidade para gerenciar o config</p>","2019-01-18 09:44:23","2019-01-18 09:44:23","N","8","8","37");
+
+INSERT INTO tb_historia VALUES("158","Resert Config","<p>Resetar o conig para o padr&atilde;o</p>","2019-01-18 09:45:21","2019-01-18 09:45:21","N","5","5","37");
+
+INSERT INTO tb_historia VALUES("159","Inicializar o Banco de dados","<p>Inicializar o Banco de dados com os dados iniciais necess&aacute;rios padr&otilde;es</p>","2019-01-18 09:48:00","2019-01-18 09:48:00","N","5","5","34");
+
+INSERT INTO tb_historia VALUES("160","Unificar as Classe GRID","<p>Padronizar as classes</p>","2019-01-18 10:01:11","2019-01-18 10:01:11","N","1","1","34");
 
 
 
@@ -7619,7 +8231,7 @@ CREATE TABLE `tb_modulo` (
   `co_projeto` int(11) NOT NULL,
   PRIMARY KEY (`co_modulo`,`co_projeto`),
   KEY `fk_TB_MODULO_TB_PROJETO1_idx` (`co_projeto`)
-) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8;
 
 
 INSERT INTO tb_modulo VALUES("1","Assinante","2018-07-25 11:07:40","1");
@@ -7632,7 +8244,9 @@ INSERT INTO tb_modulo VALUES("4","Site","2018-07-26 17:35:18","1");
 
 INSERT INTO tb_modulo VALUES("5","Lançamento do Sistema Da Beleaza","2018-07-26 17:42:45","1");
 
-INSERT INTO tb_modulo VALUES("6","Melhorias Arquitetura","2018-12-20 13:02:52","1");
+INSERT INTO tb_modulo VALUES("6","Melhorias Arquitetura","2018-12-20 13:02:52","2");
+
+INSERT INTO tb_modulo VALUES("7","Gestão Arquitetura","2019-01-18 09:33:56","2");
 
 
 
@@ -7741,10 +8355,12 @@ CREATE TABLE `tb_projeto` (
   `no_projeto` varchar(80) DEFAULT NULL,
   `dt_cadastro` datetime DEFAULT NULL,
   PRIMARY KEY (`co_projeto`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
 
 
 INSERT INTO tb_projeto VALUES("1","Sistema Da Beleza","2018-07-25 11:07:40");
+
+INSERT INTO tb_projeto VALUES("2","Arquitetura","2019-01-15 13:22:03");
 
 
 
@@ -7759,7 +8375,7 @@ CREATE TABLE `tb_sessao` (
   `co_modulo` int(11) NOT NULL,
   PRIMARY KEY (`co_sessao`,`co_modulo`),
   KEY `fk_TB_SESSAO_TB_MODULO1_idx` (`co_modulo`)
-) ENGINE=InnoDB AUTO_INCREMENT=36 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=38 DEFAULT CHARSET=utf8;
 
 
 INSERT INTO tb_sessao VALUES("1","Assinante","2018-07-25 11:07:40","1");
@@ -7826,6 +8442,10 @@ INSERT INTO tb_sessao VALUES("34","Melhorias","2018-12-20 13:04:40","6");
 
 INSERT INTO tb_sessao VALUES("35","Padronização Library","2019-01-13 21:36:48","6");
 
+INSERT INTO tb_sessao VALUES("36","Banco de dados","2019-01-18 09:34:33","7");
+
+INSERT INTO tb_sessao VALUES("37","Config Padrão","2019-01-18 09:41:44","7");
+
 
 
 
@@ -7845,7 +8465,7 @@ CREATE TABLE `tb_trafego` (
   `ds_dispositivo` varchar(45) DEFAULT NULL,
   `ds_agente` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`co_trafego`)
-) ENGINE=InnoDB AUTO_INCREMENT=99 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=110 DEFAULT CHARSET=utf8;
 
 
 INSERT INTO tb_trafego VALUES("1","::1","Desconhecido","Desconhecida","Desconhecida","Desconhecida","Desconhecida","Firefox","Windows 8.1","Desktop","Mozilla/5.0 (Windows NT 6.3; Win64; x64; rv:61.0) Gecko/20100101 Firefox/61.0");
@@ -8043,6 +8663,28 @@ INSERT INTO tb_trafego VALUES("96","::1","Desconhecido","Desconhecida","Desconhe
 INSERT INTO tb_trafego VALUES("97","::1","Desconhecido","Desconhecida","Desconhecida","Desconhecida","Desconhecida","Firefox","Windows 8.1","Desktop","Mozilla/5.0 (Windows NT 6.3; Win64; x64; rv:64.0) Gecko/20100101 Firefox/64.0");
 
 INSERT INTO tb_trafego VALUES("98","::1","Desconhecido","Desconhecida","Desconhecida","Desconhecida","Desconhecida","Firefox","Windows 10","Desktop","Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:64.0) Gecko/20100101 Firefox/64.0");
+
+INSERT INTO tb_trafego VALUES("99","::1","Desconhecido","Desconhecida","Desconhecida","Desconhecida","Desconhecida","Firefox","Windows 10","Desktop","Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:64.0) Gecko/20100101 Firefox/64.0");
+
+INSERT INTO tb_trafego VALUES("100","::1","Desconhecido","Desconhecida","Desconhecida","Desconhecida","Desconhecida","Firefox","Windows 10","Desktop","Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:64.0) Gecko/20100101 Firefox/64.0");
+
+INSERT INTO tb_trafego VALUES("101","::1","Desconhecido","Desconhecida","Desconhecida","Desconhecida","Desconhecida","Firefox","Windows 10","Desktop","Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:64.0) Gecko/20100101 Firefox/64.0");
+
+INSERT INTO tb_trafego VALUES("102","::1","Desconhecido","Desconhecida","Desconhecida","Desconhecida","Desconhecida","Firefox","Windows 10","Desktop","Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:64.0) Gecko/20100101 Firefox/64.0");
+
+INSERT INTO tb_trafego VALUES("103","::1","Desconhecido","Desconhecida","Desconhecida","Desconhecida","Desconhecida","Firefox","Windows 10","Desktop","Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:64.0) Gecko/20100101 Firefox/64.0");
+
+INSERT INTO tb_trafego VALUES("104","::1","Desconhecido","Desconhecida","Desconhecida","Desconhecida","Desconhecida","Firefox","Windows 10","Desktop","Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:64.0) Gecko/20100101 Firefox/64.0");
+
+INSERT INTO tb_trafego VALUES("105","::1","Desconhecido","Desconhecida","Desconhecida","Desconhecida","Desconhecida","Firefox","Windows 10","Desktop","Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:64.0) Gecko/20100101 Firefox/64.0");
+
+INSERT INTO tb_trafego VALUES("106","::1","Desconhecido","Desconhecida","Desconhecida","Desconhecida","Desconhecida","Firefox","Windows 10","Desktop","Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:64.0) Gecko/20100101 Firefox/64.0");
+
+INSERT INTO tb_trafego VALUES("107","::1","Desconhecido","Desconhecida","Desconhecida","Desconhecida","Desconhecida","Firefox","Windows 10","Desktop","Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:64.0) Gecko/20100101 Firefox/64.0");
+
+INSERT INTO tb_trafego VALUES("108","127.0.0.1","Desconhecido","Desconhecida","Desconhecida","Desconhecida","Desconhecida","Firefox","Windows 10","Desktop","Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:64.0) Gecko/20100101 Firefox/64.0");
+
+INSERT INTO tb_trafego VALUES("109","127.0.0.1","Desconhecido","Desconhecida","Desconhecida","Desconhecida","Desconhecida","Firefox","Windows 10","Desktop","Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:64.0) Gecko/20100101 Firefox/64.0");
 
 
 

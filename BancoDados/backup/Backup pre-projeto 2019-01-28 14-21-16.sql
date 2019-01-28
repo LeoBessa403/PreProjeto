@@ -16,7 +16,7 @@ CREATE TABLE `tb_acesso` (
   PRIMARY KEY (`co_acesso`,`co_usuario`,`co_trafego`),
   KEY `fk_TB_ACESSO_TB_USUARIO1_idx` (`co_usuario`),
   KEY `fk_TB_ACESSO_TB_TRAFEGO1_idx` (`co_trafego`)
-) ENGINE=InnoDB AUTO_INCREMENT=97 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=117 DEFAULT CHARSET=utf8;
 
 
 INSERT INTO tb_acesso VALUES("1","qiae0mv2m2g9l50i845316ji72","2018-07-23 11:20:13","2018-07-23 13:21:47","F","1","1");
@@ -209,7 +209,47 @@ INSERT INTO tb_acesso VALUES("94","au886dq4kojafm6uua4vtlccc5","2018-12-20 11:42
 
 INSERT INTO tb_acesso VALUES("95","au886dq4kojafm6uua4vtlccc5","2018-12-20 12:58:27","2018-12-20 15:39:55","F","1","95");
 
-INSERT INTO tb_acesso VALUES("96","au886dq4kojafm6uua4vtlccc5","2018-12-20 15:40:28","2018-12-20 16:43:32","A","1","96");
+INSERT INTO tb_acesso VALUES("96","au886dq4kojafm6uua4vtlccc5","2018-12-20 15:40:28","2018-12-20 16:43:32","F","1","96");
+
+INSERT INTO tb_acesso VALUES("97","1bgpm4dhiihe6vqtf0le9rfdg6","2019-01-13 21:32:28","2019-01-13 22:49:38","F","1","97");
+
+INSERT INTO tb_acesso VALUES("98","eq7iu344l6pht078svt9t4g7o7","2019-01-14 13:06:59","2019-01-14 15:07:54","F","1","98");
+
+INSERT INTO tb_acesso VALUES("99","eq7iu344l6pht078svt9t4g7o7","2019-01-14 15:54:57","2019-01-14 17:26:39","F","1","99");
+
+INSERT INTO tb_acesso VALUES("100","eq7iu344l6pht078svt9t4g7o7","2019-01-14 17:42:14","2019-01-14 18:45:17","F","1","100");
+
+INSERT INTO tb_acesso VALUES("101","eq7iu344l6pht078svt9t4g7o7","2019-01-15 10:00:00","2019-01-15 11:06:53","F","1","101");
+
+INSERT INTO tb_acesso VALUES("102","eq7iu344l6pht078svt9t4g7o7","2019-01-15 13:15:25","2019-01-17 13:11:23","F","1","102");
+
+INSERT INTO tb_acesso VALUES("103","eq7iu344l6pht078svt9t4g7o7","2019-01-17 13:12:57","2019-01-17 14:24:30","F","1","103");
+
+INSERT INTO tb_acesso VALUES("104","eq7iu344l6pht078svt9t4g7o7","2019-01-17 17:18:45","2019-01-17 18:24:22","F","1","104");
+
+INSERT INTO tb_acesso VALUES("105","eq7iu344l6pht078svt9t4g7o7","2019-01-18 09:32:52","2019-01-18 11:53:15","F","1","105");
+
+INSERT INTO tb_acesso VALUES("106","eq7iu344l6pht078svt9t4g7o7","2019-01-18 12:54:12","2019-01-18 14:28:54","F","1","106");
+
+INSERT INTO tb_acesso VALUES("107","eq7iu344l6pht078svt9t4g7o7","2019-01-18 16:28:53","2019-01-18 17:32:20","F","1","107");
+
+INSERT INTO tb_acesso VALUES("108","21kubq6khf4fjne7tv68refih0","2019-01-22 11:53:21","2019-01-22 12:54:24","F","1","108");
+
+INSERT INTO tb_acesso VALUES("109","21kubq6khf4fjne7tv68refih0","2019-01-22 14:52:20","2019-01-24 10:25:30","F","1","109");
+
+INSERT INTO tb_acesso VALUES("110","21kubq6khf4fjne7tv68refih0","2019-01-24 10:25:42","2019-01-24 11:37:38","F","1","110");
+
+INSERT INTO tb_acesso VALUES("111","21kubq6khf4fjne7tv68refih0","2019-01-24 16:39:13","2019-01-24 17:45:42","F","1","111");
+
+INSERT INTO tb_acesso VALUES("112","21kubq6khf4fjne7tv68refih0","2019-01-25 09:19:56","2019-01-25 11:54:28","F","1","112");
+
+INSERT INTO tb_acesso VALUES("113","21kubq6khf4fjne7tv68refih0","2019-01-25 11:54:51","2019-01-25 12:56:52","F","1","113");
+
+INSERT INTO tb_acesso VALUES("114","21kubq6khf4fjne7tv68refih0","2019-01-25 14:01:57","2019-01-25 15:03:31","F","1","114");
+
+INSERT INTO tb_acesso VALUES("115","5m2jck287v566utlo77c655460","2019-01-28 11:30:49","2019-01-28 12:35:55","F","1","115");
+
+INSERT INTO tb_acesso VALUES("116","5m2jck287v566utlo77c655460","2019-01-28 13:15:33","2019-01-28 14:19:44","F","1","116");
 
 
 
@@ -249,7 +289,7 @@ CREATE TABLE `tb_auditoria` (
   `co_usuario` int(10) NOT NULL,
   PRIMARY KEY (`co_auditoria`,`co_usuario`),
   KEY `fk_TB_AUDITORIA_TB_USUARIO1_idx` (`co_usuario`)
-) ENGINE=InnoDB AUTO_INCREMENT=364 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=418 DEFAULT CHARSET=utf8;
 
 
 INSERT INTO tb_auditoria VALUES("1","2018-07-23 17:32:33","Master","1");
@@ -978,6 +1018,114 @@ INSERT INTO tb_auditoria VALUES("362","2018-12-20 15:42:57","Master","1");
 
 INSERT INTO tb_auditoria VALUES("363","2018-12-20 15:43:21","Master","1");
 
+INSERT INTO tb_auditoria VALUES("364","2019-01-13 21:36:48","Master","1");
+
+INSERT INTO tb_auditoria VALUES("365","2019-01-13 21:38:34","Master","1");
+
+INSERT INTO tb_auditoria VALUES("366","2019-01-13 21:40:03","Master","1");
+
+INSERT INTO tb_auditoria VALUES("367","2019-01-13 21:43:02","Master","1");
+
+INSERT INTO tb_auditoria VALUES("368","2019-01-13 21:49:26","Master","1");
+
+INSERT INTO tb_auditoria VALUES("369","2019-01-14 13:09:48","Master","1");
+
+INSERT INTO tb_auditoria VALUES("370","2019-01-14 13:54:50","Master","1");
+
+INSERT INTO tb_auditoria VALUES("371","2019-01-14 14:01:10","Master","1");
+
+INSERT INTO tb_auditoria VALUES("372","2019-01-14 14:01:47","Master","1");
+
+INSERT INTO tb_auditoria VALUES("373","2019-01-14 15:56:22","Master","1");
+
+INSERT INTO tb_auditoria VALUES("374","2019-01-14 15:56:57","Master","1");
+
+INSERT INTO tb_auditoria VALUES("375","2019-01-14 15:57:17","Master","1");
+
+INSERT INTO tb_auditoria VALUES("376","2019-01-14 15:58:00","Master","1");
+
+INSERT INTO tb_auditoria VALUES("377","2019-01-14 15:58:47","Master","1");
+
+INSERT INTO tb_auditoria VALUES("378","2019-01-14 16:08:33","Master","1");
+
+INSERT INTO tb_auditoria VALUES("379","2019-01-14 16:24:17","Master","1");
+
+INSERT INTO tb_auditoria VALUES("380","2019-01-14 17:44:38","Master","1");
+
+INSERT INTO tb_auditoria VALUES("381","2019-01-15 10:06:25","Master","1");
+
+INSERT INTO tb_auditoria VALUES("382","2019-01-15 13:20:50","Master","1");
+
+INSERT INTO tb_auditoria VALUES("383","2019-01-15 13:21:30","Master","1");
+
+INSERT INTO tb_auditoria VALUES("384","2019-01-15 13:22:03","Master","1");
+
+INSERT INTO tb_auditoria VALUES("385","2019-01-17 17:20:10","Master","1");
+
+INSERT INTO tb_auditoria VALUES("386","2019-01-18 09:33:57","Master","1");
+
+INSERT INTO tb_auditoria VALUES("387","2019-01-18 09:34:33","Master","1");
+
+INSERT INTO tb_auditoria VALUES("388","2019-01-18 09:36:18","Master","1");
+
+INSERT INTO tb_auditoria VALUES("389","2019-01-18 09:37:10","Master","1");
+
+INSERT INTO tb_auditoria VALUES("390","2019-01-18 09:39:15","Master","1");
+
+INSERT INTO tb_auditoria VALUES("391","2019-01-18 09:39:52","Master","1");
+
+INSERT INTO tb_auditoria VALUES("392","2019-01-18 09:40:56","Master","1");
+
+INSERT INTO tb_auditoria VALUES("393","2019-01-18 09:41:45","Master","1");
+
+INSERT INTO tb_auditoria VALUES("394","2019-01-18 09:43:32","Master","1");
+
+INSERT INTO tb_auditoria VALUES("395","2019-01-18 09:44:24","Master","1");
+
+INSERT INTO tb_auditoria VALUES("396","2019-01-18 09:45:21","Master","1");
+
+INSERT INTO tb_auditoria VALUES("397","2019-01-18 09:48:00","Master","1");
+
+INSERT INTO tb_auditoria VALUES("398","2019-01-18 10:01:11","Master","1");
+
+INSERT INTO tb_auditoria VALUES("399","2019-01-18 10:33:43","Master","1");
+
+INSERT INTO tb_auditoria VALUES("400","2019-01-18 10:34:59","Master","1");
+
+INSERT INTO tb_auditoria VALUES("401","2019-01-18 12:55:16","Master","1");
+
+INSERT INTO tb_auditoria VALUES("402","2019-01-18 13:28:07","Master","1");
+
+INSERT INTO tb_auditoria VALUES("403","2019-01-24 10:26:58","Master","1");
+
+INSERT INTO tb_auditoria VALUES("404","2019-01-24 10:28:58","Master","1");
+
+INSERT INTO tb_auditoria VALUES("405","2019-01-24 10:30:45","Master","1");
+
+INSERT INTO tb_auditoria VALUES("406","2019-01-24 10:32:11","Master","1");
+
+INSERT INTO tb_auditoria VALUES("407","2019-01-24 16:45:33","Master","1");
+
+INSERT INTO tb_auditoria VALUES("408","2019-01-25 09:21:54","Master","1");
+
+INSERT INTO tb_auditoria VALUES("409","2019-01-25 09:22:48","Master","1");
+
+INSERT INTO tb_auditoria VALUES("410","2019-01-25 09:23:49","Master","1");
+
+INSERT INTO tb_auditoria VALUES("411","2019-01-25 09:29:36","Master","1");
+
+INSERT INTO tb_auditoria VALUES("412","2019-01-25 09:29:45","Master","1");
+
+INSERT INTO tb_auditoria VALUES("413","2019-01-25 11:56:43","Master","1");
+
+INSERT INTO tb_auditoria VALUES("414","2019-01-25 14:03:01","Master","1");
+
+INSERT INTO tb_auditoria VALUES("415","2019-01-28 13:16:33","Master","1");
+
+INSERT INTO tb_auditoria VALUES("416","2019-01-28 13:17:01","Master","1");
+
+INSERT INTO tb_auditoria VALUES("417","2019-01-28 13:19:12","Master","1");
+
 
 
 
@@ -992,7 +1140,7 @@ CREATE TABLE `tb_auditoria_itens` (
   `co_auditoria_tabela` int(11) NOT NULL,
   PRIMARY KEY (`co_auditoria_itens`,`co_auditoria_tabela`),
   KEY `fk_TB_AUDITORIA_ITENS_TB_AUDITORIA_TABELA1_idx` (`co_auditoria_tabela`)
-) ENGINE=InnoDB AUTO_INCREMENT=2680 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=3104 DEFAULT CHARSET=utf8;
 
 
 INSERT INTO tb_auditoria_itens VALUES("1","","Sistema Da Beleaza","no_projeto","1");
@@ -1305,7 +1453,7 @@ INSERT INTO tb_auditoria_itens VALUES("154","1","","co_historia","29");
 
 INSERT INTO tb_auditoria_itens VALUES("155","Manter Planos do sistema","Manter Planos do sistema","ds_titulo","29");
 
-INSERT INTO tb_auditoria_itens VALUES("156","<p>Manter planos do sistema da beleza, onde ter&aacute; que manter os desconto com per&iacute;odo para o plano</p>","<p>Manter planos do sistema da beleza, onde ter&aacute; que manter os desconto com per&iacute;odo para o plano</p>\n\n\n\n<p>&nbsp;</p>\n\n\n\n<p>Modelagem: PLano e desconto plano</p>","ds_observacao","29");
+INSERT INTO tb_auditoria_itens VALUES("156","<p>Manter planos do sistema da beleza, onde ter&aacute; que manter os desconto com per&iacute;odo para o plano</p>","<p>Manter planos do sistema da beleza, onde ter&aacute; que manter os desconto com per&iacute;odo para o plano</p>\n\n\n\n\n\n\n\n<p>&nbsp;</p>\n\n\n\n\n\n\n\n<p>Modelagem: PLano e desconto plano</p>","ds_observacao","29");
 
 INSERT INTO tb_auditoria_itens VALUES("157","2018-07-24 15:28:56","","dt_cadastro","29");
 
@@ -1320,8 +1468,6 @@ INSERT INTO tb_auditoria_itens VALUES("161","8","13","nu_esforco_restante","29")
 INSERT INTO tb_auditoria_itens VALUES("162","1","1","co_sessao","29");
 
 INSERT INTO tb_auditoria_itens VALUES("163","","Manter Assinante","ds_titulo","30");
-
-INSERT INTO tb_auditoria_itens VALUES("164","","<p>Manter assinante do sistema e com data de expira&ccedil;&atilde;o do sistema para o assinante, criar usu&aacute;rio, criar contato, criar pessoa</p>\n\n\n\n<p>&nbsp;</p>\n\n\n\n<p>Modelagem: Assinante (Jun&ccedil;&atilde;o de pessoa, contato, usuario, data","ds_observacao","30");
 
 INSERT INTO tb_auditoria_itens VALUES("165","","1","co_sessao","30");
 
@@ -1345,7 +1491,7 @@ INSERT INTO tb_auditoria_itens VALUES("174","1","1","co_modulo","31");
 
 INSERT INTO tb_auditoria_itens VALUES("175","","Manter Filial","ds_titulo","32");
 
-INSERT INTO tb_auditoria_itens VALUES("176","","<p>Manter filial</p>\n\n\n\n<p>Modelagem: Filial (FK assinante)</p>","ds_observacao","32");
+INSERT INTO tb_auditoria_itens VALUES("176","","<p>Manter filial</p>\n\n\n\n\n\n\n\n<p>Modelagem: Filial (FK assinante)</p>","ds_observacao","32");
 
 INSERT INTO tb_auditoria_itens VALUES("177","","1","co_sessao","32");
 
@@ -1360,8 +1506,6 @@ INSERT INTO tb_auditoria_itens VALUES("181","","2018-07-25 11:37:35","dt_atualiz
 INSERT INTO tb_auditoria_itens VALUES("182","","2018-07-25 11:37:35","dt_cadastro","32");
 
 INSERT INTO tb_auditoria_itens VALUES("183","","Gesttão de pagamentos","ds_titulo","33");
-
-INSERT INTO tb_auditoria_itens VALUES("184","","<p>Dar baixas no pagamento, e atualizar o prazo de expira&ccedil;&atilde;o do assiante e suas filias</p>\n\n\n\n<p>Criar mensagem de expira&ccedil;&atilde;o e bloqueio do sistema</p>\n\n\n\n<p>&nbsp;</p>\n\n\n\n<p>Modelagem: Pagamento assinante (Ligada com plan","ds_observacao","33");
 
 INSERT INTO tb_auditoria_itens VALUES("185","","1","co_sessao","33");
 
@@ -1378,8 +1522,6 @@ INSERT INTO tb_auditoria_itens VALUES("190","","2018-07-25 11:42:55","dt_cadastr
 INSERT INTO tb_auditoria_itens VALUES("191","4","","co_historia","34");
 
 INSERT INTO tb_auditoria_itens VALUES("192","Gesttão de pagamentos","Gestão de pagamentos dos assinantes","ds_titulo","34");
-
-INSERT INTO tb_auditoria_itens VALUES("193","<p>Dar baixas no pagamento, e atualizar o prazo de expira&ccedil;&atilde;o do assiante e suas filias</p>\n\n\n\n<p>Criar mensagem de expira&ccedil;&atilde;o e bloqueio do sistema</p>\n\n\n\n<p>&nbsp;</p>\n\n\n\n<p>Modelagem: Pagamento assinante (Ligada com plan","<p>Dar baixas no pagamento, e atualizar o prazo de expira&ccedil;&atilde;o do assiante e suas filias</p>\n\n\n\n<p>Criar mensagem de expira&ccedil;&atilde;o e bloqueio do sistema</p>\n\n\n\n<p>&nbsp;</p>\n\n\n\n<p>Modelagem: Pagamento assinante (Ligada com plan","ds_observacao","34");
 
 INSERT INTO tb_auditoria_itens VALUES("194","2018-07-25 11:42:55","","dt_cadastro","34");
 
@@ -1435,7 +1577,7 @@ INSERT INTO tb_auditoria_itens VALUES("219","","2018-07-25 12:02:33","dt_cadastr
 
 INSERT INTO tb_auditoria_itens VALUES("220","","Dados complementares básicos","ds_titulo","40");
 
-INSERT INTO tb_auditoria_itens VALUES("221","","<p>Manter dados: (Endere&ccedil;o, telefone, CNPJ, fantasia, raz&atilde;o e outros)</p>\n\n\n\n<p>Modelagem: Contato, endere&ccedil;o e empresa ou pessoa</p>","ds_observacao","40");
+INSERT INTO tb_auditoria_itens VALUES("221","","<p>Manter dados: (Endere&ccedil;o, telefone, CNPJ, fantasia, raz&atilde;o e outros)</p>\n\n\n\n\n\n\n\n<p>Modelagem: Contato, endere&ccedil;o e empresa ou pessoa</p>","ds_observacao","40");
 
 INSERT INTO tb_auditoria_itens VALUES("222","","2","co_sessao","40");
 
@@ -1451,7 +1593,7 @@ INSERT INTO tb_auditoria_itens VALUES("227","","2018-07-25 12:11:05","dt_cadastr
 
 INSERT INTO tb_auditoria_itens VALUES("228","","Manter Horário de funcionamento padrão","ds_titulo","41");
 
-INSERT INTO tb_auditoria_itens VALUES("229","","<p>Manter hor&aacute;rio de funcionamento</p>\n\n\n\n<p>Modelagem: Funcionamento (Assinante)</p>\n\n\n\n<p>&nbsp;</p>","ds_observacao","41");
+INSERT INTO tb_auditoria_itens VALUES("229","","<p>Manter hor&aacute;rio de funcionamento</p>\n\n\n\n\n\n\n\n<p>Modelagem: Funcionamento (Assinante)</p>\n\n\n\n\n\n\n\n<p>&nbsp;</p>","ds_observacao","41");
 
 INSERT INTO tb_auditoria_itens VALUES("230","","2","co_sessao","41");
 
@@ -1467,7 +1609,7 @@ INSERT INTO tb_auditoria_itens VALUES("235","","2018-07-25 12:19:44","dt_cadastr
 
 INSERT INTO tb_auditoria_itens VALUES("236","","Manter Fotos do Estabelecimento","ds_titulo","42");
 
-INSERT INTO tb_auditoria_itens VALUES("237","","<p>Manter Fotos do Estabelecimento para o Site</p>\n\n\n\n<p>Modelagem: Imagem (FK Assinante)</p>","ds_observacao","42");
+INSERT INTO tb_auditoria_itens VALUES("237","","<p>Manter Fotos do Estabelecimento para o Site</p>\n\n\n\n\n\n\n\n<p>Modelagem: Imagem (FK Assinante)</p>","ds_observacao","42");
 
 INSERT INTO tb_auditoria_itens VALUES("238","","2","co_sessao","42");
 
@@ -1489,7 +1631,7 @@ INSERT INTO tb_auditoria_itens VALUES("246","","2018-07-25 12:24:17","dt_cadastr
 
 INSERT INTO tb_auditoria_itens VALUES("247","","Manter Feriados","ds_titulo","44");
 
-INSERT INTO tb_auditoria_itens VALUES("248","","<p>Manter Feriados</p>\n\n\n\n<p>Modelagem: Tabela base Feriados nacionais, Feriados (FK assinante, com hor&aacute;rio de funcionamento)</p>","ds_observacao","44");
+INSERT INTO tb_auditoria_itens VALUES("248","","<p>Manter Feriados</p>\n\n\n\n\n\n\n\n<p>Modelagem: Tabela base Feriados nacionais, Feriados (FK assinante, com hor&aacute;rio de funcionamento)</p>","ds_observacao","44");
 
 INSERT INTO tb_auditoria_itens VALUES("249","","4","co_sessao","44");
 
@@ -1505,7 +1647,7 @@ INSERT INTO tb_auditoria_itens VALUES("254","","2018-07-25 12:27:26","dt_cadastr
 
 INSERT INTO tb_auditoria_itens VALUES("255","","Manter Fias Especiais","ds_titulo","45");
 
-INSERT INTO tb_auditoria_itens VALUES("256","","<p>Manter Fias Especiais n&atilde;o recorrente</p>\n\n\n\n<p>Modelagem: dias especiais (FK assinante, com hor&aacute;rio de funcionamento)</p>","ds_observacao","45");
+INSERT INTO tb_auditoria_itens VALUES("256","","<p>Manter Fias Especiais n&atilde;o recorrente</p>\n\n\n\n\n\n\n\n<p>Modelagem: dias especiais (FK assinante, com hor&aacute;rio de funcionamento)</p>","ds_observacao","45");
 
 INSERT INTO tb_auditoria_itens VALUES("257","","4","co_sessao","45");
 
@@ -1523,7 +1665,7 @@ INSERT INTO tb_auditoria_itens VALUES("263","10","","co_historia","46");
 
 INSERT INTO tb_auditoria_itens VALUES("264","Manter Fias Especiais","Manter Dias Especiais","ds_titulo","46");
 
-INSERT INTO tb_auditoria_itens VALUES("265","<p>Manter Fias Especiais n&atilde;o recorrente</p>\n\n\n\n<p>Modelagem: dias especiais (FK assinante, com hor&aacute;rio de funcionamento)</p>","<p>Manter Dias Especiais n&atilde;o recorrente</p>\n\n\n\n<p>Modelagem: dias especiais (FK assinante, com hor&aacute;rio de funcionamento)</p>","ds_observacao","46");
+INSERT INTO tb_auditoria_itens VALUES("265","<p>Manter Fias Especiais n&atilde;o recorrente</p>\n\n\n\n\n\n\n\n<p>Modelagem: dias especiais (FK assinante, com hor&aacute;rio de funcionamento)</p>","<p>Manter Dias Especiais n&atilde;o recorrente</p>\n\n\n\n\n\n\n\n<p>Modelagem: dias especiais (FK assinante, com hor&aacute;rio de funcionamento)</p>","ds_observacao","46");
 
 INSERT INTO tb_auditoria_itens VALUES("266","2018-07-25 12:28:51","","dt_cadastro","46");
 
@@ -1553,7 +1695,7 @@ INSERT INTO tb_auditoria_itens VALUES("278","2","2","co_modulo","48");
 
 INSERT INTO tb_auditoria_itens VALUES("279","","Formas de pagamento","ds_titulo","49");
 
-INSERT INTO tb_auditoria_itens VALUES("280","","<p>Forma de pagamento aceitas e taxas</p>\n\n\n\n<p>Configura&ccedil;&atilde;o se aceita pagamento posterior</p>\n\n\n\n<p>&nbsp;</p>\n\n\n\n<p>modelagem: Configuracao (FK assinante), Taxas cart&otilde;es</p>","ds_observacao","49");
+INSERT INTO tb_auditoria_itens VALUES("280","","<p>Forma de pagamento aceitas e taxas</p>\n\n\n\n\n\n\n\n<p>Configura&ccedil;&atilde;o se aceita pagamento posterior</p>\n\n\n\n\n\n\n\n<p>&nbsp;</p>\n\n\n\n\n\n\n\n<p>modelagem: Configuracao (FK assinante), Taxas cart&otilde;es</p>","ds_observacao","49");
 
 INSERT INTO tb_auditoria_itens VALUES("281","","5","co_sessao","49");
 
@@ -1570,8 +1712,6 @@ INSERT INTO tb_auditoria_itens VALUES("286","","2018-07-25 14:38:19","dt_cadastr
 INSERT INTO tb_auditoria_itens VALUES("287","11","","co_historia","50");
 
 INSERT INTO tb_auditoria_itens VALUES("288","Formas de pagamento","Formas de pagamento","ds_titulo","50");
-
-INSERT INTO tb_auditoria_itens VALUES("289","<p>Forma de pagamento aceitas e taxas</p>\n\n\n\n<p>Configura&ccedil;&atilde;o se aceita pagamento posterior</p>\n\n\n\n<p>&nbsp;</p>\n\n\n\n<p>modelagem: Configuracao (FK assinante), Taxas cart&otilde;es</p>","<p>Forma de pagamento aceitas e taxas</p>\n\n\n\n<p>Configura&ccedil;&atilde;o se aceita pagamento posterior</p>\n\n\n\n<p>&nbsp;</p>\n\n\n\n<p>modelagem: Configuracao (FK assinante), Taxas cart&otilde;es, Tabela base Formas de pagamento, Tabela base bandeira c","ds_observacao","50");
 
 INSERT INTO tb_auditoria_itens VALUES("290","2018-07-25 14:38:19","","dt_cadastro","50");
 
@@ -1593,7 +1733,7 @@ INSERT INTO tb_auditoria_itens VALUES("298","","2018-07-25 14:41:14","dt_cadastr
 
 INSERT INTO tb_auditoria_itens VALUES("299","","Configuração do cliente","ds_titulo","52");
 
-INSERT INTO tb_auditoria_itens VALUES("300","","<p>Cliente Marcar Servi&ccedil;o S / N, quantidade de aus&ecirc;ncia para que o cliente n&atilde;o marque mais servi&ccedil;os</p>\n\n\n\n<p>&nbsp;</p>\n\n\n\n<p>Modelagem: Configura&ccedil;&atilde;o assinante (FK Assinante)</p>","ds_observacao","52");
+INSERT INTO tb_auditoria_itens VALUES("300","","<p>Cliente Marcar Servi&ccedil;o S / N, quantidade de aus&ecirc;ncia para que o cliente n&atilde;o marque mais servi&ccedil;os</p>\n\n\n\n\n\n\n\n<p>&nbsp;</p>\n\n\n\n\n\n\n\n<p>Modelagem: Configura&ccedil;&atilde;o assinante (FK Assinante)</p>","ds_observacao","52");
 
 INSERT INTO tb_auditoria_itens VALUES("301","","6","co_sessao","52");
 
@@ -1615,8 +1755,6 @@ INSERT INTO tb_auditoria_itens VALUES("309","","2018-07-25 14:43:31","dt_cadastr
 
 INSERT INTO tb_auditoria_itens VALUES("310","","Configuração de agendamento","ds_titulo","54");
 
-INSERT INTO tb_auditoria_itens VALUES("311","","<p>Confirma&ccedil;&atilde;o do agendamento e Regras de agendamento, agendamento recorrente, Horas de antecedencia do agendamento, Aagendamento online, intervalo de agendamento dos clientes</p>\n\n\n\n<p>&nbsp;</p>\n\n\n\n<p>Modelagem: Configura&ccedil;&atild","ds_observacao","54");
-
 INSERT INTO tb_auditoria_itens VALUES("312","","7","co_sessao","54");
 
 INSERT INTO tb_auditoria_itens VALUES("313","","N","st_situacao","54");
@@ -1637,7 +1775,7 @@ INSERT INTO tb_auditoria_itens VALUES("320","","2018-07-25 15:10:45","dt_cadastr
 
 INSERT INTO tb_auditoria_itens VALUES("321","","Manter Motivo desconto","ds_titulo","56");
 
-INSERT INTO tb_auditoria_itens VALUES("322","","<p>Manter Motivo desconto</p>\n\n\n\n<p>&nbsp;</p>\n\n\n\n<p>Modelagem: Motivo desconto (FK Assinante)</p>\n\n\n\n<p>&nbsp;</p>","ds_observacao","56");
+INSERT INTO tb_auditoria_itens VALUES("322","","<p>Manter Motivo desconto</p>\n\n\n\n\n\n\n\n<p>&nbsp;</p>\n\n\n\n\n\n\n\n<p>Modelagem: Motivo desconto (FK Assinante)</p>\n\n\n\n\n\n\n\n<p>&nbsp;</p>","ds_observacao","56");
 
 INSERT INTO tb_auditoria_itens VALUES("323","","8","co_sessao","56");
 
@@ -1675,7 +1813,7 @@ INSERT INTO tb_auditoria_itens VALUES("339","","2018-07-25 15:27:04","dt_cadastr
 
 INSERT INTO tb_auditoria_itens VALUES("340","","Manter profissional","ds_titulo","59");
 
-INSERT INTO tb_auditoria_itens VALUES("341","","<p>Manter profissional</p>\n\n\n\n<p>Modelagem: Profissional (FK Assinante, pessoa, usuario, endere&ccedil;o e contato)</p>","ds_observacao","59");
+INSERT INTO tb_auditoria_itens VALUES("341","","<p>Manter profissional</p>\n\n\n\n\n\n\n\n<p>Modelagem: Profissional (FK Assinante, pessoa, usuario, endere&ccedil;o e contato)</p>","ds_observacao","59");
 
 INSERT INTO tb_auditoria_itens VALUES("342","","9","co_sessao","59");
 
@@ -1691,7 +1829,7 @@ INSERT INTO tb_auditoria_itens VALUES("347","","2018-07-25 15:56:07","dt_cadastr
 
 INSERT INTO tb_auditoria_itens VALUES("348","","Manter ausência","ds_titulo","60");
 
-INSERT INTO tb_auditoria_itens VALUES("349","","<p>Manter aus&ecirc;ncia</p>\n\n\n\n<p>&nbsp;</p>\n\n\n\n<p>Modelagem: Aus&ecirc;ncia Profissional (FK Profissional)</p>","ds_observacao","60");
+INSERT INTO tb_auditoria_itens VALUES("349","","<p>Manter aus&ecirc;ncia</p>\n\n\n\n\n\n\n\n<p>&nbsp;</p>\n\n\n\n\n\n\n\n<p>Modelagem: Aus&ecirc;ncia Profissional (FK Profissional)</p>","ds_observacao","60");
 
 INSERT INTO tb_auditoria_itens VALUES("350","","9","co_sessao","60");
 
@@ -1713,7 +1851,7 @@ INSERT INTO tb_auditoria_itens VALUES("358","","2018-07-25 16:09:50","dt_cadastr
 
 INSERT INTO tb_auditoria_itens VALUES("359","","Manter Bloqueio por profissional","ds_titulo","62");
 
-INSERT INTO tb_auditoria_itens VALUES("360","","<p>Bloqueio de hor&aacute;rio para o profissional</p>\n\n\n\n<p>Modelagem: Bloqueio hor&aacute;rio (FK profissional, motivo)</p>","ds_observacao","62");
+INSERT INTO tb_auditoria_itens VALUES("360","","<p>Bloqueio de hor&aacute;rio para o profissional</p>\n\n\n\n\n\n\n\n<p>Modelagem: Bloqueio hor&aacute;rio (FK profissional, motivo)</p>","ds_observacao","62");
 
 INSERT INTO tb_auditoria_itens VALUES("361","","10","co_sessao","62");
 
@@ -1735,7 +1873,7 @@ INSERT INTO tb_auditoria_itens VALUES("369","","2018-07-25 16:13:20","dt_cadastr
 
 INSERT INTO tb_auditoria_itens VALUES("370","","Manter Cliente","ds_titulo","64");
 
-INSERT INTO tb_auditoria_itens VALUES("371","","<p>Manter Cliente, Clientes recebem SMS com lembrete do hor&aacute;rio agendado, Integra&ccedil;&atilde;o com WhatsApp,</p>\n\n\n\n<p>Modelagem: Cliente (FK Assinante, pessoa, contato, endere&ccedil;o, foto)</p>","ds_observacao","64");
+INSERT INTO tb_auditoria_itens VALUES("371","","<p>Manter Cliente, Clientes recebem SMS com lembrete do hor&aacute;rio agendado, Integra&ccedil;&atilde;o com WhatsApp,</p>\n\n\n\n\n\n\n\n<p>Modelagem: Cliente (FK Assinante, pessoa, contato, endere&ccedil;o, foto)</p>","ds_observacao","64");
 
 INSERT INTO tb_auditoria_itens VALUES("372","","11","co_sessao","64");
 
@@ -1753,7 +1891,7 @@ INSERT INTO tb_auditoria_itens VALUES("378","19","","co_historia","65");
 
 INSERT INTO tb_auditoria_itens VALUES("379","Manter Cliente","Manter Cliente","ds_titulo","65");
 
-INSERT INTO tb_auditoria_itens VALUES("380","<p>Manter Cliente, Clientes recebem SMS com lembrete do hor&aacute;rio agendado, Integra&ccedil;&atilde;o com WhatsApp,</p>\n\n\n\n<p>Modelagem: Cliente (FK Assinante, pessoa, contato, endere&ccedil;o, foto)</p>","<p>Manter Cliente, Clientes recebem SMS com lembrete do hor&aacute;rio agendado, Integra&ccedil;&atilde;o com WhatsApp,</p>\n\n\n\n<p>Modelagem: Cliente (FK Assinante, pessoa, contato, endere&ccedil;o, foto)</p>","ds_observacao","65");
+INSERT INTO tb_auditoria_itens VALUES("380","<p>Manter Cliente, Clientes recebem SMS com lembrete do hor&aacute;rio agendado, Integra&ccedil;&atilde;o com WhatsApp,</p>\n\n\n\n\n\n\n\n<p>Modelagem: Cliente (FK Assinante, pessoa, contato, endere&ccedil;o, foto)</p>","<p>Manter Cliente, Clientes recebem SMS com lembrete do hor&aacute;rio agendado, Integra&ccedil;&atilde;o com WhatsApp,</p>\n\n\n\n\n\n\n\n<p>Modelagem: Cliente (FK Assinante, pessoa, contato, endere&ccedil;o, foto)</p>","ds_observacao","65");
 
 INSERT INTO tb_auditoria_itens VALUES("381","2018-07-25 16:16:48","","dt_cadastro","65");
 
@@ -1775,7 +1913,7 @@ INSERT INTO tb_auditoria_itens VALUES("389","","2018-07-25 16:17:48","dt_cadastr
 
 INSERT INTO tb_auditoria_itens VALUES("390","","Manter Categorias do Serviço","ds_titulo","67");
 
-INSERT INTO tb_auditoria_itens VALUES("391","","<p>Manter Categorias do Servi&ccedil;o</p>\n\n\n\n<p>Modelagem: Cat. servico (FK Assinante)</p>","ds_observacao","67");
+INSERT INTO tb_auditoria_itens VALUES("391","","<p>Manter Categorias do Servi&ccedil;o</p>\n\n\n\n\n\n\n\n<p>Modelagem: Cat. servico (FK Assinante)</p>","ds_observacao","67");
 
 INSERT INTO tb_auditoria_itens VALUES("392","","12","co_sessao","67");
 
@@ -1791,7 +1929,7 @@ INSERT INTO tb_auditoria_itens VALUES("397","","2018-07-25 16:19:34","dt_cadastr
 
 INSERT INTO tb_auditoria_itens VALUES("398","","Tabela base Categorias serviços","ds_titulo","68");
 
-INSERT INTO tb_auditoria_itens VALUES("399","","<p>Tabela base Categorias servi&ccedil;os</p>\n\n\n\n<p>&nbsp;</p>\n\n\n\n<p>Modelagem: Tabela base Categorias servi&ccedil;os</p>","ds_observacao","68");
+INSERT INTO tb_auditoria_itens VALUES("399","","<p>Tabela base Categorias servi&ccedil;os</p>\n\n\n\n\n\n\n\n<p>&nbsp;</p>\n\n\n\n\n\n\n\n<p>Modelagem: Tabela base Categorias servi&ccedil;os</p>","ds_observacao","68");
 
 INSERT INTO tb_auditoria_itens VALUES("400","","12","co_sessao","68");
 
@@ -1823,7 +1961,7 @@ INSERT INTO tb_auditoria_itens VALUES("413","","2018-07-25 16:23:07","dt_cadastr
 
 INSERT INTO tb_auditoria_itens VALUES("414","","Profissionais que atende o serviço","ds_titulo","70");
 
-INSERT INTO tb_auditoria_itens VALUES("415","","<p>Profissionais que atende o servi&ccedil;o, comiss&atilde;o padr&atilde;o pra todos</p>\n\n\n\n<p>Modelagem: Tab tern&aacute;ria Profissional e Servi&ccedil;o (Comiss&atilde;o individual)</p>","ds_observacao","70");
+INSERT INTO tb_auditoria_itens VALUES("415","","<p>Profissionais que atende o servi&ccedil;o, comiss&atilde;o padr&atilde;o pra todos</p>\n\n\n\n\n\n\n\n<p>Modelagem: Tab tern&aacute;ria Profissional e Servi&ccedil;o (Comiss&atilde;o individual)</p>","ds_observacao","70");
 
 INSERT INTO tb_auditoria_itens VALUES("416","","12","co_sessao","70");
 
@@ -1845,7 +1983,7 @@ INSERT INTO tb_auditoria_itens VALUES("424","","2018-07-25 16:28:16","dt_cadastr
 
 INSERT INTO tb_auditoria_itens VALUES("425","","Manter Pacote","ds_titulo","72");
 
-INSERT INTO tb_auditoria_itens VALUES("426","","<p>Manter Pacote</p>\n\n\n\n<p>Modelagem: Pacote (FK Assinante), Pacote Servi&ccedil;os (FK Pacote e servi&ccedil;o)</p>","ds_observacao","72");
+INSERT INTO tb_auditoria_itens VALUES("426","","<p>Manter Pacote</p>\n\n\n\n\n\n\n\n<p>Modelagem: Pacote (FK Assinante), Pacote Servi&ccedil;os (FK Pacote e servi&ccedil;o)</p>","ds_observacao","72");
 
 INSERT INTO tb_auditoria_itens VALUES("427","","13","co_sessao","72");
 
@@ -1867,7 +2005,7 @@ INSERT INTO tb_auditoria_itens VALUES("435","","2018-07-25 17:11:37","dt_cadastr
 
 INSERT INTO tb_auditoria_itens VALUES("436","","Manter promoção","ds_titulo","74");
 
-INSERT INTO tb_auditoria_itens VALUES("437","","<p>Manter promo&ccedil;&atilde;o dias e hor&aacute;rios a ser ultilizado per&iacute;odo v&aacute;lido</p>\n\n\n\n<p>&nbsp;</p>\n\n\n\n<p>Modelagem: Promocao (FK Servi&ccedil;o)</p>","ds_observacao","74");
+INSERT INTO tb_auditoria_itens VALUES("437","","<p>Manter promo&ccedil;&atilde;o dias e hor&aacute;rios a ser ultilizado per&iacute;odo v&aacute;lido</p>\n\n\n\n\n\n\n\n<p>&nbsp;</p>\n\n\n\n\n\n\n\n<p>Modelagem: Promocao (FK Servi&ccedil;o)</p>","ds_observacao","74");
 
 INSERT INTO tb_auditoria_itens VALUES("438","","14","co_sessao","74");
 
@@ -1889,7 +2027,7 @@ INSERT INTO tb_auditoria_itens VALUES("446","","2018-07-25 17:13:07","dt_cadastr
 
 INSERT INTO tb_auditoria_itens VALUES("447","","Manter cortesia","ds_titulo","76");
 
-INSERT INTO tb_auditoria_itens VALUES("448","","<p>Manter cortesia, validade da cortesia, per&iacute;odo de uso dia e hora</p>\n\n\n\n<p>&nbsp;</p>\n\n\n\n<p>Modelagem (FK cliente, servico)</p>","ds_observacao","76");
+INSERT INTO tb_auditoria_itens VALUES("448","","<p>Manter cortesia, validade da cortesia, per&iacute;odo de uso dia e hora</p>\n\n\n\n\n\n\n\n<p>&nbsp;</p>\n\n\n\n\n\n\n\n<p>Modelagem (FK cliente, servico)</p>","ds_observacao","76");
 
 INSERT INTO tb_auditoria_itens VALUES("449","","15","co_sessao","76");
 
@@ -1911,7 +2049,7 @@ INSERT INTO tb_auditoria_itens VALUES("457","","2018-07-25 17:19:32","dt_cadastr
 
 INSERT INTO tb_auditoria_itens VALUES("458","","Manter Vale presente","ds_titulo","78");
 
-INSERT INTO tb_auditoria_itens VALUES("459","","<p>Manter Vale presente, gerar c&oacute;digo pra passar para o cliente que ira usar, validade e periodo de uso</p>\n\n\n\n<p>Modelagem: Vale presente e valepresente servicos (FK Servicos e vale presente)</p>","ds_observacao","78");
+INSERT INTO tb_auditoria_itens VALUES("459","","<p>Manter Vale presente, gerar c&oacute;digo pra passar para o cliente que ira usar, validade e periodo de uso</p>\n\n\n\n\n\n\n\n<p>Modelagem: Vale presente e valepresente servicos (FK Servicos e vale presente)</p>","ds_observacao","78");
 
 INSERT INTO tb_auditoria_itens VALUES("460","","16","co_sessao","78");
 
@@ -1933,7 +2071,7 @@ INSERT INTO tb_auditoria_itens VALUES("468","","2018-07-25 17:24:48","dt_cadastr
 
 INSERT INTO tb_auditoria_itens VALUES("469","","Manter Agendamento","ds_titulo","80");
 
-INSERT INTO tb_auditoria_itens VALUES("470","","<p>Manter Agendamento (Op&ccedil;&atilde;o da recorr&ecirc;ncia)</p>\n\n\n\n<p>&nbsp;</p>\n\n\n\n<p>Modelagem: (FK cliente, Servi&ccedil;o, Profissional)</p>","ds_observacao","80");
+INSERT INTO tb_auditoria_itens VALUES("470","","<p>Manter Agendamento (Op&ccedil;&atilde;o da recorr&ecirc;ncia)</p>\n\n\n\n\n\n\n\n<p>&nbsp;</p>\n\n\n\n\n\n\n\n<p>Modelagem: (FK cliente, Servi&ccedil;o, Profissional)</p>","ds_observacao","80");
 
 INSERT INTO tb_auditoria_itens VALUES("471","","17","co_sessao","80");
 
@@ -1951,7 +2089,7 @@ INSERT INTO tb_auditoria_itens VALUES("477","28","","co_historia","81");
 
 INSERT INTO tb_auditoria_itens VALUES("478","Manter Agendamento","Manter Agendamento","ds_titulo","81");
 
-INSERT INTO tb_auditoria_itens VALUES("479","<p>Manter Agendamento (Op&ccedil;&atilde;o da recorr&ecirc;ncia)</p>\n\n\n\n<p>&nbsp;</p>\n\n\n\n<p>Modelagem: (FK cliente, Servi&ccedil;o, Profissional)</p>","<p>Manter Agendamento (Op&ccedil;&atilde;o da recorr&ecirc;ncia)</p>\n\n\n\n<p>&nbsp;</p>\n\n\n\n<p>Modelagem: (FK cliente, Servi&ccedil;o, Profissional)</p>","ds_observacao","81");
+INSERT INTO tb_auditoria_itens VALUES("479","<p>Manter Agendamento (Op&ccedil;&atilde;o da recorr&ecirc;ncia)</p>\n\n\n\n\n\n\n\n<p>&nbsp;</p>\n\n\n\n\n\n\n\n<p>Modelagem: (FK cliente, Servi&ccedil;o, Profissional)</p>","<p>Manter Agendamento (Op&ccedil;&atilde;o da recorr&ecirc;ncia)</p>\n\n\n\n\n\n\n\n<p>&nbsp;</p>\n\n\n\n\n\n\n\n<p>Modelagem: (FK cliente, Servi&ccedil;o, Profissional)</p>","ds_observacao","81");
 
 INSERT INTO tb_auditoria_itens VALUES("480","2018-07-25 17:32:10","","dt_cadastro","81");
 
@@ -2017,7 +2155,7 @@ INSERT INTO tb_auditoria_itens VALUES("510","28","","co_historia","85");
 
 INSERT INTO tb_auditoria_itens VALUES("511","Manter Agendamento","Manter Agendamento","ds_titulo","85");
 
-INSERT INTO tb_auditoria_itens VALUES("512","<p>Manter Agendamento (Op&ccedil;&atilde;o da recorr&ecirc;ncia)</p>\n\n\n\n<p>&nbsp;</p>\n\n\n\n<p>Modelagem: (FK cliente, Servi&ccedil;o, Profissional)</p>","<p>Manter Agendamento (Op&ccedil;&atilde;o da recorr&ecirc;ncia)</p>\n\n\n\n<p>&nbsp;</p>\n\n\n\n<p>Modelagem: (FK cliente, Servi&ccedil;o, Profissional)</p>","ds_observacao","85");
+INSERT INTO tb_auditoria_itens VALUES("512","<p>Manter Agendamento (Op&ccedil;&atilde;o da recorr&ecirc;ncia)</p>\n\n\n\n\n\n\n\n<p>&nbsp;</p>\n\n\n\n\n\n\n\n<p>Modelagem: (FK cliente, Servi&ccedil;o, Profissional)</p>","<p>Manter Agendamento (Op&ccedil;&atilde;o da recorr&ecirc;ncia)</p>\n\n\n\n\n\n\n\n<p>&nbsp;</p>\n\n\n\n\n\n\n\n<p>Modelagem: (FK cliente, Servi&ccedil;o, Profissional)</p>","ds_observacao","85");
 
 INSERT INTO tb_auditoria_itens VALUES("513","2018-07-25 17:32:10","","dt_cadastro","85");
 
@@ -2067,7 +2205,7 @@ INSERT INTO tb_auditoria_itens VALUES("535","28","","co_historia","88");
 
 INSERT INTO tb_auditoria_itens VALUES("536","Manter Agendamento","Cadastrar Agendamento","ds_titulo","88");
 
-INSERT INTO tb_auditoria_itens VALUES("537","<p>Manter Agendamento (Op&ccedil;&atilde;o da recorr&ecirc;ncia)</p>\n\n\n\n<p>&nbsp;</p>\n\n\n\n<p>Modelagem: (FK cliente, Servi&ccedil;o, Profissional)</p>","<p>Cadastrar Agendamento (Op&ccedil;&atilde;o da recorr&ecirc;ncia)</p>\n\n\n\n<p>&nbsp;</p>\n\n\n\n<p>Modelagem: (FK cliente, Servi&ccedil;o, Profissional)</p>","ds_observacao","88");
+INSERT INTO tb_auditoria_itens VALUES("537","<p>Manter Agendamento (Op&ccedil;&atilde;o da recorr&ecirc;ncia)</p>\n\n\n\n\n\n\n\n<p>&nbsp;</p>\n\n\n\n\n\n\n\n<p>Modelagem: (FK cliente, Servi&ccedil;o, Profissional)</p>","<p>Cadastrar Agendamento (Op&ccedil;&atilde;o da recorr&ecirc;ncia)</p>\n\n\n\n\n\n\n\n<p>&nbsp;</p>\n\n\n\n\n\n\n\n<p>Modelagem: (FK cliente, Servi&ccedil;o, Profissional)</p>","ds_observacao","88");
 
 INSERT INTO tb_auditoria_itens VALUES("538","2018-07-25 17:32:10","","dt_cadastro","88");
 
@@ -2149,7 +2287,7 @@ INSERT INTO tb_auditoria_itens VALUES("576","17","17","co_sessao","92");
 
 INSERT INTO tb_auditoria_itens VALUES("577","","Fechamento de conta","ds_titulo","93");
 
-INSERT INTO tb_auditoria_itens VALUES("578","","<p>Fechamento de conta</p>\n\n\n\n<p>Modelagem: Pagamento (FK agendamento, FK Caixa)</p>","ds_observacao","93");
+INSERT INTO tb_auditoria_itens VALUES("578","","<p>Fechamento de conta</p>\n\n\n\n\n\n\n\n<p>Modelagem: Pagamento (FK agendamento, FK Caixa)</p>","ds_observacao","93");
 
 INSERT INTO tb_auditoria_itens VALUES("579","","17","co_sessao","93");
 
@@ -2165,7 +2303,7 @@ INSERT INTO tb_auditoria_itens VALUES("584","","2018-07-25 18:12:12","dt_cadastr
 
 INSERT INTO tb_auditoria_itens VALUES("585","","Manter Fotos agendamento","ds_titulo","94");
 
-INSERT INTO tb_auditoria_itens VALUES("586","","<p>Manter Fotos agendamento</p>\n\n\n\n<p>&nbsp;</p>\n\n\n\n<p>Modelagem: Agendamento Imagem (FK imagem, FK agendamento)</p>","ds_observacao","94");
+INSERT INTO tb_auditoria_itens VALUES("586","","<p>Manter Fotos agendamento</p>\n\n\n\n\n\n\n\n<p>&nbsp;</p>\n\n\n\n\n\n\n\n<p>Modelagem: Agendamento Imagem (FK imagem, FK agendamento)</p>","ds_observacao","94");
 
 INSERT INTO tb_auditoria_itens VALUES("587","","17","co_sessao","94");
 
@@ -2187,7 +2325,7 @@ INSERT INTO tb_auditoria_itens VALUES("595","","2018-07-25 18:15:22","dt_cadastr
 
 INSERT INTO tb_auditoria_itens VALUES("596","","Abertura de caixa","ds_titulo","96");
 
-INSERT INTO tb_auditoria_itens VALUES("597","","<p>Abertura de caixa</p>\n\n\n\n<p>&nbsp;</p>\n\n\n\n<p>Modelagem: Caixa (FK Assinante)</p>","ds_observacao","96");
+INSERT INTO tb_auditoria_itens VALUES("597","","<p>Abertura de caixa</p>\n\n\n\n\n\n\n\n<p>&nbsp;</p>\n\n\n\n\n\n\n\n<p>Modelagem: Caixa (FK Assinante)</p>","ds_observacao","96");
 
 INSERT INTO tb_auditoria_itens VALUES("598","","18","co_sessao","96");
 
@@ -2203,7 +2341,7 @@ INSERT INTO tb_auditoria_itens VALUES("603","","2018-07-25 18:16:22","dt_cadastr
 
 INSERT INTO tb_auditoria_itens VALUES("604","","Retirada / Sangria","ds_titulo","97");
 
-INSERT INTO tb_auditoria_itens VALUES("605","","<p>Retirada / Sangria (Normal e recorrente)</p>\n\n\n\n<p>Modelagem: Sangria caixa (FK Caixa)</p>","ds_observacao","97");
+INSERT INTO tb_auditoria_itens VALUES("605","","<p>Retirada / Sangria (Normal e recorrente)</p>\n\n\n\n\n\n\n\n<p>Modelagem: Sangria caixa (FK Caixa)</p>","ds_observacao","97");
 
 INSERT INTO tb_auditoria_itens VALUES("606","","18","co_sessao","97");
 
@@ -2219,7 +2357,7 @@ INSERT INTO tb_auditoria_itens VALUES("611","","2018-07-25 18:24:58","dt_cadastr
 
 INSERT INTO tb_auditoria_itens VALUES("612","","Recebimentos","ds_titulo","98");
 
-INSERT INTO tb_auditoria_itens VALUES("613","","<p>Recebimentos</p>\n\n\n\n<p>Modelagem: Recebimento caixa (FK Caixa)</p>","ds_observacao","98");
+INSERT INTO tb_auditoria_itens VALUES("613","","<p>Recebimentos</p>\n\n\n\n\n\n\n\n<p>Modelagem: Recebimento caixa (FK Caixa)</p>","ds_observacao","98");
 
 INSERT INTO tb_auditoria_itens VALUES("614","","18","co_sessao","98");
 
@@ -2253,7 +2391,7 @@ INSERT INTO tb_auditoria_itens VALUES("628","37","","co_historia","100");
 
 INSERT INTO tb_auditoria_itens VALUES("629","Fechamento de conta","Fechamento de conta no agendamento","ds_titulo","100");
 
-INSERT INTO tb_auditoria_itens VALUES("630","<p>Fechamento de conta</p>\n\n\n\n<p>Modelagem: Pagamento (FK agendamento, FK Caixa)</p>","<p>Fechamento de conta no agendamento</p>\n\n\n\n<p>Modelagem: Pagamento (FK agendamento, FK Caixa)</p>","ds_observacao","100");
+INSERT INTO tb_auditoria_itens VALUES("630","<p>Fechamento de conta</p>\n\n\n\n\n\n\n\n<p>Modelagem: Pagamento (FK agendamento, FK Caixa)</p>","<p>Fechamento de conta no agendamento</p>\n\n\n\n\n\n\n\n<p>Modelagem: Pagamento (FK agendamento, FK Caixa)</p>","ds_observacao","100");
 
 INSERT INTO tb_auditoria_itens VALUES("631","2018-07-25 18:12:12","","dt_cadastro","100");
 
@@ -2269,7 +2407,7 @@ INSERT INTO tb_auditoria_itens VALUES("636","18","18","co_sessao","100");
 
 INSERT INTO tb_auditoria_itens VALUES("637","","Valor pago por serviço","ds_titulo","101");
 
-INSERT INTO tb_auditoria_itens VALUES("638","","<p>Determinar porcentagem ou valor para cada servi&ccedil;o.</p>\n\n\n\n<p>Depend&ecirc;ncia:</p>","ds_observacao","101");
+INSERT INTO tb_auditoria_itens VALUES("638","","<p>Determinar porcentagem ou valor para cada servi&ccedil;o.</p>\n\n\n\n\n\n\n\n<p>Depend&ecirc;ncia:</p>","ds_observacao","101");
 
 INSERT INTO tb_auditoria_itens VALUES("639","","5","co_sessao","101");
 
@@ -2285,7 +2423,7 @@ INSERT INTO tb_auditoria_itens VALUES("644","","2018-07-25 18:40:36","dt_cadastr
 
 INSERT INTO tb_auditoria_itens VALUES("645","","Manter Serviço","ds_titulo","102");
 
-INSERT INTO tb_auditoria_itens VALUES("646","","<p>Manter Servi&ccedil;o</p>\n\n\n\n<p>Modelagem: Servi&ccedil;o (FK categoria Servi. Assinante)</p>","ds_observacao","102");
+INSERT INTO tb_auditoria_itens VALUES("646","","<p>Manter Servi&ccedil;o</p>\n\n\n\n\n\n\n\n<p>Modelagem: Servi&ccedil;o (FK categoria Servi. Assinante)</p>","ds_observacao","102");
 
 INSERT INTO tb_auditoria_itens VALUES("647","","12","co_sessao","102");
 
@@ -2301,7 +2439,7 @@ INSERT INTO tb_auditoria_itens VALUES("652","","2018-07-25 18:42:35","dt_cadastr
 
 INSERT INTO tb_auditoria_itens VALUES("653","","Tabela base serviços","ds_titulo","103");
 
-INSERT INTO tb_auditoria_itens VALUES("654","","<p>Tabela base servi&ccedil;os</p>\n\n\n\n<p>Modelagem: Servi&ccedil;os Base</p>","ds_observacao","103");
+INSERT INTO tb_auditoria_itens VALUES("654","","<p>Tabela base servi&ccedil;os</p>\n\n\n\n\n\n\n\n<p>Modelagem: Servi&ccedil;os Base</p>","ds_observacao","103");
 
 INSERT INTO tb_auditoria_itens VALUES("655","","12","co_sessao","103");
 
@@ -2319,7 +2457,7 @@ INSERT INTO tb_auditoria_itens VALUES("661","43","","co_historia","104");
 
 INSERT INTO tb_auditoria_itens VALUES("662","Valor pago por serviço","Valor pago por serviço","ds_titulo","104");
 
-INSERT INTO tb_auditoria_itens VALUES("663","<p>Determinar porcentagem ou valor para cada servi&ccedil;o.</p>\n\n\n\n<p>Depend&ecirc;ncia:</p>","<p>Determinar porcentagem ou valor para cada servi&ccedil;o.</p>\n\n\n\n<p>Depend&ecirc;ncia: http://localhost/PreProjeto/admin/Historia/CadastroHistoria/MjA5YzYzNDY2NTYyNjBlN2E3OGVmZGI1MDcxNWM2NTkvTkRRPQ==</p>","ds_observacao","104");
+INSERT INTO tb_auditoria_itens VALUES("663","<p>Determinar porcentagem ou valor para cada servi&ccedil;o.</p>\n\n\n\n\n\n\n\n<p>Depend&ecirc;ncia:</p>","<p>Determinar porcentagem ou valor para cada servi&ccedil;o.</p>\n\n\n\n\n\n\n\n<p>Depend&ecirc;ncia: http://localhost/PreProjeto/admin/Historia/CadastroHistoria/MjA5YzYzNDY2NTYyNjBlN2E3OGVmZGI1MDcxNWM2NTkvTkRRPQ==</p>","ds_observacao","104");
 
 INSERT INTO tb_auditoria_itens VALUES("664","2018-07-25 18:40:36","","dt_cadastro","104");
 
@@ -2337,8 +2475,6 @@ INSERT INTO tb_auditoria_itens VALUES("670","43","","co_historia","105");
 
 INSERT INTO tb_auditoria_itens VALUES("671","Valor pago por serviço","Valor pago por serviço","ds_titulo","105");
 
-INSERT INTO tb_auditoria_itens VALUES("672","<p>Determinar porcentagem ou valor para cada servi&ccedil;o.</p>\n\n\n\n<p>Depend&ecirc;ncia: http://localhost/PreProjeto/admin/Historia/CadastroHistoria/MjA5YzYzNDY2NTYyNjBlN2E3OGVmZGI1MDcxNWM2NTkvTkRRPQ==</p>","<p>Determinar porcentagem ou valor para cada servi&ccedil;o.</p>\n\n\n\n<p>Depend&ecirc;ncia: <a href=\"http://localhost/PreProjeto/admin/Historia/CadastroHistoria/MjA5YzYzNDY2NTYyNjBlN2E3OGVmZGI1MDcxNWM2NTkvTkRRPQ==\">http://localhost/PreProjeto/admin/Histor","ds_observacao","105");
-
 INSERT INTO tb_auditoria_itens VALUES("673","2018-07-25 18:40:36","","dt_cadastro","105");
 
 INSERT INTO tb_auditoria_itens VALUES("674","2018-07-25 18:44:48","2018-07-25 18:45:49","dt_atualizado","105");
@@ -2353,7 +2489,7 @@ INSERT INTO tb_auditoria_itens VALUES("678","5","5","co_sessao","105");
 
 INSERT INTO tb_auditoria_itens VALUES("679","","Horários de atendimento dos profissionais","ds_titulo","106");
 
-INSERT INTO tb_auditoria_itens VALUES("680","","<p>Hor&aacute;rios de atendimento dos profissionais</p>\n\n\n\n<p>Modelagem: Horario Profissional</p>","ds_observacao","106");
+INSERT INTO tb_auditoria_itens VALUES("680","","<p>Hor&aacute;rios de atendimento dos profissionais</p>\n\n\n\n\n\n\n\n<p>Modelagem: Horario Profissional</p>","ds_observacao","106");
 
 INSERT INTO tb_auditoria_itens VALUES("681","","9","co_sessao","106");
 
@@ -2387,7 +2523,7 @@ INSERT INTO tb_auditoria_itens VALUES("695","47","","co_historia","108");
 
 INSERT INTO tb_auditoria_itens VALUES("696","Histórico de comissões","Histórico de comissões","ds_titulo","108");
 
-INSERT INTO tb_auditoria_itens VALUES("697","<p>Hist&oacute;rico de comiss&otilde;es</p>","<p>Hist&oacute;rico de comiss&otilde;es</p>\n\n\n\n<p>&nbsp;</p>\n\n\n\n<p>Pendencia: Manter agendamento</p>","ds_observacao","108");
+INSERT INTO tb_auditoria_itens VALUES("697","<p>Hist&oacute;rico de comiss&otilde;es</p>","<p>Hist&oacute;rico de comiss&otilde;es</p>\n\n\n\n\n\n\n\n<p>&nbsp;</p>\n\n\n\n\n\n\n\n<p>Pendencia: Manter agendamento</p>","ds_observacao","108");
 
 INSERT INTO tb_auditoria_itens VALUES("698","2018-07-25 19:11:25","","dt_cadastro","108");
 
@@ -2403,7 +2539,7 @@ INSERT INTO tb_auditoria_itens VALUES("703","9","9","co_sessao","108");
 
 INSERT INTO tb_auditoria_itens VALUES("704","","Histórico de serviços","ds_titulo","109");
 
-INSERT INTO tb_auditoria_itens VALUES("705","","<p>Hist&oacute;rico de servi&ccedil;os</p>\n\n\n\n<p>pendencia: manter agendamento</p>","ds_observacao","109");
+INSERT INTO tb_auditoria_itens VALUES("705","","<p>Hist&oacute;rico de servi&ccedil;os</p>\n\n\n\n\n\n\n\n<p>pendencia: manter agendamento</p>","ds_observacao","109");
 
 INSERT INTO tb_auditoria_itens VALUES("706","","9","co_sessao","109");
 
@@ -2419,7 +2555,7 @@ INSERT INTO tb_auditoria_itens VALUES("711","","2018-07-25 19:17:02","dt_cadastr
 
 INSERT INTO tb_auditoria_itens VALUES("712","","Histórico de agendamentos","ds_titulo","110");
 
-INSERT INTO tb_auditoria_itens VALUES("713","","<p>Hist&oacute;rico de agendamentos</p>\n\n\n\n<p>Pend&ecirc;ncia: Manter agendamento</p>","ds_observacao","110");
+INSERT INTO tb_auditoria_itens VALUES("713","","<p>Hist&oacute;rico de agendamentos</p>\n\n\n\n\n\n\n\n<p>Pend&ecirc;ncia: Manter agendamento</p>","ds_observacao","110");
 
 INSERT INTO tb_auditoria_itens VALUES("714","","9","co_sessao","110");
 
@@ -2435,7 +2571,7 @@ INSERT INTO tb_auditoria_itens VALUES("719","","2018-07-25 19:17:37","dt_cadastr
 
 INSERT INTO tb_auditoria_itens VALUES("720","","Histórico de vale/adiantamento","ds_titulo","111");
 
-INSERT INTO tb_auditoria_itens VALUES("721","","<p>Hist&oacute;rico de vale/adiantamento</p>\n\n\n\n<p>Pendencia: Manter vale/adiantamento (Financeiro)</p>","ds_observacao","111");
+INSERT INTO tb_auditoria_itens VALUES("721","","<p>Hist&oacute;rico de vale/adiantamento</p>\n\n\n\n\n\n\n\n<p>Pendencia: Manter vale/adiantamento (Financeiro)</p>","ds_observacao","111");
 
 INSERT INTO tb_auditoria_itens VALUES("722","","9","co_sessao","111");
 
@@ -2451,7 +2587,7 @@ INSERT INTO tb_auditoria_itens VALUES("727","","2018-07-25 19:20:30","dt_cadastr
 
 INSERT INTO tb_auditoria_itens VALUES("728","","Relatório de comissões","ds_titulo","112");
 
-INSERT INTO tb_auditoria_itens VALUES("729","","<p>Relat&oacute;rio de comiss&otilde;es (Filtros)</p>\n\n\n\n<p>Pendencia: Manter agendamento</p>","ds_observacao","112");
+INSERT INTO tb_auditoria_itens VALUES("729","","<p>Relat&oacute;rio de comiss&otilde;es (Filtros)</p>\n\n\n\n\n\n\n\n<p>Pendencia: Manter agendamento</p>","ds_observacao","112");
 
 INSERT INTO tb_auditoria_itens VALUES("730","","9","co_sessao","112");
 
@@ -2483,7 +2619,7 @@ INSERT INTO tb_auditoria_itens VALUES("743","","2018-07-25 19:22:51","dt_cadastr
 
 INSERT INTO tb_auditoria_itens VALUES("744","","Histórico de agendamentos","ds_titulo","114");
 
-INSERT INTO tb_auditoria_itens VALUES("745","","<p>Hist&oacute;rico de agendamentos</p>\n\n\n\n<p>Pend&ecirc;ncia: Manter agendamento</p>","ds_observacao","114");
+INSERT INTO tb_auditoria_itens VALUES("745","","<p>Hist&oacute;rico de agendamentos</p>\n\n\n\n\n\n\n\n<p>Pend&ecirc;ncia: Manter agendamento</p>","ds_observacao","114");
 
 INSERT INTO tb_auditoria_itens VALUES("746","","11","co_sessao","114");
 
@@ -2499,7 +2635,7 @@ INSERT INTO tb_auditoria_itens VALUES("751","","2018-07-25 19:24:05","dt_cadastr
 
 INSERT INTO tb_auditoria_itens VALUES("752","","Histórico de serviços","ds_titulo","115");
 
-INSERT INTO tb_auditoria_itens VALUES("753","","<p>Hist&oacute;rico de servi&ccedil;os</p>\n\n\n\n<p>Pend&ecirc;ncia: Manter agendamento</p>","ds_observacao","115");
+INSERT INTO tb_auditoria_itens VALUES("753","","<p>Hist&oacute;rico de servi&ccedil;os</p>\n\n\n\n\n\n\n\n<p>Pend&ecirc;ncia: Manter agendamento</p>","ds_observacao","115");
 
 INSERT INTO tb_auditoria_itens VALUES("754","","11","co_sessao","115");
 
@@ -2515,7 +2651,7 @@ INSERT INTO tb_auditoria_itens VALUES("759","","2018-07-25 19:24:33","dt_cadastr
 
 INSERT INTO tb_auditoria_itens VALUES("760","","Histórico de Pacotes","ds_titulo","116");
 
-INSERT INTO tb_auditoria_itens VALUES("761","","<p>Hist&oacute;rico de Pacotes</p>\n\n\n\n<p>Pend&ecirc;ncia: Manter agendamento</p>","ds_observacao","116");
+INSERT INTO tb_auditoria_itens VALUES("761","","<p>Hist&oacute;rico de Pacotes</p>\n\n\n\n\n\n\n\n<p>Pend&ecirc;ncia: Manter agendamento</p>","ds_observacao","116");
 
 INSERT INTO tb_auditoria_itens VALUES("762","","11","co_sessao","116");
 
@@ -2531,7 +2667,7 @@ INSERT INTO tb_auditoria_itens VALUES("767","","2018-07-25 19:25:05","dt_cadastr
 
 INSERT INTO tb_auditoria_itens VALUES("768","","Histórico de Débitos","ds_titulo","117");
 
-INSERT INTO tb_auditoria_itens VALUES("769","","<p>Hist&oacute;rico de D&eacute;bitos</p>\n\n\n\n<p>Pend&ecirc;ncia: Manter agendamento</p>","ds_observacao","117");
+INSERT INTO tb_auditoria_itens VALUES("769","","<p>Hist&oacute;rico de D&eacute;bitos</p>\n\n\n\n\n\n\n\n<p>Pend&ecirc;ncia: Manter agendamento</p>","ds_observacao","117");
 
 INSERT INTO tb_auditoria_itens VALUES("770","","11","co_sessao","117");
 
@@ -2547,7 +2683,7 @@ INSERT INTO tb_auditoria_itens VALUES("775","","2018-07-25 19:25:36","dt_cadastr
 
 INSERT INTO tb_auditoria_itens VALUES("776","","Histórico de crédito","ds_titulo","118");
 
-INSERT INTO tb_auditoria_itens VALUES("777","","<p>Hist&oacute;rico de cr&eacute;dito</p>\n\n\n\n<p>Pend&ecirc;ncia: Manter agendamento</p>","ds_observacao","118");
+INSERT INTO tb_auditoria_itens VALUES("777","","<p>Hist&oacute;rico de cr&eacute;dito</p>\n\n\n\n\n\n\n\n<p>Pend&ecirc;ncia: Manter agendamento</p>","ds_observacao","118");
 
 INSERT INTO tb_auditoria_itens VALUES("778","","11","co_sessao","118");
 
@@ -2563,7 +2699,7 @@ INSERT INTO tb_auditoria_itens VALUES("783","","2018-07-25 19:26:05","dt_cadastr
 
 INSERT INTO tb_auditoria_itens VALUES("784","","Histórico de Vale presente","ds_titulo","119");
 
-INSERT INTO tb_auditoria_itens VALUES("785","","<p>Hist&oacute;rico de Vale presente</p>\n\n\n\n<p>Pend&ecirc;ncia: Manter agendamento</p>","ds_observacao","119");
+INSERT INTO tb_auditoria_itens VALUES("785","","<p>Hist&oacute;rico de Vale presente</p>\n\n\n\n\n\n\n\n<p>Pend&ecirc;ncia: Manter agendamento</p>","ds_observacao","119");
 
 INSERT INTO tb_auditoria_itens VALUES("786","","11","co_sessao","119");
 
@@ -2579,7 +2715,7 @@ INSERT INTO tb_auditoria_itens VALUES("791","","2018-07-25 19:26:52","dt_cadastr
 
 INSERT INTO tb_auditoria_itens VALUES("792","","Histórico de Sms","ds_titulo","120");
 
-INSERT INTO tb_auditoria_itens VALUES("793","","<p>Hist&oacute;rico de Sms</p>\n\n\n\n<p>Pend&ecirc;ncia: Manter Sms</p>","ds_observacao","120");
+INSERT INTO tb_auditoria_itens VALUES("793","","<p>Hist&oacute;rico de Sms</p>\n\n\n\n\n\n\n\n<p>Pend&ecirc;ncia: Manter Sms</p>","ds_observacao","120");
 
 INSERT INTO tb_auditoria_itens VALUES("794","","11","co_sessao","120");
 
@@ -2595,7 +2731,7 @@ INSERT INTO tb_auditoria_itens VALUES("799","","2018-07-25 19:27:25","dt_cadastr
 
 INSERT INTO tb_auditoria_itens VALUES("800","","Histórico de E-mail","ds_titulo","121");
 
-INSERT INTO tb_auditoria_itens VALUES("801","","<p>Hist&oacute;rico de E-mail</p>\n\n\n\n<p>Pend&ecirc;ncia: Manter E-mail</p>","ds_observacao","121");
+INSERT INTO tb_auditoria_itens VALUES("801","","<p>Hist&oacute;rico de E-mail</p>\n\n\n\n\n\n\n\n<p>Pend&ecirc;ncia: Manter E-mail</p>","ds_observacao","121");
 
 INSERT INTO tb_auditoria_itens VALUES("802","","11","co_sessao","121");
 
@@ -2843,7 +2979,7 @@ INSERT INTO tb_auditoria_itens VALUES("923","","2018-07-26 17:53:22","dt_cadastr
 
 INSERT INTO tb_auditoria_itens VALUES("924","","Criar conteúdos e Entregas","ds_titulo","143");
 
-INSERT INTO tb_auditoria_itens VALUES("925","","<p>Criar conte&uacute;dos para entrega e ir formulando a lista de lead</p>\n\n\n\n<p>Inicio da divulga&ccedil;&atilde;o para o lan&ccedil;amento.</p>","ds_observacao","143");
+INSERT INTO tb_auditoria_itens VALUES("925","","<p>Criar conte&uacute;dos para entrega e ir formulando a lista de lead</p>\n\n\n\n\n\n\n\n<p>Inicio da divulga&ccedil;&atilde;o para o lan&ccedil;amento.</p>","ds_observacao","143");
 
 INSERT INTO tb_auditoria_itens VALUES("926","","24","co_sessao","143");
 
@@ -2869,7 +3005,7 @@ INSERT INTO tb_auditoria_itens VALUES("936","67","","co_historia","145");
 
 INSERT INTO tb_auditoria_itens VALUES("937","Material do Pré Lançamento","Material do Pré Lançamento","ds_titulo","145");
 
-INSERT INTO tb_auditoria_itens VALUES("938","<p>Produ&ccedil;&atilde;o e Disponibiliza&ccedil;&atilde;o do material para lista de lead</p>","<p>Produ&ccedil;&atilde;o e Disponibiliza&ccedil;&atilde;o do material para lista de lead</p>\n\n\n\n<p>Dura&ccedil;&atilde;o de 7 a 10 dias antes do Lan&ccedil;amento de 3 a 4 v&iacute;deos</p>","ds_observacao","145");
+INSERT INTO tb_auditoria_itens VALUES("938","<p>Produ&ccedil;&atilde;o e Disponibiliza&ccedil;&atilde;o do material para lista de lead</p>","<p>Produ&ccedil;&atilde;o e Disponibiliza&ccedil;&atilde;o do material para lista de lead</p>\n\n\n\n\n\n\n\n<p>Dura&ccedil;&atilde;o de 7 a 10 dias antes do Lan&ccedil;amento de 3 a 4 v&iacute;deos</p>","ds_observacao","145");
 
 INSERT INTO tb_auditoria_itens VALUES("939","2018-07-26 17:45:02","","dt_cadastro","145");
 
@@ -2995,7 +3131,7 @@ INSERT INTO tb_auditoria_itens VALUES("999","","2018-07-26 18:39:09","dt_cadastr
 
 INSERT INTO tb_auditoria_itens VALUES("1000","","Iniciar o sistema com as configurações básicas","ds_titulo","155");
 
-INSERT INTO tb_auditoria_itens VALUES("1001","","<p>Iniciar o sistema com as configura&ccedil;&otilde;es b&aacute;sicas para depois iniciar o painel</p>\n\n\n\n<p>&nbsp;</p>\n\n\n\n<p>Cadastro de proffisional, cliente, servi&ccedil;os e configura&ccedil;&otilde;es padr&otilde;es</p>","ds_observacao","155");
+INSERT INTO tb_auditoria_itens VALUES("1001","","<p>Iniciar o sistema com as configura&ccedil;&otilde;es b&aacute;sicas para depois iniciar o painel</p>\n\n\n\n\n\n\n\n<p>&nbsp;</p>\n\n\n\n\n\n\n\n<p>Cadastro de proffisional, cliente, servi&ccedil;os e configura&ccedil;&otilde;es padr&otilde;es</p>","ds_observacao","155");
 
 INSERT INTO tb_auditoria_itens VALUES("1002","","26","co_sessao","155");
 
@@ -3013,7 +3149,7 @@ INSERT INTO tb_auditoria_itens VALUES("1008","37","","co_historia","156");
 
 INSERT INTO tb_auditoria_itens VALUES("1009","Fechamento de conta no agendamento","Fechamento de conta no agendamento","ds_titulo","156");
 
-INSERT INTO tb_auditoria_itens VALUES("1010","<p>Fechamento de conta no agendamento</p>\n\n\n\n<p>Modelagem: Pagamento (FK agendamento, FK Caixa)</p>","<p>Fechamento de conta no agendamento</p>\n\n\n\n<p>Transformar troco em cr&eacute;dito</p>\n\n\n\n<p>Modelagem: Pagamento (FK agendamento, FK Caixa)</p>","ds_observacao","156");
+INSERT INTO tb_auditoria_itens VALUES("1010","<p>Fechamento de conta no agendamento</p>\n\n\n\n\n\n\n\n<p>Modelagem: Pagamento (FK agendamento, FK Caixa)</p>","<p>Fechamento de conta no agendamento</p>\n\n\n\n\n\n\n\n<p>Transformar troco em cr&eacute;dito</p>\n\n\n\n\n\n\n\n<p>Modelagem: Pagamento (FK agendamento, FK Caixa)</p>","ds_observacao","156");
 
 INSERT INTO tb_auditoria_itens VALUES("1011","2018-07-25 18:12:12","","dt_cadastro","156");
 
@@ -3030,8 +3166,6 @@ INSERT INTO tb_auditoria_itens VALUES("1016","18","18","co_sessao","156");
 INSERT INTO tb_auditoria_itens VALUES("1017","62","","co_historia","157");
 
 INSERT INTO tb_auditoria_itens VALUES("1018","Página do Assinante","Página do Assinante","ds_titulo","157");
-
-INSERT INTO tb_auditoria_itens VALUES("1019","<p>P&aacute;gina do Assinante</p>","<p>P&aacute;gina do Assinante</p>\n\n\n\n<p>Promova seu sal&atilde;o no sistema da beleza com sua pr&oacute;pria p&aacute;gina customizada e com agendamento on-line</p>\n\n\n\n<p>Utilize sua p&aacute;gina exclusiva para divulgar fotos, servi&ccedil;os e infor","ds_observacao","157");
 
 INSERT INTO tb_auditoria_itens VALUES("1020","2018-07-26 17:36:50","","dt_cadastro","157");
 
@@ -3315,7 +3449,7 @@ INSERT INTO tb_auditoria_itens VALUES("1159","","2018-07-26 22:17:41","dt_cadast
 
 INSERT INTO tb_auditoria_itens VALUES("1160","","Manter Entrada e saída (Normal e recorrente)","ds_titulo","181");
 
-INSERT INTO tb_auditoria_itens VALUES("1161","","<p>Manter Entrada e sa&iacute;da (Normal e recorrente)</p>\n\n\n\n<p>&nbsp;</p>\n\n\n\n<p>Modelagem: Entrada saida (FK Assinante)</p>","ds_observacao","181");
+INSERT INTO tb_auditoria_itens VALUES("1161","","<p>Manter Entrada e sa&iacute;da (Normal e recorrente)</p>\n\n\n\n\n\n\n\n<p>&nbsp;</p>\n\n\n\n\n\n\n\n<p>Modelagem: Entrada saida (FK Assinante)</p>","ds_observacao","181");
 
 INSERT INTO tb_auditoria_itens VALUES("1162","","30","co_sessao","181");
 
@@ -3331,7 +3465,7 @@ INSERT INTO tb_auditoria_itens VALUES("1167","","2018-07-26 22:19:03","dt_cadast
 
 INSERT INTO tb_auditoria_itens VALUES("1168","","Manter categorias de entrada e saída","ds_titulo","182");
 
-INSERT INTO tb_auditoria_itens VALUES("1169","","<p>Manter categorias de entrada e sa&iacute;da</p>\n\n\n\n<p>Modelagem: categorias entrada e sa&iacute;da (FK Assinante)</p>\n\n\n\n<p>Tabela Base categorias entrada e sa&iacute;da</p>","ds_observacao","182");
+INSERT INTO tb_auditoria_itens VALUES("1169","","<p>Manter categorias de entrada e sa&iacute;da</p>\n\n\n\n\n\n\n\n<p>Modelagem: categorias entrada e sa&iacute;da (FK Assinante)</p>\n\n\n\n\n\n\n\n<p>Tabela Base categorias entrada e sa&iacute;da</p>","ds_observacao","182");
 
 INSERT INTO tb_auditoria_itens VALUES("1170","","30","co_sessao","182");
 
@@ -3347,7 +3481,7 @@ INSERT INTO tb_auditoria_itens VALUES("1175","","2018-07-26 22:21:00","dt_cadast
 
 INSERT INTO tb_auditoria_itens VALUES("1176","","Manter Comissões","ds_titulo","183");
 
-INSERT INTO tb_auditoria_itens VALUES("1177","","<p>Manter Comiss&otilde;es</p>\n\n\n\n<p>Modelagem: comissao (FK Agendamento)</p>","ds_observacao","183");
+INSERT INTO tb_auditoria_itens VALUES("1177","","<p>Manter Comiss&otilde;es</p>\n\n\n\n\n\n\n\n<p>Modelagem: comissao (FK Agendamento)</p>","ds_observacao","183");
 
 INSERT INTO tb_auditoria_itens VALUES("1178","","30","co_sessao","183");
 
@@ -3363,7 +3497,7 @@ INSERT INTO tb_auditoria_itens VALUES("1183","","2018-07-26 22:23:39","dt_cadast
 
 INSERT INTO tb_auditoria_itens VALUES("1184","","Manter vale e adiantamento","ds_titulo","184");
 
-INSERT INTO tb_auditoria_itens VALUES("1185","","<p>Manter vale e adiantamento</p>\n\n\n\n<p>Modelagem: vale e adiantamento (FK Profissional)</p>","ds_observacao","184");
+INSERT INTO tb_auditoria_itens VALUES("1185","","<p>Manter vale e adiantamento</p>\n\n\n\n\n\n\n\n<p>Modelagem: vale e adiantamento (FK Profissional)</p>","ds_observacao","184");
 
 INSERT INTO tb_auditoria_itens VALUES("1186","","30","co_sessao","184");
 
@@ -3385,7 +3519,7 @@ INSERT INTO tb_auditoria_itens VALUES("1194","","2018-07-26 22:26:08","dt_cadast
 
 INSERT INTO tb_auditoria_itens VALUES("1195","","Manter Suporte","ds_titulo","186");
 
-INSERT INTO tb_auditoria_itens VALUES("1196","","<p>Manter Suporte</p>\n\n\n\n<p>Modelagem: suporte (FK Assinante, Categoria Suporte)</p>\n\n\n\n<p>Tabela base Categoria Suporte</p>","ds_observacao","186");
+INSERT INTO tb_auditoria_itens VALUES("1196","","<p>Manter Suporte</p>\n\n\n\n\n\n\n\n<p>Modelagem: suporte (FK Assinante, Categoria Suporte)</p>\n\n\n\n\n\n\n\n<p>Tabela base Categoria Suporte</p>","ds_observacao","186");
 
 INSERT INTO tb_auditoria_itens VALUES("1197","","31","co_sessao","186");
 
@@ -3403,7 +3537,7 @@ INSERT INTO tb_auditoria_itens VALUES("1203","89","","co_historia","187");
 
 INSERT INTO tb_auditoria_itens VALUES("1204","Manter Suporte","Manter Suporte","ds_titulo","187");
 
-INSERT INTO tb_auditoria_itens VALUES("1205","<p>Manter Suporte</p>\n\n\n\n<p>Modelagem: suporte (FK Assinante, Categoria Suporte)</p>\n\n\n\n<p>Tabela base Categoria Suporte</p>","<p>Manter Suporte, responder suporte, apresentar resposta</p>\n\n\n\n<p>Modelagem: suporte (FK Assinante, Categoria Suporte)</p>\n\n\n\n<p>Tabela base Categoria Suporte</p>","ds_observacao","187");
+INSERT INTO tb_auditoria_itens VALUES("1205","<p>Manter Suporte</p>\n\n\n\n\n\n\n\n<p>Modelagem: suporte (FK Assinante, Categoria Suporte)</p>\n\n\n\n\n\n\n\n<p>Tabela base Categoria Suporte</p>","<p>Manter Suporte, responder suporte, apresentar resposta</p>\n\n\n\n\n\n\n\n<p>Modelagem: suporte (FK Assinante, Categoria Suporte)</p>\n\n\n\n\n\n\n\n<p>Tabela base Categoria Suporte</p>","ds_observacao","187");
 
 INSERT INTO tb_auditoria_itens VALUES("1206","2018-07-26 22:27:22","","dt_cadastro","187");
 
@@ -3512,8 +3646,6 @@ INSERT INTO tb_auditoria_itens VALUES("1257","","2018-07-27 17:19:07","dt_cadast
 INSERT INTO tb_auditoria_itens VALUES("1258","11","","co_historia","194");
 
 INSERT INTO tb_auditoria_itens VALUES("1259","Formas de pagamento","Formas de pagamento","ds_titulo","194");
-
-INSERT INTO tb_auditoria_itens VALUES("1260","<p>Forma de pagamento aceitas e taxas</p>\n\n\n\n<p>Configura&ccedil;&atilde;o se aceita pagamento posterior</p>\n\n\n\n<p>&nbsp;</p>\n\n\n\n<p>modelagem: Configuracao (FK assinante), Taxas cart&otilde;es, Tabela base Formas de pagamento, Tabela base bandeira c","<p>Forma de pagamento aceitas e taxas e periodo da taxa hist&oacute;rico da taxa</p>\n\n\n\n<p>Configura&ccedil;&atilde;o se aceita pagamento posterior</p>\n\n\n\n<p>&nbsp;</p>\n\n\n\n<p>modelagem: Configuracao (FK assinante), Taxas cart&otilde;es, Tabela base ","ds_observacao","194");
 
 INSERT INTO tb_auditoria_itens VALUES("1261","2018-07-25 14:38:19","","dt_cadastro","194");
 
@@ -3647,7 +3779,7 @@ INSERT INTO tb_auditoria_itens VALUES("1325","92","","co_historia","202");
 
 INSERT INTO tb_auditoria_itens VALUES("1326","Profissional mostra os serviços realizados","Profissional mostra os serviços realizados","ds_titulo","202");
 
-INSERT INTO tb_auditoria_itens VALUES("1327","<p>Profissional Gerar Gr&aacute;ficos e Relat&oacute;rios Mostra os servi&ccedil;os realizados no per&iacute;odo com um Profissional ou auxiliar</p>","<p>Profissional Gerar Gr&aacute;ficos e Relat&oacute;rios Mostra os servi&ccedil;os realizados no per&iacute;odo com um Profissional ou auxiliar</p>\n\n\n\n<p>Impress&atilde;o dos gr&aacute;ficos e dados</p>","ds_observacao","202");
+INSERT INTO tb_auditoria_itens VALUES("1327","<p>Profissional Gerar Gr&aacute;ficos e Relat&oacute;rios Mostra os servi&ccedil;os realizados no per&iacute;odo com um Profissional ou auxiliar</p>","<p>Profissional Gerar Gr&aacute;ficos e Relat&oacute;rios Mostra os servi&ccedil;os realizados no per&iacute;odo com um Profissional ou auxiliar</p>\n\n\n\n\n\n\n\n<p>Impress&atilde;o dos gr&aacute;ficos e dados</p>","ds_observacao","202");
 
 INSERT INTO tb_auditoria_itens VALUES("1328","2018-07-27 17:37:41","","dt_cadastro","202");
 
@@ -3665,7 +3797,7 @@ INSERT INTO tb_auditoria_itens VALUES("1334","93","","co_historia","203");
 
 INSERT INTO tb_auditoria_itens VALUES("1335","Profissional mostra todas as reservas","Profissional mostra todas as reservas","ds_titulo","203");
 
-INSERT INTO tb_auditoria_itens VALUES("1336","<p>Profissional Gerar Gr&aacute;ficos e Relat&oacute;rios Mostra todas as reservas de um profissional no per&iacute;odo</p>","<p>Profissional Gerar Gr&aacute;ficos e Relat&oacute;rios Mostra todas as reservas de um profissional no per&iacute;odo</p>\n\n\n\n<p>Impress&atilde;o dos gr&aacute;ficos e dados</p>","ds_observacao","203");
+INSERT INTO tb_auditoria_itens VALUES("1336","<p>Profissional Gerar Gr&aacute;ficos e Relat&oacute;rios Mostra todas as reservas de um profissional no per&iacute;odo</p>","<p>Profissional Gerar Gr&aacute;ficos e Relat&oacute;rios Mostra todas as reservas de um profissional no per&iacute;odo</p>\n\n\n\n\n\n\n\n<p>Impress&atilde;o dos gr&aacute;ficos e dados</p>","ds_observacao","203");
 
 INSERT INTO tb_auditoria_itens VALUES("1337","2018-07-27 17:38:44","","dt_cadastro","203");
 
@@ -3683,7 +3815,7 @@ INSERT INTO tb_auditoria_itens VALUES("1343","94","","co_historia","204");
 
 INSERT INTO tb_auditoria_itens VALUES("1344","Profissional mostra todos agendamentos atendidos","Profissional mostra todos agendamentos atendidos","ds_titulo","204");
 
-INSERT INTO tb_auditoria_itens VALUES("1345","<p>Profissional Gerar Gr&aacute;ficos e Relat&oacute;rios Mostra todos agendamentos atendidos de um profissional no per&iacute;odo</p>","<p>Profissional Gerar Gr&aacute;ficos e Relat&oacute;rios Mostra todos agendamentos atendidos de um profissional no per&iacute;odo</p>\n\n\n\n<p>Impress&atilde;o dos gr&aacute;ficos e dados</p>","ds_observacao","204");
+INSERT INTO tb_auditoria_itens VALUES("1345","<p>Profissional Gerar Gr&aacute;ficos e Relat&oacute;rios Mostra todos agendamentos atendidos de um profissional no per&iacute;odo</p>","<p>Profissional Gerar Gr&aacute;ficos e Relat&oacute;rios Mostra todos agendamentos atendidos de um profissional no per&iacute;odo</p>\n\n\n\n\n\n\n\n<p>Impress&atilde;o dos gr&aacute;ficos e dados</p>","ds_observacao","204");
 
 INSERT INTO tb_auditoria_itens VALUES("1346","2018-07-27 17:40:17","","dt_cadastro","204");
 
@@ -3701,8 +3833,6 @@ INSERT INTO tb_auditoria_itens VALUES("1352","95","","co_historia","205");
 
 INSERT INTO tb_auditoria_itens VALUES("1353","Profissionais o total de comissões","Profissionais o total de comissões","ds_titulo","205");
 
-INSERT INTO tb_auditoria_itens VALUES("1354","<p>Profissional Gerar Gr&aacute;ficos e Relat&oacute;rio Mostra o total de comiss&otilde;es para todos os profissionais do per&iacute;odo, Comiss&atilde;o por profissional (Principal ou auxiliar)</p>","<p>Profissional Gerar Gr&aacute;ficos e Relat&oacute;rio Mostra o total de comiss&otilde;es para todos os profissionais do per&iacute;odo, Comiss&atilde;o por profissional (Principal ou auxiliar)</p>\n\n\n\n<p>Impress&atilde;o dos gr&aacute;ficos e dados</p","ds_observacao","205");
-
 INSERT INTO tb_auditoria_itens VALUES("1355","2018-07-27 17:41:16","","dt_cadastro","205");
 
 INSERT INTO tb_auditoria_itens VALUES("1356","2018-07-27 17:41:42","2018-07-27 17:46:55","dt_atualizado","205");
@@ -3719,7 +3849,7 @@ INSERT INTO tb_auditoria_itens VALUES("1361","96","","co_historia","206");
 
 INSERT INTO tb_auditoria_itens VALUES("1362","Cliente por profissonal atendido","Cliente por profissonal atendido","ds_titulo","206");
 
-INSERT INTO tb_auditoria_itens VALUES("1363","<p>Cliente Gerar Gr&aacute;ficos e Relat&oacute;rios Selecione o profissional e o per&iacute;odo para ver os clientes atendidos por ele</p>","<p>Cliente Gerar Gr&aacute;ficos e Relat&oacute;rios Selecione o profissional e o per&iacute;odo para ver os clientes atendidos por ele</p>\n\n\n\n<p>Impress&atilde;o dos gr&aacute;ficos e dados</p>","ds_observacao","206");
+INSERT INTO tb_auditoria_itens VALUES("1363","<p>Cliente Gerar Gr&aacute;ficos e Relat&oacute;rios Selecione o profissional e o per&iacute;odo para ver os clientes atendidos por ele</p>","<p>Cliente Gerar Gr&aacute;ficos e Relat&oacute;rios Selecione o profissional e o per&iacute;odo para ver os clientes atendidos por ele</p>\n\n\n\n\n\n\n\n<p>Impress&atilde;o dos gr&aacute;ficos e dados</p>","ds_observacao","206");
 
 INSERT INTO tb_auditoria_itens VALUES("1364","2018-07-27 17:43:01","","dt_cadastro","206");
 
@@ -3737,8 +3867,6 @@ INSERT INTO tb_auditoria_itens VALUES("1370","95","","co_historia","207");
 
 INSERT INTO tb_auditoria_itens VALUES("1371","Profissionais o total de comissões","Profissional o total de comissões","ds_titulo","207");
 
-INSERT INTO tb_auditoria_itens VALUES("1372","<p>Profissional Gerar Gr&aacute;ficos e Relat&oacute;rio Mostra o total de comiss&otilde;es para todos os profissionais do per&iacute;odo, Comiss&atilde;o por profissional (Principal ou auxiliar)</p>\n\n\n\n<p>Impress&atilde;o dos gr&aacute;ficos e dados</p","<p>Profissional Gerar Gr&aacute;ficos e Relat&oacute;rio Mostra o total de comiss&otilde;es para todos os profissionais do per&iacute;odo, Comiss&atilde;o por profissional (Principal ou auxiliar)</p>\n\n\n\n<p>Impress&atilde;o dos gr&aacute;ficos e dados</p","ds_observacao","207");
-
 INSERT INTO tb_auditoria_itens VALUES("1373","2018-07-27 17:41:16","","dt_cadastro","207");
 
 INSERT INTO tb_auditoria_itens VALUES("1374","2018-07-27 17:46:55","2018-07-27 17:47:48","dt_atualizado","207");
@@ -3753,7 +3881,7 @@ INSERT INTO tb_auditoria_itens VALUES("1378","32","32","co_sessao","207");
 
 INSERT INTO tb_auditoria_itens VALUES("1379","","Cliente Informações básicas","ds_titulo","208");
 
-INSERT INTO tb_auditoria_itens VALUES("1380","","<p>Cliente Gerar Gr&aacute;ficos e Relat&oacute;rios com informa&ccedil;&otilde;es como aniversariantes do m&ecirc;s, lista de contatos, atrav&eacute;s de que meio</p>\n\n\n\n<p>Impress&atilde;o dos gr&aacute;ficos e dados</p>\n\n\n\n<p>&nbsp;</p>","ds_observacao","208");
+INSERT INTO tb_auditoria_itens VALUES("1380","","<p>Cliente Gerar Gr&aacute;ficos e Relat&oacute;rios com informa&ccedil;&otilde;es como aniversariantes do m&ecirc;s, lista de contatos, atrav&eacute;s de que meio</p>\n\n\n\n\n\n\n\n<p>Impress&atilde;o dos gr&aacute;ficos e dados</p>\n\n\n\n\n\n\n\n<p>&nbsp;</p>","ds_observacao","208");
 
 INSERT INTO tb_auditoria_itens VALUES("1381","","32","co_sessao","208");
 
@@ -3769,7 +3897,7 @@ INSERT INTO tb_auditoria_itens VALUES("1386","","2018-07-27 17:49:20","dt_cadast
 
 INSERT INTO tb_auditoria_itens VALUES("1387","","Cliente todos agendamentos","ds_titulo","209");
 
-INSERT INTO tb_auditoria_itens VALUES("1388","","<p>Cliente Gerar Gr&aacute;ficos e Relat&oacute;rios Mostrar todos agendamentos por cliente</p>\n\n\n\n<p>Impress&atilde;o dos gr&aacute;ficos e dados</p>\n\n\n\n<p>&nbsp;</p>","ds_observacao","209");
+INSERT INTO tb_auditoria_itens VALUES("1388","","<p>Cliente Gerar Gr&aacute;ficos e Relat&oacute;rios Mostrar todos agendamentos por cliente</p>\n\n\n\n\n\n\n\n<p>Impress&atilde;o dos gr&aacute;ficos e dados</p>\n\n\n\n\n\n\n\n<p>&nbsp;</p>","ds_observacao","209");
 
 INSERT INTO tb_auditoria_itens VALUES("1389","","32","co_sessao","209");
 
@@ -3785,7 +3913,7 @@ INSERT INTO tb_auditoria_itens VALUES("1394","","2018-07-27 17:50:16","dt_cadast
 
 INSERT INTO tb_auditoria_itens VALUES("1395","","Cliente serviços consumido","ds_titulo","210");
 
-INSERT INTO tb_auditoria_itens VALUES("1396","","<p>Cliente Gerar Gr&aacute;ficos e Relat&oacute;rios Mostrar servi&ccedil;os consumido por cliente</p>\n\n\n\n<p>Impress&atilde;o dos gr&aacute;ficos e dados</p>\n\n\n\n<p>&nbsp;</p>","ds_observacao","210");
+INSERT INTO tb_auditoria_itens VALUES("1396","","<p>Cliente Gerar Gr&aacute;ficos e Relat&oacute;rios Mostrar servi&ccedil;os consumido por cliente</p>\n\n\n\n\n\n\n\n<p>Impress&atilde;o dos gr&aacute;ficos e dados</p>\n\n\n\n\n\n\n\n<p>&nbsp;</p>","ds_observacao","210");
 
 INSERT INTO tb_auditoria_itens VALUES("1397","","32","co_sessao","210");
 
@@ -3801,7 +3929,7 @@ INSERT INTO tb_auditoria_itens VALUES("1402","","2018-07-27 17:51:05","dt_cadast
 
 INSERT INTO tb_auditoria_itens VALUES("1403","","Clientes cadastrados no periodo","ds_titulo","211");
 
-INSERT INTO tb_auditoria_itens VALUES("1404","","<p>Cliente Gerar Gr&aacute;ficos e Relat&oacute;rios Mostra quais clientes foram cadastrados no per&iacute;odo selecionado</p>\n\n\n\n<p>Impress&atilde;o dos gr&aacute;ficos e dados</p>\n\n\n\n<p>&nbsp;</p>","ds_observacao","211");
+INSERT INTO tb_auditoria_itens VALUES("1404","","<p>Cliente Gerar Gr&aacute;ficos e Relat&oacute;rios Mostra quais clientes foram cadastrados no per&iacute;odo selecionado</p>\n\n\n\n\n\n\n\n<p>Impress&atilde;o dos gr&aacute;ficos e dados</p>\n\n\n\n\n\n\n\n<p>&nbsp;</p>","ds_observacao","211");
 
 INSERT INTO tb_auditoria_itens VALUES("1405","","32","co_sessao","211");
 
@@ -3817,7 +3945,7 @@ INSERT INTO tb_auditoria_itens VALUES("1410","","2018-07-27 17:51:49","dt_cadast
 
 INSERT INTO tb_auditoria_itens VALUES("1411","","Financeiro débitos e créditos dos clientes","ds_titulo","212");
 
-INSERT INTO tb_auditoria_itens VALUES("1412","","<p>Financeiro Gerar Gr&aacute;ficos e Relat&oacute;rios Mostra quais clientes possuem d&eacute;bitos e cr&eacute;ditos</p>\n\n\n\n<p>&nbsp; Impress&atilde;o dos gr&aacute;ficos e dados</p>","ds_observacao","212");
+INSERT INTO tb_auditoria_itens VALUES("1412","","<p>Financeiro Gerar Gr&aacute;ficos e Relat&oacute;rios Mostra quais clientes possuem d&eacute;bitos e cr&eacute;ditos</p>\n\n\n\n\n\n\n\n<p>&nbsp; Impress&atilde;o dos gr&aacute;ficos e dados</p>","ds_observacao","212");
 
 INSERT INTO tb_auditoria_itens VALUES("1413","","32","co_sessao","212");
 
@@ -3833,7 +3961,7 @@ INSERT INTO tb_auditoria_itens VALUES("1418","","2018-07-27 17:53:27","dt_cadast
 
 INSERT INTO tb_auditoria_itens VALUES("1419","","Financeiro entrada e saída","ds_titulo","213");
 
-INSERT INTO tb_auditoria_itens VALUES("1420","","<p>Financeiro Gerar Gr&aacute;ficos e Relat&oacute;rios Financeiro com entradas e sa&iacute;das por per&iacute;odo</p>\n\n\n\n<p>Impress&atilde;o dos gr&aacute;ficos e dados</p>","ds_observacao","213");
+INSERT INTO tb_auditoria_itens VALUES("1420","","<p>Financeiro Gerar Gr&aacute;ficos e Relat&oacute;rios Financeiro com entradas e sa&iacute;das por per&iacute;odo</p>\n\n\n\n\n\n\n\n<p>Impress&atilde;o dos gr&aacute;ficos e dados</p>","ds_observacao","213");
 
 INSERT INTO tb_auditoria_itens VALUES("1421","","32","co_sessao","213");
 
@@ -3849,7 +3977,7 @@ INSERT INTO tb_auditoria_itens VALUES("1426","","2018-07-27 17:54:38","dt_cadast
 
 INSERT INTO tb_auditoria_itens VALUES("1427","","Financeiro comissões pagas","ds_titulo","214");
 
-INSERT INTO tb_auditoria_itens VALUES("1428","","<p>Financeiro Gerar Gr&aacute;ficos e Relat&oacute;rios Mostra todas as comiss&otilde;es pagas em determinado per&iacute;odo</p>\n\n\n\n<p>Impress&atilde;o dos gr&aacute;ficos e dados</p>","ds_observacao","214");
+INSERT INTO tb_auditoria_itens VALUES("1428","","<p>Financeiro Gerar Gr&aacute;ficos e Relat&oacute;rios Mostra todas as comiss&otilde;es pagas em determinado per&iacute;odo</p>\n\n\n\n\n\n\n\n<p>Impress&atilde;o dos gr&aacute;ficos e dados</p>","ds_observacao","214");
 
 INSERT INTO tb_auditoria_itens VALUES("1429","","32","co_sessao","214");
 
@@ -3883,7 +4011,7 @@ INSERT INTO tb_auditoria_itens VALUES("1443","19","19","co_sessao","215");
 
 INSERT INTO tb_auditoria_itens VALUES("1444","","Financeiro faturamento por forma de pagamento","ds_titulo","216");
 
-INSERT INTO tb_auditoria_itens VALUES("1445","","<p>Financeiro Gerar Gr&aacute;ficos e Relat&oacute;rios&nbsp;Selecione um per&iacute;odo de datas para gerar o relat&oacute;rio de faturamento por forma de pagamento</p>\n\n\n\n<p>Impress&atilde;o dos gr&aacute;ficos e dados</p>","ds_observacao","216");
+INSERT INTO tb_auditoria_itens VALUES("1445","","<p>Financeiro Gerar Gr&aacute;ficos e Relat&oacute;rios&nbsp;Selecione um per&iacute;odo de datas para gerar o relat&oacute;rio de faturamento por forma de pagamento</p>\n\n\n\n\n\n\n\n<p>Impress&atilde;o dos gr&aacute;ficos e dados</p>","ds_observacao","216");
 
 INSERT INTO tb_auditoria_itens VALUES("1446","","32","co_sessao","216");
 
@@ -3901,7 +4029,7 @@ INSERT INTO tb_auditoria_itens VALUES("1452","102","","co_historia","217");
 
 INSERT INTO tb_auditoria_itens VALUES("1453","Financeiro entrada e saída","Financeiro entrada e saída","ds_titulo","217");
 
-INSERT INTO tb_auditoria_itens VALUES("1454","<p>Financeiro Gerar Gr&aacute;ficos e Relat&oacute;rios Financeiro com entradas e sa&iacute;das por per&iacute;odo</p>\n\n\n\n<p>Impress&atilde;o dos gr&aacute;ficos e dados</p>","<p>Financeiro Gerar Gr&aacute;ficos e Relat&oacute;rios Financeiro com entradas e sa&iacute;das por per&iacute;odo</p>\n\n\n\n<p>Impress&atilde;o dos gr&aacute;ficos e dados</p>","ds_observacao","217");
+INSERT INTO tb_auditoria_itens VALUES("1454","<p>Financeiro Gerar Gr&aacute;ficos e Relat&oacute;rios Financeiro com entradas e sa&iacute;das por per&iacute;odo</p>\n\n\n\n\n\n\n\n<p>Impress&atilde;o dos gr&aacute;ficos e dados</p>","<p>Financeiro Gerar Gr&aacute;ficos e Relat&oacute;rios Financeiro com entradas e sa&iacute;das por per&iacute;odo</p>\n\n\n\n\n\n\n\n<p>Impress&atilde;o dos gr&aacute;ficos e dados</p>","ds_observacao","217");
 
 INSERT INTO tb_auditoria_itens VALUES("1455","2018-07-27 17:54:38","","dt_cadastro","217");
 
@@ -3917,7 +4045,7 @@ INSERT INTO tb_auditoria_itens VALUES("1460","32","32","co_sessao","217");
 
 INSERT INTO tb_auditoria_itens VALUES("1461","","Financeiro faturamento diário","ds_titulo","218");
 
-INSERT INTO tb_auditoria_itens VALUES("1462","","<p>Financeiro Gerar Gr&aacute;ficos e Relat&oacute;rios Selecione um Per&iacute;odo para gerar o relat&oacute;rio de faturamento do sal&atilde;o por dia</p>\n\n\n\n<p>&nbsp; Impress&atilde;o dos gr&aacute;ficos e dados</p>","ds_observacao","218");
+INSERT INTO tb_auditoria_itens VALUES("1462","","<p>Financeiro Gerar Gr&aacute;ficos e Relat&oacute;rios Selecione um Per&iacute;odo para gerar o relat&oacute;rio de faturamento do sal&atilde;o por dia</p>\n\n\n\n\n\n\n\n<p>&nbsp; Impress&atilde;o dos gr&aacute;ficos e dados</p>","ds_observacao","218");
 
 INSERT INTO tb_auditoria_itens VALUES("1463","","32","co_sessao","218");
 
@@ -3933,7 +4061,7 @@ INSERT INTO tb_auditoria_itens VALUES("1468","","2018-07-27 18:07:54","dt_cadast
 
 INSERT INTO tb_auditoria_itens VALUES("1469","","Financeiro taxas dos cartões pagas","ds_titulo","219");
 
-INSERT INTO tb_auditoria_itens VALUES("1470","","<p>Financeiro Gerar Gr&aacute;ficos e Relat&oacute;rios Mostra quanto voc&ecirc; ter&aacute; de pagar de taxas de cart&atilde;o de cr&eacute;dito e d&eacute;bito no per&iacute;odo considerando as taxas inseridas na aba configura&ccedil;&otilde;es</p>\n\n\n","ds_observacao","219");
+INSERT INTO tb_auditoria_itens VALUES("1470","","<p>Financeiro Gerar Gr&aacute;ficos e Relat&oacute;rios Mostra quanto voc&ecirc; ter&aacute; de pagar de taxas de cart&atilde;o de cr&eacute;dito e d&eacute;bito no per&iacute;odo considerando as taxas inseridas na aba configura&ccedil;&otilde;es</p>\n\n\n\n","ds_observacao","219");
 
 INSERT INTO tb_auditoria_itens VALUES("1471","","32","co_sessao","219");
 
@@ -3949,7 +4077,7 @@ INSERT INTO tb_auditoria_itens VALUES("1476","","2018-07-27 18:09:40","dt_cadast
 
 INSERT INTO tb_auditoria_itens VALUES("1477","","Financeiro taxas dos cartões pagas por bandeira","ds_titulo","220");
 
-INSERT INTO tb_auditoria_itens VALUES("1478","","<p>Financeiro Gerar Gr&aacute;ficos e Relat&oacute;rios Mostra o total de faturamento por bandeira e total de taxa descontado no per&iacute;odo</p>\n\n\n\n<p>Impress&atilde;o dos gr&aacute;ficos e dados</p>","ds_observacao","220");
+INSERT INTO tb_auditoria_itens VALUES("1478","","<p>Financeiro Gerar Gr&aacute;ficos e Relat&oacute;rios Mostra o total de faturamento por bandeira e total de taxa descontado no per&iacute;odo</p>\n\n\n\n\n\n\n\n<p>Impress&atilde;o dos gr&aacute;ficos e dados</p>","ds_observacao","220");
 
 INSERT INTO tb_auditoria_itens VALUES("1479","","32","co_sessao","220");
 
@@ -3965,8 +4093,6 @@ INSERT INTO tb_auditoria_itens VALUES("1484","","2018-07-27 18:10:55","dt_cadast
 
 INSERT INTO tb_auditoria_itens VALUES("1485","","Caixa Fechados e abertos por periodo","ds_titulo","221");
 
-INSERT INTO tb_auditoria_itens VALUES("1486","","<p>Caixa Gerar Gr&aacute;ficos e Relat&oacute;rios&nbsp;Selecione o per&iacute;odo e visualize todos os caixas fechados e os seus respectivos hor&aacute;rios de abertura e fechamento</p>\n\n\n\n<p>Impress&atilde;o dos gr&aacute;ficos e dados</p>\n\n\n\n<p>&nb","ds_observacao","221");
-
 INSERT INTO tb_auditoria_itens VALUES("1487","","32","co_sessao","221");
 
 INSERT INTO tb_auditoria_itens VALUES("1488","","N","st_situacao","221");
@@ -3981,7 +4107,7 @@ INSERT INTO tb_auditoria_itens VALUES("1492","","2018-07-27 18:12:06","dt_cadast
 
 INSERT INTO tb_auditoria_itens VALUES("1493","","Caixa entrada de pagamento","ds_titulo","222");
 
-INSERT INTO tb_auditoria_itens VALUES("1494","","<p>Caixa Gerar Gr&aacute;ficos e Relat&oacute;rios Mostra todas as entradas de pagamento no per&iacute;odo por caixa</p>\n\n\n\n<p>&nbsp; Impress&atilde;o dos gr&aacute;ficos e dados</p>\n\n\n\n<p>&nbsp;</p>","ds_observacao","222");
+INSERT INTO tb_auditoria_itens VALUES("1494","","<p>Caixa Gerar Gr&aacute;ficos e Relat&oacute;rios Mostra todas as entradas de pagamento no per&iacute;odo por caixa</p>\n\n\n\n\n\n\n\n<p>&nbsp; Impress&atilde;o dos gr&aacute;ficos e dados</p>\n\n\n\n\n\n\n\n<p>&nbsp;</p>","ds_observacao","222");
 
 INSERT INTO tb_auditoria_itens VALUES("1495","","32","co_sessao","222");
 
@@ -3997,7 +4123,7 @@ INSERT INTO tb_auditoria_itens VALUES("1500","","2018-07-27 18:12:44","dt_cadast
 
 INSERT INTO tb_auditoria_itens VALUES("1501","","Caixa sangrias","ds_titulo","223");
 
-INSERT INTO tb_auditoria_itens VALUES("1502","","<p>Caixa Gerar Gr&aacute;ficos e Relat&oacute;rios Mostra as sangrias de caixa no per&iacute;odo por caixa</p>\n\n\n\n<p>Impress&atilde;o dos gr&aacute;ficos e dados</p>\n\n\n\n<p>&nbsp;</p>","ds_observacao","223");
+INSERT INTO tb_auditoria_itens VALUES("1502","","<p>Caixa Gerar Gr&aacute;ficos e Relat&oacute;rios Mostra as sangrias de caixa no per&iacute;odo por caixa</p>\n\n\n\n\n\n\n\n<p>Impress&atilde;o dos gr&aacute;ficos e dados</p>\n\n\n\n\n\n\n\n<p>&nbsp;</p>","ds_observacao","223");
 
 INSERT INTO tb_auditoria_itens VALUES("1503","","32","co_sessao","223");
 
@@ -4013,7 +4139,7 @@ INSERT INTO tb_auditoria_itens VALUES("1508","","2018-07-27 18:13:22","dt_cadast
 
 INSERT INTO tb_auditoria_itens VALUES("1509","","Vale Presente vendidos","ds_titulo","224");
 
-INSERT INTO tb_auditoria_itens VALUES("1510","","<p>Vale Presente Gerar Gr&aacute;ficos e Relat&oacute;rios&nbsp;Mostra todos os vales presentes que foram vendidos (Geral)</p>\n\n\n\n<p>Impress&atilde;o dos gr&aacute;ficos e dados</p>","ds_observacao","224");
+INSERT INTO tb_auditoria_itens VALUES("1510","","<p>Vale Presente Gerar Gr&aacute;ficos e Relat&oacute;rios&nbsp;Mostra todos os vales presentes que foram vendidos (Geral)</p>\n\n\n\n\n\n\n\n<p>Impress&atilde;o dos gr&aacute;ficos e dados</p>","ds_observacao","224");
 
 INSERT INTO tb_auditoria_itens VALUES("1511","","32","co_sessao","224");
 
@@ -4029,7 +4155,7 @@ INSERT INTO tb_auditoria_itens VALUES("1516","","2018-07-27 18:14:26","dt_cadast
 
 INSERT INTO tb_auditoria_itens VALUES("1517","","Vale Presente usados","ds_titulo","225");
 
-INSERT INTO tb_auditoria_itens VALUES("1518","","<p>Vale Presente Gerar Gr&aacute;ficos e Relat&oacute;rios Mostra todos os vales presentes que foram usados</p>\n\n\n\n<p>Impress&atilde;o dos gr&aacute;ficos e dados</p>","ds_observacao","225");
+INSERT INTO tb_auditoria_itens VALUES("1518","","<p>Vale Presente Gerar Gr&aacute;ficos e Relat&oacute;rios Mostra todos os vales presentes que foram usados</p>\n\n\n\n\n\n\n\n<p>Impress&atilde;o dos gr&aacute;ficos e dados</p>","ds_observacao","225");
 
 INSERT INTO tb_auditoria_itens VALUES("1519","","32","co_sessao","225");
 
@@ -4047,7 +4173,7 @@ INSERT INTO tb_auditoria_itens VALUES("1525","111","","co_historia","226");
 
 INSERT INTO tb_auditoria_itens VALUES("1526","Vale Presente vendidos","Vale Presente vendidos","ds_titulo","226");
 
-INSERT INTO tb_auditoria_itens VALUES("1527","<p>Vale Presente Gerar Gr&aacute;ficos e Relat&oacute;rios&nbsp;Mostra todos os vales presentes que foram vendidos (Geral)</p>\n\n\n\n<p>Impress&atilde;o dos gr&aacute;ficos e dados</p>","<p>Vale Presente Gerar Gr&aacute;ficos e Relat&oacute;rios&nbsp;Mostra todos os vales presentes que foram vendidos (Geral) Filtros: usados, ativos e vencidos</p>\n\n\n\n<p>Impress&atilde;o dos gr&aacute;ficos e dados</p>","ds_observacao","226");
+INSERT INTO tb_auditoria_itens VALUES("1527","<p>Vale Presente Gerar Gr&aacute;ficos e Relat&oacute;rios&nbsp;Mostra todos os vales presentes que foram vendidos (Geral)</p>\n\n\n\n\n\n\n\n<p>Impress&atilde;o dos gr&aacute;ficos e dados</p>","<p>Vale Presente Gerar Gr&aacute;ficos e Relat&oacute;rios&nbsp;Mostra todos os vales presentes que foram vendidos (Geral) Filtros: usados, ativos e vencidos</p>\n\n\n\n\n\n\n\n<p>Impress&atilde;o dos gr&aacute;ficos e dados</p>","ds_observacao","226");
 
 INSERT INTO tb_auditoria_itens VALUES("1528","2018-07-27 18:14:26","","dt_cadastro","226");
 
@@ -4065,7 +4191,7 @@ INSERT INTO tb_auditoria_itens VALUES("1534","112","","co_historia","227");
 
 INSERT INTO tb_auditoria_itens VALUES("1535","Vale Presente usados","Cortesia Dadas","ds_titulo","227");
 
-INSERT INTO tb_auditoria_itens VALUES("1536","<p>Vale Presente Gerar Gr&aacute;ficos e Relat&oacute;rios Mostra todos os vales presentes que foram usados</p>\n\n\n\n<p>Impress&atilde;o dos gr&aacute;ficos e dados</p>","<p>Cortesia Gerar Gr&aacute;ficos e Relat&oacute;rios Mostra todos as cortesias dadas (Geral) Filtros: usados, ativos e vencidos</p>\n\n\n\n<p>Impress&atilde;o dos gr&aacute;ficos e dados</p>","ds_observacao","227");
+INSERT INTO tb_auditoria_itens VALUES("1536","<p>Vale Presente Gerar Gr&aacute;ficos e Relat&oacute;rios Mostra todos os vales presentes que foram usados</p>\n\n\n\n\n\n\n\n<p>Impress&atilde;o dos gr&aacute;ficos e dados</p>","<p>Cortesia Gerar Gr&aacute;ficos e Relat&oacute;rios Mostra todos as cortesias dadas (Geral) Filtros: usados, ativos e vencidos</p>\n\n\n\n\n\n\n\n<p>Impress&atilde;o dos gr&aacute;ficos e dados</p>","ds_observacao","227");
 
 INSERT INTO tb_auditoria_itens VALUES("1537","2018-07-27 18:15:07","","dt_cadastro","227");
 
@@ -4083,7 +4209,7 @@ INSERT INTO tb_auditoria_itens VALUES("1543","111","","co_historia","228");
 
 INSERT INTO tb_auditoria_itens VALUES("1544","Vale Presente vendidos","Vale Presente vendidos","ds_titulo","228");
 
-INSERT INTO tb_auditoria_itens VALUES("1545","<p>Vale Presente Gerar Gr&aacute;ficos e Relat&oacute;rios&nbsp;Mostra todos os vales presentes que foram vendidos (Geral) Filtros: usados, ativos e vencidos</p>\n\n\n\n<p>Impress&atilde;o dos gr&aacute;ficos e dados</p>","<p>Vale Presente Gerar Gr&aacute;ficos e Relat&oacute;rios&nbsp;Mostra todos os vales presentes que foram vendidos (Geral) Filtros: usados, ativos e vencidos</p>\n\n\n\n<p>Impress&atilde;o dos gr&aacute;ficos e dados</p>","ds_observacao","228");
+INSERT INTO tb_auditoria_itens VALUES("1545","<p>Vale Presente Gerar Gr&aacute;ficos e Relat&oacute;rios&nbsp;Mostra todos os vales presentes que foram vendidos (Geral) Filtros: usados, ativos e vencidos</p>\n\n\n\n\n\n\n\n<p>Impress&atilde;o dos gr&aacute;ficos e dados</p>","<p>Vale Presente Gerar Gr&aacute;ficos e Relat&oacute;rios&nbsp;Mostra todos os vales presentes que foram vendidos (Geral) Filtros: usados, ativos e vencidos</p>\n\n\n\n\n\n\n\n<p>Impress&atilde;o dos gr&aacute;ficos e dados</p>","ds_observacao","228");
 
 INSERT INTO tb_auditoria_itens VALUES("1546","2018-07-27 18:14:26","","dt_cadastro","228");
 
@@ -4099,7 +4225,7 @@ INSERT INTO tb_auditoria_itens VALUES("1551","32","32","co_sessao","228");
 
 INSERT INTO tb_auditoria_itens VALUES("1552","","Promoções Vendidas","ds_titulo","229");
 
-INSERT INTO tb_auditoria_itens VALUES("1553","","<p>Promo&ccedil;&otilde;es Gerar Gr&aacute;ficos e Relat&oacute;rios Mostra todos as promo&ccedil;&otilde;es vendidas (Geral) Filtros: usados, ativos e vencidos</p>\n\n\n\n<p>Impress&atilde;o dos gr&aacute;ficos e dados</p>","ds_observacao","229");
+INSERT INTO tb_auditoria_itens VALUES("1553","","<p>Promo&ccedil;&otilde;es Gerar Gr&aacute;ficos e Relat&oacute;rios Mostra todos as promo&ccedil;&otilde;es vendidas (Geral) Filtros: usados, ativos e vencidos</p>\n\n\n\n\n\n\n\n<p>Impress&atilde;o dos gr&aacute;ficos e dados</p>","ds_observacao","229");
 
 INSERT INTO tb_auditoria_itens VALUES("1554","","32","co_sessao","229");
 
@@ -4115,7 +4241,7 @@ INSERT INTO tb_auditoria_itens VALUES("1559","","2018-07-27 18:20:43","dt_cadast
 
 INSERT INTO tb_auditoria_itens VALUES("1560","","Serviço realizados por profissionais","ds_titulo","230");
 
-INSERT INTO tb_auditoria_itens VALUES("1561","","<p>Servi&ccedil;os Gerar Gr&aacute;ficos e Relat&oacute;rios Profissionais por servi&ccedil;os realizados</p>\n\n\n\n<p>Impress&atilde;o dos gr&aacute;ficos e dados</p>","ds_observacao","230");
+INSERT INTO tb_auditoria_itens VALUES("1561","","<p>Servi&ccedil;os Gerar Gr&aacute;ficos e Relat&oacute;rios Profissionais por servi&ccedil;os realizados</p>\n\n\n\n\n\n\n\n<p>Impress&atilde;o dos gr&aacute;ficos e dados</p>","ds_observacao","230");
 
 INSERT INTO tb_auditoria_itens VALUES("1562","","32","co_sessao","230");
 
@@ -4131,7 +4257,7 @@ INSERT INTO tb_auditoria_itens VALUES("1567","","2018-07-27 18:22:34","dt_cadast
 
 INSERT INTO tb_auditoria_itens VALUES("1568","","Serviço Clientes atendidos","ds_titulo","231");
 
-INSERT INTO tb_auditoria_itens VALUES("1569","","<p>Servi&ccedil;os Gerar Gr&aacute;ficos e Relat&oacute;rios Selecione o servi&ccedil;o e per&iacute;odo e veja os clientes atendidos por aquele servi&ccedil;o</p>\n\n\n\n<p>Impress&atilde;o dos gr&aacute;ficos e dados</p>","ds_observacao","231");
+INSERT INTO tb_auditoria_itens VALUES("1569","","<p>Servi&ccedil;os Gerar Gr&aacute;ficos e Relat&oacute;rios Selecione o servi&ccedil;o e per&iacute;odo e veja os clientes atendidos por aquele servi&ccedil;o</p>\n\n\n\n\n\n\n\n<p>Impress&atilde;o dos gr&aacute;ficos e dados</p>","ds_observacao","231");
 
 INSERT INTO tb_auditoria_itens VALUES("1570","","32","co_sessao","231");
 
@@ -4149,7 +4275,7 @@ INSERT INTO tb_auditoria_itens VALUES("1576","114","","co_historia","232");
 
 INSERT INTO tb_auditoria_itens VALUES("1577","Serviço realizados por profissionais","Serviço profissionais que realizou","ds_titulo","232");
 
-INSERT INTO tb_auditoria_itens VALUES("1578","<p>Servi&ccedil;os Gerar Gr&aacute;ficos e Relat&oacute;rios Profissionais por servi&ccedil;os realizados</p>\n\n\n\n<p>Impress&atilde;o dos gr&aacute;ficos e dados</p>","<p>Servi&ccedil;os Gerar Gr&aacute;ficos e Relat&oacute;rios Profissionais por servi&ccedil;os realizados</p>\n\n\n\n<p>Impress&atilde;o dos gr&aacute;ficos e dados</p>","ds_observacao","232");
+INSERT INTO tb_auditoria_itens VALUES("1578","<p>Servi&ccedil;os Gerar Gr&aacute;ficos e Relat&oacute;rios Profissionais por servi&ccedil;os realizados</p>\n\n\n\n\n\n\n\n<p>Impress&atilde;o dos gr&aacute;ficos e dados</p>","<p>Servi&ccedil;os Gerar Gr&aacute;ficos e Relat&oacute;rios Profissionais por servi&ccedil;os realizados</p>\n\n\n\n\n\n\n\n<p>Impress&atilde;o dos gr&aacute;ficos e dados</p>","ds_observacao","232");
 
 INSERT INTO tb_auditoria_itens VALUES("1579","2018-07-27 18:22:34","","dt_cadastro","232");
 
@@ -4165,7 +4291,7 @@ INSERT INTO tb_auditoria_itens VALUES("1584","32","32","co_sessao","232");
 
 INSERT INTO tb_auditoria_itens VALUES("1585","","Serviços utilizados por categoria","ds_titulo","233");
 
-INSERT INTO tb_auditoria_itens VALUES("1586","","<p>Servi&ccedil;os Gerar Gr&aacute;ficos e Relat&oacute;rios Servi&ccedil;os mais utilizados por categorias</p>\n\n\n\n<p>Impress&atilde;o dos gr&aacute;ficos e dados</p>","ds_observacao","233");
+INSERT INTO tb_auditoria_itens VALUES("1586","","<p>Servi&ccedil;os Gerar Gr&aacute;ficos e Relat&oacute;rios Servi&ccedil;os mais utilizados por categorias</p>\n\n\n\n\n\n\n\n<p>Impress&atilde;o dos gr&aacute;ficos e dados</p>","ds_observacao","233");
 
 INSERT INTO tb_auditoria_itens VALUES("1587","","32","co_sessao","233");
 
@@ -4197,7 +4323,7 @@ INSERT INTO tb_auditoria_itens VALUES("1600","","2018-07-27 18:49:49","dt_cadast
 
 INSERT INTO tb_auditoria_itens VALUES("1601","","Pacote ativos por serviços","ds_titulo","235");
 
-INSERT INTO tb_auditoria_itens VALUES("1602","","<p>Pacotes Gerar Gr&aacute;ficos e Relat&oacute;rios Mostra todos os clientes que ainda possuem pacotes ativos e seu servi&ccedil;os</p>\n\n\n\n<p>Impress&atilde;o dos gr&aacute;ficos e dados</p>","ds_observacao","235");
+INSERT INTO tb_auditoria_itens VALUES("1602","","<p>Pacotes Gerar Gr&aacute;ficos e Relat&oacute;rios Mostra todos os clientes que ainda possuem pacotes ativos e seu servi&ccedil;os</p>\n\n\n\n\n\n\n\n<p>Impress&atilde;o dos gr&aacute;ficos e dados</p>","ds_observacao","235");
 
 INSERT INTO tb_auditoria_itens VALUES("1603","","32","co_sessao","235");
 
@@ -4213,7 +4339,7 @@ INSERT INTO tb_auditoria_itens VALUES("1608","","2018-07-27 18:52:04","dt_cadast
 
 INSERT INTO tb_auditoria_itens VALUES("1609","","Pacote serviços ja realizados","ds_titulo","236");
 
-INSERT INTO tb_auditoria_itens VALUES("1610","","<p>Pacotes Gerar Gr&aacute;ficos e Relat&oacute;rios Mostra todos os servi&ccedil;os do pacote j&aacute; consumidos no per&iacute;odo</p>\n\n\n\n<p>Impress&atilde;o dos gr&aacute;ficos e dados</p>","ds_observacao","236");
+INSERT INTO tb_auditoria_itens VALUES("1610","","<p>Pacotes Gerar Gr&aacute;ficos e Relat&oacute;rios Mostra todos os servi&ccedil;os do pacote j&aacute; consumidos no per&iacute;odo</p>\n\n\n\n\n\n\n\n<p>Impress&atilde;o dos gr&aacute;ficos e dados</p>","ds_observacao","236");
 
 INSERT INTO tb_auditoria_itens VALUES("1611","","32","co_sessao","236");
 
@@ -4231,7 +4357,7 @@ INSERT INTO tb_auditoria_itens VALUES("1617","119","","co_historia","237");
 
 INSERT INTO tb_auditoria_itens VALUES("1618","Pacote serviços ja realizados","Pacote status por serviços","ds_titulo","237");
 
-INSERT INTO tb_auditoria_itens VALUES("1619","<p>Pacotes Gerar Gr&aacute;ficos e Relat&oacute;rios Mostra todos os servi&ccedil;os do pacote j&aacute; consumidos no per&iacute;odo</p>\n\n\n\n<p>Impress&atilde;o dos gr&aacute;ficos e dados</p>","<p>Pacotes Gerar Gr&aacute;ficos e Relat&oacute;rios Mostra todos os servi&ccedil;os do pacote &nbsp;ja realizados e ativos e vencidos no per&iacute;odo</p>\n\n\n\n<p>Impress&atilde;o dos gr&aacute;ficos e dados</p>","ds_observacao","237");
+INSERT INTO tb_auditoria_itens VALUES("1619","<p>Pacotes Gerar Gr&aacute;ficos e Relat&oacute;rios Mostra todos os servi&ccedil;os do pacote j&aacute; consumidos no per&iacute;odo</p>\n\n\n\n\n\n\n\n<p>Impress&atilde;o dos gr&aacute;ficos e dados</p>","<p>Pacotes Gerar Gr&aacute;ficos e Relat&oacute;rios Mostra todos os servi&ccedil;os do pacote &nbsp;ja realizados e ativos e vencidos no per&iacute;odo</p>\n\n\n\n\n\n\n\n<p>Impress&atilde;o dos gr&aacute;ficos e dados</p>","ds_observacao","237");
 
 INSERT INTO tb_auditoria_itens VALUES("1620","2018-07-27 18:53:06","","dt_cadastro","237");
 
@@ -4249,7 +4375,7 @@ INSERT INTO tb_auditoria_itens VALUES("1626","118","","co_historia","238");
 
 INSERT INTO tb_auditoria_itens VALUES("1627","Pacote ativos por serviços","Pacote status por serviços","ds_titulo","238");
 
-INSERT INTO tb_auditoria_itens VALUES("1628","<p>Pacotes Gerar Gr&aacute;ficos e Relat&oacute;rios Mostra todos os clientes que ainda possuem pacotes ativos e seu servi&ccedil;os</p>\n\n\n\n<p>Impress&atilde;o dos gr&aacute;ficos e dados</p>","<p>Pacotes Gerar Gr&aacute;ficos e Relat&oacute;rios Mostra todos os clientes que tem servi&ccedil;os ativos realizados e vencidos e seu servi&ccedil;os</p>\n\n\n\n<p>Impress&atilde;o dos gr&aacute;ficos e dados</p>","ds_observacao","238");
+INSERT INTO tb_auditoria_itens VALUES("1628","<p>Pacotes Gerar Gr&aacute;ficos e Relat&oacute;rios Mostra todos os clientes que ainda possuem pacotes ativos e seu servi&ccedil;os</p>\n\n\n\n\n\n\n\n<p>Impress&atilde;o dos gr&aacute;ficos e dados</p>","<p>Pacotes Gerar Gr&aacute;ficos e Relat&oacute;rios Mostra todos os clientes que tem servi&ccedil;os ativos realizados e vencidos e seu servi&ccedil;os</p>\n\n\n\n\n\n\n\n<p>Impress&atilde;o dos gr&aacute;ficos e dados</p>","ds_observacao","238");
 
 INSERT INTO tb_auditoria_itens VALUES("1629","2018-07-27 18:52:04","","dt_cadastro","238");
 
@@ -4303,7 +4429,7 @@ INSERT INTO tb_auditoria_itens VALUES("1653","80","","co_historia","241");
 
 INSERT INTO tb_auditoria_itens VALUES("1654","Regras de SMS","Regras de SMS","ds_titulo","241");
 
-INSERT INTO tb_auditoria_itens VALUES("1655","<p>Regras de envio de SMS</p>","<p>Regras de envio de SMS</p>\n\n\n\n<p>&nbsp;</p>\n\n\n\n<p>Aprendizagem de envio de SMS</p>","ds_observacao","241");
+INSERT INTO tb_auditoria_itens VALUES("1655","<p>Regras de envio de SMS</p>","<p>Regras de envio de SMS</p>\n\n\n\n\n\n\n\n<p>&nbsp;</p>\n\n\n\n\n\n\n\n<p>Aprendizagem de envio de SMS</p>","ds_observacao","241");
 
 INSERT INTO tb_auditoria_itens VALUES("1656","2018-07-26 18:53:05","","dt_cadastro","241");
 
@@ -4337,7 +4463,7 @@ INSERT INTO tb_auditoria_itens VALUES("1670","28","28","co_sessao","242");
 
 INSERT INTO tb_auditoria_itens VALUES("1671","","Sms Histórico de envio","ds_titulo","243");
 
-INSERT INTO tb_auditoria_itens VALUES("1672","","<p>Sms Gerar Gr&aacute;ficos e Relat&oacute;rios Sms disparados para lembrete</p>\n\n\n\n<p>Impress&atilde;o dos gr&aacute;ficos e dados</p>","ds_observacao","243");
+INSERT INTO tb_auditoria_itens VALUES("1672","","<p>Sms Gerar Gr&aacute;ficos e Relat&oacute;rios Sms disparados para lembrete</p>\n\n\n\n\n\n\n\n<p>Impress&atilde;o dos gr&aacute;ficos e dados</p>","ds_observacao","243");
 
 INSERT INTO tb_auditoria_itens VALUES("1673","","32","co_sessao","243");
 
@@ -4353,7 +4479,7 @@ INSERT INTO tb_auditoria_itens VALUES("1678","","2018-07-27 19:08:38","dt_cadast
 
 INSERT INTO tb_auditoria_itens VALUES("1679","","E-mail Historico de envio","ds_titulo","244");
 
-INSERT INTO tb_auditoria_itens VALUES("1680","","<p>E-mail Gerar Gr&aacute;ficos e Relat&oacute;rios E-mail disparados para lembrete</p>\n\n\n\n<p>Impress&atilde;o dos gr&aacute;ficos e dados</p>","ds_observacao","244");
+INSERT INTO tb_auditoria_itens VALUES("1680","","<p>E-mail Gerar Gr&aacute;ficos e Relat&oacute;rios E-mail disparados para lembrete</p>\n\n\n\n\n\n\n\n<p>Impress&atilde;o dos gr&aacute;ficos e dados</p>","ds_observacao","244");
 
 INSERT INTO tb_auditoria_itens VALUES("1681","","32","co_sessao","244");
 
@@ -4369,7 +4495,7 @@ INSERT INTO tb_auditoria_itens VALUES("1686","","2018-07-27 19:09:29","dt_cadast
 
 INSERT INTO tb_auditoria_itens VALUES("1687","","Agendamento detalhes","ds_titulo","245");
 
-INSERT INTO tb_auditoria_itens VALUES("1688","","<p>Agendamentos Gerar Gr&aacute;ficos e Relat&oacute;rios de gendamentos por status do agendamento cliente profissional e periodo</p>\n\n\n\n<p>&nbsp;Impress&atilde;o dos gr&aacute;ficos e dados</p>","ds_observacao","245");
+INSERT INTO tb_auditoria_itens VALUES("1688","","<p>Agendamentos Gerar Gr&aacute;ficos e Relat&oacute;rios de gendamentos por status do agendamento cliente profissional e periodo</p>\n\n\n\n\n\n\n\n<p>&nbsp;Impress&atilde;o dos gr&aacute;ficos e dados</p>","ds_observacao","245");
 
 INSERT INTO tb_auditoria_itens VALUES("1689","","32","co_sessao","245");
 
@@ -4491,7 +4617,7 @@ INSERT INTO tb_auditoria_itens VALUES("1747","1","","co_historia","252");
 
 INSERT INTO tb_auditoria_itens VALUES("1748","Manter Planos do sistema","Manter Planos do sistema","ds_titulo","252");
 
-INSERT INTO tb_auditoria_itens VALUES("1749","<p>Manter planos do sistema da beleza, onde ter&aacute; que manter os desconto com per&iacute;odo para o plano</p>\n\n\n\n<p>&nbsp;</p>\n\n\n\n<p>Modelagem: PLano e desconto plano</p>","<p>Manter planos do sistema da beleza, onde ter&aacute; que manter os desconto com per&iacute;odo para o plano</p>\n\n\n\n<p>&nbsp;</p>\n\n\n\n<p>Modelagem: PLano e desconto plano</p>","ds_observacao","252");
+INSERT INTO tb_auditoria_itens VALUES("1749","<p>Manter planos do sistema da beleza, onde ter&aacute; que manter os desconto com per&iacute;odo para o plano</p>\n\n\n\n\n\n\n\n<p>&nbsp;</p>\n\n\n\n\n\n\n\n<p>Modelagem: PLano e desconto plano</p>","<p>Manter planos do sistema da beleza, onde ter&aacute; que manter os desconto com per&iacute;odo para o plano</p>\n\n\n\n\n\n\n\n<p>&nbsp;</p>\n\n\n\n\n\n\n\n<p>Modelagem: PLano e desconto plano</p>","ds_observacao","252");
 
 INSERT INTO tb_auditoria_itens VALUES("1750","2018-07-24 15:28:56","","dt_cadastro","252");
 
@@ -4509,7 +4635,7 @@ INSERT INTO tb_auditoria_itens VALUES("1756","1","","co_historia","253");
 
 INSERT INTO tb_auditoria_itens VALUES("1757","Manter Planos do sistema","Manter Planos do sistema","ds_titulo","253");
 
-INSERT INTO tb_auditoria_itens VALUES("1758","<p>Manter planos do sistema da beleza, onde ter&aacute; que manter os desconto com per&iacute;odo para o plano</p>\n\n\n\n<p>&nbsp;</p>\n\n\n\n<p>Modelagem: PLano e desconto plano</p>","<p>Manter planos do sistema da beleza, onde ter&aacute; que manter os desconto com per&iacute;odo para o plano</p>\n\n\n\n<p>&nbsp;</p>\n\n\n\n<p>Modelagem: PLano e desconto plano</p>","ds_observacao","253");
+INSERT INTO tb_auditoria_itens VALUES("1758","<p>Manter planos do sistema da beleza, onde ter&aacute; que manter os desconto com per&iacute;odo para o plano</p>\n\n\n\n\n\n\n\n<p>&nbsp;</p>\n\n\n\n\n\n\n\n<p>Modelagem: PLano e desconto plano</p>","<p>Manter planos do sistema da beleza, onde ter&aacute; que manter os desconto com per&iacute;odo para o plano</p>\n\n\n\n\n\n\n\n<p>&nbsp;</p>\n\n\n\n\n\n\n\n<p>Modelagem: PLano e desconto plano</p>","ds_observacao","253");
 
 INSERT INTO tb_auditoria_itens VALUES("1759","2018-07-24 15:28:56","","dt_cadastro","253");
 
@@ -4527,7 +4653,7 @@ INSERT INTO tb_auditoria_itens VALUES("1765","1","","co_historia","254");
 
 INSERT INTO tb_auditoria_itens VALUES("1766","Manter Planos do sistema","Manter Planos do sistema","ds_titulo","254");
 
-INSERT INTO tb_auditoria_itens VALUES("1767","<p>Manter planos do sistema da beleza, onde ter&aacute; que manter os desconto com per&iacute;odo para o plano</p>\n\n\n\n<p>&nbsp;</p>\n\n\n\n<p>Modelagem: PLano e desconto plano</p>","<p>Manter planos do sistema da beleza, onde ter&aacute; que manter os desconto com per&iacute;odo para o plano</p>\n\n\n\n<p>&nbsp;</p>\n\n\n\n<p>Modelagem: Plano e historico plano modulos</p>","ds_observacao","254");
+INSERT INTO tb_auditoria_itens VALUES("1767","<p>Manter planos do sistema da beleza, onde ter&aacute; que manter os desconto com per&iacute;odo para o plano</p>\n\n\n\n\n\n\n\n<p>&nbsp;</p>\n\n\n\n\n\n\n\n<p>Modelagem: PLano e desconto plano</p>","<p>Manter planos do sistema da beleza, onde ter&aacute; que manter os desconto com per&iacute;odo para o plano</p>\n\n\n\n\n\n\n\n<p>&nbsp;</p>\n\n\n\n\n\n\n\n<p>Modelagem: Plano e historico plano modulos</p>","ds_observacao","254");
 
 INSERT INTO tb_auditoria_itens VALUES("1768","2018-07-24 15:28:56","","dt_cadastro","254");
 
@@ -4545,7 +4671,7 @@ INSERT INTO tb_auditoria_itens VALUES("1774","1","","co_historia","255");
 
 INSERT INTO tb_auditoria_itens VALUES("1775","Manter Planos do sistema","Manter Planos do sistema","ds_titulo","255");
 
-INSERT INTO tb_auditoria_itens VALUES("1776","<p>Manter planos do sistema da beleza, onde ter&aacute; que manter os desconto com per&iacute;odo para o plano</p>\n\n\n\n<p>&nbsp;</p>\n\n\n\n<p>Modelagem: Plano e historico plano modulos</p>","<p>Manter planos do sistema da beleza, onde ter&aacute; que manter os desconto com per&iacute;odo para o plano</p>\n\n\n\n<p>&nbsp;</p>\n\n\n\n<p>Modelagem: Plano e historico plano modulos</p>","ds_observacao","255");
+INSERT INTO tb_auditoria_itens VALUES("1776","<p>Manter planos do sistema da beleza, onde ter&aacute; que manter os desconto com per&iacute;odo para o plano</p>\n\n\n\n\n\n\n\n<p>&nbsp;</p>\n\n\n\n\n\n\n\n<p>Modelagem: Plano e historico plano modulos</p>","<p>Manter planos do sistema da beleza, onde ter&aacute; que manter os desconto com per&iacute;odo para o plano</p>\n\n\n\n\n\n\n\n<p>&nbsp;</p>\n\n\n\n\n\n\n\n<p>Modelagem: Plano e historico plano modulos</p>","ds_observacao","255");
 
 INSERT INTO tb_auditoria_itens VALUES("1777","2018-07-24 15:28:56","","dt_cadastro","255");
 
@@ -4563,7 +4689,7 @@ INSERT INTO tb_auditoria_itens VALUES("1783","1","","co_historia","256");
 
 INSERT INTO tb_auditoria_itens VALUES("1784","Manter Planos do sistema","Manter Planos do sistema","ds_titulo","256");
 
-INSERT INTO tb_auditoria_itens VALUES("1785","<p>Manter planos do sistema da beleza, onde ter&aacute; que manter os desconto com per&iacute;odo para o plano</p>\n\n\n\n<p>&nbsp;</p>\n\n\n\n<p>Modelagem: Plano e historico plano modulos</p>","<p>Manter planos do sistema da beleza, onde ter&aacute; que manter os desconto com per&iacute;odo para o plano</p>\n\n\n\n<p>&nbsp;</p>\n\n\n\n<p>Modelagem: Plano e historico plano modulos</p>","ds_observacao","256");
+INSERT INTO tb_auditoria_itens VALUES("1785","<p>Manter planos do sistema da beleza, onde ter&aacute; que manter os desconto com per&iacute;odo para o plano</p>\n\n\n\n\n\n\n\n<p>&nbsp;</p>\n\n\n\n\n\n\n\n<p>Modelagem: Plano e historico plano modulos</p>","<p>Manter planos do sistema da beleza, onde ter&aacute; que manter os desconto com per&iacute;odo para o plano</p>\n\n\n\n\n\n\n\n<p>&nbsp;</p>\n\n\n\n\n\n\n\n<p>Modelagem: Plano e historico plano modulos</p>","ds_observacao","256");
 
 INSERT INTO tb_auditoria_itens VALUES("1786","2018-07-24 15:28:56","","dt_cadastro","256");
 
@@ -4581,7 +4707,7 @@ INSERT INTO tb_auditoria_itens VALUES("1792","1","","co_historia","257");
 
 INSERT INTO tb_auditoria_itens VALUES("1793","Manter Planos do sistema","Manter Planos do sistema","ds_titulo","257");
 
-INSERT INTO tb_auditoria_itens VALUES("1794","<p>Manter planos do sistema da beleza, onde ter&aacute; que manter os desconto com per&iacute;odo para o plano</p>\n\n\n\n<p>&nbsp;</p>\n\n\n\n<p>Modelagem: Plano e historico plano modulos</p>","<p>Manter planos do sistema da beleza, onde ter&aacute; que manter os desconto com per&iacute;odo para o plano</p>\n\n\n\n<p>&nbsp;</p>\n\n\n\n<p>Modelagem: Plano e historico plano modulos</p>","ds_observacao","257");
+INSERT INTO tb_auditoria_itens VALUES("1794","<p>Manter planos do sistema da beleza, onde ter&aacute; que manter os desconto com per&iacute;odo para o plano</p>\n\n\n\n\n\n\n\n<p>&nbsp;</p>\n\n\n\n\n\n\n\n<p>Modelagem: Plano e historico plano modulos</p>","<p>Manter planos do sistema da beleza, onde ter&aacute; que manter os desconto com per&iacute;odo para o plano</p>\n\n\n\n\n\n\n\n<p>&nbsp;</p>\n\n\n\n\n\n\n\n<p>Modelagem: Plano e historico plano modulos</p>","ds_observacao","257");
 
 INSERT INTO tb_auditoria_itens VALUES("1795","2018-07-24 15:28:56","","dt_cadastro","257");
 
@@ -4599,8 +4725,6 @@ INSERT INTO tb_auditoria_itens VALUES("1801","2","","co_historia","258");
 
 INSERT INTO tb_auditoria_itens VALUES("1802","Manter Assinante","Manter Assinante","ds_titulo","258");
 
-INSERT INTO tb_auditoria_itens VALUES("1803","<p>Manter assinante do sistema e com data de expira&ccedil;&atilde;o do sistema para o assinante, criar usu&aacute;rio, criar contato, criar pessoa</p>\n\n\n\n<p>&nbsp;</p>\n\n\n\n<p>Modelagem: Assinante (Jun&ccedil;&atilde;o de pessoa, contato, usuario, data","<p>Manter assinante do sistema e com data de expira&ccedil;&atilde;o do sistema para o assinante, criar usu&aacute;rio, criar contato, criar pessoa</p>\n\n\n\n<p>&nbsp;</p>\n\n\n\n<p>Modelagem: Assinante (Jun&ccedil;&atilde;o de pessoa, contato, usuario, data","ds_observacao","258");
-
 INSERT INTO tb_auditoria_itens VALUES("1804","2018-07-25 11:24:23","","dt_cadastro","258");
 
 INSERT INTO tb_auditoria_itens VALUES("1805","2018-07-25 11:24:23","2018-07-31 15:26:40","dt_atualizado","258");
@@ -4616,8 +4740,6 @@ INSERT INTO tb_auditoria_itens VALUES("1809","1","1","co_sessao","258");
 INSERT INTO tb_auditoria_itens VALUES("1810","2","","co_historia","259");
 
 INSERT INTO tb_auditoria_itens VALUES("1811","Manter Assinante","Manter Assinante","ds_titulo","259");
-
-INSERT INTO tb_auditoria_itens VALUES("1812","<p>Manter assinante do sistema e com data de expira&ccedil;&atilde;o do sistema para o assinante, criar usu&aacute;rio, criar contato, criar pessoa</p>\n\n\n\n<p>&nbsp;</p>\n\n\n\n<p>Modelagem: Assinante (Jun&ccedil;&atilde;o de pessoa, contato, usuario, data","<p>Manter assinante do sistema e com data de expira&ccedil;&atilde;o do sistema para o assinante, criar usu&aacute;rio, criar contato, criar pessoa</p>\n\n\n\n<p>&nbsp;</p>\n\n\n\n<p>Modelagem: Assinante (Jun&ccedil;&atilde;o de pessoa, contato, usuario, data","ds_observacao","259");
 
 INSERT INTO tb_auditoria_itens VALUES("1813","2018-07-25 11:24:23","","dt_cadastro","259");
 
@@ -4653,8 +4775,6 @@ INSERT INTO tb_auditoria_itens VALUES("1828","2","","co_historia","261");
 
 INSERT INTO tb_auditoria_itens VALUES("1829","Manter Assinante","Manter Assinante","ds_titulo","261");
 
-INSERT INTO tb_auditoria_itens VALUES("1830","<p>Manter assinante do sistema e com data de expira&ccedil;&atilde;o do sistema para o assinante, criar usu&aacute;rio, criar contato, criar pessoa</p>\n\n\n\n<p>&nbsp;</p>\n\n\n\n<p>Modelagem: Assinante (Jun&ccedil;&atilde;o de pessoa, contato, usuario, data","<p>Manter assinante do sistema e com data de expira&ccedil;&atilde;o do sistema para o assinante, criar usu&aacute;rio, criar contato, criar pessoa</p>\n\n\n\n<p>&nbsp;</p>\n\n\n\n<p>Modelagem: Assinante (Jun&ccedil;&atilde;o de pessoa, contato, usuario, data","ds_observacao","261");
-
 INSERT INTO tb_auditoria_itens VALUES("1831","2018-07-25 11:24:23","","dt_cadastro","261");
 
 INSERT INTO tb_auditoria_itens VALUES("1832","2018-07-31 15:27:03","2018-07-31 18:05:29","dt_atualizado","261");
@@ -4670,8 +4790,6 @@ INSERT INTO tb_auditoria_itens VALUES("1836","1","1","co_sessao","261");
 INSERT INTO tb_auditoria_itens VALUES("1837","2","","co_historia","262");
 
 INSERT INTO tb_auditoria_itens VALUES("1838","Manter Assinante","Manter Assinante","ds_titulo","262");
-
-INSERT INTO tb_auditoria_itens VALUES("1839","<p>Manter assinante do sistema e com data de expira&ccedil;&atilde;o do sistema para o assinante, criar usu&aacute;rio, criar contato, criar pessoa</p>\n\n\n\n<p>&nbsp;</p>\n\n\n\n<p>Modelagem: Assinante (Jun&ccedil;&atilde;o de pessoa, contato, usuario, data","<p>Manter assinante do sistema e com data de expira&ccedil;&atilde;o do sistema para o assinante, criar contato, criar pessoa, envio de email de confirma&ccedil;&atilde;o com senha gerada</p>\n\n\n\n<p>&nbsp;</p>\n\n\n\n<p>Modelagem: Assinante (Jun&ccedil;&at","ds_observacao","262");
 
 INSERT INTO tb_auditoria_itens VALUES("1840","2018-07-25 11:24:23","","dt_cadastro","262");
 
@@ -4689,8 +4807,6 @@ INSERT INTO tb_auditoria_itens VALUES("1846","2","","co_historia","263");
 
 INSERT INTO tb_auditoria_itens VALUES("1847","Manter Assinante","Manter Assinante","ds_titulo","263");
 
-INSERT INTO tb_auditoria_itens VALUES("1848","<p>Manter assinante do sistema e com data de expira&ccedil;&atilde;o do sistema para o assinante, criar contato, criar pessoa, envio de email de confirma&ccedil;&atilde;o com senha gerada</p>\n\n\n\n<p>&nbsp;</p>\n\n\n\n<p>Modelagem: Assinante (Jun&ccedil;&at","<p>Manter assinante do sistema e com data de expira&ccedil;&atilde;o do sistema para o assinante, criar contato, criar pessoa, envio de email de confirma&ccedil;&atilde;o com senha gerada</p>\n\n\n\n<p>&nbsp;</p>\n\n\n\n<p>Modelagem: Assinante (Jun&ccedil;&at","ds_observacao","263");
-
 INSERT INTO tb_auditoria_itens VALUES("1849","2018-07-25 11:24:23","","dt_cadastro","263");
 
 INSERT INTO tb_auditoria_itens VALUES("1850","2018-07-31 20:12:44","2018-07-31 22:41:38","dt_atualizado","263");
@@ -4706,8 +4822,6 @@ INSERT INTO tb_auditoria_itens VALUES("1854","1","1","co_sessao","263");
 INSERT INTO tb_auditoria_itens VALUES("1855","2","","co_historia","264");
 
 INSERT INTO tb_auditoria_itens VALUES("1856","Manter Assinante","Manter Assinante","ds_titulo","264");
-
-INSERT INTO tb_auditoria_itens VALUES("1857","<p>Manter assinante do sistema e com data de expira&ccedil;&atilde;o do sistema para o assinante, criar contato, criar pessoa, envio de email de confirma&ccedil;&atilde;o com senha gerada</p>\n\n\n\n<p>&nbsp;</p>\n\n\n\n<p>Modelagem: Assinante (Jun&ccedil;&at","<p>Manter assinante do sistema e com data de expira&ccedil;&atilde;o do sistema para o assinante, criar contato, criar pessoa, envio de email de confirma&ccedil;&atilde;o com senha gerada</p>\n\n\n\n<p>&nbsp;</p>\n\n\n\n<p>Modelagem: Assinante (Jun&ccedil;&at","ds_observacao","264");
 
 INSERT INTO tb_auditoria_itens VALUES("1858","2018-07-25 11:24:23","","dt_cadastro","264");
 
@@ -4725,8 +4839,6 @@ INSERT INTO tb_auditoria_itens VALUES("1864","2","","co_historia","265");
 
 INSERT INTO tb_auditoria_itens VALUES("1865","Manter Assinante","Manter Assinante","ds_titulo","265");
 
-INSERT INTO tb_auditoria_itens VALUES("1866","<p>Manter assinante do sistema e com data de expira&ccedil;&atilde;o do sistema para o assinante, criar contato, criar pessoa, envio de email de confirma&ccedil;&atilde;o com senha gerada</p>\n\n\n\n<p>&nbsp;</p>\n\n\n\n<p>Modelagem: Assinante (Jun&ccedil;&at","<p>Manter assinante do sistema e com data de expira&ccedil;&atilde;o do sistema para o assinante, criar contato, criar pessoa, envio de email de confirma&ccedil;&atilde;o com senha gerada</p>\n\n\n\n<p>&nbsp;</p>\n\n\n\n<p>Modelagem: Assinante (Jun&ccedil;&at","ds_observacao","265");
-
 INSERT INTO tb_auditoria_itens VALUES("1867","2018-07-25 11:24:23","","dt_cadastro","265");
 
 INSERT INTO tb_auditoria_itens VALUES("1868","2018-07-31 22:45:16","2018-07-31 22:45:39","dt_atualizado","265");
@@ -4743,7 +4855,7 @@ INSERT INTO tb_auditoria_itens VALUES("1873","3","","co_historia","266");
 
 INSERT INTO tb_auditoria_itens VALUES("1874","Manter Filial","Manter Filial","ds_titulo","266");
 
-INSERT INTO tb_auditoria_itens VALUES("1875","<p>Manter filial</p>\n\n\n\n<p>Modelagem: Filial (FK assinante)</p>","<p>Manter filial</p>\n\n\n\n<p>Modelagem: Filial (FK assinante)</p>","ds_observacao","266");
+INSERT INTO tb_auditoria_itens VALUES("1875","<p>Manter filial</p>\n\n\n\n\n\n\n\n<p>Modelagem: Filial (FK assinante)</p>","<p>Manter filial</p>\n\n\n\n\n\n\n\n<p>Modelagem: Filial (FK assinante)</p>","ds_observacao","266");
 
 INSERT INTO tb_auditoria_itens VALUES("1876","2018-07-25 11:37:35","","dt_cadastro","266");
 
@@ -4761,7 +4873,7 @@ INSERT INTO tb_auditoria_itens VALUES("1882","3","","co_historia","267");
 
 INSERT INTO tb_auditoria_itens VALUES("1883","Manter Filial","Manter Filial","ds_titulo","267");
 
-INSERT INTO tb_auditoria_itens VALUES("1884","<p>Manter filial</p>\n\n\n\n<p>Modelagem: Filial (FK assinante)</p>","<p>Manter filial</p>\n\n\n\n<p>Modelagem: Filial (FK assinante)</p>","ds_observacao","267");
+INSERT INTO tb_auditoria_itens VALUES("1884","<p>Manter filial</p>\n\n\n\n\n\n\n\n<p>Modelagem: Filial (FK assinante)</p>","<p>Manter filial</p>\n\n\n\n\n\n\n\n<p>Modelagem: Filial (FK assinante)</p>","ds_observacao","267");
 
 INSERT INTO tb_auditoria_itens VALUES("1885","2018-07-25 11:37:35","","dt_cadastro","267");
 
@@ -4779,7 +4891,7 @@ INSERT INTO tb_auditoria_itens VALUES("1891","3","","co_historia","268");
 
 INSERT INTO tb_auditoria_itens VALUES("1892","Manter Filial","Manter Filial","ds_titulo","268");
 
-INSERT INTO tb_auditoria_itens VALUES("1893","<p>Manter filial</p>\n\n\n\n<p>Modelagem: Filial (FK assinante)</p>","<p>Manter filial</p>\n\n\n\n<p>Modelagem: Filial (FK assinante)</p>","ds_observacao","268");
+INSERT INTO tb_auditoria_itens VALUES("1893","<p>Manter filial</p>\n\n\n\n\n\n\n\n<p>Modelagem: Filial (FK assinante)</p>","<p>Manter filial</p>\n\n\n\n\n\n\n\n<p>Modelagem: Filial (FK assinante)</p>","ds_observacao","268");
 
 INSERT INTO tb_auditoria_itens VALUES("1894","2018-07-25 11:37:35","","dt_cadastro","268");
 
@@ -4813,8 +4925,6 @@ INSERT INTO tb_auditoria_itens VALUES("1908","2","","co_historia","271");
 
 INSERT INTO tb_auditoria_itens VALUES("1909","Manter Assinante","Manter Assinante","ds_titulo","271");
 
-INSERT INTO tb_auditoria_itens VALUES("1910","<p>Manter assinante do sistema e com data de expira&ccedil;&atilde;o do sistema para o assinante, criar contato, criar pessoa, envio de email de confirma&ccedil;&atilde;o com senha gerada</p>\n\n\n\n<p>&nbsp;</p>\n\n\n\n<p>Modelagem: Assinante (Jun&ccedil;&at","<p>Manter assinante do sistema e com data de expira&ccedil;&atilde;o do sistema para o assinante, criar contato, criar pessoa, envio de email de confirma&ccedil;&atilde;o com senha gerada</p>\n\n\n\n<p>&nbsp;</p>\n\n\n\n<p>Modelagem: Assinante (Jun&ccedil;&at","ds_observacao","271");
-
 INSERT INTO tb_auditoria_itens VALUES("1911","2018-07-25 11:24:23","","dt_cadastro","271");
 
 INSERT INTO tb_auditoria_itens VALUES("1912","2018-07-31 22:45:39","2018-08-03 19:31:35","dt_atualizado","271");
@@ -4830,8 +4940,6 @@ INSERT INTO tb_auditoria_itens VALUES("1916","1","1","co_sessao","271");
 INSERT INTO tb_auditoria_itens VALUES("1917","4","","co_historia","272");
 
 INSERT INTO tb_auditoria_itens VALUES("1918","Gestão de pagamentos dos assinantes","Gestão de pagamentos dos assinantes","ds_titulo","272");
-
-INSERT INTO tb_auditoria_itens VALUES("1919","<p>Dar baixas no pagamento, e atualizar o prazo de expira&ccedil;&atilde;o do assiante e suas filias</p>\n\n\n\n<p>Criar mensagem de expira&ccedil;&atilde;o e bloqueio do sistema</p>\n\n\n\n<p>&nbsp;</p>\n\n\n\n<p>Modelagem: Pagamento assinante (Ligada com plan","<p>Dar baixas no pagamento, e atualizar o prazo de expira&ccedil;&atilde;o do assiante e suas filias</p>\n\n\n\n<p>Criar mensagem de expira&ccedil;&atilde;o e bloqueio do sistema hist&oacute;rico</p>\n\n\n\n<p>&nbsp;</p>\n\n\n\n<p>Modelagem: Pagamento assinante","ds_observacao","272");
 
 INSERT INTO tb_auditoria_itens VALUES("1920","2018-07-25 11:42:55","","dt_cadastro","272");
 
@@ -4877,7 +4985,7 @@ INSERT INTO tb_auditoria_itens VALUES("1940","3","","co_historia","276");
 
 INSERT INTO tb_auditoria_itens VALUES("1941","Manter Filial","Manter Filial","ds_titulo","276");
 
-INSERT INTO tb_auditoria_itens VALUES("1942","<p>Manter filial</p>\n\n\n\n<p>Modelagem: Filial (FK assinante)</p>","<p>Manter filial</p>\n\n\n\n<p>Modelagem: Filial (FK assinante)</p>","ds_observacao","276");
+INSERT INTO tb_auditoria_itens VALUES("1942","<p>Manter filial</p>\n\n\n\n\n\n\n\n<p>Modelagem: Filial (FK assinante)</p>","<p>Manter filial</p>\n\n\n\n\n\n\n\n<p>Modelagem: Filial (FK assinante)</p>","ds_observacao","276");
 
 INSERT INTO tb_auditoria_itens VALUES("1943","2018-07-25 11:37:35","","dt_cadastro","276");
 
@@ -4894,8 +5002,6 @@ INSERT INTO tb_auditoria_itens VALUES("1948","1","1","co_sessao","276");
 INSERT INTO tb_auditoria_itens VALUES("1949","4","","co_historia","277");
 
 INSERT INTO tb_auditoria_itens VALUES("1950","Gestão de pagamentos dos assinantes","Gestão de pagamentos dos assinantes","ds_titulo","277");
-
-INSERT INTO tb_auditoria_itens VALUES("1951","<p>Dar baixas no pagamento, e atualizar o prazo de expira&ccedil;&atilde;o do assiante e suas filias</p>\n\n\n\n<p>Criar mensagem de expira&ccedil;&atilde;o e bloqueio do sistema hist&oacute;rico</p>\n\n\n\n<p>&nbsp;</p>\n\n\n\n<p>Modelagem: Pagamento assinante","<p>Dar baixas no pagamento, e atualizar o prazo de expira&ccedil;&atilde;o do assiante e suas filias</p>\n\n\n\n<p>Criar hist&oacute;rico dos pagamentos</p>\n\n\n\n<p>&nbsp;</p>\n\n\n\n<p>Modelagem: Pagamento assinante (Ligada com plano e assinante)</p>","ds_observacao","277");
 
 INSERT INTO tb_auditoria_itens VALUES("1952","2018-07-25 11:42:55","","dt_cadastro","277");
 
@@ -4971,8 +5077,6 @@ INSERT INTO tb_auditoria_itens VALUES("1987","2","","co_historia","282");
 
 INSERT INTO tb_auditoria_itens VALUES("1988","Manter Assinante","Manter Assinante","ds_titulo","282");
 
-INSERT INTO tb_auditoria_itens VALUES("1989","<p>Manter assinante do sistema e com data de expira&ccedil;&atilde;o do sistema para o assinante, criar contato, criar pessoa, envio de email de confirma&ccedil;&atilde;o com senha gerada</p>\n\n\n\n<p>&nbsp;</p>\n\n\n\n<p>Modelagem: Assinante (Jun&ccedil;&at","<p>Manter assinante do sistema e com data de expira&ccedil;&atilde;o do sistema para o assinante, criar contato, criar pessoa, envio de email de confirma&ccedil;&atilde;o com senha gerada</p>\n\n\n\n<p>&nbsp;</p>\n\n\n\n<p>Modelagem: Assinante (Jun&ccedil;&at","ds_observacao","282");
-
 INSERT INTO tb_auditoria_itens VALUES("1990","2018-07-25 11:24:23","","dt_cadastro","282");
 
 INSERT INTO tb_auditoria_itens VALUES("1991","2018-08-03 19:31:35","2018-08-13 18:02:23","dt_atualizado","282");
@@ -5007,8 +5111,6 @@ INSERT INTO tb_auditoria_itens VALUES("2005","2","","co_historia","284");
 
 INSERT INTO tb_auditoria_itens VALUES("2006","Manter Assinante","Manter Assinante","ds_titulo","284");
 
-INSERT INTO tb_auditoria_itens VALUES("2007","<p>Manter assinante do sistema e com data de expira&ccedil;&atilde;o do sistema para o assinante, criar contato, criar pessoa, envio de email de confirma&ccedil;&atilde;o com senha gerada</p>\n\n\n\n<p>&nbsp;</p>\n\n\n\n<p>Modelagem: Assinante (Jun&ccedil;&at","<p>Manter assinante do sistema e com data de expira&ccedil;&atilde;o do sistema para o assinante, criar contato, criar pessoa, envio de email de confirma&ccedil;&atilde;o com senha gerada</p>\n\n\n\n<p>Criar o usu&aacute;rio quando criar o assinante, plano ","ds_observacao","284");
-
 INSERT INTO tb_auditoria_itens VALUES("2008","2018-07-25 11:24:23","","dt_cadastro","284");
 
 INSERT INTO tb_auditoria_itens VALUES("2009","2018-08-13 18:02:23","2018-08-13 18:05:02","dt_atualizado","284");
@@ -5024,8 +5126,6 @@ INSERT INTO tb_auditoria_itens VALUES("2013","1","1","co_sessao","284");
 INSERT INTO tb_auditoria_itens VALUES("2014","2","","co_historia","285");
 
 INSERT INTO tb_auditoria_itens VALUES("2015","Manter Assinante","Manter Assinante","ds_titulo","285");
-
-INSERT INTO tb_auditoria_itens VALUES("2016","<p>Manter assinante do sistema e com data de expira&ccedil;&atilde;o do sistema para o assinante, criar contato, criar pessoa, envio de email de confirma&ccedil;&atilde;o com senha gerada</p>\n\n\n\n<p>Criar o usu&aacute;rio quando criar o assinante, plano ","<p>Manter assinante do sistema e com data de expira&ccedil;&atilde;o do sistema para o assinante, criar contato, criar pessoa, envio de email de confirma&ccedil;&atilde;o com senha gerada</p>\n\n\n\n<p>Criar o usu&aacute;rio quando criar o assinante, plano ","ds_observacao","285");
 
 INSERT INTO tb_auditoria_itens VALUES("2017","2018-07-25 11:24:23","","dt_cadastro","285");
 
@@ -5119,7 +5219,7 @@ INSERT INTO tb_auditoria_itens VALUES("2061","124","","co_historia","291");
 
 INSERT INTO tb_auditoria_itens VALUES("2062","Mudar loguin","Mudar loguin","ds_titulo","291");
 
-INSERT INTO tb_auditoria_itens VALUES("2063","<p>Mudar loguin para logar com email tb, mudar senha e recuperar senha</p>","<p>Mudar loguin para logar com email tb, mudar senha e recuperar senha</p>\n\n\n\n<p>Validar a mudan&ccedil;a dos dados do susu&aacute;rio na edi&ccedil;&atilde;o da senha</p>","ds_observacao","291");
+INSERT INTO tb_auditoria_itens VALUES("2063","<p>Mudar loguin para logar com email tb, mudar senha e recuperar senha</p>","<p>Mudar loguin para logar com email tb, mudar senha e recuperar senha</p>\n\n\n\n\n\n\n\n<p>Validar a mudan&ccedil;a dos dados do susu&aacute;rio na edi&ccedil;&atilde;o da senha</p>","ds_observacao","291");
 
 INSERT INTO tb_auditoria_itens VALUES("2064","2018-07-30 11:11:11","","dt_cadastro","291");
 
@@ -5177,7 +5277,7 @@ INSERT INTO tb_auditoria_itens VALUES("2090","124","","co_historia","295");
 
 INSERT INTO tb_auditoria_itens VALUES("2091","Mudar loguin","Mudar loguin","ds_titulo","295");
 
-INSERT INTO tb_auditoria_itens VALUES("2092","<p>Mudar loguin para logar com email tb, mudar senha e recuperar senha</p>\n\n\n\n<p>Validar a mudan&ccedil;a dos dados do susu&aacute;rio na edi&ccedil;&atilde;o da senha</p>","<p>Mudar loguin para logar com email tb, recuperar senha</p>","ds_observacao","295");
+INSERT INTO tb_auditoria_itens VALUES("2092","<p>Mudar loguin para logar com email tb, mudar senha e recuperar senha</p>\n\n\n\n\n\n\n\n<p>Validar a mudan&ccedil;a dos dados do susu&aacute;rio na edi&ccedil;&atilde;o da senha</p>","<p>Mudar loguin para logar com email tb, recuperar senha</p>","ds_observacao","295");
 
 INSERT INTO tb_auditoria_itens VALUES("2093","2018-07-30 11:11:11","","dt_cadastro","295");
 
@@ -5301,7 +5401,7 @@ INSERT INTO tb_auditoria_itens VALUES("2152","6","","co_historia","302");
 
 INSERT INTO tb_auditoria_itens VALUES("2153","Dados complementares básicos","Dados complementares básicos","ds_titulo","302");
 
-INSERT INTO tb_auditoria_itens VALUES("2154","<p>Manter dados: (Endere&ccedil;o, telefone, CNPJ, fantasia, raz&atilde;o e outros)</p>\n\n\n\n<p>Modelagem: Contato, endere&ccedil;o e empresa ou pessoa</p>","<p>Manter dados: (Endere&ccedil;o, telefone, CNPJ, fantasia, raz&atilde;o e outros)</p>\n\n\n\n<p>Modelagem: Contato, endere&ccedil;o e empresa ou pessoa</p>","ds_observacao","302");
+INSERT INTO tb_auditoria_itens VALUES("2154","<p>Manter dados: (Endere&ccedil;o, telefone, CNPJ, fantasia, raz&atilde;o e outros)</p>\n\n\n\n\n\n\n\n<p>Modelagem: Contato, endere&ccedil;o e empresa ou pessoa</p>","<p>Manter dados: (Endere&ccedil;o, telefone, CNPJ, fantasia, raz&atilde;o e outros)</p>\n\n\n\n\n\n\n\n<p>Modelagem: Contato, endere&ccedil;o e empresa ou pessoa</p>","ds_observacao","302");
 
 INSERT INTO tb_auditoria_itens VALUES("2155","2018-07-25 12:11:05","","dt_cadastro","302");
 
@@ -5335,7 +5435,7 @@ INSERT INTO tb_auditoria_itens VALUES("2169","8","","co_historia","304");
 
 INSERT INTO tb_auditoria_itens VALUES("2170","Manter Fotos do Estabelecimento","Manter Fotos do Estabelecimento","ds_titulo","304");
 
-INSERT INTO tb_auditoria_itens VALUES("2171","<p>Manter Fotos do Estabelecimento para o Site</p>\n\n\n\n<p>Modelagem: Imagem (FK Assinante)</p>","<p>Manter Fotos do Estabelecimento para o Site</p>\n\n\n\n<p>Modelagem: Imagem (FK Assinante)</p>","ds_observacao","304");
+INSERT INTO tb_auditoria_itens VALUES("2171","<p>Manter Fotos do Estabelecimento para o Site</p>\n\n\n\n\n\n\n\n<p>Modelagem: Imagem (FK Assinante)</p>","<p>Manter Fotos do Estabelecimento para o Site</p>\n\n\n\n\n\n\n\n<p>Modelagem: Imagem (FK Assinante)</p>","ds_observacao","304");
 
 INSERT INTO tb_auditoria_itens VALUES("2172","2018-07-25 12:21:30","","dt_cadastro","304");
 
@@ -5353,7 +5453,7 @@ INSERT INTO tb_auditoria_itens VALUES("2178","7","","co_historia","305");
 
 INSERT INTO tb_auditoria_itens VALUES("2179","Manter Horário de funcionamento padrão","Manter Horário de funcionamento padrão","ds_titulo","305");
 
-INSERT INTO tb_auditoria_itens VALUES("2180","<p>Manter hor&aacute;rio de funcionamento</p>\n\n\n\n<p>Modelagem: Funcionamento (Assinante)</p>\n\n\n\n<p>&nbsp;</p>","<p>Manter hor&aacute;rio de funcionamento</p>\n\n\n\n<p>Modelagem: Funcionamento (Assinante)</p>\n\n\n\n<p>&nbsp;</p>","ds_observacao","305");
+INSERT INTO tb_auditoria_itens VALUES("2180","<p>Manter hor&aacute;rio de funcionamento</p>\n\n\n\n\n\n\n\n<p>Modelagem: Funcionamento (Assinante)</p>\n\n\n\n\n\n\n\n<p>&nbsp;</p>","<p>Manter hor&aacute;rio de funcionamento</p>\n\n\n\n\n\n\n\n<p>Modelagem: Funcionamento (Assinante)</p>\n\n\n\n\n\n\n\n<p>&nbsp;</p>","ds_observacao","305");
 
 INSERT INTO tb_auditoria_itens VALUES("2181","2018-07-25 12:19:44","","dt_cadastro","305");
 
@@ -5371,7 +5471,7 @@ INSERT INTO tb_auditoria_itens VALUES("2187","6","","co_historia","306");
 
 INSERT INTO tb_auditoria_itens VALUES("2188","Dados complementares básicos","Dados complementares básicos","ds_titulo","306");
 
-INSERT INTO tb_auditoria_itens VALUES("2189","<p>Manter dados: (Endere&ccedil;o, telefone, CNPJ, fantasia, raz&atilde;o e outros)</p>\n\n\n\n<p>Modelagem: Contato, endere&ccedil;o e empresa ou pessoa</p>","<p>Manter dados: (Endere&ccedil;o, telefone, CNPJ, fantasia, raz&atilde;o e outros)</p>\n\n\n\n<p>Modelagem: Contato, endere&ccedil;o e empresa ou pessoa</p>","ds_observacao","306");
+INSERT INTO tb_auditoria_itens VALUES("2189","<p>Manter dados: (Endere&ccedil;o, telefone, CNPJ, fantasia, raz&atilde;o e outros)</p>\n\n\n\n\n\n\n\n<p>Modelagem: Contato, endere&ccedil;o e empresa ou pessoa</p>","<p>Manter dados: (Endere&ccedil;o, telefone, CNPJ, fantasia, raz&atilde;o e outros)</p>\n\n\n\n\n\n\n\n<p>Modelagem: Contato, endere&ccedil;o e empresa ou pessoa</p>","ds_observacao","306");
 
 INSERT INTO tb_auditoria_itens VALUES("2190","2018-07-25 12:11:05","","dt_cadastro","306");
 
@@ -5389,7 +5489,7 @@ INSERT INTO tb_auditoria_itens VALUES("2196","6","","co_historia","307");
 
 INSERT INTO tb_auditoria_itens VALUES("2197","Dados complementares básicos","Dados complementares básicos","ds_titulo","307");
 
-INSERT INTO tb_auditoria_itens VALUES("2198","<p>Manter dados: (Endere&ccedil;o, telefone, CNPJ, fantasia, raz&atilde;o e outros)</p>\n\n\n\n<p>Modelagem: Contato, endere&ccedil;o e empresa ou pessoa</p>","<p>Manter dados: (Endere&ccedil;o, telefone, CNPJ, fantasia, raz&atilde;o e outros)</p>\n\n\n\n<p>Modelagem: Contato, endere&ccedil;o e empresa ou pessoa</p>","ds_observacao","307");
+INSERT INTO tb_auditoria_itens VALUES("2198","<p>Manter dados: (Endere&ccedil;o, telefone, CNPJ, fantasia, raz&atilde;o e outros)</p>\n\n\n\n\n\n\n\n<p>Modelagem: Contato, endere&ccedil;o e empresa ou pessoa</p>","<p>Manter dados: (Endere&ccedil;o, telefone, CNPJ, fantasia, raz&atilde;o e outros)</p>\n\n\n\n\n\n\n\n<p>Modelagem: Contato, endere&ccedil;o e empresa ou pessoa</p>","ds_observacao","307");
 
 INSERT INTO tb_auditoria_itens VALUES("2199","2018-07-25 12:11:05","","dt_cadastro","307");
 
@@ -5425,7 +5525,7 @@ INSERT INTO tb_auditoria_itens VALUES("2214","7","","co_historia","309");
 
 INSERT INTO tb_auditoria_itens VALUES("2215","Manter Horário de funcionamento padrão","Manter Horário de funcionamento padrão","ds_titulo","309");
 
-INSERT INTO tb_auditoria_itens VALUES("2216","<p>Manter hor&aacute;rio de funcionamento</p>\n\n\n\n<p>Modelagem: Funcionamento (Assinante)</p>\n\n\n\n<p>&nbsp;</p>","<p>Manter hor&aacute;rio de funcionamento</p>\n\n\n\n<p>Modelagem: Funcionamento (Assinante)</p>\n\n\n\n<p>&nbsp;</p>","ds_observacao","309");
+INSERT INTO tb_auditoria_itens VALUES("2216","<p>Manter hor&aacute;rio de funcionamento</p>\n\n\n\n\n\n\n\n<p>Modelagem: Funcionamento (Assinante)</p>\n\n\n\n\n\n\n\n<p>&nbsp;</p>","<p>Manter hor&aacute;rio de funcionamento</p>\n\n\n\n\n\n\n\n<p>Modelagem: Funcionamento (Assinante)</p>\n\n\n\n\n\n\n\n<p>&nbsp;</p>","ds_observacao","309");
 
 INSERT INTO tb_auditoria_itens VALUES("2217","2018-07-25 12:19:44","","dt_cadastro","309");
 
@@ -5443,7 +5543,7 @@ INSERT INTO tb_auditoria_itens VALUES("2223","8","","co_historia","310");
 
 INSERT INTO tb_auditoria_itens VALUES("2224","Manter Fotos do Estabelecimento","Manter Fotos do Estabelecimento","ds_titulo","310");
 
-INSERT INTO tb_auditoria_itens VALUES("2225","<p>Manter Fotos do Estabelecimento para o Site</p>\n\n\n\n<p>Modelagem: Imagem (FK Assinante)</p>","<p>Manter Fotos do Estabelecimento para o Site</p>\n\n\n\n<p>Modelagem: Imagem (FK Assinante)</p>","ds_observacao","310");
+INSERT INTO tb_auditoria_itens VALUES("2225","<p>Manter Fotos do Estabelecimento para o Site</p>\n\n\n\n\n\n\n\n<p>Modelagem: Imagem (FK Assinante)</p>","<p>Manter Fotos do Estabelecimento para o Site</p>\n\n\n\n\n\n\n\n<p>Modelagem: Imagem (FK Assinante)</p>","ds_observacao","310");
 
 INSERT INTO tb_auditoria_itens VALUES("2226","2018-07-25 12:21:30","","dt_cadastro","310");
 
@@ -5479,7 +5579,7 @@ INSERT INTO tb_auditoria_itens VALUES("2241","8","","co_historia","312");
 
 INSERT INTO tb_auditoria_itens VALUES("2242","Manter Fotos do Estabelecimento","Manter Fotos do Estabelecimento","ds_titulo","312");
 
-INSERT INTO tb_auditoria_itens VALUES("2243","<p>Manter Fotos do Estabelecimento para o Site</p>\n\n\n\n<p>Modelagem: Imagem (FK Assinante)</p>","<p>Manter Fotos do Estabelecimento para o Site</p>\n\n\n\n<p>Modelagem: Imagem (FK Assinante)</p>","ds_observacao","312");
+INSERT INTO tb_auditoria_itens VALUES("2243","<p>Manter Fotos do Estabelecimento para o Site</p>\n\n\n\n\n\n\n\n<p>Modelagem: Imagem (FK Assinante)</p>","<p>Manter Fotos do Estabelecimento para o Site</p>\n\n\n\n\n\n\n\n<p>Modelagem: Imagem (FK Assinante)</p>","ds_observacao","312");
 
 INSERT INTO tb_auditoria_itens VALUES("2244","2018-07-25 12:21:30","","dt_cadastro","312");
 
@@ -5497,7 +5597,7 @@ INSERT INTO tb_auditoria_itens VALUES("2250","7","","co_historia","313");
 
 INSERT INTO tb_auditoria_itens VALUES("2251","Manter Horário de funcionamento padrão","Manter Horário de funcionamento padrão","ds_titulo","313");
 
-INSERT INTO tb_auditoria_itens VALUES("2252","<p>Manter hor&aacute;rio de funcionamento</p>\n\n\n\n<p>Modelagem: Funcionamento (Assinante)</p>\n\n\n\n<p>&nbsp;</p>","<p>Manter hor&aacute;rio de funcionamento</p>\n\n\n\n<p>Modelagem: Funcionamento (Assinante)</p>\n\n\n\n<p>&nbsp;</p>","ds_observacao","313");
+INSERT INTO tb_auditoria_itens VALUES("2252","<p>Manter hor&aacute;rio de funcionamento</p>\n\n\n\n\n\n\n\n<p>Modelagem: Funcionamento (Assinante)</p>\n\n\n\n\n\n\n\n<p>&nbsp;</p>","<p>Manter hor&aacute;rio de funcionamento</p>\n\n\n\n\n\n\n\n<p>Modelagem: Funcionamento (Assinante)</p>\n\n\n\n\n\n\n\n<p>&nbsp;</p>","ds_observacao","313");
 
 INSERT INTO tb_auditoria_itens VALUES("2253","2018-07-25 12:19:44","","dt_cadastro","313");
 
@@ -5515,7 +5615,7 @@ INSERT INTO tb_auditoria_itens VALUES("2259","6","","co_historia","314");
 
 INSERT INTO tb_auditoria_itens VALUES("2260","Dados complementares básicos","Dados complementares básicos","ds_titulo","314");
 
-INSERT INTO tb_auditoria_itens VALUES("2261","<p>Manter dados: (Endere&ccedil;o, telefone, CNPJ, fantasia, raz&atilde;o e outros)</p>\n\n\n\n<p>Modelagem: Contato, endere&ccedil;o e empresa ou pessoa</p>","<p>Manter dados: (Endere&ccedil;o, telefone, CNPJ, fantasia, raz&atilde;o e outros)</p>\n\n\n\n<p>Modelagem: Contato, endere&ccedil;o e empresa ou pessoa</p>","ds_observacao","314");
+INSERT INTO tb_auditoria_itens VALUES("2261","<p>Manter dados: (Endere&ccedil;o, telefone, CNPJ, fantasia, raz&atilde;o e outros)</p>\n\n\n\n\n\n\n\n<p>Modelagem: Contato, endere&ccedil;o e empresa ou pessoa</p>","<p>Manter dados: (Endere&ccedil;o, telefone, CNPJ, fantasia, raz&atilde;o e outros)</p>\n\n\n\n\n\n\n\n<p>Modelagem: Contato, endere&ccedil;o e empresa ou pessoa</p>","ds_observacao","314");
 
 INSERT INTO tb_auditoria_itens VALUES("2262","2018-07-25 12:11:05","","dt_cadastro","314");
 
@@ -5533,7 +5633,7 @@ INSERT INTO tb_auditoria_itens VALUES("2268","10","","co_historia","315");
 
 INSERT INTO tb_auditoria_itens VALUES("2269","Manter Dias Especiais","Manter Dias Especiais","ds_titulo","315");
 
-INSERT INTO tb_auditoria_itens VALUES("2270","<p>Manter Dias Especiais n&atilde;o recorrente</p>\n\n\n\n<p>Modelagem: dias especiais (FK assinante, com hor&aacute;rio de funcionamento)</p>","<p>Manter Dias Especiais n&atilde;o recorrente</p>\n\n\n\n<p>Modelagem: dias especiais (FK assinante, com hor&aacute;rio de funcionamento)</p>","ds_observacao","315");
+INSERT INTO tb_auditoria_itens VALUES("2270","<p>Manter Dias Especiais n&atilde;o recorrente</p>\n\n\n\n\n\n\n\n<p>Modelagem: dias especiais (FK assinante, com hor&aacute;rio de funcionamento)</p>","<p>Manter Dias Especiais n&atilde;o recorrente</p>\n\n\n\n\n\n\n\n<p>Modelagem: dias especiais (FK assinante, com hor&aacute;rio de funcionamento)</p>","ds_observacao","315");
 
 INSERT INTO tb_auditoria_itens VALUES("2271","2018-07-25 12:28:51","","dt_cadastro","315");
 
@@ -5551,7 +5651,7 @@ INSERT INTO tb_auditoria_itens VALUES("2277","9","","co_historia","316");
 
 INSERT INTO tb_auditoria_itens VALUES("2278","Manter Feriados","Manter Feriados","ds_titulo","316");
 
-INSERT INTO tb_auditoria_itens VALUES("2279","<p>Manter Feriados</p>\n\n\n\n<p>Modelagem: Tabela base Feriados nacionais, Feriados (FK assinante, com hor&aacute;rio de funcionamento)</p>","<p>Manter Feriados</p>\n\n\n\n<p>Modelagem: Tabela base Feriados nacionais, Feriados (FK assinante, com hor&aacute;rio de funcionamento)</p>","ds_observacao","316");
+INSERT INTO tb_auditoria_itens VALUES("2279","<p>Manter Feriados</p>\n\n\n\n\n\n\n\n<p>Modelagem: Tabela base Feriados nacionais, Feriados (FK assinante, com hor&aacute;rio de funcionamento)</p>","<p>Manter Feriados</p>\n\n\n\n\n\n\n\n<p>Modelagem: Tabela base Feriados nacionais, Feriados (FK assinante, com hor&aacute;rio de funcionamento)</p>","ds_observacao","316");
 
 INSERT INTO tb_auditoria_itens VALUES("2280","2018-07-25 12:27:26","","dt_cadastro","316");
 
@@ -5569,8 +5669,6 @@ INSERT INTO tb_auditoria_itens VALUES("2286","11","","co_historia","317");
 
 INSERT INTO tb_auditoria_itens VALUES("2287","Formas de pagamento","Formas de pagamento","ds_titulo","317");
 
-INSERT INTO tb_auditoria_itens VALUES("2288","<p>Forma de pagamento aceitas e taxas e periodo da taxa hist&oacute;rico da taxa</p>\n\n\n\n<p>Configura&ccedil;&atilde;o se aceita pagamento posterior</p>\n\n\n\n<p>&nbsp;</p>\n\n\n\n<p>modelagem: Configuracao (FK assinante), Taxas cart&otilde;es, Tabela base ","<p>Forma de pagamento aceitas</p>\n\n\n\n<p>modelagem: Configuracao (FK assinante),&nbsp; Tabela base Formas de pagamento, Tabela base bandeira cartao</p>","ds_observacao","317");
-
 INSERT INTO tb_auditoria_itens VALUES("2289","2018-07-25 14:38:19","","dt_cadastro","317");
 
 INSERT INTO tb_auditoria_itens VALUES("2290","2018-07-27 17:22:59","2018-09-25 14:23:14","dt_atualizado","317");
@@ -5584,8 +5682,6 @@ INSERT INTO tb_auditoria_itens VALUES("2293","40","13","nu_esforco_restante","31
 INSERT INTO tb_auditoria_itens VALUES("2294","5","5","co_sessao","317");
 
 INSERT INTO tb_auditoria_itens VALUES("2295","","Taxas dos cartões","ds_titulo","318");
-
-INSERT INTO tb_auditoria_itens VALUES("2296","","<p>Taxas cobradas dos cart&otilde;es de d&eacute;bito e cr&eacute;dito e taxa de antecipa&ccedil;&atilde;o dos cart&otilde;es de cr&eacute;dito com periodo da taxa</p>\n\n\n\n<p>modelagem: Configuracao (FK assinante), Taxas cart&otilde;es</p>\n\n\n\n<p>&nbsp;","ds_observacao","318");
 
 INSERT INTO tb_auditoria_itens VALUES("2297","","5","co_sessao","318");
 
@@ -5601,7 +5697,7 @@ INSERT INTO tb_auditoria_itens VALUES("2302","","2018-09-25 14:26:26","dt_cadast
 
 INSERT INTO tb_auditoria_itens VALUES("2303","","Histórico da taxas","ds_titulo","319");
 
-INSERT INTO tb_auditoria_itens VALUES("2304","","<p>hist&oacute;rico da taxas cobradas dos cart&otilde;es</p>\n\n\n\n<p>&nbsp;</p>","ds_observacao","319");
+INSERT INTO tb_auditoria_itens VALUES("2304","","<p>hist&oacute;rico da taxas cobradas dos cart&otilde;es</p>\n\n\n\n\n\n\n\n<p>&nbsp;</p>","ds_observacao","319");
 
 INSERT INTO tb_auditoria_itens VALUES("2305","","5","co_sessao","319");
 
@@ -5619,7 +5715,7 @@ INSERT INTO tb_auditoria_itens VALUES("2311","12","","co_historia","320");
 
 INSERT INTO tb_auditoria_itens VALUES("2312","Configuração do cliente","Configuração do cliente","ds_titulo","320");
 
-INSERT INTO tb_auditoria_itens VALUES("2313","<p>Cliente Marcar Servi&ccedil;o S / N, quantidade de aus&ecirc;ncia para que o cliente n&atilde;o marque mais servi&ccedil;os</p>\n\n\n\n<p>&nbsp;</p>\n\n\n\n<p>Modelagem: Configura&ccedil;&atilde;o assinante (FK Assinante)</p>","<p>Cliente Marcar Servi&ccedil;o S / N, quantidade de aus&ecirc;ncia para que o cliente n&atilde;o marque mais servi&ccedil;os</p>\n\n\n\n<p>&nbsp;</p>\n\n\n\n<p>Modelagem: Configura&ccedil;&atilde;o assinante (FK Assinante)</p>","ds_observacao","320");
+INSERT INTO tb_auditoria_itens VALUES("2313","<p>Cliente Marcar Servi&ccedil;o S / N, quantidade de aus&ecirc;ncia para que o cliente n&atilde;o marque mais servi&ccedil;os</p>\n\n\n\n\n\n\n\n<p>&nbsp;</p>\n\n\n\n\n\n\n\n<p>Modelagem: Configura&ccedil;&atilde;o assinante (FK Assinante)</p>","<p>Cliente Marcar Servi&ccedil;o S / N, quantidade de aus&ecirc;ncia para que o cliente n&atilde;o marque mais servi&ccedil;os</p>\n\n\n\n\n\n\n\n<p>&nbsp;</p>\n\n\n\n\n\n\n\n<p>Modelagem: Configura&ccedil;&atilde;o assinante (FK Assinante)</p>","ds_observacao","320");
 
 INSERT INTO tb_auditoria_itens VALUES("2314","2018-07-25 14:43:02","","dt_cadastro","320");
 
@@ -5671,7 +5767,7 @@ INSERT INTO tb_auditoria_itens VALUES("2337","11","","co_historia","323");
 
 INSERT INTO tb_auditoria_itens VALUES("2338","Formas de pagamento","Formas de pagamento","ds_titulo","323");
 
-INSERT INTO tb_auditoria_itens VALUES("2339","<p>Forma de pagamento aceitas</p>\n\n\n\n<p>modelagem: Configuracao (FK assinante),&nbsp; Tabela base Formas de pagamento, Tabela base bandeira cartao</p>","<p>Forma de pagamento aceitas</p>\n\n\n\n<p>modelagem: Configuracao (FK assinante),&nbsp; Tabela base Formas de pagamento, Tabela base bandeira cartao</p>","ds_observacao","323");
+INSERT INTO tb_auditoria_itens VALUES("2339","<p>Forma de pagamento aceitas</p>\n\n\n\n\n\n\n\n<p>modelagem: Configuracao (FK assinante),&nbsp; Tabela base Formas de pagamento, Tabela base bandeira cartao</p>","<p>Forma de pagamento aceitas</p>\n\n\n\n\n\n\n\n<p>modelagem: Configuracao (FK assinante),&nbsp; Tabela base Formas de pagamento, Tabela base bandeira cartao</p>","ds_observacao","323");
 
 INSERT INTO tb_auditoria_itens VALUES("2340","2018-07-25 14:38:19","","dt_cadastro","323");
 
@@ -5689,7 +5785,7 @@ INSERT INTO tb_auditoria_itens VALUES("2346","11","","co_historia","324");
 
 INSERT INTO tb_auditoria_itens VALUES("2347","Formas de pagamento","Formas de pagamento","ds_titulo","324");
 
-INSERT INTO tb_auditoria_itens VALUES("2348","<p>Forma de pagamento aceitas</p>\n\n\n\n<p>modelagem: Configuracao (FK assinante),&nbsp; Tabela base Formas de pagamento, Tabela base bandeira cartao</p>","<p>Forma de pagamento aceitas</p>\n\n\n\n<p>modelagem: Configuracao (FK assinante),&nbsp; Tabela base Formas de pagamento, Tabela base bandeira cartao</p>","ds_observacao","324");
+INSERT INTO tb_auditoria_itens VALUES("2348","<p>Forma de pagamento aceitas</p>\n\n\n\n\n\n\n\n<p>modelagem: Configuracao (FK assinante),&nbsp; Tabela base Formas de pagamento, Tabela base bandeira cartao</p>","<p>Forma de pagamento aceitas</p>\n\n\n\n\n\n\n\n<p>modelagem: Configuracao (FK assinante),&nbsp; Tabela base Formas de pagamento, Tabela base bandeira cartao</p>","ds_observacao","324");
 
 INSERT INTO tb_auditoria_itens VALUES("2349","2018-07-25 14:38:19","","dt_cadastro","324");
 
@@ -5707,7 +5803,7 @@ INSERT INTO tb_auditoria_itens VALUES("2355","11","","co_historia","325");
 
 INSERT INTO tb_auditoria_itens VALUES("2356","Formas de pagamento","Formas de pagamento","ds_titulo","325");
 
-INSERT INTO tb_auditoria_itens VALUES("2357","<p>Forma de pagamento aceitas</p>\n\n\n\n<p>modelagem: Configuracao (FK assinante),&nbsp; Tabela base Formas de pagamento, Tabela base bandeira cartao</p>","<p>Forma de pagamento aceitas</p>\n\n\n\n<p>modelagem: Configuracao (FK assinante),&nbsp; Tabela base Formas de pagamento, Tabela base bandeira cartao</p>","ds_observacao","325");
+INSERT INTO tb_auditoria_itens VALUES("2357","<p>Forma de pagamento aceitas</p>\n\n\n\n\n\n\n\n<p>modelagem: Configuracao (FK assinante),&nbsp; Tabela base Formas de pagamento, Tabela base bandeira cartao</p>","<p>Forma de pagamento aceitas</p>\n\n\n\n\n\n\n\n<p>modelagem: Configuracao (FK assinante),&nbsp; Tabela base Formas de pagamento, Tabela base bandeira cartao</p>","ds_observacao","325");
 
 INSERT INTO tb_auditoria_itens VALUES("2358","2018-07-25 14:38:19","","dt_cadastro","325");
 
@@ -5725,8 +5821,6 @@ INSERT INTO tb_auditoria_itens VALUES("2364","131","","co_historia","326");
 
 INSERT INTO tb_auditoria_itens VALUES("2365","Taxas dos cartões","Taxas dos cartões","ds_titulo","326");
 
-INSERT INTO tb_auditoria_itens VALUES("2366","<p>Taxas cobradas dos cart&otilde;es de d&eacute;bito e cr&eacute;dito e taxa de antecipa&ccedil;&atilde;o dos cart&otilde;es de cr&eacute;dito com periodo da taxa</p>\n\n\n\n<p>modelagem: Configuracao (FK assinante), Taxas cart&otilde;es</p>\n\n\n\n<p>&nbsp;","<p>Taxas cobradas dos cart&otilde;es de d&eacute;bito e cr&eacute;dito e taxa de antecipa&ccedil;&atilde;o dos cart&otilde;es de cr&eacute;dito com periodo da taxa</p>\n\n\n\n<p>modelagem: Configuracao (FK assinante), Taxas cart&otilde;es</p>\n\n\n\n<p>&nbsp;","ds_observacao","326");
-
 INSERT INTO tb_auditoria_itens VALUES("2367","2018-09-25 14:26:26","","dt_cadastro","326");
 
 INSERT INTO tb_auditoria_itens VALUES("2368","2018-09-25 14:26:26","2018-10-19 11:32:32","dt_atualizado","326");
@@ -5742,8 +5836,6 @@ INSERT INTO tb_auditoria_itens VALUES("2372","5","5","co_sessao","326");
 INSERT INTO tb_auditoria_itens VALUES("2373","131","","co_historia","327");
 
 INSERT INTO tb_auditoria_itens VALUES("2374","Taxas dos cartões","Taxas dos cartões","ds_titulo","327");
-
-INSERT INTO tb_auditoria_itens VALUES("2375","<p>Taxas cobradas dos cart&otilde;es de d&eacute;bito e cr&eacute;dito e taxa de antecipa&ccedil;&atilde;o dos cart&otilde;es de cr&eacute;dito com periodo da taxa</p>\n\n\n\n<p>modelagem: Configuracao (FK assinante), Taxas cart&otilde;es</p>\n\n\n\n<p>&nbsp;","<p>Taxas cobradas dos cart&otilde;es de d&eacute;bito e cr&eacute;dito e taxa de antecipa&ccedil;&atilde;o dos cart&otilde;es de cr&eacute;dito com periodo da taxa</p>\n\n\n\n<p>modelagem: Configuracao (FK assinante), Taxas cart&otilde;es</p>\n\n\n\n<p>&nbsp;","ds_observacao","327");
 
 INSERT INTO tb_auditoria_itens VALUES("2376","2018-09-25 14:26:26","","dt_cadastro","327");
 
@@ -5761,7 +5853,7 @@ INSERT INTO tb_auditoria_itens VALUES("2382","132","","co_historia","328");
 
 INSERT INTO tb_auditoria_itens VALUES("2383","Histórico da taxas","Histórico da taxas","ds_titulo","328");
 
-INSERT INTO tb_auditoria_itens VALUES("2384","<p>hist&oacute;rico da taxas cobradas dos cart&otilde;es</p>\n\n\n\n<p>&nbsp;</p>","<p>hist&oacute;rico da taxas cobradas dos cart&otilde;es</p>\n\n\n\n<p>&nbsp;</p>","ds_observacao","328");
+INSERT INTO tb_auditoria_itens VALUES("2384","<p>hist&oacute;rico da taxas cobradas dos cart&otilde;es</p>\n\n\n\n\n\n\n\n<p>&nbsp;</p>","<p>hist&oacute;rico da taxas cobradas dos cart&otilde;es</p>\n\n\n\n\n\n\n\n<p>&nbsp;</p>","ds_observacao","328");
 
 INSERT INTO tb_auditoria_itens VALUES("2385","2018-09-25 14:27:18","","dt_cadastro","328");
 
@@ -5779,7 +5871,7 @@ INSERT INTO tb_auditoria_itens VALUES("2391","12","","co_historia","329");
 
 INSERT INTO tb_auditoria_itens VALUES("2392","Configuração do cliente","Configuração do cliente","ds_titulo","329");
 
-INSERT INTO tb_auditoria_itens VALUES("2393","<p>Cliente Marcar Servi&ccedil;o S / N, quantidade de aus&ecirc;ncia para que o cliente n&atilde;o marque mais servi&ccedil;os</p>\n\n\n\n<p>&nbsp;</p>\n\n\n\n<p>Modelagem: Configura&ccedil;&atilde;o assinante (FK Assinante)</p>","<p>Cliente Marcar Servi&ccedil;o S / N, quantidade de aus&ecirc;ncia para que o cliente n&atilde;o marque mais servi&ccedil;os</p>\n\n\n\n<p>&nbsp;</p>\n\n\n\n<p>Modelagem: Configura&ccedil;&atilde;o assinante (FK Assinante)</p>","ds_observacao","329");
+INSERT INTO tb_auditoria_itens VALUES("2393","<p>Cliente Marcar Servi&ccedil;o S / N, quantidade de aus&ecirc;ncia para que o cliente n&atilde;o marque mais servi&ccedil;os</p>\n\n\n\n\n\n\n\n<p>&nbsp;</p>\n\n\n\n\n\n\n\n<p>Modelagem: Configura&ccedil;&atilde;o assinante (FK Assinante)</p>","<p>Cliente Marcar Servi&ccedil;o S / N, quantidade de aus&ecirc;ncia para que o cliente n&atilde;o marque mais servi&ccedil;os</p>\n\n\n\n\n\n\n\n<p>&nbsp;</p>\n\n\n\n\n\n\n\n<p>Modelagem: Configura&ccedil;&atilde;o assinante (FK Assinante)</p>","ds_observacao","329");
 
 INSERT INTO tb_auditoria_itens VALUES("2394","2018-07-25 14:43:02","","dt_cadastro","329");
 
@@ -5797,8 +5889,6 @@ INSERT INTO tb_auditoria_itens VALUES("2400","13","","co_historia","330");
 
 INSERT INTO tb_auditoria_itens VALUES("2401","Configuração de agendamento","Configuração de agendamento","ds_titulo","330");
 
-INSERT INTO tb_auditoria_itens VALUES("2402","<p>Confirma&ccedil;&atilde;o do agendamento e Regras de agendamento, agendamento recorrente, Horas de antecedencia do agendamento, Aagendamento online, intervalo de agendamento dos clientes</p>\n\n\n\n<p>&nbsp;</p>\n\n\n\n<p>Modelagem: Configura&ccedil;&atild","<p>Confirma&ccedil;&atilde;o do agendamento e Regras de agendamento, agendamento recorrente, Horas de antecedencia do agendamento, Agendamento online, intervalo de agendamento dos clientes</p>\n\n\n\n<p>&nbsp;</p>\n\n\n\n<p>Modelagem: Configura&ccedil;&atilde","ds_observacao","330");
-
 INSERT INTO tb_auditoria_itens VALUES("2403","2018-07-25 14:54:36","","dt_cadastro","330");
 
 INSERT INTO tb_auditoria_itens VALUES("2404","2018-07-25 14:54:36","2018-10-26 20:45:05","dt_atualizado","330");
@@ -5815,7 +5905,7 @@ INSERT INTO tb_auditoria_itens VALUES("2409","12","","co_historia","331");
 
 INSERT INTO tb_auditoria_itens VALUES("2410","Configuração do cliente","Configuração do cliente","ds_titulo","331");
 
-INSERT INTO tb_auditoria_itens VALUES("2411","<p>Cliente Marcar Servi&ccedil;o S / N, quantidade de aus&ecirc;ncia para que o cliente n&atilde;o marque mais servi&ccedil;os</p>\n\n\n\n<p>&nbsp;</p>\n\n\n\n<p>Modelagem: Configura&ccedil;&atilde;o assinante (FK Assinante)</p>","<p>Cliente Marcar Servi&ccedil;o S / N, quantidade de aus&ecirc;ncia para que o cliente n&atilde;o marque mais servi&ccedil;os</p>\n\n<p>&nbsp;</p>\n\n<p>Modelagem: Configura&ccedil;&atilde;o assinante (FK Assinante)</p>","ds_observacao","331");
+INSERT INTO tb_auditoria_itens VALUES("2411","<p>Cliente Marcar Servi&ccedil;o S / N, quantidade de aus&ecirc;ncia para que o cliente n&atilde;o marque mais servi&ccedil;os</p>\n\n\n\n\n\n\n\n<p>&nbsp;</p>\n\n\n\n\n\n\n\n<p>Modelagem: Configura&ccedil;&atilde;o assinante (FK Assinante)</p>","<p>Cliente Marcar Servi&ccedil;o S / N, quantidade de aus&ecirc;ncia para que o cliente n&atilde;o marque mais servi&ccedil;os</p>\n\n\n\n\n\n<p>&nbsp;</p>\n\n\n\n\n\n<p>Modelagem: Configura&ccedil;&atilde;o assinante (FK Assinante)</p>","ds_observacao","331");
 
 INSERT INTO tb_auditoria_itens VALUES("2412","2018-07-25 14:43:02","","dt_cadastro","331");
 
@@ -5833,8 +5923,6 @@ INSERT INTO tb_auditoria_itens VALUES("2418","13","","co_historia","332");
 
 INSERT INTO tb_auditoria_itens VALUES("2419","Configuração de agendamento","Configuração de agendamento","ds_titulo","332");
 
-INSERT INTO tb_auditoria_itens VALUES("2420","<p>Confirma&ccedil;&atilde;o do agendamento e Regras de agendamento, agendamento recorrente, Horas de antecedencia do agendamento, Agendamento online, intervalo de agendamento dos clientes</p>\n\n\n\n<p>&nbsp;</p>\n\n\n\n<p>Modelagem: Configura&ccedil;&atilde","<p>Confirma&ccedil;&atilde;o do agendamento e Regras de agendamento, agendamento recorrente, Horas de antecedencia do agendamento, Agendamento online, intervalo de agendamento dos clientes</p>\n\n<p>&nbsp;</p>\n\n<p>Modelagem: Configura&ccedil;&atilde;o a","ds_observacao","332");
-
 INSERT INTO tb_auditoria_itens VALUES("2421","2018-07-25 14:54:36","","dt_cadastro","332");
 
 INSERT INTO tb_auditoria_itens VALUES("2422","2018-10-26 20:45:05","2018-11-19 17:37:31","dt_atualizado","332");
@@ -5851,8 +5939,6 @@ INSERT INTO tb_auditoria_itens VALUES("2427","13","","co_historia","333");
 
 INSERT INTO tb_auditoria_itens VALUES("2428","Configuração de agendamento","Configuração de agendamento","ds_titulo","333");
 
-INSERT INTO tb_auditoria_itens VALUES("2429","<p>Confirma&ccedil;&atilde;o do agendamento e Regras de agendamento, agendamento recorrente, Horas de antecedencia do agendamento, Agendamento online, intervalo de agendamento dos clientes</p>\n\n<p>&nbsp;</p>\n\n<p>Modelagem: Configura&ccedil;&atilde;o a","<p>Confirma&ccedil;&atilde;o do agendamento e Regras de agendamento, agendamento recorrente, Horas de antecedencia do agendamento, Agendamento online, intervalo de agendamento dos clientes</p>\n\n<p>&nbsp;</p>\n\n<p>Modelagem: Configura&ccedil;&atilde;o a","ds_observacao","333");
-
 INSERT INTO tb_auditoria_itens VALUES("2430","2018-07-25 14:54:36","","dt_cadastro","333");
 
 INSERT INTO tb_auditoria_itens VALUES("2431","2018-11-19 17:37:31","2018-11-19 17:37:56","dt_atualizado","333");
@@ -5868,8 +5954,6 @@ INSERT INTO tb_auditoria_itens VALUES("2435","5","5","co_sessao","333");
 INSERT INTO tb_auditoria_itens VALUES("2436","133","","co_historia","334");
 
 INSERT INTO tb_auditoria_itens VALUES("2437","Configuração das comissões","Configuração das comissões","ds_titulo","334");
-
-INSERT INTO tb_auditoria_itens VALUES("2438","<p>Configura&ccedil;&atilde;o das comiss&otilde;es</p>","<p>Configura&ccedil;&atilde;o das comiss&otilde;es</p>\n\n<p>&nbsp;</p>\n\n<p>Considerar ou n&atilde;o as Taxas de antecipa&ccedil;&atilde;o, taxa administrativa, taxa cart&atilde;o de cr&eacute;dito, taxa cart&atilde;o de d&eacute;bito, Regras de pagamen","ds_observacao","334");
 
 INSERT INTO tb_auditoria_itens VALUES("2439","2018-09-25 14:31:36","","dt_cadastro","334");
 
@@ -5905,7 +5989,7 @@ INSERT INTO tb_auditoria_itens VALUES("2454","14","","co_historia","336");
 
 INSERT INTO tb_auditoria_itens VALUES("2455","Manter Motivo desconto","Manter Motivo desconto","ds_titulo","336");
 
-INSERT INTO tb_auditoria_itens VALUES("2456","<p>Manter Motivo desconto</p>\n\n\n\n<p>&nbsp;</p>\n\n\n\n<p>Modelagem: Motivo desconto (FK Assinante)</p>\n\n\n\n<p>&nbsp;</p>","<p>Manter Motivo desconto</p>\n\n<p>&nbsp;</p>\n\n<p>Modelagem: Motivo desconto (FK Assinante)</p>\n\n<p>&nbsp;</p>","ds_observacao","336");
+INSERT INTO tb_auditoria_itens VALUES("2456","<p>Manter Motivo desconto</p>\n\n\n\n\n\n\n\n<p>&nbsp;</p>\n\n\n\n\n\n\n\n<p>Modelagem: Motivo desconto (FK Assinante)</p>\n\n\n\n\n\n\n\n<p>&nbsp;</p>","<p>Manter Motivo desconto</p>\n\n\n\n\n\n<p>&nbsp;</p>\n\n\n\n\n\n<p>Modelagem: Motivo desconto (FK Assinante)</p>\n\n\n\n\n\n<p>&nbsp;</p>","ds_observacao","336");
 
 INSERT INTO tb_auditoria_itens VALUES("2457","2018-07-25 15:13:38","","dt_cadastro","336");
 
@@ -5941,7 +6025,7 @@ INSERT INTO tb_auditoria_itens VALUES("2472","14","","co_historia","338");
 
 INSERT INTO tb_auditoria_itens VALUES("2473","Manter Motivo desconto","Manter Motivo desconto","ds_titulo","338");
 
-INSERT INTO tb_auditoria_itens VALUES("2474","<p>Manter Motivo desconto</p>\n\n<p>&nbsp;</p>\n\n<p>Modelagem: Motivo desconto (FK Assinante)</p>\n\n<p>&nbsp;</p>","<p>Manter Motivo desconto</p>\n\n<p>&nbsp;</p>\n\n<p>Modelagem: Motivo desconto (FK Assinante)</p>\n\n<p>&nbsp;</p>","ds_observacao","338");
+INSERT INTO tb_auditoria_itens VALUES("2474","<p>Manter Motivo desconto</p>\n\n\n\n\n\n<p>&nbsp;</p>\n\n\n\n\n\n<p>Modelagem: Motivo desconto (FK Assinante)</p>\n\n\n\n\n\n<p>&nbsp;</p>","<p>Manter Motivo desconto</p>\n\n\n\n\n\n<p>&nbsp;</p>\n\n\n\n\n\n<p>Modelagem: Motivo desconto (FK Assinante)</p>\n\n\n\n\n\n<p>&nbsp;</p>","ds_observacao","338");
 
 INSERT INTO tb_auditoria_itens VALUES("2475","2018-07-25 15:13:38","","dt_cadastro","338");
 
@@ -5959,7 +6043,7 @@ INSERT INTO tb_auditoria_itens VALUES("2481","14","","co_historia","339");
 
 INSERT INTO tb_auditoria_itens VALUES("2482","Manter Motivo desconto","Manter Motivo desconto","ds_titulo","339");
 
-INSERT INTO tb_auditoria_itens VALUES("2483","<p>Manter Motivo desconto</p>\n\n<p>&nbsp;</p>\n\n<p>Modelagem: Motivo desconto (FK Assinante)</p>\n\n<p>&nbsp;</p>","<p>Manter Motivo desconto</p>\n\n<p>&nbsp;</p>\n\n<p>Modelagem: Motivo desconto (FK Assinante)</p>\n\n<p>&nbsp;</p>","ds_observacao","339");
+INSERT INTO tb_auditoria_itens VALUES("2483","<p>Manter Motivo desconto</p>\n\n\n\n\n\n<p>&nbsp;</p>\n\n\n\n\n\n<p>Modelagem: Motivo desconto (FK Assinante)</p>\n\n\n\n\n\n<p>&nbsp;</p>","<p>Manter Motivo desconto</p>\n\n\n\n\n\n<p>&nbsp;</p>\n\n\n\n\n\n<p>Modelagem: Motivo desconto (FK Assinante)</p>\n\n\n\n\n\n<p>&nbsp;</p>","ds_observacao","339");
 
 INSERT INTO tb_auditoria_itens VALUES("2484","2018-07-25 15:13:38","","dt_cadastro","339");
 
@@ -5993,7 +6077,7 @@ INSERT INTO tb_auditoria_itens VALUES("2498","16","","co_historia","341");
 
 INSERT INTO tb_auditoria_itens VALUES("2499","Manter profissional","Manter profissional","ds_titulo","341");
 
-INSERT INTO tb_auditoria_itens VALUES("2500","<p>Manter profissional</p>\n\n\n\n<p>Modelagem: Profissional (FK Assinante, pessoa, usuario, endere&ccedil;o e contato)</p>","<p>Manter profissional</p>\n\n<p>Modelagem: Profissional (FK Assinante, pessoa, usuario, endere&ccedil;o e contato)</p>","ds_observacao","341");
+INSERT INTO tb_auditoria_itens VALUES("2500","<p>Manter profissional</p>\n\n\n\n\n\n\n\n<p>Modelagem: Profissional (FK Assinante, pessoa, usuario, endere&ccedil;o e contato)</p>","<p>Manter profissional</p>\n\n\n\n\n\n<p>Modelagem: Profissional (FK Assinante, pessoa, usuario, endere&ccedil;o e contato)</p>","ds_observacao","341");
 
 INSERT INTO tb_auditoria_itens VALUES("2501","2018-07-25 15:56:07","","dt_cadastro","341");
 
@@ -6011,7 +6095,7 @@ INSERT INTO tb_auditoria_itens VALUES("2507","16","","co_historia","342");
 
 INSERT INTO tb_auditoria_itens VALUES("2508","Manter profissional","Manter profissional","ds_titulo","342");
 
-INSERT INTO tb_auditoria_itens VALUES("2509","<p>Manter profissional</p>\n\n<p>Modelagem: Profissional (FK Assinante, pessoa, usuario, endere&ccedil;o e contato)</p>","<p>Manter profissional</p>\n\n<p>Modelagem: Profissional (FK Assinante, pessoa, usuario, endere&ccedil;o e contato)</p>","ds_observacao","342");
+INSERT INTO tb_auditoria_itens VALUES("2509","<p>Manter profissional</p>\n\n\n\n\n\n<p>Modelagem: Profissional (FK Assinante, pessoa, usuario, endere&ccedil;o e contato)</p>","<p>Manter profissional</p>\n\n\n\n\n\n<p>Modelagem: Profissional (FK Assinante, pessoa, usuario, endere&ccedil;o e contato)</p>","ds_observacao","342");
 
 INSERT INTO tb_auditoria_itens VALUES("2510","2018-07-25 15:56:07","","dt_cadastro","342");
 
@@ -6029,7 +6113,7 @@ INSERT INTO tb_auditoria_itens VALUES("2516","16","","co_historia","343");
 
 INSERT INTO tb_auditoria_itens VALUES("2517","Manter profissional","Manter profissional","ds_titulo","343");
 
-INSERT INTO tb_auditoria_itens VALUES("2518","<p>Manter profissional</p>\n\n<p>Modelagem: Profissional (FK Assinante, pessoa, usuario, endere&ccedil;o e contato)</p>","<p>Manter profissional</p>\n\n<p>Modelagem: Profissional (FK Assinante, pessoa, usuario, endere&ccedil;o e contato)</p>","ds_observacao","343");
+INSERT INTO tb_auditoria_itens VALUES("2518","<p>Manter profissional</p>\n\n\n\n\n\n<p>Modelagem: Profissional (FK Assinante, pessoa, usuario, endere&ccedil;o e contato)</p>","<p>Manter profissional</p>\n\n\n\n\n\n<p>Modelagem: Profissional (FK Assinante, pessoa, usuario, endere&ccedil;o e contato)</p>","ds_observacao","343");
 
 INSERT INTO tb_auditoria_itens VALUES("2519","2018-07-25 15:56:07","","dt_cadastro","343");
 
@@ -6047,7 +6131,7 @@ INSERT INTO tb_auditoria_itens VALUES("2525","16","","co_historia","344");
 
 INSERT INTO tb_auditoria_itens VALUES("2526","Manter profissional","Manter profissional","ds_titulo","344");
 
-INSERT INTO tb_auditoria_itens VALUES("2527","<p>Manter profissional</p>\n\n<p>Modelagem: Profissional (FK Assinante, pessoa, usuario, endere&ccedil;o e contato)</p>","<p>Manter profissional</p>\n\n<p>Modelagem: Profissional (FK Assinante, pessoa, usuario, endere&ccedil;o e contato)</p>","ds_observacao","344");
+INSERT INTO tb_auditoria_itens VALUES("2527","<p>Manter profissional</p>\n\n\n\n\n\n<p>Modelagem: Profissional (FK Assinante, pessoa, usuario, endere&ccedil;o e contato)</p>","<p>Manter profissional</p>\n\n\n\n\n\n<p>Modelagem: Profissional (FK Assinante, pessoa, usuario, endere&ccedil;o e contato)</p>","ds_observacao","344");
 
 INSERT INTO tb_auditoria_itens VALUES("2528","2018-07-25 15:56:07","","dt_cadastro","344");
 
@@ -6065,7 +6149,7 @@ INSERT INTO tb_auditoria_itens VALUES("2534","16","","co_historia","345");
 
 INSERT INTO tb_auditoria_itens VALUES("2535","Manter profissional","Manter profissional","ds_titulo","345");
 
-INSERT INTO tb_auditoria_itens VALUES("2536","<p>Manter profissional</p>\n\n<p>Modelagem: Profissional (FK Assinante, pessoa, usuario, endere&ccedil;o e contato)</p>","<p>Manter profissional</p>\n\n<p>Modelagem: Profissional (FK Assinante, pessoa, usuario, endere&ccedil;o, dados banc&aacute;rios, configura&ccedil;&atilde;o, jornada de trabalho e contato)</p>","ds_observacao","345");
+INSERT INTO tb_auditoria_itens VALUES("2536","<p>Manter profissional</p>\n\n\n\n\n\n<p>Modelagem: Profissional (FK Assinante, pessoa, usuario, endere&ccedil;o e contato)</p>","<p>Manter profissional</p>\n\n\n\n\n\n<p>Modelagem: Profissional (FK Assinante, pessoa, usuario, endere&ccedil;o, dados banc&aacute;rios, configura&ccedil;&atilde;o, jornada de trabalho e contato)</p>","ds_observacao","345");
 
 INSERT INTO tb_auditoria_itens VALUES("2537","2018-07-25 15:56:07","","dt_cadastro","345");
 
@@ -6083,7 +6167,7 @@ INSERT INTO tb_auditoria_itens VALUES("2543","46","","co_historia","346");
 
 INSERT INTO tb_auditoria_itens VALUES("2544","Horários de atendimento dos profissionais","Manter intervalos do profissional","ds_titulo","346");
 
-INSERT INTO tb_auditoria_itens VALUES("2545","<p>Hor&aacute;rios de atendimento dos profissionais</p>\n\n\n\n<p>Modelagem: Horario Profissional</p>","<p>Manter intervalos do profissional</p>\n\n<p>Modelagem: Horario do Profissional de refei&ccedil;&otilde;es e intervalos.</p>","ds_observacao","346");
+INSERT INTO tb_auditoria_itens VALUES("2545","<p>Hor&aacute;rios de atendimento dos profissionais</p>\n\n\n\n\n\n\n\n<p>Modelagem: Horario Profissional</p>","<p>Manter intervalos do profissional</p>\n\n\n\n\n\n<p>Modelagem: Horario do Profissional de refei&ccedil;&otilde;es e intervalos.</p>","ds_observacao","346");
 
 INSERT INTO tb_auditoria_itens VALUES("2546","2018-07-25 18:55:44","","dt_cadastro","346");
 
@@ -6101,7 +6185,7 @@ INSERT INTO tb_auditoria_itens VALUES("2552","16","","co_historia","347");
 
 INSERT INTO tb_auditoria_itens VALUES("2553","Manter profissional","Manter profissional","ds_titulo","347");
 
-INSERT INTO tb_auditoria_itens VALUES("2554","<p>Manter profissional</p>\n\n<p>Modelagem: Profissional (FK Assinante, pessoa, usuario, endere&ccedil;o, dados banc&aacute;rios, configura&ccedil;&atilde;o, jornada de trabalho e contato)</p>","<p>Manter profissional</p>\n\n<p>Modelagem: Profissional (FK Assinante, pessoa, usuario, endere&ccedil;o, dados banc&aacute;rios, configura&ccedil;&atilde;o, jornada de trabalho e contato)</p>","ds_observacao","347");
+INSERT INTO tb_auditoria_itens VALUES("2554","<p>Manter profissional</p>\n\n\n\n\n\n<p>Modelagem: Profissional (FK Assinante, pessoa, usuario, endere&ccedil;o, dados banc&aacute;rios, configura&ccedil;&atilde;o, jornada de trabalho e contato)</p>","<p>Manter profissional</p>\n\n\n\n\n\n<p>Modelagem: Profissional (FK Assinante, pessoa, usuario, endere&ccedil;o, dados banc&aacute;rios, configura&ccedil;&atilde;o, jornada de trabalho e contato)</p>","ds_observacao","347");
 
 INSERT INTO tb_auditoria_itens VALUES("2555","2018-07-25 15:56:07","","dt_cadastro","347");
 
@@ -6119,7 +6203,7 @@ INSERT INTO tb_auditoria_itens VALUES("2561","16","","co_historia","348");
 
 INSERT INTO tb_auditoria_itens VALUES("2562","Manter profissional","Manter profissional","ds_titulo","348");
 
-INSERT INTO tb_auditoria_itens VALUES("2563","<p>Manter profissional</p>\n\n<p>Modelagem: Profissional (FK Assinante, pessoa, usuario, endere&ccedil;o, dados banc&aacute;rios, configura&ccedil;&atilde;o, jornada de trabalho e contato)</p>","<p>Manter profissional</p>\n\n<p>Modelagem: Profissional (FK Assinante, pessoa, usuario, endere&ccedil;o, dados banc&aacute;rios, configura&ccedil;&atilde;o, jornada de trabalho e contato)</p>","ds_observacao","348");
+INSERT INTO tb_auditoria_itens VALUES("2563","<p>Manter profissional</p>\n\n\n\n\n\n<p>Modelagem: Profissional (FK Assinante, pessoa, usuario, endere&ccedil;o, dados banc&aacute;rios, configura&ccedil;&atilde;o, jornada de trabalho e contato)</p>","<p>Manter profissional</p>\n\n\n\n\n\n<p>Modelagem: Profissional (FK Assinante, pessoa, usuario, endere&ccedil;o, dados banc&aacute;rios, configura&ccedil;&atilde;o, jornada de trabalho e contato)</p>","ds_observacao","348");
 
 INSERT INTO tb_auditoria_itens VALUES("2564","2018-07-25 15:56:07","","dt_cadastro","348");
 
@@ -6137,7 +6221,7 @@ INSERT INTO tb_auditoria_itens VALUES("2570","16","","co_historia","349");
 
 INSERT INTO tb_auditoria_itens VALUES("2571","Manter profissional","Manter profissional","ds_titulo","349");
 
-INSERT INTO tb_auditoria_itens VALUES("2572","<p>Manter profissional</p>\n\n<p>Modelagem: Profissional (FK Assinante, pessoa, usuario, endere&ccedil;o, dados banc&aacute;rios, configura&ccedil;&atilde;o, jornada de trabalho e contato)</p>","<p>Manter profissional</p>\n\n<p>Modelagem: Profissional (FK Assinante, pessoa, usuario, endere&ccedil;o, dados banc&aacute;rios, configura&ccedil;&atilde;o, jornada de trabalho e contato)</p>","ds_observacao","349");
+INSERT INTO tb_auditoria_itens VALUES("2572","<p>Manter profissional</p>\n\n\n\n\n\n<p>Modelagem: Profissional (FK Assinante, pessoa, usuario, endere&ccedil;o, dados banc&aacute;rios, configura&ccedil;&atilde;o, jornada de trabalho e contato)</p>","<p>Manter profissional</p>\n\n\n\n\n\n<p>Modelagem: Profissional (FK Assinante, pessoa, usuario, endere&ccedil;o, dados banc&aacute;rios, configura&ccedil;&atilde;o, jornada de trabalho e contato)</p>","ds_observacao","349");
 
 INSERT INTO tb_auditoria_itens VALUES("2573","2018-07-25 15:56:07","","dt_cadastro","349");
 
@@ -6273,7 +6357,7 @@ INSERT INTO tb_auditoria_itens VALUES("2638","16","","co_historia","359");
 
 INSERT INTO tb_auditoria_itens VALUES("2639","Manter profissional","Manter profissional","ds_titulo","359");
 
-INSERT INTO tb_auditoria_itens VALUES("2640","<p>Manter profissional</p>\n\n<p>Modelagem: Profissional (FK Assinante, pessoa, usuario, endere&ccedil;o, dados banc&aacute;rios, configura&ccedil;&atilde;o, jornada de trabalho e contato)</p>","<p>Manter profissional</p>\n\n<p>Modelagem: Profissional (FK Assinante, pessoa, usuario, endere&ccedil;o, dados banc&aacute;rios, configura&ccedil;&atilde;o, jornada de trabalho e contato)</p>","ds_observacao","359");
+INSERT INTO tb_auditoria_itens VALUES("2640","<p>Manter profissional</p>\n\n\n\n\n\n<p>Modelagem: Profissional (FK Assinante, pessoa, usuario, endere&ccedil;o, dados banc&aacute;rios, configura&ccedil;&atilde;o, jornada de trabalho e contato)</p>","<p>Manter profissional</p>\n\n\n\n\n\n<p>Modelagem: Profissional (FK Assinante, pessoa, usuario, endere&ccedil;o, dados banc&aacute;rios, configura&ccedil;&atilde;o, jornada de trabalho e contato)</p>","ds_observacao","359");
 
 INSERT INTO tb_auditoria_itens VALUES("2641","2018-07-25 15:56:07","","dt_cadastro","359");
 
@@ -6353,6 +6437,854 @@ INSERT INTO tb_auditoria_itens VALUES("2678","5","8","nu_esforco_restante","363"
 
 INSERT INTO tb_auditoria_itens VALUES("2679","34","34","co_sessao","363");
 
+INSERT INTO tb_auditoria_itens VALUES("2680","","Padronização Library","no_sessao","364");
+
+INSERT INTO tb_auditoria_itens VALUES("2681","","6","co_modulo","364");
+
+INSERT INTO tb_auditoria_itens VALUES("2682","","2019-01-13 21:36:48","dt_cadastro","364");
+
+INSERT INTO tb_auditoria_itens VALUES("2683","","Padronização do uso do site","ds_titulo","365");
+
+INSERT INTO tb_auditoria_itens VALUES("2684","","<p>Criar constate TEM_SITE para valida&ccedil;&atilde;o do site</p>","ds_observacao","365");
+
+INSERT INTO tb_auditoria_itens VALUES("2685","","35","co_sessao","365");
+
+INSERT INTO tb_auditoria_itens VALUES("2686","","C","st_situacao","365");
+
+INSERT INTO tb_auditoria_itens VALUES("2687","","5","nu_esforco","365");
+
+INSERT INTO tb_auditoria_itens VALUES("2688","","0","nu_esforco_restante","365");
+
+INSERT INTO tb_auditoria_itens VALUES("2689","","2019-01-13 21:38:34","dt_atualizado","365");
+
+INSERT INTO tb_auditoria_itens VALUES("2690","","2019-01-13 21:38:34","dt_cadastro","365");
+
+INSERT INTO tb_auditoria_itens VALUES("2691","","Padronização das telas principais","ds_titulo","366");
+
+INSERT INTO tb_auditoria_itens VALUES("2692","","<p>Ajuste do site e sistema e login</p>","ds_observacao","366");
+
+INSERT INTO tb_auditoria_itens VALUES("2693","","35","co_sessao","366");
+
+INSERT INTO tb_auditoria_itens VALUES("2694","","C","st_situacao","366");
+
+INSERT INTO tb_auditoria_itens VALUES("2695","","8","nu_esforco","366");
+
+INSERT INTO tb_auditoria_itens VALUES("2696","","0","nu_esforco_restante","366");
+
+INSERT INTO tb_auditoria_itens VALUES("2697","","2019-01-13 21:40:03","dt_atualizado","366");
+
+INSERT INTO tb_auditoria_itens VALUES("2698","","2019-01-13 21:40:03","dt_cadastro","366");
+
+INSERT INTO tb_auditoria_itens VALUES("2699","","Padrinização do sistema com/sem Assinante","ds_titulo","367");
+
+INSERT INTO tb_auditoria_itens VALUES("2700","","<p>Criar constante TEM_ASSINANTE e fazer valida&ccedil;&otilde;es para funcionar com e sem assinante</p>","ds_observacao","367");
+
+INSERT INTO tb_auditoria_itens VALUES("2701","","35","co_sessao","367");
+
+INSERT INTO tb_auditoria_itens VALUES("2702","","N","st_situacao","367");
+
+INSERT INTO tb_auditoria_itens VALUES("2703","","30","nu_esforco","367");
+
+INSERT INTO tb_auditoria_itens VALUES("2704","","30","nu_esforco_restante","367");
+
+INSERT INTO tb_auditoria_itens VALUES("2705","","2019-01-13 21:43:02","dt_atualizado","367");
+
+INSERT INTO tb_auditoria_itens VALUES("2706","","2019-01-13 21:43:02","dt_cadastro","367");
+
+INSERT INTO tb_auditoria_itens VALUES("2707","","Merge das Library","ds_titulo","368");
+
+INSERT INTO tb_auditoria_itens VALUES("2708","","<p>Merge da Library do projeto Sistema da Beleza com a master do Projeto Merge das Library</p>","ds_observacao","368");
+
+INSERT INTO tb_auditoria_itens VALUES("2709","","35","co_sessao","368");
+
+INSERT INTO tb_auditoria_itens VALUES("2710","","N","st_situacao","368");
+
+INSERT INTO tb_auditoria_itens VALUES("2711","","5","nu_esforco","368");
+
+INSERT INTO tb_auditoria_itens VALUES("2712","","5","nu_esforco_restante","368");
+
+INSERT INTO tb_auditoria_itens VALUES("2713","","2019-01-13 21:49:26","dt_atualizado","368");
+
+INSERT INTO tb_auditoria_itens VALUES("2714","","2019-01-13 21:49:26","dt_cadastro","368");
+
+INSERT INTO tb_auditoria_itens VALUES("2715","","Backup Banco","ds_titulo","369");
+
+INSERT INTO tb_auditoria_itens VALUES("2716","","<p>Melhorias do Backup e automa&ccedil;&atilde;o da atualiza&ccedil;&atilde;o do banco</p>","ds_observacao","369");
+
+INSERT INTO tb_auditoria_itens VALUES("2717","","34","co_sessao","369");
+
+INSERT INTO tb_auditoria_itens VALUES("2718","","N","st_situacao","369");
+
+INSERT INTO tb_auditoria_itens VALUES("2719","","13","nu_esforco","369");
+
+INSERT INTO tb_auditoria_itens VALUES("2720","","13","nu_esforco_restante","369");
+
+INSERT INTO tb_auditoria_itens VALUES("2721","","2019-01-14 13:09:48","dt_atualizado","369");
+
+INSERT INTO tb_auditoria_itens VALUES("2722","","2019-01-14 13:09:48","dt_cadastro","369");
+
+INSERT INTO tb_auditoria_itens VALUES("2723","","Login opcional","ds_titulo","370");
+
+INSERT INTO tb_auditoria_itens VALUES("2724","","<p>Podendo loghar com E-mail ou CPF</p>","ds_observacao","370");
+
+INSERT INTO tb_auditoria_itens VALUES("2725","","35","co_sessao","370");
+
+INSERT INTO tb_auditoria_itens VALUES("2726","","C","st_situacao","370");
+
+INSERT INTO tb_auditoria_itens VALUES("2727","","5","nu_esforco","370");
+
+INSERT INTO tb_auditoria_itens VALUES("2728","","0","nu_esforco_restante","370");
+
+INSERT INTO tb_auditoria_itens VALUES("2729","","2019-01-14 13:54:50","dt_atualizado","370");
+
+INSERT INTO tb_auditoria_itens VALUES("2730","","2019-01-14 13:54:50","dt_cadastro","370");
+
+INSERT INTO tb_auditoria_itens VALUES("2731","128","","co_historia","371");
+
+INSERT INTO tb_auditoria_itens VALUES("2732","Manter Usuário","Manter Usuário Assinante","ds_titulo","371");
+
+INSERT INTO tb_auditoria_itens VALUES("2733","<p>Manter Usu&aacute;rio do Assinante</p>","<p>Manter Usu&aacute;rio do Assinante</p>","ds_observacao","371");
+
+INSERT INTO tb_auditoria_itens VALUES("2734","2018-08-17 16:10:59","","dt_cadastro","371");
+
+INSERT INTO tb_auditoria_itens VALUES("2735","2018-08-17 16:10:59","2019-01-14 14:01:10","dt_atualizado","371");
+
+INSERT INTO tb_auditoria_itens VALUES("2736","I","I","st_situacao","371");
+
+INSERT INTO tb_auditoria_itens VALUES("2737","20","30","nu_esforco","371");
+
+INSERT INTO tb_auditoria_itens VALUES("2738","18","25","nu_esforco_restante","371");
+
+INSERT INTO tb_auditoria_itens VALUES("2739","33","33","co_sessao","371");
+
+INSERT INTO tb_auditoria_itens VALUES("2740","","Manter Usuário Comum","ds_titulo","372");
+
+INSERT INTO tb_auditoria_itens VALUES("2741","","<p>Manter Usu&aacute;rio sem assinante</p>","ds_observacao","372");
+
+INSERT INTO tb_auditoria_itens VALUES("2742","","33","co_sessao","372");
+
+INSERT INTO tb_auditoria_itens VALUES("2743","","I","st_situacao","372");
+
+INSERT INTO tb_auditoria_itens VALUES("2744","","20","nu_esforco","372");
+
+INSERT INTO tb_auditoria_itens VALUES("2745","","15","nu_esforco_restante","372");
+
+INSERT INTO tb_auditoria_itens VALUES("2746","","2019-01-14 14:01:47","dt_atualizado","372");
+
+INSERT INTO tb_auditoria_itens VALUES("2747","","2019-01-14 14:01:47","dt_cadastro","372");
+
+INSERT INTO tb_auditoria_itens VALUES("2748","","Validação dos includes","ds_titulo","373");
+
+INSERT INTO tb_auditoria_itens VALUES("2749","","<p>Valida&ccedil;&atilde;o dos includes o que &eacute; necess&aacute;rio e se &eacute; preciso pro arquivo</p>","ds_observacao","373");
+
+INSERT INTO tb_auditoria_itens VALUES("2750","","34","co_sessao","373");
+
+INSERT INTO tb_auditoria_itens VALUES("2751","","N","st_situacao","373");
+
+INSERT INTO tb_auditoria_itens VALUES("2752","","8","nu_esforco","373");
+
+INSERT INTO tb_auditoria_itens VALUES("2753","","8","nu_esforco_restante","373");
+
+INSERT INTO tb_auditoria_itens VALUES("2754","","2019-01-14 15:56:22","dt_atualizado","373");
+
+INSERT INTO tb_auditoria_itens VALUES("2755","","2019-01-14 15:56:22","dt_cadastro","373");
+
+INSERT INTO tb_auditoria_itens VALUES("2756","","Exclusão de arquivos","ds_titulo","374");
+
+INSERT INTO tb_auditoria_itens VALUES("2757","","<p>Exclus&atilde;o de arquivos desnecess&aacute;rios do projeto</p>","ds_observacao","374");
+
+INSERT INTO tb_auditoria_itens VALUES("2758","","34","co_sessao","374");
+
+INSERT INTO tb_auditoria_itens VALUES("2759","","N","st_situacao","374");
+
+INSERT INTO tb_auditoria_itens VALUES("2760","","5","nu_esforco","374");
+
+INSERT INTO tb_auditoria_itens VALUES("2761","","5","nu_esforco_restante","374");
+
+INSERT INTO tb_auditoria_itens VALUES("2762","","2019-01-14 15:56:57","dt_atualizado","374");
+
+INSERT INTO tb_auditoria_itens VALUES("2763","","2019-01-14 15:56:57","dt_cadastro","374");
+
+INSERT INTO tb_auditoria_itens VALUES("2764","151","","co_historia","375");
+
+INSERT INTO tb_auditoria_itens VALUES("2765","Exclusão de arquivos","Exclusão de arquivos","ds_titulo","375");
+
+INSERT INTO tb_auditoria_itens VALUES("2766","<p>Exclus&atilde;o de arquivos desnecess&aacute;rios do projeto</p>","<p>Exclus&atilde;o de arquivos desnecess&aacute;rios do projeto</p>","ds_observacao","375");
+
+INSERT INTO tb_auditoria_itens VALUES("2767","2019-01-14 15:56:57","","dt_cadastro","375");
+
+INSERT INTO tb_auditoria_itens VALUES("2768","2019-01-14 15:56:57","2019-01-14 15:57:17","dt_atualizado","375");
+
+INSERT INTO tb_auditoria_itens VALUES("2769","N","N","st_situacao","375");
+
+INSERT INTO tb_auditoria_itens VALUES("2770","5","3","nu_esforco","375");
+
+INSERT INTO tb_auditoria_itens VALUES("2771","5","3","nu_esforco_restante","375");
+
+INSERT INTO tb_auditoria_itens VALUES("2772","34","34","co_sessao","375");
+
+INSERT INTO tb_auditoria_itens VALUES("2773","145","","co_historia","376");
+
+INSERT INTO tb_auditoria_itens VALUES("2774","Padrinização do sistema com/sem Assinante","Padrinização do sistema com/sem Assinante","ds_titulo","376");
+
+INSERT INTO tb_auditoria_itens VALUES("2775","<p>Criar constante TEM_ASSINANTE e fazer valida&ccedil;&otilde;es para funcionar com e sem assinante</p>","<p>Criar constante TEM_ASSINANTE e fazer valida&ccedil;&otilde;es para funcionar com e sem assinante</p>","ds_observacao","376");
+
+INSERT INTO tb_auditoria_itens VALUES("2776","2019-01-13 21:43:02","","dt_cadastro","376");
+
+INSERT INTO tb_auditoria_itens VALUES("2777","2019-01-13 21:43:02","2019-01-14 15:58:00","dt_atualizado","376");
+
+INSERT INTO tb_auditoria_itens VALUES("2778","N","N","st_situacao","376");
+
+INSERT INTO tb_auditoria_itens VALUES("2779","30","13","nu_esforco","376");
+
+INSERT INTO tb_auditoria_itens VALUES("2780","30","13","nu_esforco_restante","376");
+
+INSERT INTO tb_auditoria_itens VALUES("2781","35","35","co_sessao","376");
+
+INSERT INTO tb_auditoria_itens VALUES("2782","145","","co_historia","377");
+
+INSERT INTO tb_auditoria_itens VALUES("2783","Padrinização do sistema com/sem Assinante","Padrinização do sistema com/sem Assinante","ds_titulo","377");
+
+INSERT INTO tb_auditoria_itens VALUES("2784","<p>Criar constante TEM_ASSINANTE e fazer valida&ccedil;&otilde;es para funcionar com e sem assinante</p>","<p>Criar constante TEM_ASSINANTE e fazer valida&ccedil;&otilde;es para funcionar com e sem assinante</p>","ds_observacao","377");
+
+INSERT INTO tb_auditoria_itens VALUES("2785","2019-01-13 21:43:02","","dt_cadastro","377");
+
+INSERT INTO tb_auditoria_itens VALUES("2786","2019-01-14 15:58:00","2019-01-14 15:58:47","dt_atualizado","377");
+
+INSERT INTO tb_auditoria_itens VALUES("2787","N","I","st_situacao","377");
+
+INSERT INTO tb_auditoria_itens VALUES("2788","13","13","nu_esforco","377");
+
+INSERT INTO tb_auditoria_itens VALUES("2789","13","3","nu_esforco_restante","377");
+
+INSERT INTO tb_auditoria_itens VALUES("2790","35","35","co_sessao","377");
+
+INSERT INTO tb_auditoria_itens VALUES("2791","145","","co_historia","378");
+
+INSERT INTO tb_auditoria_itens VALUES("2792","Padrinização do sistema com/sem Assinante","Padrinização do sistema com/sem Assinante","ds_titulo","378");
+
+INSERT INTO tb_auditoria_itens VALUES("2793","<p>Criar constante TEM_ASSINANTE e fazer valida&ccedil;&otilde;es para funcionar com e sem assinante</p>","<p>Criar constante TEM_ASSINANTE e fazer valida&ccedil;&otilde;es para funcionar com e sem assinante</p>","ds_observacao","378");
+
+INSERT INTO tb_auditoria_itens VALUES("2794","2019-01-13 21:43:02","","dt_cadastro","378");
+
+INSERT INTO tb_auditoria_itens VALUES("2795","2019-01-14 15:58:47","2019-01-14 16:08:33","dt_atualizado","378");
+
+INSERT INTO tb_auditoria_itens VALUES("2796","I","C","st_situacao","378");
+
+INSERT INTO tb_auditoria_itens VALUES("2797","13","8","nu_esforco","378");
+
+INSERT INTO tb_auditoria_itens VALUES("2798","3","","nu_esforco_restante","378");
+
+INSERT INTO tb_auditoria_itens VALUES("2799","35","35","co_sessao","378");
+
+INSERT INTO tb_auditoria_itens VALUES("2800","147","","co_historia","379");
+
+INSERT INTO tb_auditoria_itens VALUES("2801","Backup Banco","Backup Banco","ds_titulo","379");
+
+INSERT INTO tb_auditoria_itens VALUES("2802","<p>Melhorias do Backup e automa&ccedil;&atilde;o da atualiza&ccedil;&atilde;o do banco</p>","<p>Melhorias do Backup e automa&ccedil;&atilde;o da atualiza&ccedil;&atilde;o do banco</p>","ds_observacao","379");
+
+INSERT INTO tb_auditoria_itens VALUES("2803","2019-01-14 13:09:48","","dt_cadastro","379");
+
+INSERT INTO tb_auditoria_itens VALUES("2804","2019-01-14 13:09:48","2019-01-14 16:24:17","dt_atualizado","379");
+
+INSERT INTO tb_auditoria_itens VALUES("2805","N","N","st_situacao","379");
+
+INSERT INTO tb_auditoria_itens VALUES("2806","13","8","nu_esforco","379");
+
+INSERT INTO tb_auditoria_itens VALUES("2807","13","8","nu_esforco_restante","379");
+
+INSERT INTO tb_auditoria_itens VALUES("2808","34","34","co_sessao","379");
+
+INSERT INTO tb_auditoria_itens VALUES("2809","147","","co_historia","380");
+
+INSERT INTO tb_auditoria_itens VALUES("2810","Backup Banco","Backup Banco","ds_titulo","380");
+
+INSERT INTO tb_auditoria_itens VALUES("2811","<p>Melhorias do Backup e automa&ccedil;&atilde;o da atualiza&ccedil;&atilde;o do banco</p>","<p>Melhorias do Backup e automa&ccedil;&atilde;o da atualiza&ccedil;&atilde;o do banco</p>","ds_observacao","380");
+
+INSERT INTO tb_auditoria_itens VALUES("2812","2019-01-14 13:09:48","","dt_cadastro","380");
+
+INSERT INTO tb_auditoria_itens VALUES("2813","2019-01-14 16:24:17","2019-01-14 17:44:38","dt_atualizado","380");
+
+INSERT INTO tb_auditoria_itens VALUES("2814","N","C","st_situacao","380");
+
+INSERT INTO tb_auditoria_itens VALUES("2815","8","8","nu_esforco","380");
+
+INSERT INTO tb_auditoria_itens VALUES("2816","8","","nu_esforco_restante","380");
+
+INSERT INTO tb_auditoria_itens VALUES("2817","34","34","co_sessao","380");
+
+INSERT INTO tb_auditoria_itens VALUES("2818","","Auditoria","ds_titulo","381");
+
+INSERT INTO tb_auditoria_itens VALUES("2819","","<p>Melhorias na funcionalidade de auditoria onde tem que separar os itens da auditoria quando usa o metodo <code><strong>deletar quando </strong><var>e vincular as chaves estrangeiras para aparecer a descri&ccedil;&atilde;o da chave</var></code></p>\n\n<p","ds_observacao","381");
+
+INSERT INTO tb_auditoria_itens VALUES("2820","","34","co_sessao","381");
+
+INSERT INTO tb_auditoria_itens VALUES("2821","","N","st_situacao","381");
+
+INSERT INTO tb_auditoria_itens VALUES("2822","","13","nu_esforco","381");
+
+INSERT INTO tb_auditoria_itens VALUES("2823","","13","nu_esforco_restante","381");
+
+INSERT INTO tb_auditoria_itens VALUES("2824","","2019-01-15 10:06:24","dt_atualizado","381");
+
+INSERT INTO tb_auditoria_itens VALUES("2825","","2019-01-15 10:06:24","dt_cadastro","381");
+
+INSERT INTO tb_auditoria_itens VALUES("2826","146","","co_historia","382");
+
+INSERT INTO tb_auditoria_itens VALUES("2827","Merge das Library","Merge das Library","ds_titulo","382");
+
+INSERT INTO tb_auditoria_itens VALUES("2828","<p>Merge da Library do projeto Sistema da Beleza com a master do Projeto Merge das Library</p>","<p>Merge da Library do projeto Sistema da Beleza com a master do Projeto Merge das Library</p>","ds_observacao","382");
+
+INSERT INTO tb_auditoria_itens VALUES("2829","2019-01-13 21:49:26","","dt_cadastro","382");
+
+INSERT INTO tb_auditoria_itens VALUES("2830","2019-01-13 21:49:26","2019-01-15 13:20:50","dt_atualizado","382");
+
+INSERT INTO tb_auditoria_itens VALUES("2831","N","C","st_situacao","382");
+
+INSERT INTO tb_auditoria_itens VALUES("2832","5","5","nu_esforco","382");
+
+INSERT INTO tb_auditoria_itens VALUES("2833","5","","nu_esforco_restante","382");
+
+INSERT INTO tb_auditoria_itens VALUES("2834","35","35","co_sessao","382");
+
+INSERT INTO tb_auditoria_itens VALUES("2835","","Merge library nos projetos","ds_titulo","383");
+
+INSERT INTO tb_auditoria_itens VALUES("2836","","<p>Aplicar Library nos projetos</p>","ds_observacao","383");
+
+INSERT INTO tb_auditoria_itens VALUES("2837","","35","co_sessao","383");
+
+INSERT INTO tb_auditoria_itens VALUES("2838","","N","st_situacao","383");
+
+INSERT INTO tb_auditoria_itens VALUES("2839","","5","nu_esforco","383");
+
+INSERT INTO tb_auditoria_itens VALUES("2840","","5","nu_esforco_restante","383");
+
+INSERT INTO tb_auditoria_itens VALUES("2841","","2019-01-15 13:21:30","dt_atualizado","383");
+
+INSERT INTO tb_auditoria_itens VALUES("2842","","2019-01-15 13:21:30","dt_cadastro","383");
+
+INSERT INTO tb_auditoria_itens VALUES("2843","","Arquitetura","no_projeto","384");
+
+INSERT INTO tb_auditoria_itens VALUES("2844","","2019-01-15 13:22:03","dt_cadastro","384");
+
+INSERT INTO tb_auditoria_itens VALUES("2845","139","","co_historia","385");
+
+INSERT INTO tb_auditoria_itens VALUES("2846","Padronizar classes FORMs","Padronizar classes FORMs","ds_titulo","385");
+
+INSERT INTO tb_auditoria_itens VALUES("2847","<p>Unificar as 2 classes de FORM e FORMASSISTENTE</p>","<p>Unificar as 2 classes de FORM e FORMASSISTENTE</p>","ds_observacao","385");
+
+INSERT INTO tb_auditoria_itens VALUES("2848","2018-12-20 13:13:10","","dt_cadastro","385");
+
+INSERT INTO tb_auditoria_itens VALUES("2849","2018-12-20 15:43:21","2019-01-17 17:20:10","dt_atualizado","385");
+
+INSERT INTO tb_auditoria_itens VALUES("2850","N","C","st_situacao","385");
+
+INSERT INTO tb_auditoria_itens VALUES("2851","8","5","nu_esforco","385");
+
+INSERT INTO tb_auditoria_itens VALUES("2852","8","","nu_esforco_restante","385");
+
+INSERT INTO tb_auditoria_itens VALUES("2853","34","34","co_sessao","385");
+
+INSERT INTO tb_auditoria_itens VALUES("2854","","Gestão","no_modulo","386");
+
+INSERT INTO tb_auditoria_itens VALUES("2855","","2","co_projeto","386");
+
+INSERT INTO tb_auditoria_itens VALUES("2856","","2019-01-18 09:33:56","dt_cadastro","386");
+
+INSERT INTO tb_auditoria_itens VALUES("2857","","Banco de dados","no_sessao","387");
+
+INSERT INTO tb_auditoria_itens VALUES("2858","","7","co_modulo","387");
+
+INSERT INTO tb_auditoria_itens VALUES("2859","","2019-01-18 09:34:33","dt_cadastro","387");
+
+INSERT INTO tb_auditoria_itens VALUES("2860","","Realizar Backup","ds_titulo","388");
+
+INSERT INTO tb_auditoria_itens VALUES("2861","","<p>Criar funcionalidade para realizar o backup do bamco do projeto, com a op&ccedil;&atilde;o de enviar o arquivo sql paor email.</p>","ds_observacao","388");
+
+INSERT INTO tb_auditoria_itens VALUES("2862","","36","co_sessao","388");
+
+INSERT INTO tb_auditoria_itens VALUES("2863","","N","st_situacao","388");
+
+INSERT INTO tb_auditoria_itens VALUES("2864","","5","nu_esforco","388");
+
+INSERT INTO tb_auditoria_itens VALUES("2865","","5","nu_esforco_restante","388");
+
+INSERT INTO tb_auditoria_itens VALUES("2866","","2019-01-18 09:36:17","dt_atualizado","388");
+
+INSERT INTO tb_auditoria_itens VALUES("2867","","2019-01-18 09:36:17","dt_cadastro","388");
+
+INSERT INTO tb_auditoria_itens VALUES("2868","","Gerar Entidades","ds_titulo","389");
+
+INSERT INTO tb_auditoria_itens VALUES("2869","","<p>Criar funcionalidades para gerar as entidades a partir do banco.</p>","ds_observacao","389");
+
+INSERT INTO tb_auditoria_itens VALUES("2870","","36","co_sessao","389");
+
+INSERT INTO tb_auditoria_itens VALUES("2871","","N","st_situacao","389");
+
+INSERT INTO tb_auditoria_itens VALUES("2872","","5","nu_esforco","389");
+
+INSERT INTO tb_auditoria_itens VALUES("2873","","5","nu_esforco_restante","389");
+
+INSERT INTO tb_auditoria_itens VALUES("2874","","2019-01-18 09:37:10","dt_atualizado","389");
+
+INSERT INTO tb_auditoria_itens VALUES("2875","","2019-01-18 09:37:10","dt_cadastro","389");
+
+INSERT INTO tb_auditoria_itens VALUES("2876","","Melhorar classe Gerar Entidade","ds_titulo","390");
+
+INSERT INTO tb_auditoria_itens VALUES("2877","","<p>Melhorar classe Gerar Entidade para gerar constantes geral e relacionamento so acrescentar o que precisa.</p>","ds_observacao","390");
+
+INSERT INTO tb_auditoria_itens VALUES("2878","","34","co_sessao","390");
+
+INSERT INTO tb_auditoria_itens VALUES("2879","","N","st_situacao","390");
+
+INSERT INTO tb_auditoria_itens VALUES("2880","","8","nu_esforco","390");
+
+INSERT INTO tb_auditoria_itens VALUES("2881","","8","nu_esforco_restante","390");
+
+INSERT INTO tb_auditoria_itens VALUES("2882","","2019-01-18 09:39:15","dt_atualizado","390");
+
+INSERT INTO tb_auditoria_itens VALUES("2883","","2019-01-18 09:39:15","dt_cadastro","390");
+
+INSERT INTO tb_auditoria_itens VALUES("2884","152","","co_historia","391");
+
+INSERT INTO tb_auditoria_itens VALUES("2885","Auditoria","Visualização da Auditoria","ds_titulo","391");
+
+INSERT INTO tb_auditoria_itens VALUES("2886","<p>Melhorias na funcionalidade de auditoria onde tem que separar os itens da auditoria quando usa o metodo <code><strong>deletar quando </strong><var>e vincular as chaves estrangeiras para aparecer a descri&ccedil;&atilde;o da chave</var></code></p>\n\n<p","<p>Melhorias na funcionalidade de auditoria onde tem que separar os itens da auditoria quando usa o metodo <code><strong>deletar quando </strong><var>e vincular as chaves estrangeiras para aparecer a descri&ccedil;&atilde;o da chave</var></code></p>\n\n<p","ds_observacao","391");
+
+INSERT INTO tb_auditoria_itens VALUES("2887","2019-01-15 10:06:24","","dt_cadastro","391");
+
+INSERT INTO tb_auditoria_itens VALUES("2888","2019-01-15 10:06:24","2019-01-18 09:39:52","dt_atualizado","391");
+
+INSERT INTO tb_auditoria_itens VALUES("2889","N","N","st_situacao","391");
+
+INSERT INTO tb_auditoria_itens VALUES("2890","13","13","nu_esforco","391");
+
+INSERT INTO tb_auditoria_itens VALUES("2891","13","13","nu_esforco_restante","391");
+
+INSERT INTO tb_auditoria_itens VALUES("2892","34","34","co_sessao","391");
+
+INSERT INTO tb_auditoria_itens VALUES("2893","7","","co_modulo","392");
+
+INSERT INTO tb_auditoria_itens VALUES("2894","Gestão","Gestão Arquitetura","no_modulo","392");
+
+INSERT INTO tb_auditoria_itens VALUES("2895","2019-01-18 09:33:56","","dt_cadastro","392");
+
+INSERT INTO tb_auditoria_itens VALUES("2896","2","2","co_projeto","392");
+
+INSERT INTO tb_auditoria_itens VALUES("2897","","URL Amigável","no_sessao","393");
+
+INSERT INTO tb_auditoria_itens VALUES("2898","","7","co_modulo","393");
+
+INSERT INTO tb_auditoria_itens VALUES("2899","","2019-01-18 09:41:44","dt_cadastro","393");
+
+INSERT INTO tb_auditoria_itens VALUES("2900","37","","co_sessao","394");
+
+INSERT INTO tb_auditoria_itens VALUES("2901","URL Amigável","Config Padrão","no_sessao","394");
+
+INSERT INTO tb_auditoria_itens VALUES("2902","2019-01-18 09:41:44","","dt_cadastro","394");
+
+INSERT INTO tb_auditoria_itens VALUES("2903","7","7","co_modulo","394");
+
+INSERT INTO tb_auditoria_itens VALUES("2904","","Gestão do Config","ds_titulo","395");
+
+INSERT INTO tb_auditoria_itens VALUES("2905","","<p>Criar funcionalidade para gerenciar o config</p>","ds_observacao","395");
+
+INSERT INTO tb_auditoria_itens VALUES("2906","","37","co_sessao","395");
+
+INSERT INTO tb_auditoria_itens VALUES("2907","","N","st_situacao","395");
+
+INSERT INTO tb_auditoria_itens VALUES("2908","","8","nu_esforco","395");
+
+INSERT INTO tb_auditoria_itens VALUES("2909","","8","nu_esforco_restante","395");
+
+INSERT INTO tb_auditoria_itens VALUES("2910","","2019-01-18 09:44:23","dt_atualizado","395");
+
+INSERT INTO tb_auditoria_itens VALUES("2911","","2019-01-18 09:44:23","dt_cadastro","395");
+
+INSERT INTO tb_auditoria_itens VALUES("2912","","Resert Config","ds_titulo","396");
+
+INSERT INTO tb_auditoria_itens VALUES("2913","","<p>Resetar o conig para o padr&atilde;o</p>","ds_observacao","396");
+
+INSERT INTO tb_auditoria_itens VALUES("2914","","37","co_sessao","396");
+
+INSERT INTO tb_auditoria_itens VALUES("2915","","N","st_situacao","396");
+
+INSERT INTO tb_auditoria_itens VALUES("2916","","5","nu_esforco","396");
+
+INSERT INTO tb_auditoria_itens VALUES("2917","","5","nu_esforco_restante","396");
+
+INSERT INTO tb_auditoria_itens VALUES("2918","","2019-01-18 09:45:21","dt_atualizado","396");
+
+INSERT INTO tb_auditoria_itens VALUES("2919","","2019-01-18 09:45:21","dt_cadastro","396");
+
+INSERT INTO tb_auditoria_itens VALUES("2920","","Inicializar o Banco de dados","ds_titulo","397");
+
+INSERT INTO tb_auditoria_itens VALUES("2921","","<p>Inicializar o Banco de dados com os dados iniciais necess&aacute;rios padr&otilde;es</p>","ds_observacao","397");
+
+INSERT INTO tb_auditoria_itens VALUES("2922","","34","co_sessao","397");
+
+INSERT INTO tb_auditoria_itens VALUES("2923","","N","st_situacao","397");
+
+INSERT INTO tb_auditoria_itens VALUES("2924","","5","nu_esforco","397");
+
+INSERT INTO tb_auditoria_itens VALUES("2925","","5","nu_esforco_restante","397");
+
+INSERT INTO tb_auditoria_itens VALUES("2926","","2019-01-18 09:48:00","dt_atualizado","397");
+
+INSERT INTO tb_auditoria_itens VALUES("2927","","2019-01-18 09:48:00","dt_cadastro","397");
+
+INSERT INTO tb_auditoria_itens VALUES("2928","","Unificar as Classe GRID","ds_titulo","398");
+
+INSERT INTO tb_auditoria_itens VALUES("2929","","<p>Padronizar as classes</p>","ds_observacao","398");
+
+INSERT INTO tb_auditoria_itens VALUES("2930","","34","co_sessao","398");
+
+INSERT INTO tb_auditoria_itens VALUES("2931","","N","st_situacao","398");
+
+INSERT INTO tb_auditoria_itens VALUES("2932","","1","nu_esforco","398");
+
+INSERT INTO tb_auditoria_itens VALUES("2933","","1","nu_esforco_restante","398");
+
+INSERT INTO tb_auditoria_itens VALUES("2934","","2019-01-18 10:01:11","dt_atualizado","398");
+
+INSERT INTO tb_auditoria_itens VALUES("2935","","2019-01-18 10:01:11","dt_cadastro","398");
+
+INSERT INTO tb_auditoria_itens VALUES("2936","156","","co_historia","399");
+
+INSERT INTO tb_auditoria_itens VALUES("2937","Melhorar classe Gerar Entidade","Melhorar classe Gerar Entidade","ds_titulo","399");
+
+INSERT INTO tb_auditoria_itens VALUES("2938","<p>Melhorar classe Gerar Entidade para gerar constantes geral e relacionamento so acrescentar o que precisa.</p>","<p>Melhorar classe Gerar Entidade para gerar constantes geral e relacionamento so acrescentar o que precisa.</p>","ds_observacao","399");
+
+INSERT INTO tb_auditoria_itens VALUES("2939","2019-01-18 09:39:15","","dt_cadastro","399");
+
+INSERT INTO tb_auditoria_itens VALUES("2940","2019-01-18 09:39:15","2019-01-18 10:33:43","dt_atualizado","399");
+
+INSERT INTO tb_auditoria_itens VALUES("2941","N","N","st_situacao","399");
+
+INSERT INTO tb_auditoria_itens VALUES("2942","8","3","nu_esforco","399");
+
+INSERT INTO tb_auditoria_itens VALUES("2943","8","3","nu_esforco_restante","399");
+
+INSERT INTO tb_auditoria_itens VALUES("2944","34","34","co_sessao","399");
+
+INSERT INTO tb_auditoria_itens VALUES("2945","156","","co_historia","400");
+
+INSERT INTO tb_auditoria_itens VALUES("2946","Melhorar classe Gerar Entidade","Melhorar classe Gerar Entidade","ds_titulo","400");
+
+INSERT INTO tb_auditoria_itens VALUES("2947","<p>Melhorar classe Gerar Entidade para gerar constantes geral e relacionamento so acrescentar o que precisa.</p>","<p>Melhorar classe Gerar Entidade para gerar constantes geral e relacionamento so acrescentar o que precisa.</p>","ds_observacao","400");
+
+INSERT INTO tb_auditoria_itens VALUES("2948","2019-01-18 09:39:15","","dt_cadastro","400");
+
+INSERT INTO tb_auditoria_itens VALUES("2949","2019-01-18 10:33:43","2019-01-18 10:34:59","dt_atualizado","400");
+
+INSERT INTO tb_auditoria_itens VALUES("2950","N","C","st_situacao","400");
+
+INSERT INTO tb_auditoria_itens VALUES("2951","3","1","nu_esforco","400");
+
+INSERT INTO tb_auditoria_itens VALUES("2952","3","","nu_esforco_restante","400");
+
+INSERT INTO tb_auditoria_itens VALUES("2953","34","34","co_sessao","400");
+
+INSERT INTO tb_auditoria_itens VALUES("2954","155","","co_historia","401");
+
+INSERT INTO tb_auditoria_itens VALUES("2955","Gerar Entidades","Gerar Entidades","ds_titulo","401");
+
+INSERT INTO tb_auditoria_itens VALUES("2956","<p>Criar funcionalidades para gerar as entidades a partir do banco.</p>","<p>Criar funcionalidades para gerar as entidades a partir do banco.</p>","ds_observacao","401");
+
+INSERT INTO tb_auditoria_itens VALUES("2957","2019-01-18 09:37:10","","dt_cadastro","401");
+
+INSERT INTO tb_auditoria_itens VALUES("2958","2019-01-18 09:37:10","2019-01-18 12:55:16","dt_atualizado","401");
+
+INSERT INTO tb_auditoria_itens VALUES("2959","N","C","st_situacao","401");
+
+INSERT INTO tb_auditoria_itens VALUES("2960","5","5","nu_esforco","401");
+
+INSERT INTO tb_auditoria_itens VALUES("2961","5","","nu_esforco_restante","401");
+
+INSERT INTO tb_auditoria_itens VALUES("2962","36","36","co_sessao","401");
+
+INSERT INTO tb_auditoria_itens VALUES("2963","154","","co_historia","402");
+
+INSERT INTO tb_auditoria_itens VALUES("2964","Realizar Backup","Realizar Backup","ds_titulo","402");
+
+INSERT INTO tb_auditoria_itens VALUES("2965","<p>Criar funcionalidade para realizar o backup do bamco do projeto, com a op&ccedil;&atilde;o de enviar o arquivo sql paor email.</p>","<p>Criar funcionalidade para realizar o backup do bamco do projeto, com a op&ccedil;&atilde;o de enviar o arquivo sql paor email.</p>","ds_observacao","402");
+
+INSERT INTO tb_auditoria_itens VALUES("2966","2019-01-18 09:36:17","","dt_cadastro","402");
+
+INSERT INTO tb_auditoria_itens VALUES("2967","2019-01-18 09:36:17","2019-01-18 13:28:07","dt_atualizado","402");
+
+INSERT INTO tb_auditoria_itens VALUES("2968","N","C","st_situacao","402");
+
+INSERT INTO tb_auditoria_itens VALUES("2969","5","5","nu_esforco","402");
+
+INSERT INTO tb_auditoria_itens VALUES("2970","5","","nu_esforco_restante","402");
+
+INSERT INTO tb_auditoria_itens VALUES("2971","36","36","co_sessao","402");
+
+INSERT INTO tb_auditoria_itens VALUES("2972","157","","co_historia","403");
+
+INSERT INTO tb_auditoria_itens VALUES("2973","Gestão do Config","Manter Gestão do Config","ds_titulo","403");
+
+INSERT INTO tb_auditoria_itens VALUES("2974","<p>Criar funcionalidade para gerenciar o config</p>","<p>Criar funcionalidade para gerenciar o config</p>","ds_observacao","403");
+
+INSERT INTO tb_auditoria_itens VALUES("2975","2019-01-18 09:44:23","","dt_cadastro","403");
+
+INSERT INTO tb_auditoria_itens VALUES("2976","2019-01-18 09:44:23","2019-01-24 10:26:58","dt_atualizado","403");
+
+INSERT INTO tb_auditoria_itens VALUES("2977","N","I","st_situacao","403");
+
+INSERT INTO tb_auditoria_itens VALUES("2978","8","20","nu_esforco","403");
+
+INSERT INTO tb_auditoria_itens VALUES("2979","8","15","nu_esforco_restante","403");
+
+INSERT INTO tb_auditoria_itens VALUES("2980","37","37","co_sessao","403");
+
+INSERT INTO tb_auditoria_itens VALUES("2981","153","","co_historia","404");
+
+INSERT INTO tb_auditoria_itens VALUES("2982","Merge library nos projetos","Merge library nos projetos","ds_titulo","404");
+
+INSERT INTO tb_auditoria_itens VALUES("2983","<p>Aplicar Library nos projetos</p>","<p>Aplicar Library nos projetos (Gej e PreProjeto)</p>","ds_observacao","404");
+
+INSERT INTO tb_auditoria_itens VALUES("2984","2019-01-15 13:21:30","","dt_cadastro","404");
+
+INSERT INTO tb_auditoria_itens VALUES("2985","2019-01-15 13:21:30","2019-01-24 10:28:58","dt_atualizado","404");
+
+INSERT INTO tb_auditoria_itens VALUES("2986","N","N","st_situacao","404");
+
+INSERT INTO tb_auditoria_itens VALUES("2987","5","20","nu_esforco","404");
+
+INSERT INTO tb_auditoria_itens VALUES("2988","5","20","nu_esforco_restante","404");
+
+INSERT INTO tb_auditoria_itens VALUES("2989","35","35","co_sessao","404");
+
+INSERT INTO tb_auditoria_itens VALUES("2990","","Inicializar do config Padrão","ds_titulo","405");
+
+INSERT INTO tb_auditoria_itens VALUES("2991","","<pre>\n&#39;HOME&#39; =&gt; &#39;http://localhost/sistemadabeleza/&#39;,\n&#39;HOST&#39; =&gt; &#39;localhost&#39;,\n&#39;USER&#39; =&gt; &#39;root&#39;,\n&#39;PASS&#39; =&gt; &#39;&#39;,\n&#39;DBSA&#39; =&gt; &#39;sistem25_dabelez&#39;,</pre>","ds_observacao","405");
+
+INSERT INTO tb_auditoria_itens VALUES("2992","","34","co_sessao","405");
+
+INSERT INTO tb_auditoria_itens VALUES("2993","","N","st_situacao","405");
+
+INSERT INTO tb_auditoria_itens VALUES("2994","","5","nu_esforco","405");
+
+INSERT INTO tb_auditoria_itens VALUES("2995","","5","nu_esforco_restante","405");
+
+INSERT INTO tb_auditoria_itens VALUES("2996","","2019-01-24 10:30:45","dt_atualizado","405");
+
+INSERT INTO tb_auditoria_itens VALUES("2997","","2019-01-24 10:30:45","dt_cadastro","405");
+
+INSERT INTO tb_auditoria_itens VALUES("2998","159","","co_historia","406");
+
+INSERT INTO tb_auditoria_itens VALUES("2999","Inicializar o Banco de dados","Inicializar o Banco de dados","ds_titulo","406");
+
+INSERT INTO tb_auditoria_itens VALUES("3000","<p>Inicializar o Banco de dados com os dados iniciais necess&aacute;rios padr&otilde;es</p>","<p>Inicializar o Banco de dados com os dados iniciais necess&aacute;rios padr&otilde;es</p>\n\n<p>tabelas do banco e inserts iniciais (Usu&aacute;rio padr&atilde;o perfil maste e etc..)</p>","ds_observacao","406");
+
+INSERT INTO tb_auditoria_itens VALUES("3001","2019-01-18 09:48:00","","dt_cadastro","406");
+
+INSERT INTO tb_auditoria_itens VALUES("3002","2019-01-18 09:48:00","2019-01-24 10:32:11","dt_atualizado","406");
+
+INSERT INTO tb_auditoria_itens VALUES("3003","N","N","st_situacao","406");
+
+INSERT INTO tb_auditoria_itens VALUES("3004","5","13","nu_esforco","406");
+
+INSERT INTO tb_auditoria_itens VALUES("3005","5","13","nu_esforco_restante","406");
+
+INSERT INTO tb_auditoria_itens VALUES("3006","34","34","co_sessao","406");
+
+INSERT INTO tb_auditoria_itens VALUES("3007","","Eliminar o Enum Permissão de acesso","ds_titulo","407");
+
+INSERT INTO tb_auditoria_itens VALUES("3008","","<p>Criar no banco na tabela de funcionalidade uma coluna de ds_action pra recuperar e montar na classe de UrlAmigavel</p>","ds_observacao","407");
+
+INSERT INTO tb_auditoria_itens VALUES("3009","","34","co_sessao","407");
+
+INSERT INTO tb_auditoria_itens VALUES("3010","","N","st_situacao","407");
+
+INSERT INTO tb_auditoria_itens VALUES("3011","","5","nu_esforco","407");
+
+INSERT INTO tb_auditoria_itens VALUES("3012","","5","nu_esforco_restante","407");
+
+INSERT INTO tb_auditoria_itens VALUES("3013","","2019-01-24 16:45:33","dt_atualizado","407");
+
+INSERT INTO tb_auditoria_itens VALUES("3014","","2019-01-24 16:45:33","dt_cadastro","407");
+
+INSERT INTO tb_auditoria_itens VALUES("3015","162","","co_historia","408");
+
+INSERT INTO tb_auditoria_itens VALUES("3016","Eliminar o Enum Permissão de acesso","Eliminar o Enum Permissão de acesso","ds_titulo","408");
+
+INSERT INTO tb_auditoria_itens VALUES("3017","<p>Criar no banco na tabela de funcionalidade uma coluna de ds_action pra recuperar e montar na classe de UrlAmigavel</p>","<p>Criar no banco na tabela de funcionalidade uma coluna de ds_action pra recuperar e montar na classe de UrlAmigavel</p>","ds_observacao","408");
+
+INSERT INTO tb_auditoria_itens VALUES("3018","2019-01-24 16:45:33","","dt_cadastro","408");
+
+INSERT INTO tb_auditoria_itens VALUES("3019","2019-01-24 16:45:33","2019-01-25 09:21:54","dt_atualizado","408");
+
+INSERT INTO tb_auditoria_itens VALUES("3020","N","C","st_situacao","408");
+
+INSERT INTO tb_auditoria_itens VALUES("3021","5","5","nu_esforco","408");
+
+INSERT INTO tb_auditoria_itens VALUES("3022","5","","nu_esforco_restante","408");
+
+INSERT INTO tb_auditoria_itens VALUES("3023","34","34","co_sessao","408");
+
+INSERT INTO tb_auditoria_itens VALUES("3024","151","","co_historia","409");
+
+INSERT INTO tb_auditoria_itens VALUES("3025","Exclusão de arquivos","Exclusão de arquivos do projetpo","ds_titulo","409");
+
+INSERT INTO tb_auditoria_itens VALUES("3026","<p>Exclus&atilde;o de arquivos desnecess&aacute;rios do projeto</p>","<p>Exclus&atilde;o de arquivos desnecess&aacute;rios do projeto</p>","ds_observacao","409");
+
+INSERT INTO tb_auditoria_itens VALUES("3027","2019-01-14 15:56:57","","dt_cadastro","409");
+
+INSERT INTO tb_auditoria_itens VALUES("3028","2019-01-14 15:57:17","2019-01-25 09:22:48","dt_atualizado","409");
+
+INSERT INTO tb_auditoria_itens VALUES("3029","N","N","st_situacao","409");
+
+INSERT INTO tb_auditoria_itens VALUES("3030","3","3","nu_esforco","409");
+
+INSERT INTO tb_auditoria_itens VALUES("3031","3","3","nu_esforco_restante","409");
+
+INSERT INTO tb_auditoria_itens VALUES("3032","34","34","co_sessao","409");
+
+INSERT INTO tb_auditoria_itens VALUES("3033","151","","co_historia","410");
+
+INSERT INTO tb_auditoria_itens VALUES("3034","Exclusão de arquivos do projetpo","Exclusão de arquivos do projeto","ds_titulo","410");
+
+INSERT INTO tb_auditoria_itens VALUES("3035","<p>Exclus&atilde;o de arquivos desnecess&aacute;rios do projeto</p>","<p>Exclus&atilde;o de arquivos desnecess&aacute;rios do projeto</p>","ds_observacao","410");
+
+INSERT INTO tb_auditoria_itens VALUES("3036","2019-01-14 15:56:57","","dt_cadastro","410");
+
+INSERT INTO tb_auditoria_itens VALUES("3037","2019-01-25 09:22:48","2019-01-25 09:23:49","dt_atualizado","410");
+
+INSERT INTO tb_auditoria_itens VALUES("3038","N","N","st_situacao","410");
+
+INSERT INTO tb_auditoria_itens VALUES("3039","3","3","nu_esforco","410");
+
+INSERT INTO tb_auditoria_itens VALUES("3040","3","3","nu_esforco_restante","410");
+
+INSERT INTO tb_auditoria_itens VALUES("3041","34","34","co_sessao","410");
+
+INSERT INTO tb_auditoria_itens VALUES("3042","152","","co_historia","411");
+
+INSERT INTO tb_auditoria_itens VALUES("3043","Visualização da Auditoria","Visualização da Auditoria","ds_titulo","411");
+
+INSERT INTO tb_auditoria_itens VALUES("3044","<p>Melhorias na funcionalidade de auditoria onde tem que separar os itens da auditoria quando usa o metodo <code><strong>deletar quando </strong><var>e vincular as chaves estrangeiras para aparecer a descri&ccedil;&atilde;o da chave</var></code></p>\n\n<p","<p>Melhorias na funcionalidade de auditoria onde tem que separar os itens da auditoria quando usa o metodo <code><strong>deletar quando e unificar a auditoria item quando s&atilde;o v&aacute;rios inserts na mesma tabela </strong><var>e vincular as chaves ","ds_observacao","411");
+
+INSERT INTO tb_auditoria_itens VALUES("3045","2019-01-15 10:06:24","","dt_cadastro","411");
+
+INSERT INTO tb_auditoria_itens VALUES("3046","2019-01-18 09:39:52","2019-01-25 09:29:36","dt_atualizado","411");
+
+INSERT INTO tb_auditoria_itens VALUES("3047","N","N","st_situacao","411");
+
+INSERT INTO tb_auditoria_itens VALUES("3048","13","13","nu_esforco","411");
+
+INSERT INTO tb_auditoria_itens VALUES("3049","13","13","nu_esforco_restante","411");
+
+INSERT INTO tb_auditoria_itens VALUES("3050","34","34","co_sessao","411");
+
+INSERT INTO tb_auditoria_itens VALUES("3051","152","","co_historia","412");
+
+INSERT INTO tb_auditoria_itens VALUES("3052","Visualização da Auditoria","Visualização da Auditoria","ds_titulo","412");
+
+INSERT INTO tb_auditoria_itens VALUES("3053","<p>Melhorias na funcionalidade de auditoria onde tem que separar os itens da auditoria quando usa o metodo <code><strong>deletar quando e unificar a auditoria item quando s&atilde;o v&aacute;rios inserts na mesma tabela </strong><var>e vincular as chaves ","<p>Melhorias na funcionalidade de auditoria onde tem que separar os itens da auditoria quando usa o metodo <code><strong>deletar quando e unificar a auditoria item quando s&atilde;o v&aacute;rios inserts na mesma tabela </strong><var>e vincular as chaves ","ds_observacao","412");
+
+INSERT INTO tb_auditoria_itens VALUES("3054","2019-01-15 10:06:24","","dt_cadastro","412");
+
+INSERT INTO tb_auditoria_itens VALUES("3055","2019-01-25 09:29:36","2019-01-25 09:29:45","dt_atualizado","412");
+
+INSERT INTO tb_auditoria_itens VALUES("3056","N","N","st_situacao","412");
+
+INSERT INTO tb_auditoria_itens VALUES("3057","13","20","nu_esforco","412");
+
+INSERT INTO tb_auditoria_itens VALUES("3058","13","20","nu_esforco_restante","412");
+
+INSERT INTO tb_auditoria_itens VALUES("3059","34","34","co_sessao","412");
+
+INSERT INTO tb_auditoria_itens VALUES("3060","17","","co_historia","413");
+
+INSERT INTO tb_auditoria_itens VALUES("3061","Manter ausência","Manter ausência","ds_titulo","413");
+
+INSERT INTO tb_auditoria_itens VALUES("3062","<p>Manter aus&ecirc;ncia</p>\n\n\n\n\n\n\n\n<p>&nbsp;</p>\n\n\n\n\n\n\n\n<p>Modelagem: Aus&ecirc;ncia Profissional (FK Profissional)</p>","<p>Manter aus&ecirc;ncia</p>\n\n<p>&nbsp;</p>\n\n<p>Modelagem: Aus&ecirc;ncia Profissional (FK Profissional)</p>","ds_observacao","413");
+
+INSERT INTO tb_auditoria_itens VALUES("3063","2018-07-25 15:59:43","","dt_cadastro","413");
+
+INSERT INTO tb_auditoria_itens VALUES("3064","2018-07-25 15:59:43","2019-01-25 11:56:43","dt_atualizado","413");
+
+INSERT INTO tb_auditoria_itens VALUES("3065","N","I","st_situacao","413");
+
+INSERT INTO tb_auditoria_itens VALUES("3066","5","5","nu_esforco","413");
+
+INSERT INTO tb_auditoria_itens VALUES("3067","5","3","nu_esforco_restante","413");
+
+INSERT INTO tb_auditoria_itens VALUES("3068","9","9","co_sessao","413");
+
+INSERT INTO tb_auditoria_itens VALUES("3069","17","","co_historia","414");
+
+INSERT INTO tb_auditoria_itens VALUES("3070","Manter ausência","Manter ausência","ds_titulo","414");
+
+INSERT INTO tb_auditoria_itens VALUES("3071","<p>Manter aus&ecirc;ncia</p>\n\n<p>&nbsp;</p>\n\n<p>Modelagem: Aus&ecirc;ncia Profissional (FK Profissional)</p>","<p>Manter aus&ecirc;ncia</p>\n\n<p>&nbsp;</p>\n\n<p>Modelagem: Aus&ecirc;ncia Profissional (FK Profissional)</p>","ds_observacao","414");
+
+INSERT INTO tb_auditoria_itens VALUES("3072","2018-07-25 15:59:43","","dt_cadastro","414");
+
+INSERT INTO tb_auditoria_itens VALUES("3073","2019-01-25 11:56:43","2019-01-25 14:03:01","dt_atualizado","414");
+
+INSERT INTO tb_auditoria_itens VALUES("3074","I","C","st_situacao","414");
+
+INSERT INTO tb_auditoria_itens VALUES("3075","5","8","nu_esforco","414");
+
+INSERT INTO tb_auditoria_itens VALUES("3076","3","","nu_esforco_restante","414");
+
+INSERT INTO tb_auditoria_itens VALUES("3077","9","9","co_sessao","414");
+
+INSERT INTO tb_auditoria_itens VALUES("3078","158","","co_historia","415");
+
+INSERT INTO tb_auditoria_itens VALUES("3079","Resert Config","Resert Config","ds_titulo","415");
+
+INSERT INTO tb_auditoria_itens VALUES("3080","<p>Resetar o conig para o padr&atilde;o</p>","<p>Resetar o conig para o padr&atilde;o</p>","ds_observacao","415");
+
+INSERT INTO tb_auditoria_itens VALUES("3081","2019-01-18 09:45:21","","dt_cadastro","415");
+
+INSERT INTO tb_auditoria_itens VALUES("3082","2019-01-18 09:45:21","2019-01-28 13:16:33","dt_atualizado","415");
+
+INSERT INTO tb_auditoria_itens VALUES("3083","N","C","st_situacao","415");
+
+INSERT INTO tb_auditoria_itens VALUES("3084","5","8","nu_esforco","415");
+
+INSERT INTO tb_auditoria_itens VALUES("3085","5","","nu_esforco_restante","415");
+
+INSERT INTO tb_auditoria_itens VALUES("3086","37","37","co_sessao","415");
+
+INSERT INTO tb_auditoria_itens VALUES("3087","157","","co_historia","416");
+
+INSERT INTO tb_auditoria_itens VALUES("3088","Manter Gestão do Config","Manter Gestão do Config","ds_titulo","416");
+
+INSERT INTO tb_auditoria_itens VALUES("3089","<p>Criar funcionalidade para gerenciar o config</p>","<p>Criar funcionalidade para gerenciar o config</p>","ds_observacao","416");
+
+INSERT INTO tb_auditoria_itens VALUES("3090","2019-01-18 09:44:23","","dt_cadastro","416");
+
+INSERT INTO tb_auditoria_itens VALUES("3091","2019-01-24 10:26:58","2019-01-28 13:17:00","dt_atualizado","416");
+
+INSERT INTO tb_auditoria_itens VALUES("3092","I","C","st_situacao","416");
+
+INSERT INTO tb_auditoria_itens VALUES("3093","20","13","nu_esforco","416");
+
+INSERT INTO tb_auditoria_itens VALUES("3094","15","","nu_esforco_restante","416");
+
+INSERT INTO tb_auditoria_itens VALUES("3095","37","37","co_sessao","416");
+
+INSERT INTO tb_auditoria_itens VALUES("3096","","Pop Up de confirmação de Reset Config","ds_titulo","417");
+
+INSERT INTO tb_auditoria_itens VALUES("3097","","<p>Fazer a Pop Up de confirma&ccedil;&atilde;o de Reset Config</p>","ds_observacao","417");
+
+INSERT INTO tb_auditoria_itens VALUES("3098","","37","co_sessao","417");
+
+INSERT INTO tb_auditoria_itens VALUES("3099","","N","st_situacao","417");
+
+INSERT INTO tb_auditoria_itens VALUES("3100","","3","nu_esforco","417");
+
+INSERT INTO tb_auditoria_itens VALUES("3101","","3","nu_esforco_restante","417");
+
+INSERT INTO tb_auditoria_itens VALUES("3102","","2019-01-28 13:19:12","dt_atualizado","417");
+
+INSERT INTO tb_auditoria_itens VALUES("3103","","2019-01-28 13:19:12","dt_cadastro","417");
+
 
 
 
@@ -6367,7 +7299,7 @@ CREATE TABLE `tb_auditoria_tabela` (
   `co_auditoria` int(11) NOT NULL,
   PRIMARY KEY (`co_auditoria_tabela`,`co_auditoria`),
   KEY `fk_TB_AUDITORIA_TABELA_TB_AUDITORIA1_idx` (`co_auditoria`)
-) ENGINE=InnoDB AUTO_INCREMENT=364 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=418 DEFAULT CHARSET=utf8;
 
 
 INSERT INTO tb_auditoria_tabela VALUES("1","TB_PROJETO","I","1","1");
@@ -7096,6 +8028,114 @@ INSERT INTO tb_auditoria_tabela VALUES("362","TB_HISTORIA","I","142","362");
 
 INSERT INTO tb_auditoria_tabela VALUES("363","TB_HISTORIA","U","139","363");
 
+INSERT INTO tb_auditoria_tabela VALUES("364","TB_SESSAO","I","35","364");
+
+INSERT INTO tb_auditoria_tabela VALUES("365","TB_HISTORIA","I","143","365");
+
+INSERT INTO tb_auditoria_tabela VALUES("366","TB_HISTORIA","I","144","366");
+
+INSERT INTO tb_auditoria_tabela VALUES("367","TB_HISTORIA","I","145","367");
+
+INSERT INTO tb_auditoria_tabela VALUES("368","TB_HISTORIA","I","146","368");
+
+INSERT INTO tb_auditoria_tabela VALUES("369","TB_HISTORIA","I","147","369");
+
+INSERT INTO tb_auditoria_tabela VALUES("370","TB_HISTORIA","I","148","370");
+
+INSERT INTO tb_auditoria_tabela VALUES("371","TB_HISTORIA","U","128","371");
+
+INSERT INTO tb_auditoria_tabela VALUES("372","TB_HISTORIA","I","149","372");
+
+INSERT INTO tb_auditoria_tabela VALUES("373","TB_HISTORIA","I","150","373");
+
+INSERT INTO tb_auditoria_tabela VALUES("374","TB_HISTORIA","I","151","374");
+
+INSERT INTO tb_auditoria_tabela VALUES("375","TB_HISTORIA","U","151","375");
+
+INSERT INTO tb_auditoria_tabela VALUES("376","TB_HISTORIA","U","145","376");
+
+INSERT INTO tb_auditoria_tabela VALUES("377","TB_HISTORIA","U","145","377");
+
+INSERT INTO tb_auditoria_tabela VALUES("378","TB_HISTORIA","U","145","378");
+
+INSERT INTO tb_auditoria_tabela VALUES("379","TB_HISTORIA","U","147","379");
+
+INSERT INTO tb_auditoria_tabela VALUES("380","TB_HISTORIA","U","147","380");
+
+INSERT INTO tb_auditoria_tabela VALUES("381","TB_HISTORIA","I","152","381");
+
+INSERT INTO tb_auditoria_tabela VALUES("382","TB_HISTORIA","U","146","382");
+
+INSERT INTO tb_auditoria_tabela VALUES("383","TB_HISTORIA","I","153","383");
+
+INSERT INTO tb_auditoria_tabela VALUES("384","TB_PROJETO","I","2","384");
+
+INSERT INTO tb_auditoria_tabela VALUES("385","TB_HISTORIA","U","139","385");
+
+INSERT INTO tb_auditoria_tabela VALUES("386","TB_MODULO","I","7","386");
+
+INSERT INTO tb_auditoria_tabela VALUES("387","TB_SESSAO","I","36","387");
+
+INSERT INTO tb_auditoria_tabela VALUES("388","TB_HISTORIA","I","154","388");
+
+INSERT INTO tb_auditoria_tabela VALUES("389","TB_HISTORIA","I","155","389");
+
+INSERT INTO tb_auditoria_tabela VALUES("390","TB_HISTORIA","I","156","390");
+
+INSERT INTO tb_auditoria_tabela VALUES("391","TB_HISTORIA","U","152","391");
+
+INSERT INTO tb_auditoria_tabela VALUES("392","TB_MODULO","U","7","392");
+
+INSERT INTO tb_auditoria_tabela VALUES("393","TB_SESSAO","I","37","393");
+
+INSERT INTO tb_auditoria_tabela VALUES("394","TB_SESSAO","U","37","394");
+
+INSERT INTO tb_auditoria_tabela VALUES("395","TB_HISTORIA","I","157","395");
+
+INSERT INTO tb_auditoria_tabela VALUES("396","TB_HISTORIA","I","158","396");
+
+INSERT INTO tb_auditoria_tabela VALUES("397","TB_HISTORIA","I","159","397");
+
+INSERT INTO tb_auditoria_tabela VALUES("398","TB_HISTORIA","I","160","398");
+
+INSERT INTO tb_auditoria_tabela VALUES("399","TB_HISTORIA","U","156","399");
+
+INSERT INTO tb_auditoria_tabela VALUES("400","TB_HISTORIA","U","156","400");
+
+INSERT INTO tb_auditoria_tabela VALUES("401","TB_HISTORIA","U","155","401");
+
+INSERT INTO tb_auditoria_tabela VALUES("402","TB_HISTORIA","U","154","402");
+
+INSERT INTO tb_auditoria_tabela VALUES("403","TB_HISTORIA","U","157","403");
+
+INSERT INTO tb_auditoria_tabela VALUES("404","TB_HISTORIA","U","153","404");
+
+INSERT INTO tb_auditoria_tabela VALUES("405","TB_HISTORIA","I","161","405");
+
+INSERT INTO tb_auditoria_tabela VALUES("406","TB_HISTORIA","U","159","406");
+
+INSERT INTO tb_auditoria_tabela VALUES("407","TB_HISTORIA","I","162","407");
+
+INSERT INTO tb_auditoria_tabela VALUES("408","TB_HISTORIA","U","162","408");
+
+INSERT INTO tb_auditoria_tabela VALUES("409","TB_HISTORIA","U","151","409");
+
+INSERT INTO tb_auditoria_tabela VALUES("410","TB_HISTORIA","U","151","410");
+
+INSERT INTO tb_auditoria_tabela VALUES("411","TB_HISTORIA","U","152","411");
+
+INSERT INTO tb_auditoria_tabela VALUES("412","TB_HISTORIA","U","152","412");
+
+INSERT INTO tb_auditoria_tabela VALUES("413","TB_HISTORIA","U","17","413");
+
+INSERT INTO tb_auditoria_tabela VALUES("414","TB_HISTORIA","U","17","414");
+
+INSERT INTO tb_auditoria_tabela VALUES("415","TB_HISTORIA","U","158","415");
+
+INSERT INTO tb_auditoria_tabela VALUES("416","TB_HISTORIA","U","157","416");
+
+INSERT INTO tb_auditoria_tabela VALUES("417","TB_HISTORIA","I","163","417");
+
 
 
 
@@ -7188,62 +8228,62 @@ CREATE TABLE `tb_historia` (
   `co_sessao` int(11) NOT NULL,
   PRIMARY KEY (`co_historia`,`co_sessao`),
   KEY `fk_TB_HISTORIA_TB_SESSAO1_idx` (`co_sessao`)
-) ENGINE=InnoDB AUTO_INCREMENT=143 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=164 DEFAULT CHARSET=utf8;
 
 
-INSERT INTO tb_historia VALUES("1","Manter Planos do sistema","<p>Manter planos do sistema da beleza, onde ter&aacute; que manter os desconto com per&iacute;odo para o plano</p>\n\n\n\n<p>&nbsp;</p>\n\n\n\n<p>Modelagem: Plano e historico plano modulos</p>","2018-07-24 15:28:56","2018-07-31 15:05:13","C","13","0","1");
+INSERT INTO tb_historia VALUES("1","Manter Planos do sistema","<p>Manter planos do sistema da beleza, onde ter&aacute; que manter os desconto com per&iacute;odo para o plano</p>\n\n\n\n\n\n\n\n<p>&nbsp;</p>\n\n\n\n\n\n\n\n<p>Modelagem: Plano e historico plano modulos</p>","2018-07-24 15:28:56","2018-07-31 15:05:13","C","13","0","1");
 
-INSERT INTO tb_historia VALUES("2","Manter Assinante","<p>Manter assinante do sistema e com data de expira&ccedil;&atilde;o do sistema para o assinante, criar contato, criar pessoa, envio de email de confirma&ccedil;&atilde;o com senha gerada</p>\n\n\n\n<p>Criar o usu&aacute;rio quando criar o assinante, plano assinado</p>\n\n\n\n<p>&nbsp;</p>\n\n\n\n<p>Modelagem: Assinante (Jun&ccedil;&atilde;o de pessoa, contato, usuario, data de expira&ccedil;&atilde;o, status)</p>","2018-07-25 11:24:23","2018-08-13 23:02:29","C","20","0","1");
+INSERT INTO tb_historia VALUES("2","Manter Assinante","<p>Manter assinante do sistema e com data de expira&ccedil;&atilde;o do sistema para o assinante, criar contato, criar pessoa, envio de email de confirma&ccedil;&atilde;o com senha gerada</p>\n\n\n\n\n\n\n\n<p>Criar o usu&aacute;rio quando criar o assinante, plano assinado</p>\n\n\n\n\n\n\n\n<p>&nbsp;</p>\n\n\n\n\n\n\n\n<p>Modelagem: Assinante (Jun&ccedil;&atilde;o de pessoa, contato, usuario, data de expira&ccedil;&atilde;o, status)</p>","2018-07-25 11:24:23","2018-08-13 23:02:29","C","20","0","1");
 
-INSERT INTO tb_historia VALUES("3","Manter Filial","<p>Manter filial</p>\n\n\n\n<p>Modelagem: Filial (FK assinante)</p>","2018-07-25 11:37:35","2018-08-13 12:05:19","C","13","0","1");
+INSERT INTO tb_historia VALUES("3","Manter Filial","<p>Manter filial</p>\n\n\n\n\n\n\n\n<p>Modelagem: Filial (FK assinante)</p>","2018-07-25 11:37:35","2018-08-13 12:05:19","C","13","0","1");
 
-INSERT INTO tb_historia VALUES("4","Gestão de pagamentos dos assinantes","<p>Dar baixas no pagamento, e atualizar o prazo de expira&ccedil;&atilde;o do assiante e suas filias</p>\n\n\n\n<p>Criar hist&oacute;rico dos pagamentos</p>\n\n\n\n<p>&nbsp;</p>\n\n\n\n<p>Modelagem: Pagamento assinante (Ligada com plano e assinante)</p>","2018-07-25 11:42:55","2018-08-13 17:32:58","C","20","0","1");
+INSERT INTO tb_historia VALUES("4","Gestão de pagamentos dos assinantes","<p>Dar baixas no pagamento, e atualizar o prazo de expira&ccedil;&atilde;o do assiante e suas filias</p>\n\n\n\n\n\n\n\n<p>Criar hist&oacute;rico dos pagamentos</p>\n\n\n\n\n\n\n\n<p>&nbsp;</p>\n\n\n\n\n\n\n\n<p>Modelagem: Pagamento assinante (Ligada com plano e assinante)</p>","2018-07-25 11:42:55","2018-08-13 17:32:58","C","20","0","1");
 
-INSERT INTO tb_historia VALUES("6","Dados complementares básicos","<p>Manter dados: (Endere&ccedil;o, telefone, CNPJ, fantasia, raz&atilde;o e outros)</p>\n\n\n\n<p>Modelagem: Contato, endere&ccedil;o e empresa ou pessoa</p>","2018-07-25 12:11:05","2018-09-21 22:09:40","C","20","0","2");
+INSERT INTO tb_historia VALUES("6","Dados complementares básicos","<p>Manter dados: (Endere&ccedil;o, telefone, CNPJ, fantasia, raz&atilde;o e outros)</p>\n\n\n\n\n\n\n\n<p>Modelagem: Contato, endere&ccedil;o e empresa ou pessoa</p>","2018-07-25 12:11:05","2018-09-21 22:09:40","C","20","0","2");
 
-INSERT INTO tb_historia VALUES("7","Manter Horário de funcionamento padrão","<p>Manter hor&aacute;rio de funcionamento</p>\n\n\n\n<p>Modelagem: Funcionamento (Assinante)</p>\n\n\n\n<p>&nbsp;</p>","2018-07-25 12:19:44","2018-09-21 22:09:17","C","8","0","2");
+INSERT INTO tb_historia VALUES("7","Manter Horário de funcionamento padrão","<p>Manter hor&aacute;rio de funcionamento</p>\n\n\n\n\n\n\n\n<p>Modelagem: Funcionamento (Assinante)</p>\n\n\n\n\n\n\n\n<p>&nbsp;</p>","2018-07-25 12:19:44","2018-09-21 22:09:17","C","8","0","2");
 
-INSERT INTO tb_historia VALUES("8","Manter Fotos do Estabelecimento","<p>Manter Fotos do Estabelecimento para o Site</p>\n\n\n\n<p>Modelagem: Imagem (FK Assinante)</p>","2018-07-25 12:21:30","2018-09-21 22:08:49","C","8","0","2");
+INSERT INTO tb_historia VALUES("8","Manter Fotos do Estabelecimento","<p>Manter Fotos do Estabelecimento para o Site</p>\n\n\n\n\n\n\n\n<p>Modelagem: Imagem (FK Assinante)</p>","2018-07-25 12:21:30","2018-09-21 22:08:49","C","8","0","2");
 
-INSERT INTO tb_historia VALUES("9","Manter Feriados","<p>Manter Feriados</p>\n\n\n\n<p>Modelagem: Tabela base Feriados nacionais, Feriados (FK assinante, com hor&aacute;rio de funcionamento)</p>","2018-07-25 12:27:26","2018-09-24 20:34:02","C","5","0","4");
+INSERT INTO tb_historia VALUES("9","Manter Feriados","<p>Manter Feriados</p>\n\n\n\n\n\n\n\n<p>Modelagem: Tabela base Feriados nacionais, Feriados (FK assinante, com hor&aacute;rio de funcionamento)</p>","2018-07-25 12:27:26","2018-09-24 20:34:02","C","5","0","4");
 
-INSERT INTO tb_historia VALUES("10","Manter Dias Especiais","<p>Manter Dias Especiais n&atilde;o recorrente</p>\n\n\n\n<p>Modelagem: dias especiais (FK assinante, com hor&aacute;rio de funcionamento)</p>","2018-07-25 12:28:51","2018-09-24 20:33:36","C","13","0","4");
+INSERT INTO tb_historia VALUES("10","Manter Dias Especiais","<p>Manter Dias Especiais n&atilde;o recorrente</p>\n\n\n\n\n\n\n\n<p>Modelagem: dias especiais (FK assinante, com hor&aacute;rio de funcionamento)</p>","2018-07-25 12:28:51","2018-09-24 20:33:36","C","13","0","4");
 
-INSERT INTO tb_historia VALUES("11","Formas de pagamento","<p>Forma de pagamento aceitas</p>\n\n\n\n<p>modelagem: Configuracao (FK assinante),&nbsp; Tabela base Formas de pagamento, Tabela base bandeira cartao</p>","2018-07-25 14:38:19","2018-10-19 11:32:01","C","8","0","5");
+INSERT INTO tb_historia VALUES("11","Formas de pagamento","<p>Forma de pagamento aceitas</p>\n\n\n\n\n\n\n\n<p>modelagem: Configuracao (FK assinante),&nbsp; Tabela base Formas de pagamento, Tabela base bandeira cartao</p>","2018-07-25 14:38:19","2018-10-19 11:32:01","C","8","0","5");
 
-INSERT INTO tb_historia VALUES("12","Configuração do cliente","<p>Cliente Marcar Servi&ccedil;o S / N, quantidade de aus&ecirc;ncia para que o cliente n&atilde;o marque mais servi&ccedil;os</p>\n\n<p>&nbsp;</p>\n\n<p>Modelagem: Configura&ccedil;&atilde;o assinante (FK Assinante)</p>","2018-07-25 14:43:02","2018-11-14 16:07:41","C","5","0","5");
+INSERT INTO tb_historia VALUES("12","Configuração do cliente","<p>Cliente Marcar Servi&ccedil;o S / N, quantidade de aus&ecirc;ncia para que o cliente n&atilde;o marque mais servi&ccedil;os</p>\n\n\n\n\n\n<p>&nbsp;</p>\n\n\n\n\n\n<p>Modelagem: Configura&ccedil;&atilde;o assinante (FK Assinante)</p>","2018-07-25 14:43:02","2018-11-14 16:07:41","C","5","0","5");
 
-INSERT INTO tb_historia VALUES("13","Configuração de agendamento","<p>Confirma&ccedil;&atilde;o do agendamento e Regras de agendamento, agendamento recorrente, Horas de antecedencia do agendamento, Agendamento online, intervalo de agendamento dos clientes</p>\n\n<p>&nbsp;</p>\n\n<p>Modelagem: Configura&ccedil;&atilde;o assinante (FK Assinante)</p>","2018-07-25 14:54:36","2018-11-19 17:37:56","C","8","0","5");
+INSERT INTO tb_historia VALUES("13","Configuração de agendamento","<p>Confirma&ccedil;&atilde;o do agendamento e Regras de agendamento, agendamento recorrente, Horas de antecedencia do agendamento, Agendamento online, intervalo de agendamento dos clientes</p>\n\n\n\n\n\n<p>&nbsp;</p>\n\n\n\n\n\n<p>Modelagem: Configura&ccedil;&atilde;o assinante (FK Assinante)</p>","2018-07-25 14:54:36","2018-11-19 17:37:56","C","8","0","5");
 
-INSERT INTO tb_historia VALUES("14","Manter Motivo desconto","<p>Manter Motivo desconto</p>\n\n<p>&nbsp;</p>\n\n<p>Modelagem: Motivo desconto (FK Assinante)</p>\n\n<p>&nbsp;</p>","2018-07-25 15:13:38","2018-11-26 17:29:23","C","5","0","8");
+INSERT INTO tb_historia VALUES("14","Manter Motivo desconto","<p>Manter Motivo desconto</p>\n\n\n\n\n\n<p>&nbsp;</p>\n\n\n\n\n\n<p>Modelagem: Motivo desconto (FK Assinante)</p>\n\n\n\n\n\n<p>&nbsp;</p>","2018-07-25 15:13:38","2018-11-26 17:29:23","C","5","0","8");
 
 INSERT INTO tb_historia VALUES("15","Tabela base Motivo Desconto","<p>Modelagem: Tabela base Motivo Desconto</p>","2018-07-25 15:15:19","2018-11-23 17:55:10","C","1","0","8");
 
-INSERT INTO tb_historia VALUES("16","Manter profissional","<p>Manter profissional</p>\n\n<p>Modelagem: Profissional (FK Assinante, pessoa, usuario, endere&ccedil;o, dados banc&aacute;rios, configura&ccedil;&atilde;o, jornada de trabalho e contato)</p>","2018-07-25 15:56:07","2018-12-20 13:39:20","C","40","0","9");
+INSERT INTO tb_historia VALUES("16","Manter profissional","<p>Manter profissional</p>\n\n\n\n\n\n<p>Modelagem: Profissional (FK Assinante, pessoa, usuario, endere&ccedil;o, dados banc&aacute;rios, configura&ccedil;&atilde;o, jornada de trabalho e contato)</p>","2018-07-25 15:56:07","2018-12-20 13:39:20","C","40","0","9");
 
-INSERT INTO tb_historia VALUES("17","Manter ausência","<p>Manter aus&ecirc;ncia</p>\n\n\n\n<p>&nbsp;</p>\n\n\n\n<p>Modelagem: Aus&ecirc;ncia Profissional (FK Profissional)</p>","2018-07-25 15:59:43","2018-07-25 15:59:43","N","5","5","9");
+INSERT INTO tb_historia VALUES("17","Manter ausência","<p>Manter aus&ecirc;ncia</p>\n\n<p>&nbsp;</p>\n\n<p>Modelagem: Aus&ecirc;ncia Profissional (FK Profissional)</p>","2018-07-25 15:59:43","2019-01-25 14:03:01","C","8","0","9");
 
-INSERT INTO tb_historia VALUES("18","Manter Bloqueio por profissional","<p>Bloqueio de hor&aacute;rio para o profissional</p>\n\n\n\n<p>Modelagem: Bloqueio hor&aacute;rio (FK profissional, motivo)</p>","2018-07-25 16:12:20","2018-07-25 16:12:20","N","5","5","10");
+INSERT INTO tb_historia VALUES("18","Manter Bloqueio por profissional","<p>Bloqueio de hor&aacute;rio para o profissional</p>\n\n\n\n\n\n\n\n<p>Modelagem: Bloqueio hor&aacute;rio (FK profissional, motivo)</p>","2018-07-25 16:12:20","2018-07-25 16:12:20","N","5","5","10");
 
-INSERT INTO tb_historia VALUES("19","Manter Cliente","<p>Manter Cliente, Clientes recebem SMS com lembrete do hor&aacute;rio agendado, Integra&ccedil;&atilde;o com WhatsApp,</p>\n\n\n\n<p>Modelagem: Cliente (FK Assinante, pessoa, contato, endere&ccedil;o, foto)</p>","2018-07-25 16:16:48","2018-07-25 16:17:12","N","13","13","11");
+INSERT INTO tb_historia VALUES("19","Manter Cliente","<p>Manter Cliente, Clientes recebem SMS com lembrete do hor&aacute;rio agendado, Integra&ccedil;&atilde;o com WhatsApp,</p>\n\n\n\n\n\n\n\n<p>Modelagem: Cliente (FK Assinante, pessoa, contato, endere&ccedil;o, foto)</p>","2018-07-25 16:16:48","2018-07-25 16:17:12","N","13","13","11");
 
-INSERT INTO tb_historia VALUES("20","Manter Categorias do Serviço","<p>Manter Categorias do Servi&ccedil;o</p>\n\n\n\n<p>Modelagem: Cat. servico (FK Assinante)</p>","2018-07-25 16:19:34","2018-07-25 16:19:34","N","3","3","12");
+INSERT INTO tb_historia VALUES("20","Manter Categorias do Serviço","<p>Manter Categorias do Servi&ccedil;o</p>\n\n\n\n\n\n\n\n<p>Modelagem: Cat. servico (FK Assinante)</p>","2018-07-25 16:19:34","2018-07-25 16:19:34","N","3","3","12");
 
-INSERT INTO tb_historia VALUES("21","Tabela base Categorias serviços","<p>Tabela base Categorias servi&ccedil;os</p>\n\n\n\n<p>&nbsp;</p>\n\n\n\n<p>Modelagem: Tabela base Categorias servi&ccedil;os</p>","2018-07-25 16:21:25","2018-07-25 16:21:25","N","5","5","12");
+INSERT INTO tb_historia VALUES("21","Tabela base Categorias serviços","<p>Tabela base Categorias servi&ccedil;os</p>\n\n\n\n\n\n\n\n<p>&nbsp;</p>\n\n\n\n\n\n\n\n<p>Modelagem: Tabela base Categorias servi&ccedil;os</p>","2018-07-25 16:21:25","2018-07-25 16:21:25","N","5","5","12");
 
 INSERT INTO tb_historia VALUES("22","Edição rápida de serviços","<p>Edi&ccedil;&atilde;o r&aacute;pida de servi&ccedil;os todos eles (Comiss&atilde;o, categoria, pre&ccedil;o)</p>","2018-07-25 16:23:07","2018-07-25 16:23:07","N","13","13","12");
 
-INSERT INTO tb_historia VALUES("23","Profissionais que atende o serviço","<p>Profissionais que atende o servi&ccedil;o, comiss&atilde;o padr&atilde;o pra todos</p>\n\n\n\n<p>Modelagem: Tab tern&aacute;ria Profissional e Servi&ccedil;o (Comiss&atilde;o individual)</p>","2018-07-25 16:26:14","2018-07-25 16:26:14","N","5","5","12");
+INSERT INTO tb_historia VALUES("23","Profissionais que atende o serviço","<p>Profissionais que atende o servi&ccedil;o, comiss&atilde;o padr&atilde;o pra todos</p>\n\n\n\n\n\n\n\n<p>Modelagem: Tab tern&aacute;ria Profissional e Servi&ccedil;o (Comiss&atilde;o individual)</p>","2018-07-25 16:26:14","2018-07-25 16:26:14","N","5","5","12");
 
-INSERT INTO tb_historia VALUES("24","Manter Pacote","<p>Manter Pacote</p>\n\n\n\n<p>Modelagem: Pacote (FK Assinante), Pacote Servi&ccedil;os (FK Pacote e servi&ccedil;o)</p>","2018-07-25 16:30:25","2018-07-25 16:30:25","N","13","13","13");
+INSERT INTO tb_historia VALUES("24","Manter Pacote","<p>Manter Pacote</p>\n\n\n\n\n\n\n\n<p>Modelagem: Pacote (FK Assinante), Pacote Servi&ccedil;os (FK Pacote e servi&ccedil;o)</p>","2018-07-25 16:30:25","2018-07-25 16:30:25","N","13","13","13");
 
-INSERT INTO tb_historia VALUES("25","Manter promoção","<p>Manter promo&ccedil;&atilde;o dias e hor&aacute;rios a ser ultilizado per&iacute;odo v&aacute;lido</p>\n\n\n\n<p>&nbsp;</p>\n\n\n\n<p>Modelagem: Promocao (FK Servi&ccedil;o)</p>","2018-07-25 17:12:39","2018-07-25 17:12:39","N","5","5","14");
+INSERT INTO tb_historia VALUES("25","Manter promoção","<p>Manter promo&ccedil;&atilde;o dias e hor&aacute;rios a ser ultilizado per&iacute;odo v&aacute;lido</p>\n\n\n\n\n\n\n\n<p>&nbsp;</p>\n\n\n\n\n\n\n\n<p>Modelagem: Promocao (FK Servi&ccedil;o)</p>","2018-07-25 17:12:39","2018-07-25 17:12:39","N","5","5","14");
 
-INSERT INTO tb_historia VALUES("26","Manter cortesia","<p>Manter cortesia, validade da cortesia, per&iacute;odo de uso dia e hora</p>\n\n\n\n<p>&nbsp;</p>\n\n\n\n<p>Modelagem (FK cliente, servico)</p>","2018-07-25 17:14:29","2018-07-25 17:14:29","N","3","3","15");
+INSERT INTO tb_historia VALUES("26","Manter cortesia","<p>Manter cortesia, validade da cortesia, per&iacute;odo de uso dia e hora</p>\n\n\n\n\n\n\n\n<p>&nbsp;</p>\n\n\n\n\n\n\n\n<p>Modelagem (FK cliente, servico)</p>","2018-07-25 17:14:29","2018-07-25 17:14:29","N","3","3","15");
 
-INSERT INTO tb_historia VALUES("27","Manter Vale presente","<p>Manter Vale presente, gerar c&oacute;digo pra passar para o cliente que ira usar, validade e periodo de uso</p>\n\n\n\n<p>Modelagem: Vale presente e valepresente servicos (FK Servicos e vale presente)</p>","2018-07-25 17:23:18","2018-07-25 17:23:18","N","8","8","16");
+INSERT INTO tb_historia VALUES("27","Manter Vale presente","<p>Manter Vale presente, gerar c&oacute;digo pra passar para o cliente que ira usar, validade e periodo de uso</p>\n\n\n\n\n\n\n\n<p>Modelagem: Vale presente e valepresente servicos (FK Servicos e vale presente)</p>","2018-07-25 17:23:18","2018-07-25 17:23:18","N","8","8","16");
 
-INSERT INTO tb_historia VALUES("28","Cadastrar Agendamento","<p>Cadastrar Agendamento (Op&ccedil;&atilde;o da recorr&ecirc;ncia)</p>\n\n\n\n<p>&nbsp;</p>\n\n\n\n<p>Modelagem: (FK cliente, Servi&ccedil;o, Profissional)</p>","2018-07-25 17:32:10","2018-07-25 17:56:16","N","13","13","17");
+INSERT INTO tb_historia VALUES("28","Cadastrar Agendamento","<p>Cadastrar Agendamento (Op&ccedil;&atilde;o da recorr&ecirc;ncia)</p>\n\n\n\n\n\n\n\n<p>&nbsp;</p>\n\n\n\n\n\n\n\n<p>Modelagem: (FK cliente, Servi&ccedil;o, Profissional)</p>","2018-07-25 17:32:10","2018-07-25 17:56:16","N","13","13","17");
 
 INSERT INTO tb_historia VALUES("29","Agenda","<p>Mostrar a agenda (Filtros por profissional)</p>","2018-07-25 17:44:09","2018-07-25 17:44:09","N","40","40","17");
 
@@ -7261,57 +8301,57 @@ INSERT INTO tb_historia VALUES("35","Exclusão do agendamento","<p>Exclus&atilde
 
 INSERT INTO tb_historia VALUES("36","Editar o agendamento","<p>Editar o agendamento</p>","2018-07-25 17:58:43","2018-07-25 17:59:03","N","8","8","17");
 
-INSERT INTO tb_historia VALUES("37","Fechamento de conta no agendamento","<p>Fechamento de conta no agendamento</p>\n\n\n\n<p>Transformar troco em cr&eacute;dito</p>\n\n\n\n<p>Modelagem: Pagamento (FK agendamento, FK Caixa)</p>","2018-07-25 18:12:12","2018-07-26 18:41:34","N","20","20","18");
+INSERT INTO tb_historia VALUES("37","Fechamento de conta no agendamento","<p>Fechamento de conta no agendamento</p>\n\n\n\n\n\n\n\n<p>Transformar troco em cr&eacute;dito</p>\n\n\n\n\n\n\n\n<p>Modelagem: Pagamento (FK agendamento, FK Caixa)</p>","2018-07-25 18:12:12","2018-07-26 18:41:34","N","20","20","18");
 
-INSERT INTO tb_historia VALUES("38","Manter Fotos agendamento","<p>Manter Fotos agendamento</p>\n\n\n\n<p>&nbsp;</p>\n\n\n\n<p>Modelagem: Agendamento Imagem (FK imagem, FK agendamento)</p>","2018-07-25 18:13:09","2018-07-25 18:13:09","N","8","8","17");
+INSERT INTO tb_historia VALUES("38","Manter Fotos agendamento","<p>Manter Fotos agendamento</p>\n\n\n\n\n\n\n\n<p>&nbsp;</p>\n\n\n\n\n\n\n\n<p>Modelagem: Agendamento Imagem (FK imagem, FK agendamento)</p>","2018-07-25 18:13:09","2018-07-25 18:13:09","N","8","8","17");
 
-INSERT INTO tb_historia VALUES("39","Abertura de caixa","<p>Abertura de caixa</p>\n\n\n\n<p>&nbsp;</p>\n\n\n\n<p>Modelagem: Caixa (FK Assinante)</p>","2018-07-25 18:16:22","2018-07-25 18:16:22","N","8","8","18");
+INSERT INTO tb_historia VALUES("39","Abertura de caixa","<p>Abertura de caixa</p>\n\n\n\n\n\n\n\n<p>&nbsp;</p>\n\n\n\n\n\n\n\n<p>Modelagem: Caixa (FK Assinante)</p>","2018-07-25 18:16:22","2018-07-25 18:16:22","N","8","8","18");
 
-INSERT INTO tb_historia VALUES("40","Retirada / Sangria","<p>Retirada / Sangria (Normal e recorrente)</p>\n\n\n\n<p>Modelagem: Sangria caixa (FK Caixa)</p>","2018-07-25 18:24:58","2018-07-25 18:24:58","N","8","8","18");
+INSERT INTO tb_historia VALUES("40","Retirada / Sangria","<p>Retirada / Sangria (Normal e recorrente)</p>\n\n\n\n\n\n\n\n<p>Modelagem: Sangria caixa (FK Caixa)</p>","2018-07-25 18:24:58","2018-07-25 18:24:58","N","8","8","18");
 
-INSERT INTO tb_historia VALUES("41","Recebimentos","<p>Recebimentos</p>\n\n\n\n<p>Modelagem: Recebimento caixa (FK Caixa)</p>","2018-07-25 18:25:44","2018-07-25 18:25:44","N","8","8","18");
+INSERT INTO tb_historia VALUES("41","Recebimentos","<p>Recebimentos</p>\n\n\n\n\n\n\n\n<p>Modelagem: Recebimento caixa (FK Caixa)</p>","2018-07-25 18:25:44","2018-07-25 18:25:44","N","8","8","18");
 
 INSERT INTO tb_historia VALUES("42","Gerar cupom não fiscal","<p>Gerar cupom n&atilde;o fiscal no fechamento de conta</p>","2018-07-25 18:27:03","2018-07-25 18:27:03","N","13","13","18");
 
-INSERT INTO tb_historia VALUES("43","Valor pago por serviço","<p>Determinar porcentagem ou valor para cada servi&ccedil;o.</p>\n\n\n\n<p>Depend&ecirc;ncia: <a href=\"http://localhost/PreProjeto/admin/Historia/CadastroHistoria/MjA5YzYzNDY2NTYyNjBlN2E3OGVmZGI1MDcxNWM2NTkvTkRRPQ==\">http://localhost/PreProjeto/admin/Historia/CadastroHistoria/MjA5YzYzNDY2NTYyNjBlN2E3OGVmZGI1MDcxNWM2NTkvTkRRPQ==</a></p>","2018-07-25 18:40:36","2018-07-25 18:45:49","N","8","8","5");
+INSERT INTO tb_historia VALUES("43","Valor pago por serviço","<p>Determinar porcentagem ou valor para cada servi&ccedil;o.</p>\n\n\n\n\n\n\n\n<p>Depend&ecirc;ncia: <a href=\"http://localhost/PreProjeto/admin/Historia/CadastroHistoria/MjA5YzYzNDY2NTYyNjBlN2E3OGVmZGI1MDcxNWM2NTkvTkRRPQ==\">http://localhost/PreProjeto/admin/Historia/CadastroHistoria/MjA5YzYzNDY2NTYyNjBlN2E3OGVmZGI1MDcxNWM2NTkvTkRRPQ==</a></p>","2018-07-25 18:40:36","2018-07-25 18:45:49","N","8","8","5");
 
-INSERT INTO tb_historia VALUES("44","Manter Serviço","<p>Manter Servi&ccedil;o</p>\n\n\n\n<p>Modelagem: Servi&ccedil;o (FK categoria Servi. Assinante)</p>","2018-07-25 18:42:35","2018-07-25 18:42:35","N","8","8","12");
+INSERT INTO tb_historia VALUES("44","Manter Serviço","<p>Manter Servi&ccedil;o</p>\n\n\n\n\n\n\n\n<p>Modelagem: Servi&ccedil;o (FK categoria Servi. Assinante)</p>","2018-07-25 18:42:35","2018-07-25 18:42:35","N","8","8","12");
 
-INSERT INTO tb_historia VALUES("45","Tabela base serviços","<p>Tabela base servi&ccedil;os</p>\n\n\n\n<p>Modelagem: Servi&ccedil;os Base</p>","2018-07-25 18:43:26","2018-07-25 18:43:26","N","20","20","12");
+INSERT INTO tb_historia VALUES("45","Tabela base serviços","<p>Tabela base servi&ccedil;os</p>\n\n\n\n\n\n\n\n<p>Modelagem: Servi&ccedil;os Base</p>","2018-07-25 18:43:26","2018-07-25 18:43:26","N","20","20","12");
 
-INSERT INTO tb_historia VALUES("46","Manter intervalos do profissional","<p>Manter intervalos do profissional</p>\n\n<p>Modelagem: Horario do Profissional de refei&ccedil;&otilde;es e intervalos.</p>","2018-07-25 18:55:44","2018-12-10 16:52:48","N","8","8","9");
+INSERT INTO tb_historia VALUES("46","Manter intervalos do profissional","<p>Manter intervalos do profissional</p>\n\n\n\n\n\n<p>Modelagem: Horario do Profissional de refei&ccedil;&otilde;es e intervalos.</p>","2018-07-25 18:55:44","2018-12-10 16:52:48","N","8","8","9");
 
-INSERT INTO tb_historia VALUES("47","Histórico de comissões","<p>Hist&oacute;rico de comiss&otilde;es</p>\n\n\n\n<p>&nbsp;</p>\n\n\n\n<p>Pendencia: Manter agendamento</p>","2018-07-25 19:11:25","2018-07-25 19:11:54","N","8","8","9");
+INSERT INTO tb_historia VALUES("47","Histórico de comissões","<p>Hist&oacute;rico de comiss&otilde;es</p>\n\n\n\n\n\n\n\n<p>&nbsp;</p>\n\n\n\n\n\n\n\n<p>Pendencia: Manter agendamento</p>","2018-07-25 19:11:25","2018-07-25 19:11:54","N","8","8","9");
 
-INSERT INTO tb_historia VALUES("48","Histórico de serviços","<p>Hist&oacute;rico de servi&ccedil;os</p>\n\n\n\n<p>pendencia: manter agendamento</p>","2018-07-25 19:17:02","2018-07-25 19:17:02","N","8","8","9");
+INSERT INTO tb_historia VALUES("48","Histórico de serviços","<p>Hist&oacute;rico de servi&ccedil;os</p>\n\n\n\n\n\n\n\n<p>pendencia: manter agendamento</p>","2018-07-25 19:17:02","2018-07-25 19:17:02","N","8","8","9");
 
-INSERT INTO tb_historia VALUES("49","Histórico de agendamentos","<p>Hist&oacute;rico de agendamentos</p>\n\n\n\n<p>Pend&ecirc;ncia: Manter agendamento</p>","2018-07-25 19:17:37","2018-07-25 19:17:37","N","8","8","9");
+INSERT INTO tb_historia VALUES("49","Histórico de agendamentos","<p>Hist&oacute;rico de agendamentos</p>\n\n\n\n\n\n\n\n<p>Pend&ecirc;ncia: Manter agendamento</p>","2018-07-25 19:17:37","2018-07-25 19:17:37","N","8","8","9");
 
-INSERT INTO tb_historia VALUES("50","Histórico de vale/adiantamento","<p>Hist&oacute;rico de vale/adiantamento</p>\n\n\n\n<p>Pendencia: Manter vale/adiantamento (Financeiro)</p>","2018-07-25 19:20:30","2018-07-25 19:20:30","N","8","8","9");
+INSERT INTO tb_historia VALUES("50","Histórico de vale/adiantamento","<p>Hist&oacute;rico de vale/adiantamento</p>\n\n\n\n\n\n\n\n<p>Pendencia: Manter vale/adiantamento (Financeiro)</p>","2018-07-25 19:20:30","2018-07-25 19:20:30","N","8","8","9");
 
-INSERT INTO tb_historia VALUES("51","Relatório de comissões","<p>Relat&oacute;rio de comiss&otilde;es (Filtros)</p>\n\n\n\n<p>Pendencia: Manter agendamento</p>","2018-07-25 19:21:41","2018-07-25 19:21:41","N","8","8","9");
+INSERT INTO tb_historia VALUES("51","Relatório de comissões","<p>Relat&oacute;rio de comiss&otilde;es (Filtros)</p>\n\n\n\n\n\n\n\n<p>Pendencia: Manter agendamento</p>","2018-07-25 19:21:41","2018-07-25 19:21:41","N","8","8","9");
 
 INSERT INTO tb_historia VALUES("52","Acesso da agenda","<p>Acesso da agenda (Visualiza&ccedil;&atilde;o)</p>","2018-07-25 19:22:51","2018-07-25 19:22:51","N","5","5","9");
 
-INSERT INTO tb_historia VALUES("53","Histórico de agendamentos","<p>Hist&oacute;rico de agendamentos</p>\n\n\n\n<p>Pend&ecirc;ncia: Manter agendamento</p>","2018-07-25 19:24:05","2018-07-25 19:24:05","N","8","8","11");
+INSERT INTO tb_historia VALUES("53","Histórico de agendamentos","<p>Hist&oacute;rico de agendamentos</p>\n\n\n\n\n\n\n\n<p>Pend&ecirc;ncia: Manter agendamento</p>","2018-07-25 19:24:05","2018-07-25 19:24:05","N","8","8","11");
 
-INSERT INTO tb_historia VALUES("54","Histórico de serviços","<p>Hist&oacute;rico de servi&ccedil;os</p>\n\n\n\n<p>Pend&ecirc;ncia: Manter agendamento</p>","2018-07-25 19:24:33","2018-07-25 19:24:33","N","8","8","11");
+INSERT INTO tb_historia VALUES("54","Histórico de serviços","<p>Hist&oacute;rico de servi&ccedil;os</p>\n\n\n\n\n\n\n\n<p>Pend&ecirc;ncia: Manter agendamento</p>","2018-07-25 19:24:33","2018-07-25 19:24:33","N","8","8","11");
 
-INSERT INTO tb_historia VALUES("55","Histórico de Pacotes","<p>Hist&oacute;rico de Pacotes</p>\n\n\n\n<p>Pend&ecirc;ncia: Manter agendamento</p>","2018-07-25 19:25:05","2018-07-25 19:25:05","N","8","8","11");
+INSERT INTO tb_historia VALUES("55","Histórico de Pacotes","<p>Hist&oacute;rico de Pacotes</p>\n\n\n\n\n\n\n\n<p>Pend&ecirc;ncia: Manter agendamento</p>","2018-07-25 19:25:05","2018-07-25 19:25:05","N","8","8","11");
 
-INSERT INTO tb_historia VALUES("56","Histórico de Débitos","<p>Hist&oacute;rico de D&eacute;bitos</p>\n\n\n\n<p>Pend&ecirc;ncia: Manter agendamento</p>","2018-07-25 19:25:36","2018-07-25 19:25:36","N","8","8","11");
+INSERT INTO tb_historia VALUES("56","Histórico de Débitos","<p>Hist&oacute;rico de D&eacute;bitos</p>\n\n\n\n\n\n\n\n<p>Pend&ecirc;ncia: Manter agendamento</p>","2018-07-25 19:25:36","2018-07-25 19:25:36","N","8","8","11");
 
-INSERT INTO tb_historia VALUES("57","Histórico de crédito","<p>Hist&oacute;rico de cr&eacute;dito</p>\n\n\n\n<p>Pend&ecirc;ncia: Manter agendamento</p>","2018-07-25 19:26:05","2018-07-25 19:26:05","N","8","8","11");
+INSERT INTO tb_historia VALUES("57","Histórico de crédito","<p>Hist&oacute;rico de cr&eacute;dito</p>\n\n\n\n\n\n\n\n<p>Pend&ecirc;ncia: Manter agendamento</p>","2018-07-25 19:26:05","2018-07-25 19:26:05","N","8","8","11");
 
-INSERT INTO tb_historia VALUES("58","Histórico de Vale presente","<p>Hist&oacute;rico de Vale presente</p>\n\n\n\n<p>Pend&ecirc;ncia: Manter agendamento</p>","2018-07-25 19:26:52","2018-07-25 19:26:52","N","8","8","11");
+INSERT INTO tb_historia VALUES("58","Histórico de Vale presente","<p>Hist&oacute;rico de Vale presente</p>\n\n\n\n\n\n\n\n<p>Pend&ecirc;ncia: Manter agendamento</p>","2018-07-25 19:26:52","2018-07-25 19:26:52","N","8","8","11");
 
-INSERT INTO tb_historia VALUES("59","Histórico de Sms","<p>Hist&oacute;rico de Sms</p>\n\n\n\n<p>Pend&ecirc;ncia: Manter Sms</p>","2018-07-25 19:27:25","2018-07-25 19:27:25","N","8","8","11");
+INSERT INTO tb_historia VALUES("59","Histórico de Sms","<p>Hist&oacute;rico de Sms</p>\n\n\n\n\n\n\n\n<p>Pend&ecirc;ncia: Manter Sms</p>","2018-07-25 19:27:25","2018-07-25 19:27:25","N","8","8","11");
 
-INSERT INTO tb_historia VALUES("60","Histórico de E-mail","<p>Hist&oacute;rico de E-mail</p>\n\n\n\n<p>Pend&ecirc;ncia: Manter E-mail</p>","2018-07-25 19:27:58","2018-07-25 19:27:58","N","8","8","11");
+INSERT INTO tb_historia VALUES("60","Histórico de E-mail","<p>Hist&oacute;rico de E-mail</p>\n\n\n\n\n\n\n\n<p>Pend&ecirc;ncia: Manter E-mail</p>","2018-07-25 19:27:58","2018-07-25 19:27:58","N","8","8","11");
 
 INSERT INTO tb_historia VALUES("61","Criar Histórias Módulos Principal e assinante","<p>Criar Hist&oacute;rias M&oacute;dulos Principal e assinante</p>","2018-07-26 11:46:54","2018-07-27 17:57:45","I","40","3","19");
 
-INSERT INTO tb_historia VALUES("62","Página do Assinante","<p>P&aacute;gina do Assinante</p>\n\n\n\n<p>Promova seu sal&atilde;o no sistema da beleza com sua pr&oacute;pria p&aacute;gina customizada e com agendamento on-line</p>\n\n\n\n<p>Utilize sua p&aacute;gina exclusiva para divulgar fotos, servi&ccedil;os e informa&ccedil;&otilde;es</p>\n\n\n\n<p>Ofere&ccedil;a promo&ccedil;&otilde;es e pacotes exclusivos para seus clientes</p>\n\n\n\n<p>As promo&ccedil;&otilde;es s&atilde;o exibidas e podem ser agendadas com exclusividade na sua p&aacute;gina no Site da empresa</p>\n\n\n\n<p>Intera&ccedil;&atilde;o do cliente com o WhatsApp da Empresa</p>","2018-07-26 17:36:50","2018-07-26 18:45:07","N","40","40","20");
+INSERT INTO tb_historia VALUES("62","Página do Assinante","<p>P&aacute;gina do Assinante</p>\n\n\n\n\n\n\n\n<p>Promova seu sal&atilde;o no sistema da beleza com sua pr&oacute;pria p&aacute;gina customizada e com agendamento on-line</p>\n\n\n\n\n\n\n\n<p>Utilize sua p&aacute;gina exclusiva para divulgar fotos, servi&ccedil;os e informa&ccedil;&otilde;es</p>\n\n\n\n\n\n\n\n<p>Ofere&ccedil;a promo&ccedil;&otilde;es e pacotes exclusivos para seus clientes</p>\n\n\n\n\n\n\n\n<p>As promo&ccedil;&otilde;es s&atilde;o exibidas e podem ser agendadas com exclusividade na sua p&aacute;gina no Site da empresa</p>\n\n\n\n\n\n\n\n<p>Intera&ccedil;&atilde;o do cliente com o WhatsApp da Empresa</p>","2018-07-26 17:36:50","2018-07-26 18:45:07","N","40","40","20");
 
 INSERT INTO tb_historia VALUES("63","Página de captura de cliente","<p>P&aacute;gina de captura de cliente</p>","2018-07-26 17:38:30","2018-07-26 17:38:30","N","40","40","21");
 
@@ -7321,13 +8361,13 @@ INSERT INTO tb_historia VALUES("65","Site do Sistema da beleza","<p>Site do Sist
 
 INSERT INTO tb_historia VALUES("66","Vídeos para o Site do Sistema da beleza","<p>V&iacute;deos para o Site do Sistema da beleza</p>","2018-07-26 17:40:37","2018-07-26 17:40:37","N","20","20","21");
 
-INSERT INTO tb_historia VALUES("67","Material do Pré Lançamento","<p>Produ&ccedil;&atilde;o e Disponibiliza&ccedil;&atilde;o do material para lista de lead</p>\n\n\n\n<p>Dura&ccedil;&atilde;o de 7 a 10 dias antes do Lan&ccedil;amento de 3 a 4 v&iacute;deos</p>","2018-07-26 17:45:02","2018-07-26 17:58:04","N","40","40","22");
+INSERT INTO tb_historia VALUES("67","Material do Pré Lançamento","<p>Produ&ccedil;&atilde;o e Disponibiliza&ccedil;&atilde;o do material para lista de lead</p>\n\n\n\n\n\n\n\n<p>Dura&ccedil;&atilde;o de 7 a 10 dias antes do Lan&ccedil;amento de 3 a 4 v&iacute;deos</p>","2018-07-26 17:45:02","2018-07-26 17:58:04","N","40","40","22");
 
 INSERT INTO tb_historia VALUES("68","Criação da Lista de Lead","<p>Cria&ccedil;&atilde;o da Lista de Lead ja trabalhadas nas redes sociais e mais..</p>","2018-07-26 17:46:23","2018-07-26 17:46:23","N","40","40","24");
 
 INSERT INTO tb_historia VALUES("69","Página de captura de lead","<p>P&aacute;gina de captura de lead</p>","2018-07-26 17:47:24","2018-07-26 17:47:24","N","20","20","21");
 
-INSERT INTO tb_historia VALUES("70","Criar conteúdos e Entregas","<p>Criar conte&uacute;dos para entrega e ir formulando a lista de lead</p>\n\n\n\n<p>Inicio da divulga&ccedil;&atilde;o para o lan&ccedil;amento.</p>","2018-07-26 17:55:15","2018-07-26 17:55:15","N","40","40","24");
+INSERT INTO tb_historia VALUES("70","Criar conteúdos e Entregas","<p>Criar conte&uacute;dos para entrega e ir formulando a lista de lead</p>\n\n\n\n\n\n\n\n<p>Inicio da divulga&ccedil;&atilde;o para o lan&ccedil;amento.</p>","2018-07-26 17:55:15","2018-07-26 17:55:15","N","40","40","24");
 
 INSERT INTO tb_historia VALUES("71","Direcionar para o lançamento","<p>&nbsp;Apos Lan&ccedil;amento Direcionar para o lan&ccedil;amento o tr&aacute;fego do PL</p>","2018-07-26 18:00:07","2018-07-26 18:00:07","N","13","13","22");
 
@@ -7337,93 +8377,93 @@ INSERT INTO tb_historia VALUES("73","Vídeos para lançamento de vendas","<p>pro
 
 INSERT INTO tb_historia VALUES("74","Criar Histórias Módulos Lançamento do Sistema Da Beleaza e Site","<p>Criar Hist&oacute;rias M&oacute;dulos Lan&ccedil;amento do Sistema Da Beleaza e Site</p>","2018-07-26 18:13:56","2018-07-26 18:15:35","I","13","3","25");
 
-INSERT INTO tb_historia VALUES("75","Iniciar o sistema com as configurações básicas","<p>Iniciar o sistema com as configura&ccedil;&otilde;es b&aacute;sicas para depois iniciar o painel</p>\n\n\n\n<p>&nbsp;</p>\n\n\n\n<p>Cadastro de proffisional, cliente, servi&ccedil;os e configura&ccedil;&otilde;es padr&otilde;es</p>","2018-07-26 18:40:29","2018-07-26 18:40:29","N","30","30","26");
+INSERT INTO tb_historia VALUES("75","Iniciar o sistema com as configurações básicas","<p>Iniciar o sistema com as configura&ccedil;&otilde;es b&aacute;sicas para depois iniciar o painel</p>\n\n\n\n\n\n\n\n<p>&nbsp;</p>\n\n\n\n\n\n\n\n<p>Cadastro de proffisional, cliente, servi&ccedil;os e configura&ccedil;&otilde;es padr&otilde;es</p>","2018-07-26 18:40:29","2018-07-26 18:40:29","N","30","30","26");
 
 INSERT INTO tb_historia VALUES("76","Regras de E-mail","<p>Regras de E-mail</p>","2018-07-26 18:49:20","2018-07-27 19:00:55","N","5","5","27");
 
 INSERT INTO tb_historia VALUES("79","Criar Templates de Envio","<p>Criar Templates de Envio de email</p>","2018-07-26 18:51:32","2018-07-27 19:01:27","N","20","20","27");
 
-INSERT INTO tb_historia VALUES("80","Regras de SMS","<p>Regras de envio de SMS</p>\n\n\n\n<p>&nbsp;</p>\n\n\n\n<p>Aprendizagem de envio de SMS</p>","2018-07-26 18:53:05","2018-07-27 19:02:44","N","20","20","28");
+INSERT INTO tb_historia VALUES("80","Regras de SMS","<p>Regras de envio de SMS</p>\n\n\n\n\n\n\n\n<p>&nbsp;</p>\n\n\n\n\n\n\n\n<p>Aprendizagem de envio de SMS</p>","2018-07-26 18:53:05","2018-07-27 19:02:44","N","20","20","28");
 
 INSERT INTO tb_historia VALUES("83","Criar Templates de Envio","<p>Criar Templates de Envio de SMS</p>","2018-07-26 18:55:02","2018-07-27 19:03:11","N","5","5","28");
 
 INSERT INTO tb_historia VALUES("84","Manter Perfil","<p>Editar as funcionalidades que podem ser acessadas pro perfis</p>","2018-07-26 22:16:38","2018-07-26 22:16:38","N","30","30","29");
 
-INSERT INTO tb_historia VALUES("85","Manter Entrada e saída (Normal e recorrente)","<p>Manter Entrada e sa&iacute;da (Normal e recorrente)</p>\n\n\n\n<p>&nbsp;</p>\n\n\n\n<p>Modelagem: Entrada saida (FK Assinante)</p>","2018-07-26 22:19:03","2018-07-26 22:19:03","N","20","20","30");
+INSERT INTO tb_historia VALUES("85","Manter Entrada e saída (Normal e recorrente)","<p>Manter Entrada e sa&iacute;da (Normal e recorrente)</p>\n\n\n\n\n\n\n\n<p>&nbsp;</p>\n\n\n\n\n\n\n\n<p>Modelagem: Entrada saida (FK Assinante)</p>","2018-07-26 22:19:03","2018-07-26 22:19:03","N","20","20","30");
 
-INSERT INTO tb_historia VALUES("86","Manter categorias de entrada e saída","<p>Manter categorias de entrada e sa&iacute;da</p>\n\n\n\n<p>Modelagem: categorias entrada e sa&iacute;da (FK Assinante)</p>\n\n\n\n<p>Tabela Base categorias entrada e sa&iacute;da</p>","2018-07-26 22:21:00","2018-07-26 22:21:00","N","20","20","30");
+INSERT INTO tb_historia VALUES("86","Manter categorias de entrada e saída","<p>Manter categorias de entrada e sa&iacute;da</p>\n\n\n\n\n\n\n\n<p>Modelagem: categorias entrada e sa&iacute;da (FK Assinante)</p>\n\n\n\n\n\n\n\n<p>Tabela Base categorias entrada e sa&iacute;da</p>","2018-07-26 22:21:00","2018-07-26 22:21:00","N","20","20","30");
 
-INSERT INTO tb_historia VALUES("87","Manter Comissões","<p>Manter Comiss&otilde;es</p>\n\n\n\n<p>Modelagem: comissao (FK Agendamento)</p>","2018-07-26 22:23:39","2018-07-26 22:23:39","N","20","20","30");
+INSERT INTO tb_historia VALUES("87","Manter Comissões","<p>Manter Comiss&otilde;es</p>\n\n\n\n\n\n\n\n<p>Modelagem: comissao (FK Agendamento)</p>","2018-07-26 22:23:39","2018-07-26 22:23:39","N","20","20","30");
 
-INSERT INTO tb_historia VALUES("88","Manter vale e adiantamento","<p>Manter vale e adiantamento</p>\n\n\n\n<p>Modelagem: vale e adiantamento (FK Profissional)</p>","2018-07-26 22:25:10","2018-07-26 22:25:10","N","20","20","30");
+INSERT INTO tb_historia VALUES("88","Manter vale e adiantamento","<p>Manter vale e adiantamento</p>\n\n\n\n\n\n\n\n<p>Modelagem: vale e adiantamento (FK Profissional)</p>","2018-07-26 22:25:10","2018-07-26 22:25:10","N","20","20","30");
 
-INSERT INTO tb_historia VALUES("89","Manter Suporte","<p>Manter Suporte, responder suporte, apresentar resposta</p>\n\n\n\n<p>Modelagem: suporte (FK Assinante, Categoria Suporte)</p>\n\n\n\n<p>Tabela base Categoria Suporte</p>","2018-07-26 22:27:22","2018-07-26 22:28:33","N","40","40","31");
+INSERT INTO tb_historia VALUES("89","Manter Suporte","<p>Manter Suporte, responder suporte, apresentar resposta</p>\n\n\n\n\n\n\n\n<p>Modelagem: suporte (FK Assinante, Categoria Suporte)</p>\n\n\n\n\n\n\n\n<p>Tabela base Categoria Suporte</p>","2018-07-26 22:27:22","2018-07-26 22:28:33","N","40","40","31");
 
 INSERT INTO tb_historia VALUES("90","Percentual de desconto por Perfil","<p>Percentual de desconto por Perfil no fechamento de conta</p>","2018-07-27 15:02:27","2018-07-27 15:02:27","N","8","8","29");
 
 INSERT INTO tb_historia VALUES("91","Gerar Gráficos em relatórios","<p>Gerar Gr&aacute;ficos em relat&oacute;rios</p>","2018-07-27 17:19:07","2018-07-27 17:19:07","N","40","40","32");
 
-INSERT INTO tb_historia VALUES("92","Profissional mostra os serviços realizados","<p>Profissional Gerar Gr&aacute;ficos e Relat&oacute;rios Mostra os servi&ccedil;os realizados no per&iacute;odo com um Profissional ou auxiliar</p>\n\n\n\n<p>Impress&atilde;o dos gr&aacute;ficos e dados</p>","2018-07-27 17:37:41","2018-07-27 17:45:36","N","13","13","32");
+INSERT INTO tb_historia VALUES("92","Profissional mostra os serviços realizados","<p>Profissional Gerar Gr&aacute;ficos e Relat&oacute;rios Mostra os servi&ccedil;os realizados no per&iacute;odo com um Profissional ou auxiliar</p>\n\n\n\n\n\n\n\n<p>Impress&atilde;o dos gr&aacute;ficos e dados</p>","2018-07-27 17:37:41","2018-07-27 17:45:36","N","13","13","32");
 
-INSERT INTO tb_historia VALUES("93","Profissional mostra todas as reservas","<p>Profissional Gerar Gr&aacute;ficos e Relat&oacute;rios Mostra todas as reservas de um profissional no per&iacute;odo</p>\n\n\n\n<p>Impress&atilde;o dos gr&aacute;ficos e dados</p>","2018-07-27 17:38:44","2018-07-27 17:46:02","N","13","13","32");
+INSERT INTO tb_historia VALUES("93","Profissional mostra todas as reservas","<p>Profissional Gerar Gr&aacute;ficos e Relat&oacute;rios Mostra todas as reservas de um profissional no per&iacute;odo</p>\n\n\n\n\n\n\n\n<p>Impress&atilde;o dos gr&aacute;ficos e dados</p>","2018-07-27 17:38:44","2018-07-27 17:46:02","N","13","13","32");
 
-INSERT INTO tb_historia VALUES("94","Profissional mostra todos agendamentos atendidos","<p>Profissional Gerar Gr&aacute;ficos e Relat&oacute;rios Mostra todos agendamentos atendidos de um profissional no per&iacute;odo</p>\n\n\n\n<p>Impress&atilde;o dos gr&aacute;ficos e dados</p>","2018-07-27 17:40:17","2018-07-27 17:46:32","N","13","13","32");
+INSERT INTO tb_historia VALUES("94","Profissional mostra todos agendamentos atendidos","<p>Profissional Gerar Gr&aacute;ficos e Relat&oacute;rios Mostra todos agendamentos atendidos de um profissional no per&iacute;odo</p>\n\n\n\n\n\n\n\n<p>Impress&atilde;o dos gr&aacute;ficos e dados</p>","2018-07-27 17:40:17","2018-07-27 17:46:32","N","13","13","32");
 
-INSERT INTO tb_historia VALUES("95","Profissional o total de comissões","<p>Profissional Gerar Gr&aacute;ficos e Relat&oacute;rio Mostra o total de comiss&otilde;es para todos os profissionais do per&iacute;odo, Comiss&atilde;o por profissional (Principal ou auxiliar)</p>\n\n\n\n<p>Impress&atilde;o dos gr&aacute;ficos e dados</p>","2018-07-27 17:41:16","2018-07-27 17:47:48","N","30","30","32");
+INSERT INTO tb_historia VALUES("95","Profissional o total de comissões","<p>Profissional Gerar Gr&aacute;ficos e Relat&oacute;rio Mostra o total de comiss&otilde;es para todos os profissionais do per&iacute;odo, Comiss&atilde;o por profissional (Principal ou auxiliar)</p>\n\n\n\n\n\n\n\n<p>Impress&atilde;o dos gr&aacute;ficos e dados</p>","2018-07-27 17:41:16","2018-07-27 17:47:48","N","30","30","32");
 
-INSERT INTO tb_historia VALUES("96","Cliente por profissonal atendido","<p>Cliente Gerar Gr&aacute;ficos e Relat&oacute;rios Selecione o profissional e o per&iacute;odo para ver os clientes atendidos por ele</p>\n\n\n\n<p>Impress&atilde;o dos gr&aacute;ficos e dados</p>","2018-07-27 17:43:01","2018-07-27 17:47:20","N","13","13","32");
+INSERT INTO tb_historia VALUES("96","Cliente por profissonal atendido","<p>Cliente Gerar Gr&aacute;ficos e Relat&oacute;rios Selecione o profissional e o per&iacute;odo para ver os clientes atendidos por ele</p>\n\n\n\n\n\n\n\n<p>Impress&atilde;o dos gr&aacute;ficos e dados</p>","2018-07-27 17:43:01","2018-07-27 17:47:20","N","13","13","32");
 
-INSERT INTO tb_historia VALUES("97","Cliente Informações básicas","<p>Cliente Gerar Gr&aacute;ficos e Relat&oacute;rios com informa&ccedil;&otilde;es como aniversariantes do m&ecirc;s, lista de contatos, atrav&eacute;s de que meio</p>\n\n\n\n<p>Impress&atilde;o dos gr&aacute;ficos e dados</p>\n\n\n\n<p>&nbsp;</p>","2018-07-27 17:49:20","2018-07-27 17:49:20","N","13","13","32");
+INSERT INTO tb_historia VALUES("97","Cliente Informações básicas","<p>Cliente Gerar Gr&aacute;ficos e Relat&oacute;rios com informa&ccedil;&otilde;es como aniversariantes do m&ecirc;s, lista de contatos, atrav&eacute;s de que meio</p>\n\n\n\n\n\n\n\n<p>Impress&atilde;o dos gr&aacute;ficos e dados</p>\n\n\n\n\n\n\n\n<p>&nbsp;</p>","2018-07-27 17:49:20","2018-07-27 17:49:20","N","13","13","32");
 
-INSERT INTO tb_historia VALUES("98","Cliente todos agendamentos","<p>Cliente Gerar Gr&aacute;ficos e Relat&oacute;rios Mostrar todos agendamentos por cliente</p>\n\n\n\n<p>Impress&atilde;o dos gr&aacute;ficos e dados</p>\n\n\n\n<p>&nbsp;</p>","2018-07-27 17:50:16","2018-07-27 17:50:16","N","13","13","32");
+INSERT INTO tb_historia VALUES("98","Cliente todos agendamentos","<p>Cliente Gerar Gr&aacute;ficos e Relat&oacute;rios Mostrar todos agendamentos por cliente</p>\n\n\n\n\n\n\n\n<p>Impress&atilde;o dos gr&aacute;ficos e dados</p>\n\n\n\n\n\n\n\n<p>&nbsp;</p>","2018-07-27 17:50:16","2018-07-27 17:50:16","N","13","13","32");
 
-INSERT INTO tb_historia VALUES("99","Cliente serviços consumido","<p>Cliente Gerar Gr&aacute;ficos e Relat&oacute;rios Mostrar servi&ccedil;os consumido por cliente</p>\n\n\n\n<p>Impress&atilde;o dos gr&aacute;ficos e dados</p>\n\n\n\n<p>&nbsp;</p>","2018-07-27 17:51:05","2018-07-27 17:51:05","N","13","13","32");
+INSERT INTO tb_historia VALUES("99","Cliente serviços consumido","<p>Cliente Gerar Gr&aacute;ficos e Relat&oacute;rios Mostrar servi&ccedil;os consumido por cliente</p>\n\n\n\n\n\n\n\n<p>Impress&atilde;o dos gr&aacute;ficos e dados</p>\n\n\n\n\n\n\n\n<p>&nbsp;</p>","2018-07-27 17:51:05","2018-07-27 17:51:05","N","13","13","32");
 
-INSERT INTO tb_historia VALUES("100","Clientes cadastrados no periodo","<p>Cliente Gerar Gr&aacute;ficos e Relat&oacute;rios Mostra quais clientes foram cadastrados no per&iacute;odo selecionado</p>\n\n\n\n<p>Impress&atilde;o dos gr&aacute;ficos e dados</p>\n\n\n\n<p>&nbsp;</p>","2018-07-27 17:51:49","2018-07-27 17:51:49","N","13","13","32");
+INSERT INTO tb_historia VALUES("100","Clientes cadastrados no periodo","<p>Cliente Gerar Gr&aacute;ficos e Relat&oacute;rios Mostra quais clientes foram cadastrados no per&iacute;odo selecionado</p>\n\n\n\n\n\n\n\n<p>Impress&atilde;o dos gr&aacute;ficos e dados</p>\n\n\n\n\n\n\n\n<p>&nbsp;</p>","2018-07-27 17:51:49","2018-07-27 17:51:49","N","13","13","32");
 
-INSERT INTO tb_historia VALUES("101","Financeiro débitos e créditos dos clientes","<p>Financeiro Gerar Gr&aacute;ficos e Relat&oacute;rios Mostra quais clientes possuem d&eacute;bitos e cr&eacute;ditos</p>\n\n\n\n<p>&nbsp; Impress&atilde;o dos gr&aacute;ficos e dados</p>","2018-07-27 17:53:27","2018-07-27 17:53:27","N","13","13","32");
+INSERT INTO tb_historia VALUES("101","Financeiro débitos e créditos dos clientes","<p>Financeiro Gerar Gr&aacute;ficos e Relat&oacute;rios Mostra quais clientes possuem d&eacute;bitos e cr&eacute;ditos</p>\n\n\n\n\n\n\n\n<p>&nbsp; Impress&atilde;o dos gr&aacute;ficos e dados</p>","2018-07-27 17:53:27","2018-07-27 17:53:27","N","13","13","32");
 
-INSERT INTO tb_historia VALUES("102","Financeiro entrada e saída","<p>Financeiro Gerar Gr&aacute;ficos e Relat&oacute;rios Financeiro com entradas e sa&iacute;das por per&iacute;odo</p>\n\n\n\n<p>Impress&atilde;o dos gr&aacute;ficos e dados</p>","2018-07-27 17:54:38","2018-07-27 18:07:01","N","20","20","32");
+INSERT INTO tb_historia VALUES("102","Financeiro entrada e saída","<p>Financeiro Gerar Gr&aacute;ficos e Relat&oacute;rios Financeiro com entradas e sa&iacute;das por per&iacute;odo</p>\n\n\n\n\n\n\n\n<p>Impress&atilde;o dos gr&aacute;ficos e dados</p>","2018-07-27 17:54:38","2018-07-27 18:07:01","N","20","20","32");
 
-INSERT INTO tb_historia VALUES("103","Financeiro comissões pagas","<p>Financeiro Gerar Gr&aacute;ficos e Relat&oacute;rios Mostra todas as comiss&otilde;es pagas em determinado per&iacute;odo</p>\n\n\n\n<p>Impress&atilde;o dos gr&aacute;ficos e dados</p>","2018-07-27 17:55:41","2018-07-27 17:55:41","N","20","20","32");
+INSERT INTO tb_historia VALUES("103","Financeiro comissões pagas","<p>Financeiro Gerar Gr&aacute;ficos e Relat&oacute;rios Mostra todas as comiss&otilde;es pagas em determinado per&iacute;odo</p>\n\n\n\n\n\n\n\n<p>Impress&atilde;o dos gr&aacute;ficos e dados</p>","2018-07-27 17:55:41","2018-07-27 17:55:41","N","20","20","32");
 
-INSERT INTO tb_historia VALUES("104","Financeiro faturamento por forma de pagamento","<p>Financeiro Gerar Gr&aacute;ficos e Relat&oacute;rios&nbsp;Selecione um per&iacute;odo de datas para gerar o relat&oacute;rio de faturamento por forma de pagamento</p>\n\n\n\n<p>Impress&atilde;o dos gr&aacute;ficos e dados</p>","2018-07-27 18:06:37","2018-07-27 18:06:37","N","20","20","32");
+INSERT INTO tb_historia VALUES("104","Financeiro faturamento por forma de pagamento","<p>Financeiro Gerar Gr&aacute;ficos e Relat&oacute;rios&nbsp;Selecione um per&iacute;odo de datas para gerar o relat&oacute;rio de faturamento por forma de pagamento</p>\n\n\n\n\n\n\n\n<p>Impress&atilde;o dos gr&aacute;ficos e dados</p>","2018-07-27 18:06:37","2018-07-27 18:06:37","N","20","20","32");
 
-INSERT INTO tb_historia VALUES("105","Financeiro faturamento diário","<p>Financeiro Gerar Gr&aacute;ficos e Relat&oacute;rios Selecione um Per&iacute;odo para gerar o relat&oacute;rio de faturamento do sal&atilde;o por dia</p>\n\n\n\n<p>&nbsp; Impress&atilde;o dos gr&aacute;ficos e dados</p>","2018-07-27 18:07:54","2018-07-27 18:07:54","N","20","20","32");
+INSERT INTO tb_historia VALUES("105","Financeiro faturamento diário","<p>Financeiro Gerar Gr&aacute;ficos e Relat&oacute;rios Selecione um Per&iacute;odo para gerar o relat&oacute;rio de faturamento do sal&atilde;o por dia</p>\n\n\n\n\n\n\n\n<p>&nbsp; Impress&atilde;o dos gr&aacute;ficos e dados</p>","2018-07-27 18:07:54","2018-07-27 18:07:54","N","20","20","32");
 
-INSERT INTO tb_historia VALUES("106","Financeiro taxas dos cartões pagas","<p>Financeiro Gerar Gr&aacute;ficos e Relat&oacute;rios Mostra quanto voc&ecirc; ter&aacute; de pagar de taxas de cart&atilde;o de cr&eacute;dito e d&eacute;bito no per&iacute;odo considerando as taxas inseridas na aba configura&ccedil;&otilde;es</p>\n\n\n\n<p>&nbsp; Impress&atilde;o dos gr&aacute;ficos e dados</p>","2018-07-27 18:09:40","2018-07-27 18:09:40","N","30","30","32");
+INSERT INTO tb_historia VALUES("106","Financeiro taxas dos cartões pagas","<p>Financeiro Gerar Gr&aacute;ficos e Relat&oacute;rios Mostra quanto voc&ecirc; ter&aacute; de pagar de taxas de cart&atilde;o de cr&eacute;dito e d&eacute;bito no per&iacute;odo considerando as taxas inseridas na aba configura&ccedil;&otilde;es</p>\n\n\n\n\n\n\n\n<p>&nbsp; Impress&atilde;o dos gr&aacute;ficos e dados</p>","2018-07-27 18:09:40","2018-07-27 18:09:40","N","30","30","32");
 
-INSERT INTO tb_historia VALUES("107","Financeiro taxas dos cartões pagas por bandeira","<p>Financeiro Gerar Gr&aacute;ficos e Relat&oacute;rios Mostra o total de faturamento por bandeira e total de taxa descontado no per&iacute;odo</p>\n\n\n\n<p>Impress&atilde;o dos gr&aacute;ficos e dados</p>","2018-07-27 18:10:55","2018-07-27 18:10:55","N","20","20","32");
+INSERT INTO tb_historia VALUES("107","Financeiro taxas dos cartões pagas por bandeira","<p>Financeiro Gerar Gr&aacute;ficos e Relat&oacute;rios Mostra o total de faturamento por bandeira e total de taxa descontado no per&iacute;odo</p>\n\n\n\n\n\n\n\n<p>Impress&atilde;o dos gr&aacute;ficos e dados</p>","2018-07-27 18:10:55","2018-07-27 18:10:55","N","20","20","32");
 
-INSERT INTO tb_historia VALUES("108","Caixa Fechados e abertos por periodo","<p>Caixa Gerar Gr&aacute;ficos e Relat&oacute;rios&nbsp;Selecione o per&iacute;odo e visualize todos os caixas fechados e os seus respectivos hor&aacute;rios de abertura e fechamento</p>\n\n\n\n<p>Impress&atilde;o dos gr&aacute;ficos e dados</p>\n\n\n\n<p>&nbsp;</p>","2018-07-27 18:12:06","2018-07-27 18:12:06","N","13","13","32");
+INSERT INTO tb_historia VALUES("108","Caixa Fechados e abertos por periodo","<p>Caixa Gerar Gr&aacute;ficos e Relat&oacute;rios&nbsp;Selecione o per&iacute;odo e visualize todos os caixas fechados e os seus respectivos hor&aacute;rios de abertura e fechamento</p>\n\n\n\n\n\n\n\n<p>Impress&atilde;o dos gr&aacute;ficos e dados</p>\n\n\n\n\n\n\n\n<p>&nbsp;</p>","2018-07-27 18:12:06","2018-07-27 18:12:06","N","13","13","32");
 
-INSERT INTO tb_historia VALUES("109","Caixa entrada de pagamento","<p>Caixa Gerar Gr&aacute;ficos e Relat&oacute;rios Mostra todas as entradas de pagamento no per&iacute;odo por caixa</p>\n\n\n\n<p>&nbsp; Impress&atilde;o dos gr&aacute;ficos e dados</p>\n\n\n\n<p>&nbsp;</p>","2018-07-27 18:12:44","2018-07-27 18:12:44","N","13","13","32");
+INSERT INTO tb_historia VALUES("109","Caixa entrada de pagamento","<p>Caixa Gerar Gr&aacute;ficos e Relat&oacute;rios Mostra todas as entradas de pagamento no per&iacute;odo por caixa</p>\n\n\n\n\n\n\n\n<p>&nbsp; Impress&atilde;o dos gr&aacute;ficos e dados</p>\n\n\n\n\n\n\n\n<p>&nbsp;</p>","2018-07-27 18:12:44","2018-07-27 18:12:44","N","13","13","32");
 
-INSERT INTO tb_historia VALUES("110","Caixa sangrias","<p>Caixa Gerar Gr&aacute;ficos e Relat&oacute;rios Mostra as sangrias de caixa no per&iacute;odo por caixa</p>\n\n\n\n<p>Impress&atilde;o dos gr&aacute;ficos e dados</p>\n\n\n\n<p>&nbsp;</p>","2018-07-27 18:13:22","2018-07-27 18:13:22","N","13","13","32");
+INSERT INTO tb_historia VALUES("110","Caixa sangrias","<p>Caixa Gerar Gr&aacute;ficos e Relat&oacute;rios Mostra as sangrias de caixa no per&iacute;odo por caixa</p>\n\n\n\n\n\n\n\n<p>Impress&atilde;o dos gr&aacute;ficos e dados</p>\n\n\n\n\n\n\n\n<p>&nbsp;</p>","2018-07-27 18:13:22","2018-07-27 18:13:22","N","13","13","32");
 
-INSERT INTO tb_historia VALUES("111","Vale Presente vendidos","<p>Vale Presente Gerar Gr&aacute;ficos e Relat&oacute;rios&nbsp;Mostra todos os vales presentes que foram vendidos (Geral) Filtros: usados, ativos e vencidos</p>\n\n\n\n<p>Impress&atilde;o dos gr&aacute;ficos e dados</p>","2018-07-27 18:14:26","2018-07-27 18:19:26","N","13","13","32");
+INSERT INTO tb_historia VALUES("111","Vale Presente vendidos","<p>Vale Presente Gerar Gr&aacute;ficos e Relat&oacute;rios&nbsp;Mostra todos os vales presentes que foram vendidos (Geral) Filtros: usados, ativos e vencidos</p>\n\n\n\n\n\n\n\n<p>Impress&atilde;o dos gr&aacute;ficos e dados</p>","2018-07-27 18:14:26","2018-07-27 18:19:26","N","13","13","32");
 
-INSERT INTO tb_historia VALUES("112","Cortesia Dadas","<p>Cortesia Gerar Gr&aacute;ficos e Relat&oacute;rios Mostra todos as cortesias dadas (Geral) Filtros: usados, ativos e vencidos</p>\n\n\n\n<p>Impress&atilde;o dos gr&aacute;ficos e dados</p>","2018-07-27 18:15:07","2018-07-27 18:19:02","N","13","13","32");
+INSERT INTO tb_historia VALUES("112","Cortesia Dadas","<p>Cortesia Gerar Gr&aacute;ficos e Relat&oacute;rios Mostra todos as cortesias dadas (Geral) Filtros: usados, ativos e vencidos</p>\n\n\n\n\n\n\n\n<p>Impress&atilde;o dos gr&aacute;ficos e dados</p>","2018-07-27 18:15:07","2018-07-27 18:19:02","N","13","13","32");
 
-INSERT INTO tb_historia VALUES("113","Promoções Vendidas","<p>Promo&ccedil;&otilde;es Gerar Gr&aacute;ficos e Relat&oacute;rios Mostra todos as promo&ccedil;&otilde;es vendidas (Geral) Filtros: usados, ativos e vencidos</p>\n\n\n\n<p>Impress&atilde;o dos gr&aacute;ficos e dados</p>","2018-07-27 18:20:43","2018-07-27 18:20:43","N","13","13","32");
+INSERT INTO tb_historia VALUES("113","Promoções Vendidas","<p>Promo&ccedil;&otilde;es Gerar Gr&aacute;ficos e Relat&oacute;rios Mostra todos as promo&ccedil;&otilde;es vendidas (Geral) Filtros: usados, ativos e vencidos</p>\n\n\n\n\n\n\n\n<p>Impress&atilde;o dos gr&aacute;ficos e dados</p>","2018-07-27 18:20:43","2018-07-27 18:20:43","N","13","13","32");
 
-INSERT INTO tb_historia VALUES("114","Serviço profissionais que realizou","<p>Servi&ccedil;os Gerar Gr&aacute;ficos e Relat&oacute;rios Profissionais por servi&ccedil;os realizados</p>\n\n\n\n<p>Impress&atilde;o dos gr&aacute;ficos e dados</p>","2018-07-27 18:22:34","2018-07-27 18:24:36","N","13","13","32");
+INSERT INTO tb_historia VALUES("114","Serviço profissionais que realizou","<p>Servi&ccedil;os Gerar Gr&aacute;ficos e Relat&oacute;rios Profissionais por servi&ccedil;os realizados</p>\n\n\n\n\n\n\n\n<p>Impress&atilde;o dos gr&aacute;ficos e dados</p>","2018-07-27 18:22:34","2018-07-27 18:24:36","N","13","13","32");
 
-INSERT INTO tb_historia VALUES("115","Serviço Clientes atendidos","<p>Servi&ccedil;os Gerar Gr&aacute;ficos e Relat&oacute;rios Selecione o servi&ccedil;o e per&iacute;odo e veja os clientes atendidos por aquele servi&ccedil;o</p>\n\n\n\n<p>Impress&atilde;o dos gr&aacute;ficos e dados</p>","2018-07-27 18:23:56","2018-07-27 18:23:56","N","13","13","32");
+INSERT INTO tb_historia VALUES("115","Serviço Clientes atendidos","<p>Servi&ccedil;os Gerar Gr&aacute;ficos e Relat&oacute;rios Selecione o servi&ccedil;o e per&iacute;odo e veja os clientes atendidos por aquele servi&ccedil;o</p>\n\n\n\n\n\n\n\n<p>Impress&atilde;o dos gr&aacute;ficos e dados</p>","2018-07-27 18:23:56","2018-07-27 18:23:56","N","13","13","32");
 
-INSERT INTO tb_historia VALUES("116","Serviços utilizados por categoria","<p>Servi&ccedil;os Gerar Gr&aacute;ficos e Relat&oacute;rios Servi&ccedil;os mais utilizados por categorias</p>\n\n\n\n<p>Impress&atilde;o dos gr&aacute;ficos e dados</p>","2018-07-27 18:25:16","2018-07-27 18:25:16","N","13","13","32");
+INSERT INTO tb_historia VALUES("116","Serviços utilizados por categoria","<p>Servi&ccedil;os Gerar Gr&aacute;ficos e Relat&oacute;rios Servi&ccedil;os mais utilizados por categorias</p>\n\n\n\n\n\n\n\n<p>Impress&atilde;o dos gr&aacute;ficos e dados</p>","2018-07-27 18:25:16","2018-07-27 18:25:16","N","13","13","32");
 
 INSERT INTO tb_historia VALUES("117","Pacote Vendidos","<p>Servi&ccedil;os Gerar Gr&aacute;ficos e Relat&oacute;rios Mostra todosos pacotes vendidas (Geral) Filtros: usados, ativos e vencidos&nbsp; Impress&atilde;o dos gr&aacute;ficos e dados</p>","2018-07-27 18:49:49","2018-07-27 18:49:49","N","13","13","32");
 
-INSERT INTO tb_historia VALUES("118","Pacote status por serviços","<p>Pacotes Gerar Gr&aacute;ficos e Relat&oacute;rios Mostra todos os clientes que tem servi&ccedil;os ativos realizados e vencidos e seu servi&ccedil;os</p>\n\n\n\n<p>Impress&atilde;o dos gr&aacute;ficos e dados</p>","2018-07-27 18:52:04","2018-07-27 18:56:13","N","13","13","32");
+INSERT INTO tb_historia VALUES("118","Pacote status por serviços","<p>Pacotes Gerar Gr&aacute;ficos e Relat&oacute;rios Mostra todos os clientes que tem servi&ccedil;os ativos realizados e vencidos e seu servi&ccedil;os</p>\n\n\n\n\n\n\n\n<p>Impress&atilde;o dos gr&aacute;ficos e dados</p>","2018-07-27 18:52:04","2018-07-27 18:56:13","N","13","13","32");
 
-INSERT INTO tb_historia VALUES("119","Pacote status por serviços","<p>Pacotes Gerar Gr&aacute;ficos e Relat&oacute;rios Mostra todos os servi&ccedil;os do pacote &nbsp;ja realizados e ativos e vencidos no per&iacute;odo</p>\n\n\n\n<p>Impress&atilde;o dos gr&aacute;ficos e dados</p>","2018-07-27 18:53:06","2018-07-27 18:54:22","N","13","13","32");
+INSERT INTO tb_historia VALUES("119","Pacote status por serviços","<p>Pacotes Gerar Gr&aacute;ficos e Relat&oacute;rios Mostra todos os servi&ccedil;os do pacote &nbsp;ja realizados e ativos e vencidos no per&iacute;odo</p>\n\n\n\n\n\n\n\n<p>Impress&atilde;o dos gr&aacute;ficos e dados</p>","2018-07-27 18:53:06","2018-07-27 18:54:22","N","13","13","32");
 
-INSERT INTO tb_historia VALUES("120","Sms Histórico de envio","<p>Sms Gerar Gr&aacute;ficos e Relat&oacute;rios Sms disparados para lembrete</p>\n\n\n\n<p>Impress&atilde;o dos gr&aacute;ficos e dados</p>","2018-07-27 19:08:38","2018-07-27 19:08:38","N","13","13","32");
+INSERT INTO tb_historia VALUES("120","Sms Histórico de envio","<p>Sms Gerar Gr&aacute;ficos e Relat&oacute;rios Sms disparados para lembrete</p>\n\n\n\n\n\n\n\n<p>Impress&atilde;o dos gr&aacute;ficos e dados</p>","2018-07-27 19:08:38","2018-07-27 19:08:38","N","13","13","32");
 
-INSERT INTO tb_historia VALUES("121","E-mail Historico de envio","<p>E-mail Gerar Gr&aacute;ficos e Relat&oacute;rios E-mail disparados para lembrete</p>\n\n\n\n<p>Impress&atilde;o dos gr&aacute;ficos e dados</p>","2018-07-27 19:09:29","2018-07-27 19:09:29","N","13","13","32");
+INSERT INTO tb_historia VALUES("121","E-mail Historico de envio","<p>E-mail Gerar Gr&aacute;ficos e Relat&oacute;rios E-mail disparados para lembrete</p>\n\n\n\n\n\n\n\n<p>Impress&atilde;o dos gr&aacute;ficos e dados</p>","2018-07-27 19:09:29","2018-07-27 19:09:29","N","13","13","32");
 
-INSERT INTO tb_historia VALUES("122","Agendamento detalhes","<p>Agendamentos Gerar Gr&aacute;ficos e Relat&oacute;rios de gendamentos por status do agendamento cliente profissional e periodo</p>\n\n\n\n<p>&nbsp;Impress&atilde;o dos gr&aacute;ficos e dados</p>","2018-07-27 19:12:19","2018-07-27 19:12:19","N","20","20","32");
+INSERT INTO tb_historia VALUES("122","Agendamento detalhes","<p>Agendamentos Gerar Gr&aacute;ficos e Relat&oacute;rios de gendamentos por status do agendamento cliente profissional e periodo</p>\n\n\n\n\n\n\n\n<p>&nbsp;Impress&atilde;o dos gr&aacute;ficos e dados</p>","2018-07-27 19:12:19","2018-07-27 19:12:19","N","20","20","32");
 
 INSERT INTO tb_historia VALUES("123","Configuração inicial do projeto","<p>Configura&ccedil;&atilde;o inicial do projeto</p>","2018-07-30 10:32:17","2018-07-30 11:37:21","C","8","0","1");
 
@@ -7435,17 +8475,17 @@ INSERT INTO tb_historia VALUES("126","Cadastro pelo site para o assinante","<p>v
 
 INSERT INTO tb_historia VALUES("127","Gestão de notificações","<p>Gest&atilde;o de notifica&ccedil;&otilde;es com as mensagens geradas do sistema de sucesso erro e avisos</p>","2018-08-15 11:16:03","2018-08-28 11:25:00","C","20","0","2");
 
-INSERT INTO tb_historia VALUES("128","Manter Usuário","<p>Manter Usu&aacute;rio do Assinante</p>","2018-08-17 16:10:59","2018-08-17 16:10:59","I","20","18","33");
+INSERT INTO tb_historia VALUES("128","Manter Usuário Assinante","<p>Manter Usu&aacute;rio do Assinante</p>","2018-08-17 16:10:59","2019-01-14 14:01:10","I","30","25","33");
 
 INSERT INTO tb_historia VALUES("129","Troca de senha","<p>Troca de senha</p>","2018-08-28 10:07:32","2018-08-28 10:07:32","C","5","0","33");
 
 INSERT INTO tb_historia VALUES("130","Manter Facilidades e beneficios","<p>Manter Facilidades e beneficios</p>","2018-08-30 10:57:06","2018-09-21 22:08:20","C","8","0","2");
 
-INSERT INTO tb_historia VALUES("131","Taxas dos cartões","<p>Taxas cobradas dos cart&otilde;es de d&eacute;bito e cr&eacute;dito e taxa de antecipa&ccedil;&atilde;o dos cart&otilde;es de cr&eacute;dito com periodo da taxa</p>\n\n\n\n<p>modelagem: Configuracao (FK assinante), Taxas cart&otilde;es</p>\n\n\n\n<p>&nbsp;</p>","2018-09-25 14:26:26","2018-10-26 20:28:56","C","20","0","5");
+INSERT INTO tb_historia VALUES("131","Taxas dos cartões","<p>Taxas cobradas dos cart&otilde;es de d&eacute;bito e cr&eacute;dito e taxa de antecipa&ccedil;&atilde;o dos cart&otilde;es de cr&eacute;dito com periodo da taxa</p>\n\n\n\n\n\n\n\n<p>modelagem: Configuracao (FK assinante), Taxas cart&otilde;es</p>\n\n\n\n\n\n\n\n<p>&nbsp;</p>","2018-09-25 14:26:26","2018-10-26 20:28:56","C","20","0","5");
 
-INSERT INTO tb_historia VALUES("132","Histórico da taxas","<p>hist&oacute;rico da taxas cobradas dos cart&otilde;es</p>\n\n\n\n<p>&nbsp;</p>","2018-09-25 14:27:18","2018-10-26 20:29:19","C","8","0","5");
+INSERT INTO tb_historia VALUES("132","Histórico da taxas","<p>hist&oacute;rico da taxas cobradas dos cart&otilde;es</p>\n\n\n\n\n\n\n\n<p>&nbsp;</p>","2018-09-25 14:27:18","2018-10-26 20:29:19","C","8","0","5");
 
-INSERT INTO tb_historia VALUES("133","Configuração das comissões","<p>Configura&ccedil;&atilde;o das comiss&otilde;es</p>\n\n<p>&nbsp;</p>\n\n<p>Considerar ou n&atilde;o as Taxas de antecipa&ccedil;&atilde;o, taxa administrativa, taxa cart&atilde;o de cr&eacute;dito, taxa cart&atilde;o de d&eacute;bito, Regras de pagamentos das pr&eacute; vendas</p>","2018-09-25 14:31:36","2018-11-22 16:03:43","N","13","13","5");
+INSERT INTO tb_historia VALUES("133","Configuração das comissões","<p>Configura&ccedil;&atilde;o das comiss&otilde;es</p>\n\n\n\n\n\n<p>&nbsp;</p>\n\n\n\n\n\n<p>Considerar ou n&atilde;o as Taxas de antecipa&ccedil;&atilde;o, taxa administrativa, taxa cart&atilde;o de cr&eacute;dito, taxa cart&atilde;o de d&eacute;bito, Regras de pagamentos das pr&eacute; vendas</p>","2018-09-25 14:31:36","2018-11-22 16:03:43","N","13","13","5");
 
 INSERT INTO tb_historia VALUES("134","Configuração de Profissional","<p>Receber Email de resumo de faturamento di&aacute;rio, agenda futura (Configurar periodo), edi&ccedil;&atilde;o dos servi&ccedil;os prestados, edi&ccedil;&atilde;o dos atendimento futuros.</p>","2018-11-27 13:45:17","2018-11-27 13:45:17","N","8","8","5");
 
@@ -7457,13 +8497,55 @@ INSERT INTO tb_historia VALUES("137","Form Assistente","<p>Cria&ccedil;&atilde;o
 
 INSERT INTO tb_historia VALUES("138","Versionamento do sistema","<p>Controle da vers&atilde;o do sistema</p>","2018-12-20 13:09:11","2018-12-20 13:09:11","C","1","0","34");
 
-INSERT INTO tb_historia VALUES("139","Padronizar classes FORMs","<p>Unificar as 2 classes de FORM e FORMASSISTENTE</p>","2018-12-20 13:13:10","2018-12-20 15:43:21","N","8","8","34");
+INSERT INTO tb_historia VALUES("139","Padronizar classes FORMs","<p>Unificar as 2 classes de FORM e FORMASSISTENTE</p>","2018-12-20 13:13:10","2019-01-17 17:20:10","C","5","0","34");
 
 INSERT INTO tb_historia VALUES("140","Mudar Status","<p>Mudar Status Ativo e inativo do Profissional</p>","2018-12-20 13:42:59","2018-12-20 13:42:59","N","5","5","9");
 
 INSERT INTO tb_historia VALUES("141","Campo Tags","<p>Criar op&ccedil;&atilde;o para campos Tags</p>","2018-12-20 15:41:51","2018-12-20 15:41:51","N","5","5","34");
 
 INSERT INTO tb_historia VALUES("142","Alterar Info","<p>Alterar Info dos campo para Tooltip</p>","2018-12-20 15:42:56","2018-12-20 15:42:56","N","8","8","34");
+
+INSERT INTO tb_historia VALUES("143","Padronização do uso do site","<p>Criar constate TEM_SITE para valida&ccedil;&atilde;o do site</p>","2019-01-13 21:38:34","2019-01-13 21:38:34","C","5","0","35");
+
+INSERT INTO tb_historia VALUES("144","Padronização das telas principais","<p>Ajuste do site e sistema e login</p>","2019-01-13 21:40:03","2019-01-13 21:40:03","C","8","0","35");
+
+INSERT INTO tb_historia VALUES("145","Padrinização do sistema com/sem Assinante","<p>Criar constante TEM_ASSINANTE e fazer valida&ccedil;&otilde;es para funcionar com e sem assinante</p>","2019-01-13 21:43:02","2019-01-14 16:08:33","C","8","0","35");
+
+INSERT INTO tb_historia VALUES("146","Merge das Library","<p>Merge da Library do projeto Sistema da Beleza com a master do Projeto Merge das Library</p>","2019-01-13 21:49:26","2019-01-15 13:20:50","C","5","0","35");
+
+INSERT INTO tb_historia VALUES("147","Backup Banco","<p>Melhorias do Backup e automa&ccedil;&atilde;o da atualiza&ccedil;&atilde;o do banco</p>","2019-01-14 13:09:48","2019-01-14 17:44:38","C","8","0","34");
+
+INSERT INTO tb_historia VALUES("148","Login opcional","<p>Podendo loghar com E-mail ou CPF</p>","2019-01-14 13:54:50","2019-01-14 13:54:50","C","5","0","35");
+
+INSERT INTO tb_historia VALUES("149","Manter Usuário Comum","<p>Manter Usu&aacute;rio sem assinante</p>","2019-01-14 14:01:47","2019-01-14 14:01:47","I","20","15","33");
+
+INSERT INTO tb_historia VALUES("150","Validação dos includes","<p>Valida&ccedil;&atilde;o dos includes o que &eacute; necess&aacute;rio e se &eacute; preciso pro arquivo</p>","2019-01-14 15:56:22","2019-01-14 15:56:22","N","8","8","34");
+
+INSERT INTO tb_historia VALUES("151","Exclusão de arquivos do projeto","<p>Exclus&atilde;o de arquivos desnecess&aacute;rios do projeto</p>","2019-01-14 15:56:57","2019-01-25 09:23:49","N","3","3","34");
+
+INSERT INTO tb_historia VALUES("152","Visualização da Auditoria","<p>Melhorias na funcionalidade de auditoria onde tem que separar os itens da auditoria quando usa o metodo <code><strong>deletar quando e unificar a auditoria item quando s&atilde;o v&aacute;rios inserts na mesma tabela </strong><var>e vincular as chaves estrangeiras para aparecer a descri&ccedil;&atilde;o da chave</var></code></p>\n\n<p><code><var>Ex.: (C&oacute;digo usu&aacute;rio/ nome do usu&aacute;rio &#39;Leo Bessa&#39;)</var></code></p>\n\n<p>(C&oacute;digo Empresa/ nome da empresa &#39;Minha empresa&#39;)</p>","2019-01-15 10:06:24","2019-01-25 09:29:45","N","20","20","34");
+
+INSERT INTO tb_historia VALUES("153","Merge library nos projetos","<p>Aplicar Library nos projetos (Gej e PreProjeto)</p>","2019-01-15 13:21:30","2019-01-24 10:28:58","N","20","20","35");
+
+INSERT INTO tb_historia VALUES("154","Realizar Backup","<p>Criar funcionalidade para realizar o backup do bamco do projeto, com a op&ccedil;&atilde;o de enviar o arquivo sql paor email.</p>","2019-01-18 09:36:17","2019-01-18 13:28:07","C","5","0","36");
+
+INSERT INTO tb_historia VALUES("155","Gerar Entidades","<p>Criar funcionalidades para gerar as entidades a partir do banco.</p>","2019-01-18 09:37:10","2019-01-18 12:55:16","C","5","0","36");
+
+INSERT INTO tb_historia VALUES("156","Melhorar classe Gerar Entidade","<p>Melhorar classe Gerar Entidade para gerar constantes geral e relacionamento so acrescentar o que precisa.</p>","2019-01-18 09:39:15","2019-01-18 10:34:59","C","1","0","34");
+
+INSERT INTO tb_historia VALUES("157","Manter Gestão do Config","<p>Criar funcionalidade para gerenciar o config</p>","2019-01-18 09:44:23","2019-01-28 13:17:00","C","13","0","37");
+
+INSERT INTO tb_historia VALUES("158","Resert Config","<p>Resetar o conig para o padr&atilde;o</p>","2019-01-18 09:45:21","2019-01-28 13:16:33","C","8","0","37");
+
+INSERT INTO tb_historia VALUES("159","Inicializar o Banco de dados","<p>Inicializar o Banco de dados com os dados iniciais necess&aacute;rios padr&otilde;es</p>\n\n<p>tabelas do banco e inserts iniciais (Usu&aacute;rio padr&atilde;o perfil maste e etc..)</p>","2019-01-18 09:48:00","2019-01-24 10:32:11","N","13","13","34");
+
+INSERT INTO tb_historia VALUES("160","Unificar as Classe GRID","<p>Padronizar as classes</p>","2019-01-18 10:01:11","2019-01-18 10:01:11","N","1","1","34");
+
+INSERT INTO tb_historia VALUES("161","Inicializar do config Padrão","<pre>\n&#39;HOME&#39; =&gt; &#39;http://localhost/sistemadabeleza/&#39;,\n&#39;HOST&#39; =&gt; &#39;localhost&#39;,\n&#39;USER&#39; =&gt; &#39;root&#39;,\n&#39;PASS&#39; =&gt; &#39;&#39;,\n&#39;DBSA&#39; =&gt; &#39;sistem25_dabelez&#39;,</pre>","2019-01-24 10:30:45","2019-01-24 10:30:45","N","5","5","34");
+
+INSERT INTO tb_historia VALUES("162","Eliminar o Enum Permissão de acesso","<p>Criar no banco na tabela de funcionalidade uma coluna de ds_action pra recuperar e montar na classe de UrlAmigavel</p>","2019-01-24 16:45:33","2019-01-25 09:21:54","C","5","0","34");
+
+INSERT INTO tb_historia VALUES("163","Pop Up de confirmação de Reset Config","<p>Fazer a Pop Up de confirma&ccedil;&atilde;o de Reset Config</p>","2019-01-28 13:19:12","2019-01-28 13:19:12","N","3","3","37");
 
 
 
@@ -7493,7 +8575,7 @@ CREATE TABLE `tb_modulo` (
   `co_projeto` int(11) NOT NULL,
   PRIMARY KEY (`co_modulo`,`co_projeto`),
   KEY `fk_TB_MODULO_TB_PROJETO1_idx` (`co_projeto`)
-) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8;
 
 
 INSERT INTO tb_modulo VALUES("1","Assinante","2018-07-25 11:07:40","1");
@@ -7506,7 +8588,9 @@ INSERT INTO tb_modulo VALUES("4","Site","2018-07-26 17:35:18","1");
 
 INSERT INTO tb_modulo VALUES("5","Lançamento do Sistema Da Beleaza","2018-07-26 17:42:45","1");
 
-INSERT INTO tb_modulo VALUES("6","Melhorias Arquitetura","2018-12-20 13:02:52","1");
+INSERT INTO tb_modulo VALUES("6","Melhorias Arquitetura","2018-12-20 13:02:52","2");
+
+INSERT INTO tb_modulo VALUES("7","Gestão Arquitetura","2019-01-18 09:33:56","2");
 
 
 
@@ -7615,10 +8699,12 @@ CREATE TABLE `tb_projeto` (
   `no_projeto` varchar(80) DEFAULT NULL,
   `dt_cadastro` datetime DEFAULT NULL,
   PRIMARY KEY (`co_projeto`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
 
 
 INSERT INTO tb_projeto VALUES("1","Sistema Da Beleza","2018-07-25 11:07:40");
+
+INSERT INTO tb_projeto VALUES("2","Arquitetura","2019-01-15 13:22:03");
 
 
 
@@ -7633,7 +8719,7 @@ CREATE TABLE `tb_sessao` (
   `co_modulo` int(11) NOT NULL,
   PRIMARY KEY (`co_sessao`,`co_modulo`),
   KEY `fk_TB_SESSAO_TB_MODULO1_idx` (`co_modulo`)
-) ENGINE=InnoDB AUTO_INCREMENT=35 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=38 DEFAULT CHARSET=utf8;
 
 
 INSERT INTO tb_sessao VALUES("1","Assinante","2018-07-25 11:07:40","1");
@@ -7694,9 +8780,15 @@ INSERT INTO tb_sessao VALUES("31","Suporte","2018-07-26 22:26:08","2");
 
 INSERT INTO tb_sessao VALUES("32","Relatório","2018-07-26 22:31:46","2");
 
-INSERT INTO tb_sessao VALUES("33","Manter Usuário","2018-08-17 16:10:11","1");
+INSERT INTO tb_sessao VALUES("33","Manter Usuário","2018-08-17 16:10:11","6");
 
 INSERT INTO tb_sessao VALUES("34","Melhorias","2018-12-20 13:04:40","6");
+
+INSERT INTO tb_sessao VALUES("35","Padronização Library","2019-01-13 21:36:48","6");
+
+INSERT INTO tb_sessao VALUES("36","Banco de dados","2019-01-18 09:34:33","7");
+
+INSERT INTO tb_sessao VALUES("37","Config Padrão","2019-01-18 09:41:44","7");
 
 
 
@@ -7717,7 +8809,7 @@ CREATE TABLE `tb_trafego` (
   `ds_dispositivo` varchar(45) DEFAULT NULL,
   `ds_agente` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`co_trafego`)
-) ENGINE=InnoDB AUTO_INCREMENT=97 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=117 DEFAULT CHARSET=utf8;
 
 
 INSERT INTO tb_trafego VALUES("1","::1","Desconhecido","Desconhecida","Desconhecida","Desconhecida","Desconhecida","Firefox","Windows 8.1","Desktop","Mozilla/5.0 (Windows NT 6.3; Win64; x64; rv:61.0) Gecko/20100101 Firefox/61.0");
@@ -7911,6 +9003,46 @@ INSERT INTO tb_trafego VALUES("94","::1","Desconhecido","Desconhecida","Desconhe
 INSERT INTO tb_trafego VALUES("95","::1","Desconhecido","Desconhecida","Desconhecida","Desconhecida","Desconhecida","Firefox","Windows 10","Desktop","Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:63.0) Gecko/20100101 Firefox/63.0");
 
 INSERT INTO tb_trafego VALUES("96","::1","Desconhecido","Desconhecida","Desconhecida","Desconhecida","Desconhecida","Firefox","Windows 10","Desktop","Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:63.0) Gecko/20100101 Firefox/63.0");
+
+INSERT INTO tb_trafego VALUES("97","::1","Desconhecido","Desconhecida","Desconhecida","Desconhecida","Desconhecida","Firefox","Windows 8.1","Desktop","Mozilla/5.0 (Windows NT 6.3; Win64; x64; rv:64.0) Gecko/20100101 Firefox/64.0");
+
+INSERT INTO tb_trafego VALUES("98","::1","Desconhecido","Desconhecida","Desconhecida","Desconhecida","Desconhecida","Firefox","Windows 10","Desktop","Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:64.0) Gecko/20100101 Firefox/64.0");
+
+INSERT INTO tb_trafego VALUES("99","::1","Desconhecido","Desconhecida","Desconhecida","Desconhecida","Desconhecida","Firefox","Windows 10","Desktop","Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:64.0) Gecko/20100101 Firefox/64.0");
+
+INSERT INTO tb_trafego VALUES("100","::1","Desconhecido","Desconhecida","Desconhecida","Desconhecida","Desconhecida","Firefox","Windows 10","Desktop","Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:64.0) Gecko/20100101 Firefox/64.0");
+
+INSERT INTO tb_trafego VALUES("101","::1","Desconhecido","Desconhecida","Desconhecida","Desconhecida","Desconhecida","Firefox","Windows 10","Desktop","Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:64.0) Gecko/20100101 Firefox/64.0");
+
+INSERT INTO tb_trafego VALUES("102","::1","Desconhecido","Desconhecida","Desconhecida","Desconhecida","Desconhecida","Firefox","Windows 10","Desktop","Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:64.0) Gecko/20100101 Firefox/64.0");
+
+INSERT INTO tb_trafego VALUES("103","::1","Desconhecido","Desconhecida","Desconhecida","Desconhecida","Desconhecida","Firefox","Windows 10","Desktop","Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:64.0) Gecko/20100101 Firefox/64.0");
+
+INSERT INTO tb_trafego VALUES("104","::1","Desconhecido","Desconhecida","Desconhecida","Desconhecida","Desconhecida","Firefox","Windows 10","Desktop","Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:64.0) Gecko/20100101 Firefox/64.0");
+
+INSERT INTO tb_trafego VALUES("105","::1","Desconhecido","Desconhecida","Desconhecida","Desconhecida","Desconhecida","Firefox","Windows 10","Desktop","Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:64.0) Gecko/20100101 Firefox/64.0");
+
+INSERT INTO tb_trafego VALUES("106","::1","Desconhecido","Desconhecida","Desconhecida","Desconhecida","Desconhecida","Firefox","Windows 10","Desktop","Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:64.0) Gecko/20100101 Firefox/64.0");
+
+INSERT INTO tb_trafego VALUES("107","::1","Desconhecido","Desconhecida","Desconhecida","Desconhecida","Desconhecida","Firefox","Windows 10","Desktop","Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:64.0) Gecko/20100101 Firefox/64.0");
+
+INSERT INTO tb_trafego VALUES("108","127.0.0.1","Desconhecido","Desconhecida","Desconhecida","Desconhecida","Desconhecida","Firefox","Windows 10","Desktop","Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:64.0) Gecko/20100101 Firefox/64.0");
+
+INSERT INTO tb_trafego VALUES("109","127.0.0.1","Desconhecido","Desconhecida","Desconhecida","Desconhecida","Desconhecida","Firefox","Windows 10","Desktop","Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:64.0) Gecko/20100101 Firefox/64.0");
+
+INSERT INTO tb_trafego VALUES("110","127.0.0.1","Desconhecido","Desconhecida","Desconhecida","Desconhecida","Desconhecida","Firefox","Windows 10","Desktop","Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:64.0) Gecko/20100101 Firefox/64.0");
+
+INSERT INTO tb_trafego VALUES("111","127.0.0.1","Desconhecido","Desconhecida","Desconhecida","Desconhecida","Desconhecida","Firefox","Windows 10","Desktop","Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:64.0) Gecko/20100101 Firefox/64.0");
+
+INSERT INTO tb_trafego VALUES("112","127.0.0.1","Desconhecido","Desconhecida","Desconhecida","Desconhecida","Desconhecida","Firefox","Windows 10","Desktop","Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:64.0) Gecko/20100101 Firefox/64.0");
+
+INSERT INTO tb_trafego VALUES("113","127.0.0.1","Desconhecido","Desconhecida","Desconhecida","Desconhecida","Desconhecida","Firefox","Windows 10","Desktop","Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:64.0) Gecko/20100101 Firefox/64.0");
+
+INSERT INTO tb_trafego VALUES("114","127.0.0.1","Desconhecido","Desconhecida","Desconhecida","Desconhecida","Desconhecida","Firefox","Windows 10","Desktop","Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:64.0) Gecko/20100101 Firefox/64.0");
+
+INSERT INTO tb_trafego VALUES("115","::1","Desconhecido","Desconhecida","Desconhecida","Desconhecida","Desconhecida","Firefox","Windows 10","Desktop","Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:64.0) Gecko/20100101 Firefox/64.0");
+
+INSERT INTO tb_trafego VALUES("116","::1","Desconhecido","Desconhecida","Desconhecida","Desconhecida","Desconhecida","Firefox","Windows 10","Desktop","Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:64.0) Gecko/20100101 Firefox/64.0");
 
 
 
