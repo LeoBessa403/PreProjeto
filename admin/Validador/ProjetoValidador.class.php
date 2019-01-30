@@ -15,7 +15,7 @@ class  ProjetoValidador extends AbstractValidador
     public function validarProduto($dados)
     {
         $this->retorno[DADOS][] = $this->ValidaCampoObrigatorioDescricao(
-            $dados[NO_PROJETO], 6, 'Nome do Projeto'
+            $dados[NO_PROJETO], 2, 'Nome do Projeto'
         );
         return $this->MontaRetorno($this->retorno);
     }
